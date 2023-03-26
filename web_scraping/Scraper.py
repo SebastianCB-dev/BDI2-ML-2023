@@ -2,7 +2,7 @@ from helpers.platform import get_platform
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.service import Service
-
+import time
 class Scraper:
   driver = None
 
@@ -23,5 +23,6 @@ class Scraper:
       Exception("No se reconoce el sistema operativo")
     self.driver = webdriver.Chrome(service=service)
 
-  def start(self):
-    pass
+  def getUsersFromInstagram(self):
+    self.driver.get("https://www.instagram.com/")
+    time.sleep(5)
