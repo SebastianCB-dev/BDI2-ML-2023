@@ -26,3 +26,7 @@ class Scraper:
   def getUsersFromInstagram(self):
     self.driver.get("https://www.instagram.com/")
     time.sleep(5)
+    # Login to Instagram
+    username = self.driver.find_element(by="name", value="username")
+    username.send_keys("username")
+    time.sleep(10)
