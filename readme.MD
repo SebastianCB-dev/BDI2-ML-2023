@@ -3,3 +3,7 @@
 This is a improved version of the BDI-II project.
 
 It is in progress.
+
+
+Libraries used:
+* Selenium 
