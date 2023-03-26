@@ -3,6 +3,12 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.service import Service
 import time
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+import os
+
 class Scraper:
   driver = None
 
@@ -25,8 +31,18 @@ class Scraper:
 
   def getUsersFromInstagram(self):
     self.driver.get("https://www.instagram.com/")
-    time.sleep(5)
     # Login to Instagram
-    username = self.driver.find_element(by="name", value="username")
-    username.send_keys("username")
+    username_field = WebDriverWait(self.driver, 10).until(
+        EC.presence_of_element_located((By.NAME, "username"))
+    )
+    username_field.send_keys(os.getenv("IG_USERNAME"))
+    password_field = WebDriverWait(self.driver, 10).until(
+        EC.presence_of_element_located((By.NAME, "password"))
+    )
+    password_field.send_keys(os.getenv("IG_PASSWORD"))
+    # Click on login button
+    login_button = WebDriverWait(self.driver, 10).until(
+        EC.presence_of_element_located((By.XPATH, "//button[@type='submit']"))
+    )
+    login_button.click()
     time.sleep(10)
