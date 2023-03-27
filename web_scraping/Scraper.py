@@ -1,6 +1,7 @@
 # Standard libraries
 import os
 import time
+import json
 
 # Third-party libraries
 from selenium import webdriver
@@ -24,14 +25,12 @@ class Scraper:
   def setDriver(self):
     platform = get_platform()
     service = None
-    if platform == "Windows":
-      service = Service('./drivers/chromedriver.exe')
-    elif platform == "Linux":
-      service = Service('./drivers/chromedriver')
-    elif platform == "Darwin":
-      service = Service('./drivers/chromedriver_mac')
+    with open('example.json') as f:
+        drivers = json.load(f)
+    if(drivers[platform] != None):
+      service = Service(drivers[platform])
     else:
-      Exception("No se reconoce el sistema operativo")
+      Exception("No se reconoce el sistema operativo")    
     self.driver = webdriver.Chrome(service=service)
 
   def getUsersFromInstagram(self):
