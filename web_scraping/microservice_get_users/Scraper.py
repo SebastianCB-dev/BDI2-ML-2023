@@ -9,11 +9,12 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.support.ui import WebDriverWait
 
 # Custom libraries
 from helpers.platform import get_platform
-
+from helpers.data_transform import deleteVerified
 
 class Scraper:
   driver = None
@@ -56,25 +57,81 @@ class Scraper:
     )
     login_button.click()
     # Click on not now button
-    not_now_button = WebDriverWait(self.driver, 10).until(
-      EC.presence_of_element_located(
-        (By.XPATH, "//button[contains(text(), 'Not Now')]")
+    try:
+      not_now_button = WebDriverWait(self.driver, 10).until(
+        EC.presence_of_element_located(
+          (By.XPATH, "//button[contains(text(), 'Not Now')]")
+        )
       )
-    )
+    except TimeoutException:
+      not_now_button = WebDriverWait(self.driver, 10).until(
+           EC.presence_of_element_located(
+               (By.XPATH, "//div[contains(text(), 'Not now')]")
+           )
+      )
     not_now_button.click()
     # Go to profile
-    profile_button = WebDriverWait(self.driver, 10).until(
+    print('Go to profile')
+    self.driver.get('https://www.instagram.com/' +
+                    os.getenv('IG_USERNAME') + '/')
+
+    print('Go to following')
+    # Go to Following
+    following_button = WebDriverWait(self.driver, 10).until(
       EC.presence_of_element_located(
-        (By.XPATH, "//a[contains(@href, '/" + os.getenv("IG_USERNAME") + "/')]")
+        (By.XPATH, "//a[contains(@href, '/following')]")
       )
     )
-    profile_button.click()
-    # Go to followers
-    followers_button = WebDriverWait(self.driver, 10).until(
-      EC.presence_of_element_located(
-        (By.XPATH, "//a[contains(@href, '/" + os.getenv("IG_USERNAME") + "/followers')]")
-        )
-    )
-    followers_button.click()
+    following_button.click()
+    # Get all users from box following
+    time.sleep(2)
+    print('Open modal')
+    try:
+      self.scroll_modal_users()
+      # Get Usernames
+      usernames = self.driver.execute_script(
+          "var elements = document.querySelectorAll('span._aacl._aaco._aacw._aacx._aad7._aade'); return Array.from(elements);")
+      usernames = [username.text for username in usernames]
+      usernames = [deleteVerified(username) for username in usernames]
+      # Get Names
+      print(usernames)      
+      # Get username and name     
+      names = self.driver.execute_script(
+          "var elements = document.querySelectorAll('span.x1lliihq.x193iq5w.x6ikm8r.x10wlt62.xlyipyv.xuxw1ft'); return Array.from(elements);")
+      names = [name.text for name in names]  
+      names = [deleteVerified(name) for name in names]     
+      print(names)
+      time.sleep(100)
+    except Exception as e:
+      print('error')
 
-    time.sleep(10)
+  def scroll_modal_users(self):    
+    scroll = 500
+    height=0
+    last_height=0
+    new_height=10
+    count=0
+    while True :
+        last_height=height
+        print('1')
+        self.driver.execute_script(
+            "document.querySelector('._aano').scrollTop = "+str(scroll))
+        print('2')
+        height = int(self.driver.execute_script(
+            "return document.querySelector('._aano').scrollTop"))
+        new_height = height
+        
+        if (last_height == new_height):
+            count=count+1
+        else:
+            count=0
+        time.sleep(0.5)        
+        if( height>=scroll):
+            scroll = scroll*height
+        
+        if(count>2):
+            print("end scrolling")
+            break; 
+
+    
+  
