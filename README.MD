@@ -12,6 +12,7 @@ To install the libraries, run the following command in the terminal:
 Libraries used:
 * Selenium 
 * python-dotenv
+* psycopg2
 
 Command Docker Postgres:
 ```console
