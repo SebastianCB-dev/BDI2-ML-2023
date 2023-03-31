@@ -15,14 +15,23 @@ from selenium.webdriver.support.ui import WebDriverWait
 # Custom libraries
 from helpers.platform import get_platform
 from helpers.data_transform import deleteVerified
+from services.users_service import UsersService
 
 class Scraper:
   driver = None
 
   def __init__(self):
     self.setDriver()
+    self.startDB()
     pass
 
+  def startDB(self):
+     self.usersService = UsersService(os.getenv("DB_HOST"), 
+                                  os.getenv("DB_PORT"),
+                                 os.getenv("DB_NAME"), 
+                                 os.getenv("DB_USER"), 
+                                 os.getenv("DB_PASSWORD"))
+  
   def setDriver(self):
     platform = get_platform()
     service = None
@@ -101,9 +110,12 @@ class Scraper:
       names = [name.text for name in names]  
       names = [deleteVerified(name) for name in names]     
       print(names)
+      print(self.usersService.getUsers())
       time.sleep(100)
     except Exception as e:
+      
       print('error')
+      print(e)
 
   def scroll_modal_users(self):    
     scroll = 500
