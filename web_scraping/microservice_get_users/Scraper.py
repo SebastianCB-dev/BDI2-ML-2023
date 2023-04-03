@@ -115,7 +115,10 @@ class Scraper:
             names = [deleteVerified(name) for name in names]            
             names = [text_to_unicode(name) for name in names]            
             usernamesDB = self.usersService.getUsers()
-
+            for username in usernames:
+                if (username not in usernamesDB):
+                    self.usersService.createUser(username, names[usernames.index(username)])
+            print('Añadidos a la base de datos')
             time.sleep(100)
         except Exception as e:
 

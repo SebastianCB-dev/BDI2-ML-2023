@@ -19,4 +19,10 @@ class UsersService:
     return self.cur.fetchall()
 
   def createUser(self, username, fullname = None):
-    pass
+    try:
+      self.cur.execute('INSERT INTO users (username, fullname) VALUES (%s, %s)', (username, fullname))
+      self.conn.commit()
+      print('User created successfully')
+    except Exception as e:
+      print(e)
+      self.conn.rollback()
