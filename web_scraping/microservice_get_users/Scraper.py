@@ -54,6 +54,7 @@ class Scraper:
         self.driver = webdriver.Chrome(service=service)
 
     def getUsersFromInstagram(self):
+        self.driver.delete_all_cookies()
         # This function gets all users that the account is following from Instagram
         self.driver.get("https://www.instagram.com/")
         # Login to Instagram fielding username and password
