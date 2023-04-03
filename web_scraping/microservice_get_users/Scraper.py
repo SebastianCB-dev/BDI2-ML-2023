@@ -85,45 +85,44 @@ class Scraper:
         print('Go to profile')
         self.driver.get('https://www.instagram.com/' +
                         os.getenv('IG_USERNAME') + '/')
+        while(True):
+          print('Go to following')
+          # Go to Following
+          following_button = WebDriverWait(self.driver, 10).until(
+              EC.presence_of_element_located(
+                  (By.XPATH, "//a[contains(@href, '/following')]")
+              )
+          )
+          following_button.click()
+          # Get all users from box following
+          time.sleep(2)
+          print('Open modal')
+          try:
+              self.scroll_modal_users()
+              # Get Usernames
+              usernames = self.driver.execute_script(
+                  "var elements = document.querySelectorAll('span._aacl._aaco._aacw._aacx._aad7._aade'); return Array.from(elements);")
+              usernames = [username.text for username in usernames]
+              usernames = usernames[1:]
+              usernames = [deleteVerified(username) for username in usernames]            
+              usernames = [text_to_unicode(username) for username in usernames]
 
-        print('Go to following')
-        # Go to Following
-        following_button = WebDriverWait(self.driver, 10).until(
-            EC.presence_of_element_located(
-                (By.XPATH, "//a[contains(@href, '/following')]")
-            )
-        )
-        following_button.click()
-        # Get all users from box following
-        time.sleep(2)
-        print('Open modal')
-        try:
-            self.scroll_modal_users()
-            # Get Usernames
-            usernames = self.driver.execute_script(
-                "var elements = document.querySelectorAll('span._aacl._aaco._aacw._aacx._aad7._aade'); return Array.from(elements);")
-            usernames = [username.text for username in usernames]
-            usernames = usernames[1:]
-            usernames = [deleteVerified(username) for username in usernames]            
-            usernames = [text_to_unicode(username) for username in usernames]
-
-            # Get Names
-            # Get username and name
-            names = self.driver.execute_script(
-                "var elements = document.querySelectorAll('span.x1lliihq.x1plvlek.xryxfnj.x1n2onr6.x193iq5w.xeuugli.x1fj9vlw.x13faqbe.x1vvkbs.x1s928wv.xhkezso.x1gmr53x.x1cpjm7i.x1fgarty.x1943h6x.x1i0vuye.xvs91rp.xo1l8bm.x1roi4f4.x10wh9bi.x1wdrske.x8viiok.x18hxmgj'); return Array.from(elements);")
-            names = [name.text for name in names]
-            names = [deleteVerified(name) for name in names]            
-            names = [text_to_unicode(name) for name in names]            
-            usernamesDB = self.usersService.getUsers()
-            for username in usernames:
-                if (username not in usernamesDB):
-                    self.usersService.createUser(username, names[usernames.index(username)])
-            print('Añadidos a la base de datos')
-            time.sleep(100)
-        except Exception as e:
-
-            print('error')
-            print(e)
+              # Get Names
+              # Get username and name
+              names = self.driver.execute_script(
+                  "var elements = document.querySelectorAll('span.x1lliihq.x1plvlek.xryxfnj.x1n2onr6.x193iq5w.xeuugli.x1fj9vlw.x13faqbe.x1vvkbs.x1s928wv.xhkezso.x1gmr53x.x1cpjm7i.x1fgarty.x1943h6x.x1i0vuye.xvs91rp.xo1l8bm.x1roi4f4.x10wh9bi.x1wdrske.x8viiok.x18hxmgj'); return Array.from(elements);")
+              names = [name.text for name in names]
+              names = [deleteVerified(name) for name in names]            
+              names = [text_to_unicode(name) for name in names]            
+              usernamesDB = self.usersService.getUsers()
+              for username in usernames:
+                  if (username not in usernamesDB):
+                      self.usersService.createUser(username, names[usernames.index(username)])
+              print('Añadidos a la base de datos')
+              time.sleep(10)
+          except Exception as e:
+              print('error')
+              print(e)
 
     def scroll_modal_users(self):
         scroll = 500
