@@ -13,7 +13,7 @@ class LoggingService:
 
       # Creamos otro controlador que guardará los mensajes de registro en un archivo.
       self.file_handler = logging.FileHandler('./logs/logs.txt')
-      self.file_handler.setLevel(logging.WARNING)
+      self.file_handler.setLevel(logging.DEBUG)
       self.file_formatter = logging.Formatter(
           '%(asctime)s - %(name)s - %(levelname)s - %(message)s')
       self.file_handler.setFormatter(self.file_formatter)
@@ -22,6 +22,7 @@ class LoggingService:
       self.logger = logging.getLogger()
       self.logger.addHandler(self.console_handler)
       self.logger.addHandler(self.file_handler)
+      self.logger.setLevel(logging.INFO)
 
     def getLogging(self):
       return self.logger

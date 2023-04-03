@@ -20,14 +20,16 @@ from services.logging_service import LoggingService
 
 class Scraper:
     driver = None
-
+    logger = LoggingService().getLogging()
     def __init__(self):
         # This function initializes the class
         self.setDriver()
-        self.startDB()
-        self.logger = LoggingService().getLogging()
-        pass
-
+        self.startDB()        
+    
+    def getLogger(self):
+        # This function returns the logger
+        return self.logger
+    
     def startDB(self):
         # This function starts the database connection
         self.usersService = UsersService(os.getenv("DB_HOST"),
@@ -43,8 +45,8 @@ class Scraper:
         service = None
         with open('./helpers/drivers.json') as f:
             drivers = json.load(f)
-        if (drivers[platform] != None):
-            self.logger.info("Driver found: ", drivers[platform])
+        if (drivers[platform] != None):            
+            self.logger.info(f"Driver found to {platform}")
             service = Service(drivers[platform])
         else:
             self.logger.error("Don't recognize the operating system")
@@ -129,7 +131,7 @@ class Scraper:
               self.logger.info("Users added to database")
               time.sleep(120)
           except Exception as e:
-              self.logger.error("Error getting users", e)
+              self.logger.error(f"Error getting users {e.__str__()}")
 
     def scroll_modal_users(self):
         # This function scrolls the modal to get all users

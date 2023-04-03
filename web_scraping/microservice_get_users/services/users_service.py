@@ -1,12 +1,12 @@
 import psycopg2
 
-from logging_service import LoggingService
+from .logging_service import LoggingService
 
 class UsersService:
+  logger = LoggingService().getLogging()
 
   def __init__(self, host, port, database, user, password):
     # This function initializes the class
-    self.logger = LoggingService().getLogging()
     self.conn = psycopg2.connect(
       host=host,
       port=port,
@@ -28,8 +28,8 @@ class UsersService:
     try:
       self.cur.execute('INSERT INTO users (username, fullname) VALUES (%s, %s)', (username, fullname))
       self.conn.commit()
-      self.logger.info("User created: ", username)
+      self.logger.info(f"User created: {username}")
     except Exception as e:
-      self.logger.error("Error creating user: ", username, e)
+      self.logger.error(f"Error creating user: {username} {e.__str__()}")
       # Rollback in case there is any error
       self.conn.rollback()
