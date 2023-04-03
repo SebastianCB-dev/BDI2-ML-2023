@@ -22,11 +22,13 @@ class Scraper:
     driver = None
 
     def __init__(self):
+        # This function initializes the class
         self.setDriver()
         self.startDB()
         pass
 
     def startDB(self):
+        # This function starts the database connection
         self.usersService = UsersService(os.getenv("DB_HOST"),
                                          os.getenv("DB_PORT"),
                                          os.getenv("DB_NAME"),
@@ -34,6 +36,7 @@ class Scraper:
                                          os.getenv("DB_PASSWORD"))
 
     def setDriver(self):
+        # This function sets the driver for the browser
         platform = get_platform()
         service = None
         with open('./helpers/drivers.json') as f:
@@ -45,6 +48,7 @@ class Scraper:
         self.driver = webdriver.Chrome(service=service)
 
     def getUsersFromInstagram(self):
+        # This function gets all users that the account is following from Instagram
         self.driver.get("https://www.instagram.com/")
         # Login to Instagram fielding username and password
         username_field = WebDriverWait(self.driver, 10).until(
@@ -81,11 +85,10 @@ class Scraper:
             )
         not_now_button.click()
         # Go to profile
-        # TODO: Debe ser un bucle en este punto
-        print('Go to profile')
-        self.driver.get('https://www.instagram.com/' +
-                        os.getenv('IG_USERNAME') + '/')
         while(True):
+          print('Go to profile')
+          self.driver.get('https://www.instagram.com/' +
+                          os.getenv('IG_USERNAME') + '/')
           print('Go to following')
           # Go to Following
           following_button = WebDriverWait(self.driver, 10).until(
@@ -115,6 +118,8 @@ class Scraper:
               names = [deleteVerified(name) for name in names]            
               names = [text_to_unicode(name) for name in names]            
               usernamesDB = self.usersService.getUsers()
+              print('usernamesDB', usernamesDB)
+              print(usernames)
               for username in usernames:
                   if (username not in usernamesDB):
                       self.usersService.createUser(username, names[usernames.index(username)])
@@ -125,6 +130,7 @@ class Scraper:
               print(e)
 
     def scroll_modal_users(self):
+        # This function scrolls the modal to get all users
         scroll = 500
         height = 0
         last_height = 0
@@ -132,22 +138,20 @@ class Scraper:
         count = 0
         while True:
             last_height = height
-            print('1')
             self.driver.execute_script(
                 "document.querySelector('._aano').scrollTop = "+str(scroll))
-            print('2')
             height = int(self.driver.execute_script(
                 "return document.querySelector('._aano').scrollTop"))
             new_height = height
 
             if (last_height == new_height):
-                count = count+1
+                count = count + 1
             else:
                 count = 0
             time.sleep(0.5)
             if (height >= scroll):
-                scroll = scroll*height
+                scroll = scroll * height
 
             if (count > 2):
-                print("end scrolling")
+                # There is no more users
                 break
