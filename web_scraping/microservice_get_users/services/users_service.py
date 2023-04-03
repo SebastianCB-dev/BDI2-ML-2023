@@ -17,3 +17,6 @@ class UsersService:
   def getUsers(self):
     self.cur.execute('SELECT username FROM users')    
     return self.cur.fetchall()
+
+  def createUser(self, username, fullname = None):
+    pass
