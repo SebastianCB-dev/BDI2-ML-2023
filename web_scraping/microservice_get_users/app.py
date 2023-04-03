@@ -8,4 +8,7 @@ load_dotenv()
 scraper = Scraper()
 
 # Start the scraper
-scraper.getUsersFromInstagram()
+try:
+  scraper.getUsersFromInstagram()
+except Exception as e:
+  scraper.logger.critical("Error with the Scraper", e)

@@ -16,7 +16,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from helpers.platform import get_platform
 from helpers.data_transform import deleteVerified, text_to_unicode
 from services.users_service import UsersService
-
+from services.logging_service import LoggingService
 
 class Scraper:
     driver = None
@@ -25,6 +25,7 @@ class Scraper:
         # This function initializes the class
         self.setDriver()
         self.startDB()
+        self.logger = LoggingService().getLogging()
         pass
 
     def startDB(self):
@@ -34,6 +35,7 @@ class Scraper:
                                          os.getenv("DB_NAME"),
                                          os.getenv("DB_USER"),
                                          os.getenv("DB_PASSWORD"))
+        self.logger.info("Database connection started")
 
     def setDriver(self):
         # This function sets the driver for the browser
@@ -42,9 +44,11 @@ class Scraper:
         with open('./helpers/drivers.json') as f:
             drivers = json.load(f)
         if (drivers[platform] != None):
+            self.logger.info("Driver found: ", drivers[platform])
             service = Service(drivers[platform])
         else:
-            Exception("No se reconoce el sistema operativo")
+            self.logger.error("Don't recognize the operating system")
+            Exception("Don't recognize the operating system")
         self.driver = webdriver.Chrome(service=service)
 
     def getUsersFromInstagram(self):
@@ -85,11 +89,12 @@ class Scraper:
             )
         not_now_button.click()
         # Go to profile
+        # Loop to get all users from following list every 2 minutes
         while(True):
-          print('Go to profile')
+          self.logger.info("Going to profile")
           self.driver.get('https://www.instagram.com/' +
                           os.getenv('IG_USERNAME') + '/')
-          print('Go to following')
+          self.logger.info("Going to following")
           # Go to Following
           following_button = WebDriverWait(self.driver, 10).until(
               EC.presence_of_element_located(
@@ -99,7 +104,7 @@ class Scraper:
           following_button.click()
           # Get all users from box following
           time.sleep(2)
-          print('Open modal')
+          self.logger.info("Opening modal to get users")        
           try:
               self.scroll_modal_users()
               # Get Usernames
@@ -118,16 +123,13 @@ class Scraper:
               names = [deleteVerified(name) for name in names]            
               names = [text_to_unicode(name) for name in names]            
               usernamesDB = self.usersService.getUsers()
-              print('usernamesDB', usernamesDB)
-              print(usernames)
               for username in usernames:
                   if (username not in usernamesDB):
                       self.usersService.createUser(username, names[usernames.index(username)])
-              print('Añadidos a la base de datos')
-              time.sleep(10)
+              self.logger.info("Users added to database")
+              time.sleep(120)
           except Exception as e:
-              print('error')
-              print(e)
+              self.logger.error("Error getting users", e)
 
     def scroll_modal_users(self):
         # This function scrolls the modal to get all users
