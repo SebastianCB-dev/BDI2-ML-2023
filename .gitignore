@@ -161,4 +161,5 @@ cython_debug/
 #.idea/
 
 # logs
-logs.txt
+/logs/logs.txt
+web_scraping/microservice_get_users/logs/logs.txt
