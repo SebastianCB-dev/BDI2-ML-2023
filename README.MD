@@ -19,4 +19,9 @@ Command Docker Postgres:
     docker run --name postgres-bdi-ii -dp 5432:5432 -e POSTGRES_USER= -e POSTGRES_PASSWORD= postgres:14.7-alpine
 ```
 
+## Notes:
+
+- Every microservice has its own dockerfile to build the image.
+- Change the production.Unix.sh file to run the microservices in production mode with your own credentials.
+
    
