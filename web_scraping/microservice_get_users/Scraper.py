@@ -51,6 +51,7 @@ class Scraper:
         else:
             self.logger.error("Don't recognize the operating system")
             Exception("Don't recognize the operating system")
+        print(service.path + " driver")
         self.driver = webdriver.Chrome(service=service)
 
     def getUsersFromInstagram(self):

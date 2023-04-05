@@ -8,7 +8,7 @@ DB/
 # Archivos de log y caché
 *.log
 *.cache
-*.txt
+logs.txt
 
 # Archivos y directorios específicos de tu editor de código
 .vscode/

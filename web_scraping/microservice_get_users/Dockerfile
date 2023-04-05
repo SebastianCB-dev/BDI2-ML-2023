@@ -1,5 +1,5 @@
 # Base image: https://hub.docker.com/_/python
-FROM python:3.7-alpine3.17
+FROM python:3.11.2-alpine3.17
 
 # Dependencies for chromium
 RUN apk add --no-cache \
@@ -17,8 +17,12 @@ RUN apk add --no-cache \
 WORKDIR /app
 
 # Copy requirements.txt and install dependencies
-COPY ../../requirements.txt requirements.txt
-RUN pip install -r requirements.txt
+COPY requirements.txt requirements.txt
+RUN \
+  apk add --no-cache python3 postgresql-libs && \
+  apk add --no-cache --virtual .build-deps gcc python3-dev musl-dev postgresql-dev && \
+  python3 -m pip install -r requirements.txt --no-cache-dir && \
+  apk --purge del .build-deps
 
 # Copy the rest of the app
 COPY . .
