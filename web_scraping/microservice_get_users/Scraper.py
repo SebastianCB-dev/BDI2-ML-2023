@@ -130,7 +130,8 @@ class Scraper:
                   if (username not in usernamesDB):
                       self.usersService.createUser(username, names[usernames.index(username)])
               self.logger.info("Users added to database")
-              time.sleep(120)
+              # Timer to repeat the process every 2 minutes and avoid being blocked  
+              time.sleep(60)
           except Exception as e:
               self.logger.error(f"Error getting users {e.__str__()}")
 
