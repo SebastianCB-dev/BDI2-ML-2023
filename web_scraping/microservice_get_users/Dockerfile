@@ -1,6 +1,6 @@
 FROM ubuntu:22.10
 
-# Descargar e instalar la clave de firma de Google Chrome
+# Downlo
 RUN wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | apt-key add -
 
 # Añadir el repositorio de Google Chrome a la lista de fuentes de paquetes
@@ -25,8 +25,5 @@ WORKDIR /app
 COPY requirements.txt requirements.txt
 
 RUN pip install -r requirements.txt
-
-
-
 
 CMD ["python3", "app.py"]
