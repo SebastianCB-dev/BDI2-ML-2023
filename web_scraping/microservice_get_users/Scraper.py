@@ -53,7 +53,12 @@ class Scraper:
         else:
             self.logger.error("Don't recognize the operating system")
             Exception("Don't recognize the operating system")
-        self.driver = webdriver.Chrome(driver_path)
+        options = webdriver.ChromeOptions()
+        options.add_argument('--no-sandbox')
+        options.add_argument('--disable-dev-shm-usage')
+        options.add_argument('--headless')
+        options.add_argument('--disable-gpu')
+        self.driver = webdriver.Chrome(executable_path=driver_path, options=options)
 
     def getUsersFromInstagram(self):
         self.driver.delete_all_cookies()
