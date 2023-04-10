@@ -4,6 +4,10 @@ This is an improved version of the BDI-II project.
 
 It is in progress.
 
+## Model
+
+![Model-ML-BDI-II](https://images2.imgbox.com/0c/1d/O70CMKX7_o.png)
+
 To install the libraries, run the following command in the terminal:
 ```console
     pip install -r requirements.txt
