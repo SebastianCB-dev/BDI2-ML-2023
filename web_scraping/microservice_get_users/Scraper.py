@@ -83,6 +83,7 @@ class Scraper:
             "//button[contains(text(), 'Not Now')]",
             "//div[contains(text(), 'Not Now')]",
             "//span[contains(text(), 'Not Now')]",
+            "//div[contains(text(), 'Not now')]",
         ]
         not_now_button = self.buscar_botones(self.driver, botones)
 
