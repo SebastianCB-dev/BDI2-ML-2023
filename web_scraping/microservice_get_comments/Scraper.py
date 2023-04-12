@@ -24,7 +24,7 @@ class Scraper:
     def __init__(self):
         # This function initializes the class
         self.setDriver()
-        self.startDB()
+        # self.startDB()
 
     def getLogger(self):
         # This function returns the logger
@@ -53,6 +53,9 @@ class Scraper:
         else:
             self.logger.error("Don't recognize the operating system")
             Exception("Don't recognize the operating system")
+        if(platform == "Windows"):
+            self.driver = webdriver.Chrome(executable_path=driver_path)
+            return
         options = webdriver.ChromeOptions()
         options.add_argument('--no-sandbox')
         options.add_argument('--disable-dev-shm-usage')
@@ -83,42 +86,12 @@ class Scraper:
             "//button[contains(text(), 'Not Now')]",
             "//div[contains(text(), 'Not Now')]",
             "//span[contains(text(), 'Not Now')]",
+            "//div[contains(text(), 'Not now')]",
         ]
         not_now_button = self.buscar_botones(self.driver, botones)
 
         not_now_button.click()
         
-                
-    def scroll_modal_users(self):
-        # This function scrolls the modal to get all users
-        scroll = 500
-        height = 0
-        last_height = 0
-        new_height = 10
-        count = 0
-        while True:
-            last_height = height
-            self.driver.execute_script(
-                "document.querySelector('._aano').scrollTop = " + str(scroll)
-            )
-            height = int(
-                self.driver.execute_script(
-                    "return document.querySelector('._aano').scrollTop"
-                )
-            )
-            new_height = height
-
-            if last_height == new_height:
-                count = count + 1
-            else:
-                count = 0
-            time.sleep(0.5)
-            if height >= scroll:
-                scroll = scroll * height
-
-            if count > 2:
-                # There is no more users
-                break
 
     def buscar_botones(self, driver, botones):
         for boton in botones:

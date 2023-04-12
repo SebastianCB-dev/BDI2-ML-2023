@@ -10,5 +10,5 @@ scraper = Scraper()
 # Start the scraper
 try:  
   scraper.getUsersFromInstagram()
-except Exception as e:
+except Exception as e:  
   scraper.getLogger().critical(f"Error with the Scraper {e.__str__()}")

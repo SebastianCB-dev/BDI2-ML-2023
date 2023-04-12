@@ -1,0 +1,82 @@
+2023-04-11 18:27:19,526 - root - INFO - Driver found to Windows
+2023-04-11 18:27:19,526 - root - INFO - Driver found to Windows
+2023-04-11 18:28:53,257 - root - INFO - Driver found to Windows
+2023-04-11 18:28:53,257 - root - INFO - Driver found to Windows
+2023-04-11 18:30:34,798 - root - INFO - Driver found to Windows
+2023-04-11 18:30:34,798 - root - INFO - Driver found to Windows
+2023-04-12 17:22:02,157 - root - INFO - Driver found to Windows
+2023-04-12 17:22:02,157 - root - INFO - Driver found to Windows
+2023-04-12 17:22:08,724 - root - CRITICAL - Error with the Scraper object of type 'NoneType' has no len()
+2023-04-12 17:22:08,724 - root - CRITICAL - Error with the Scraper object of type 'NoneType' has no len()
+2023-04-12 17:22:38,592 - root - INFO - Driver found to Windows
+2023-04-12 17:22:38,592 - root - INFO - Driver found to Windows
+2023-04-12 17:22:40,950 - root - CRITICAL - Error with the Scraper object of type 'NoneType' has no len()
+2023-04-12 17:22:40,950 - root - CRITICAL - Error with the Scraper object of type 'NoneType' has no len()
+2023-04-12 17:24:03,461 - root - INFO - Driver found to Windows
+2023-04-12 17:24:03,461 - root - INFO - Driver found to Windows
+2023-04-12 17:24:33,969 - root - INFO - Driver found to Windows
+2023-04-12 17:24:33,969 - root - INFO - Driver found to Windows
+2023-04-12 17:24:36,407 - root - CRITICAL - Error with the Scraper object of type 'NoneType' has no len()
+2023-04-12 17:24:36,407 - root - CRITICAL - Error with the Scraper object of type 'NoneType' has no len()
+2023-04-12 17:24:53,900 - root - INFO - Driver found to Windows
+2023-04-12 17:24:53,900 - root - INFO - Driver found to Windows
+2023-04-12 17:24:56,181 - root - CRITICAL - Error with the Scraper object of type 'NoneType' has no len()
+2023-04-12 17:24:56,181 - root - CRITICAL - Error with the Scraper object of type 'NoneType' has no len()
+2023-04-12 17:25:06,373 - root - INFO - Driver found to Windows
+2023-04-12 17:25:06,373 - root - INFO - Driver found to Windows
+2023-04-12 17:25:08,507 - root - CRITICAL - Error with the Scraper object of type 'NoneType' has no len()
+2023-04-12 17:25:08,507 - root - CRITICAL - Error with the Scraper object of type 'NoneType' has no len()
+2023-04-12 17:25:23,341 - root - INFO - Driver found to Windows
+2023-04-12 17:25:23,341 - root - INFO - Driver found to Windows
+2023-04-12 17:25:45,197 - root - INFO - Driver found to Windows
+2023-04-12 17:25:45,197 - root - INFO - Driver found to Windows
+2023-04-12 17:26:07,818 - root - INFO - Driver found to Windows
+2023-04-12 17:26:07,818 - root - INFO - Driver found to Windows
+2023-04-12 17:26:10,267 - root - CRITICAL - Error with the Scraper object of type 'NoneType' has no len()
+2023-04-12 17:26:10,267 - root - CRITICAL - Error with the Scraper object of type 'NoneType' has no len()
+2023-04-12 17:26:45,516 - root - INFO - Driver found to Windows
+2023-04-12 17:26:45,516 - root - INFO - Driver found to Windows
+2023-04-12 17:26:52,796 - root - CRITICAL - Error with the Scraper object of type 'NoneType' has no len()
+2023-04-12 17:26:52,796 - root - CRITICAL - Error with the Scraper object of type 'NoneType' has no len()
+2023-04-12 17:26:59,734 - root - INFO - Driver found to Windows
+2023-04-12 17:26:59,734 - root - INFO - Driver found to Windows
+2023-04-12 17:27:02,382 - root - CRITICAL - Error with the Scraper object of type 'NoneType' has no len()
+2023-04-12 17:27:02,382 - root - CRITICAL - Error with the Scraper object of type 'NoneType' has no len()
+2023-04-12 17:27:52,224 - root - INFO - Driver found to Windows
+2023-04-12 17:27:52,224 - root - INFO - Driver found to Windows
+2023-04-12 17:27:55,130 - root - CRITICAL - Error with the Scraper object of type 'NoneType' has no len()
+2023-04-12 17:27:55,130 - root - CRITICAL - Error with the Scraper object of type 'NoneType' has no len()
+2023-04-12 17:28:08,078 - root - INFO - Driver found to Windows
+2023-04-12 17:28:08,078 - root - INFO - Driver found to Windows
+2023-04-12 17:28:10,555 - root - CRITICAL - Error with the Scraper object of type 'NoneType' has no len()
+2023-04-12 17:28:10,555 - root - CRITICAL - Error with the Scraper object of type 'NoneType' has no len()
+2023-04-12 17:28:26,482 - root - INFO - Driver found to Windows
+2023-04-12 17:28:26,482 - root - INFO - Driver found to Windows
+2023-04-12 17:28:28,771 - root - CRITICAL - Error with the Scraper object of type 'NoneType' has no len()
+2023-04-12 17:28:28,771 - root - CRITICAL - Error with the Scraper object of type 'NoneType' has no len()
+2023-04-12 17:29:23,356 - root - INFO - Driver found to Windows
+2023-04-12 17:29:23,356 - root - INFO - Driver found to Windows
+2023-04-12 17:29:35,219 - root - INFO - Driver found to Windows
+2023-04-12 17:29:35,219 - root - INFO - Driver found to Windows
+2023-04-12 17:30:08,599 - root - INFO - Driver found to Windows
+2023-04-12 17:30:08,599 - root - INFO - Driver found to Windows
+2023-04-12 17:31:03,194 - root - INFO - Driver found to Windows
+2023-04-12 17:31:03,194 - root - INFO - Driver found to Windows
+2023-04-12 17:32:20,951 - root - INFO - Driver found to Windows
+2023-04-12 17:32:20,951 - root - INFO - Driver found to Windows
+2023-04-12 17:32:48,186 - root - INFO - Driver found to Windows
+2023-04-12 17:32:48,186 - root - INFO - Driver found to Windows
+2023-04-12 17:33:05,701 - root - INFO - Driver found to Windows
+2023-04-12 17:33:05,701 - root - INFO - Driver found to Windows
+2023-04-12 17:33:08,967 - root - CRITICAL - Error with the Scraper object of type 'NoneType' has no len()
+2023-04-12 17:33:08,967 - root - CRITICAL - Error with the Scraper object of type 'NoneType' has no len()
+2023-04-12 17:33:52,573 - root - INFO - Driver found to Windows
+2023-04-12 17:33:52,573 - root - INFO - Driver found to Windows
+2023-04-12 17:34:12,951 - root - INFO - Driver found to Windows
+2023-04-12 17:34:12,951 - root - INFO - Driver found to Windows
+2023-04-12 17:34:46,193 - root - CRITICAL - Error with the Scraper Message: No se pudo encontrar ningún botón en la lista
+
+2023-04-12 17:34:46,193 - root - CRITICAL - Error with the Scraper Message: No se pudo encontrar ningún botón en la lista
+
+2023-04-12 17:34:55,384 - root - INFO - Driver found to Windows
+2023-04-12 17:34:55,384 - root - INFO - Driver found to Windows
