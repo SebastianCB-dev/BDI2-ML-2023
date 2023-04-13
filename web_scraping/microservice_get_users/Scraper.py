@@ -54,10 +54,14 @@ class Scraper:
             self.logger.error("Don't recognize the operating system")
             Exception("Don't recognize the operating system")
         options = webdriver.ChromeOptions()
+        if (platform == "Windows"):
+            self.driver = webdriver.Chrome(executable_path=driver_path)
+            return
         options.add_argument('--no-sandbox')
         options.add_argument('--disable-dev-shm-usage')
         options.add_argument('--headless')
         options.add_argument('--disable-gpu')
+        options.add_argument('--incognito')
         self.driver = webdriver.Chrome(executable_path=driver_path, options=options)
 
     def getUsersFromInstagram(self):
