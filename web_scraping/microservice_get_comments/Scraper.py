@@ -61,9 +61,10 @@ class Scraper:
         options.add_argument('--disable-dev-shm-usage')
         options.add_argument('--headless')
         options.add_argument('--disable-gpu')
+        options.add_argument('--incognito')
         self.driver = webdriver.Chrome(executable_path=driver_path, options=options)
 
-    def getUsersFromInstagram(self):
+    def getCommentsFromInstagram(self):
         self.driver.delete_all_cookies()
         # This function gets all users that the account is following from Instagram
         self.driver.get("https://www.instagram.com/")
@@ -89,8 +90,11 @@ class Scraper:
             "//div[contains(text(), 'Not now')]",
         ]
         not_now_button = self.buscar_botones(self.driver, botones)
-
         not_now_button.click()
+
+        while True:
+            # TODO: Get From Database 10 in PENDING STATUS
+            users = []
         
 
     def buscar_botones(self, driver, botones):
