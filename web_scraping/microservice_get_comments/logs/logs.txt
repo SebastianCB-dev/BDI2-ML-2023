@@ -80,3 +80,313 @@
 
 2023-04-12 17:34:55,384 - root - INFO - Driver found to Windows
 2023-04-12 17:34:55,384 - root - INFO - Driver found to Windows
+2023-04-13 17:45:31,513 - root - INFO - Driver found to Windows
+2023-04-13 17:45:31,513 - root - INFO - Driver found to Windows
+2023-04-13 17:57:37,698 - root - INFO - Driver found to Windows
+2023-04-13 17:57:37,698 - root - INFO - Driver found to Windows
+2023-04-13 17:58:35,367 - root - CRITICAL - Error with the Scraper Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=112.0.5615.87)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x003DDCE3+50899]
+	(No symbol) [0x0036E111]
+	(No symbol) [0x00275588]
+	(No symbol) [0x0025D333]
+	(No symbol) [0x002BF4DB]
+	(No symbol) [0x002CDB33]
+	(No symbol) [0x002BB6F6]
+	(No symbol) [0x00297708]
+	(No symbol) [0x0029886D]
+	GetHandleVerifier [0x00643EAE+2566302]
+	GetHandleVerifier [0x006792B1+2784417]
+	GetHandleVerifier [0x0067327C+2759788]
+	GetHandleVerifier [0x00475740+672048]
+	(No symbol) [0x00378872]
+	(No symbol) [0x003741C8]
+	(No symbol) [0x003742AB]
+	(No symbol) [0x003671B7]
+	BaseThreadInitThunk [0x77090099+25]
+	RtlGetAppContainerNamedObjectPath [0x77417B6E+286]
+	RtlGetAppContainerNamedObjectPath [0x77417B3E+238]
+
+2023-04-13 17:58:35,367 - root - CRITICAL - Error with the Scraper Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=112.0.5615.87)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x003DDCE3+50899]
+	(No symbol) [0x0036E111]
+	(No symbol) [0x00275588]
+	(No symbol) [0x0025D333]
+	(No symbol) [0x002BF4DB]
+	(No symbol) [0x002CDB33]
+	(No symbol) [0x002BB6F6]
+	(No symbol) [0x00297708]
+	(No symbol) [0x0029886D]
+	GetHandleVerifier [0x00643EAE+2566302]
+	GetHandleVerifier [0x006792B1+2784417]
+	GetHandleVerifier [0x0067327C+2759788]
+	GetHandleVerifier [0x00475740+672048]
+	(No symbol) [0x00378872]
+	(No symbol) [0x003741C8]
+	(No symbol) [0x003742AB]
+	(No symbol) [0x003671B7]
+	BaseThreadInitThunk [0x77090099+25]
+	RtlGetAppContainerNamedObjectPath [0x77417B6E+286]
+	RtlGetAppContainerNamedObjectPath [0x77417B3E+238]
+
+2023-04-13 17:59:09,795 - root - INFO - Driver found to Windows
+2023-04-13 17:59:09,795 - root - INFO - Driver found to Windows
+2023-04-13 18:02:06,257 - root - INFO - Driver found to Windows
+2023-04-13 18:02:06,257 - root - INFO - Driver found to Windows
+2023-04-13 18:02:42,792 - root - CRITICAL - Error with the Scraper name 'driver' is not defined
+2023-04-13 18:02:42,792 - root - CRITICAL - Error with the Scraper name 'driver' is not defined
+2023-04-13 18:03:05,586 - root - INFO - Driver found to Windows
+2023-04-13 18:03:05,586 - root - INFO - Driver found to Windows
+2023-04-13 18:05:01,836 - root - INFO - Driver found to Windows
+2023-04-13 18:05:01,836 - root - INFO - Driver found to Windows
+2023-04-13 18:06:44,723 - root - INFO - Driver found to Windows
+2023-04-13 18:06:44,723 - root - INFO - Driver found to Windows
+2023-04-13 18:40:47,825 - root - INFO - Driver found to Windows
+2023-04-13 18:40:47,825 - root - INFO - Driver found to Windows
+2023-04-13 18:43:44,685 - root - CRITICAL - Error with the Scraper Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=112.0.5615.87)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00E0DCE3+50899]
+	(No symbol) [0x00D9E111]
+	(No symbol) [0x00CA5588]
+	(No symbol) [0x00C8D333]
+	(No symbol) [0x00CEF4DB]
+	(No symbol) [0x00CFDB33]
+	(No symbol) [0x00CEB6F6]
+	(No symbol) [0x00CC7708]
+	(No symbol) [0x00CC886D]
+	GetHandleVerifier [0x01073EAE+2566302]
+	GetHandleVerifier [0x010A92B1+2784417]
+	GetHandleVerifier [0x010A327C+2759788]
+	GetHandleVerifier [0x00EA5740+672048]
+	(No symbol) [0x00DA8872]
+	(No symbol) [0x00DA41C8]
+	(No symbol) [0x00DA42AB]
+	(No symbol) [0x00D971B7]
+	BaseThreadInitThunk [0x77090099+25]
+	RtlGetAppContainerNamedObjectPath [0x77417B6E+286]
+	RtlGetAppContainerNamedObjectPath [0x77417B3E+238]
+
+2023-04-13 18:43:44,685 - root - CRITICAL - Error with the Scraper Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=112.0.5615.87)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00E0DCE3+50899]
+	(No symbol) [0x00D9E111]
+	(No symbol) [0x00CA5588]
+	(No symbol) [0x00C8D333]
+	(No symbol) [0x00CEF4DB]
+	(No symbol) [0x00CFDB33]
+	(No symbol) [0x00CEB6F6]
+	(No symbol) [0x00CC7708]
+	(No symbol) [0x00CC886D]
+	GetHandleVerifier [0x01073EAE+2566302]
+	GetHandleVerifier [0x010A92B1+2784417]
+	GetHandleVerifier [0x010A327C+2759788]
+	GetHandleVerifier [0x00EA5740+672048]
+	(No symbol) [0x00DA8872]
+	(No symbol) [0x00DA41C8]
+	(No symbol) [0x00DA42AB]
+	(No symbol) [0x00D971B7]
+	BaseThreadInitThunk [0x77090099+25]
+	RtlGetAppContainerNamedObjectPath [0x77417B6E+286]
+	RtlGetAppContainerNamedObjectPath [0x77417B3E+238]
+
+2023-04-13 18:43:50,758 - root - INFO - Driver found to Windows
+2023-04-13 18:43:50,758 - root - INFO - Driver found to Windows
+2023-04-13 18:44:38,212 - root - CRITICAL - Error with the Scraper Message: 
+
+2023-04-13 18:44:38,212 - root - CRITICAL - Error with the Scraper Message: 
+
+2023-04-13 18:45:30,553 - root - INFO - Driver found to Windows
+2023-04-13 18:45:30,553 - root - INFO - Driver found to Windows
+2023-04-13 18:47:51,818 - root - INFO - Driver found to Windows
+2023-04-13 18:47:51,818 - root - INFO - Driver found to Windows
+2023-04-13 18:49:05,189 - root - CRITICAL - Error with the Scraper Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=112.0.5615.87)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00E0DCE3+50899]
+	(No symbol) [0x00D9E111]
+	(No symbol) [0x00CA5588]
+	(No symbol) [0x00C8D333]
+	(No symbol) [0x00CEF4DB]
+	(No symbol) [0x00CFDB33]
+	(No symbol) [0x00CEB6F6]
+	(No symbol) [0x00CC7708]
+	(No symbol) [0x00CC886D]
+	GetHandleVerifier [0x01073EAE+2566302]
+	GetHandleVerifier [0x010A92B1+2784417]
+	GetHandleVerifier [0x010A327C+2759788]
+	GetHandleVerifier [0x00EA5740+672048]
+	(No symbol) [0x00DA8872]
+	(No symbol) [0x00DA41C8]
+	(No symbol) [0x00DA42AB]
+	(No symbol) [0x00D971B7]
+	BaseThreadInitThunk [0x77090099+25]
+	RtlGetAppContainerNamedObjectPath [0x77417B6E+286]
+	RtlGetAppContainerNamedObjectPath [0x77417B3E+238]
+
+2023-04-13 18:49:05,189 - root - CRITICAL - Error with the Scraper Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=112.0.5615.87)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00E0DCE3+50899]
+	(No symbol) [0x00D9E111]
+	(No symbol) [0x00CA5588]
+	(No symbol) [0x00C8D333]
+	(No symbol) [0x00CEF4DB]
+	(No symbol) [0x00CFDB33]
+	(No symbol) [0x00CEB6F6]
+	(No symbol) [0x00CC7708]
+	(No symbol) [0x00CC886D]
+	GetHandleVerifier [0x01073EAE+2566302]
+	GetHandleVerifier [0x010A92B1+2784417]
+	GetHandleVerifier [0x010A327C+2759788]
+	GetHandleVerifier [0x00EA5740+672048]
+	(No symbol) [0x00DA8872]
+	(No symbol) [0x00DA41C8]
+	(No symbol) [0x00DA42AB]
+	(No symbol) [0x00D971B7]
+	BaseThreadInitThunk [0x77090099+25]
+	RtlGetAppContainerNamedObjectPath [0x77417B6E+286]
+	RtlGetAppContainerNamedObjectPath [0x77417B3E+238]
+
+2023-04-13 18:49:08,634 - root - INFO - Driver found to Windows
+2023-04-13 18:49:08,634 - root - INFO - Driver found to Windows
+2023-04-13 18:54:41,453 - root - INFO - Driver found to Windows
+2023-04-13 18:54:41,453 - root - INFO - Driver found to Windows
+2023-04-13 18:55:44,300 - root - CRITICAL - Error with the Scraper 'WebElement' object has no attribute 'find_element_by_tag_name'
+2023-04-13 18:55:44,300 - root - CRITICAL - Error with the Scraper 'WebElement' object has no attribute 'find_element_by_tag_name'
+2023-04-13 18:56:55,317 - root - INFO - Driver found to Windows
+2023-04-13 18:56:55,317 - root - INFO - Driver found to Windows
+2023-04-13 18:57:42,469 - root - CRITICAL - Error with the Scraper 'WebElement' object has no attribute 'find_element_by_tag_name'
+2023-04-13 18:57:42,469 - root - CRITICAL - Error with the Scraper 'WebElement' object has no attribute 'find_element_by_tag_name'
+2023-04-13 18:58:46,149 - root - INFO - Driver found to Windows
+2023-04-13 18:58:46,149 - root - INFO - Driver found to Windows
+2023-04-13 18:59:44,389 - root - CRITICAL - Error with the Scraper 'WebElement' object has no attribute 'querySelector'
+2023-04-13 18:59:44,389 - root - CRITICAL - Error with the Scraper 'WebElement' object has no attribute 'querySelector'
+2023-04-13 19:05:52,662 - root - INFO - Driver found to Windows
+2023-04-13 19:05:52,662 - root - INFO - Driver found to Windows
+2023-04-13 19:06:29,395 - root - CRITICAL - Error with the Scraper Message: javascript error: Missing initializer in const declaration
+  (Session info: chrome=112.0.5615.87)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00E0DCE3+50899]
+	(No symbol) [0x00D9E111]
+	(No symbol) [0x00CA5588]
+	(No symbol) [0x00CA7EDB]
+	(No symbol) [0x00CA7DB0]
+	(No symbol) [0x00CA8690]
+	(No symbol) [0x00CFE98D]
+	(No symbol) [0x00CEB8FC]
+	(No symbol) [0x00CFE01C]
+	(No symbol) [0x00CEB6F6]
+	(No symbol) [0x00CC7708]
+	(No symbol) [0x00CC886D]
+	GetHandleVerifier [0x01073EAE+2566302]
+	GetHandleVerifier [0x010A92B1+2784417]
+	GetHandleVerifier [0x010A327C+2759788]
+	GetHandleVerifier [0x00EA5740+672048]
+	(No symbol) [0x00DA8872]
+	(No symbol) [0x00DA41C8]
+	(No symbol) [0x00DA42AB]
+	(No symbol) [0x00D971B7]
+	BaseThreadInitThunk [0x77090099+25]
+	RtlGetAppContainerNamedObjectPath [0x77417B6E+286]
+	RtlGetAppContainerNamedObjectPath [0x77417B3E+238]
+
+2023-04-13 19:06:29,395 - root - CRITICAL - Error with the Scraper Message: javascript error: Missing initializer in const declaration
+  (Session info: chrome=112.0.5615.87)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00E0DCE3+50899]
+	(No symbol) [0x00D9E111]
+	(No symbol) [0x00CA5588]
+	(No symbol) [0x00CA7EDB]
+	(No symbol) [0x00CA7DB0]
+	(No symbol) [0x00CA8690]
+	(No symbol) [0x00CFE98D]
+	(No symbol) [0x00CEB8FC]
+	(No symbol) [0x00CFE01C]
+	(No symbol) [0x00CEB6F6]
+	(No symbol) [0x00CC7708]
+	(No symbol) [0x00CC886D]
+	GetHandleVerifier [0x01073EAE+2566302]
+	GetHandleVerifier [0x010A92B1+2784417]
+	GetHandleVerifier [0x010A327C+2759788]
+	GetHandleVerifier [0x00EA5740+672048]
+	(No symbol) [0x00DA8872]
+	(No symbol) [0x00DA41C8]
+	(No symbol) [0x00DA42AB]
+	(No symbol) [0x00D971B7]
+	BaseThreadInitThunk [0x77090099+25]
+	RtlGetAppContainerNamedObjectPath [0x77417B6E+286]
+	RtlGetAppContainerNamedObjectPath [0x77417B3E+238]
+
+2023-04-13 19:07:07,198 - root - INFO - Driver found to Windows
+2023-04-13 19:07:07,198 - root - INFO - Driver found to Windows
+2023-04-13 19:09:48,296 - root - CRITICAL - Error with the Scraper Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=112.0.5615.87)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00E0DCE3+50899]
+	(No symbol) [0x00D9E111]
+	(No symbol) [0x00CA5588]
+	(No symbol) [0x00C8D333]
+	(No symbol) [0x00CEF4DB]
+	(No symbol) [0x00CFDB33]
+	(No symbol) [0x00CEB6F6]
+	(No symbol) [0x00CC7708]
+	(No symbol) [0x00CC886D]
+	GetHandleVerifier [0x01073EAE+2566302]
+	GetHandleVerifier [0x010A92B1+2784417]
+	GetHandleVerifier [0x010A327C+2759788]
+	GetHandleVerifier [0x00EA5740+672048]
+	(No symbol) [0x00DA8872]
+	(No symbol) [0x00DA41C8]
+	(No symbol) [0x00DA42AB]
+	(No symbol) [0x00D971B7]
+	BaseThreadInitThunk [0x77090099+25]
+	RtlGetAppContainerNamedObjectPath [0x77417B6E+286]
+	RtlGetAppContainerNamedObjectPath [0x77417B3E+238]
+
+2023-04-13 19:09:48,296 - root - CRITICAL - Error with the Scraper Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=112.0.5615.87)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00E0DCE3+50899]
+	(No symbol) [0x00D9E111]
+	(No symbol) [0x00CA5588]
+	(No symbol) [0x00C8D333]
+	(No symbol) [0x00CEF4DB]
+	(No symbol) [0x00CFDB33]
+	(No symbol) [0x00CEB6F6]
+	(No symbol) [0x00CC7708]
+	(No symbol) [0x00CC886D]
+	GetHandleVerifier [0x01073EAE+2566302]
+	GetHandleVerifier [0x010A92B1+2784417]
+	GetHandleVerifier [0x010A327C+2759788]
+	GetHandleVerifier [0x00EA5740+672048]
+	(No symbol) [0x00DA8872]
+	(No symbol) [0x00DA41C8]
+	(No symbol) [0x00DA42AB]
+	(No symbol) [0x00D971B7]
+	BaseThreadInitThunk [0x77090099+25]
+	RtlGetAppContainerNamedObjectPath [0x77417B6E+286]
+	RtlGetAppContainerNamedObjectPath [0x77417B3E+238]
+
