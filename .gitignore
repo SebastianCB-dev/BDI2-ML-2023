@@ -163,3 +163,4 @@ cython_debug/
 # logs
 /logs/logs.txt
 web_scraping/microservice_get_users/logs/logs.txt
+web_scraping/microservice_get_comments/logs/logs.txt
