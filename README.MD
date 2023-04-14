@@ -29,3 +29,6 @@ Command Docker Postgres:
 - Change the production.Unix.sh file to run the microservices in production mode with your own credentials.
 
    
+
+#### acknowledgment
+@drojas6 for contributing with Web Scraping scripts
