@@ -96,7 +96,7 @@ class Scraper:
 
         while True:
             # TODO: Get From Database 10 in PENDING STATUS
-            users = ['pamela.moreno', 'anabreco', 'san27ivette']
+            users = ['pamela.moreno']
             for user in users:
                 self.driver.get('https://www.instagram.com/' + user)
                 SCROLL_PAUSE_TIME = 1
@@ -111,10 +111,8 @@ class Scraper:
                     # Scroll down to bottom
                     self.driver.execute_script(
                         "window.scrollTo(0, document.body.scrollHeight);")
-
                     # Wait to load page
                     time.sleep(SCROLL_PAUSE_TIME)
-
                     # Calculate new scroll height and compare with last scroll height
                     new_height = self.driver.execute_script(
                         "return document.body.scrollHeight")
@@ -141,8 +139,12 @@ class Scraper:
                         else:
                             last_height = new_height
                             continue
+                # Posts URLS
                 print(posts_urls)
-                
+                for post in posts_urls:
+                    self.driver.get(post)
+                    time.sleep(5)
+
     def buscar_botones(self, driver, botones):
         for boton in botones:
             try:
