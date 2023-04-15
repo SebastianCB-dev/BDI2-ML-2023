@@ -7,8 +7,9 @@ import json
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.common.exceptions import TimeoutException
+from selenium.common.exceptions import TimeoutException, NoSuchElementException
 from selenium.webdriver.support.ui import WebDriverWait
+from bs4 import BeautifulSoup
 
 # Custom libraries
 from helpers.platform import get_platform
@@ -144,14 +145,11 @@ class Scraper:
                 # Delete duplicated
                 posts_urls = list(set(posts_urls))
                 print(len(posts_urls))
-                time.sleep(2000)
                 for post in posts_urls:
                     self.driver.get(post)
-                    description = self.get_publication_description()
-                    print(description)
                     comments = self.scroll_comments()
                     time.sleep(20)
-
+    
     def buscar_botones(self, driver, botones):
         for boton in botones:
             try:
@@ -161,18 +159,63 @@ class Scraper:
             except TimeoutException:
                 continue
         raise TimeoutException("No se pudo encontrar ningún botón en la lista")
-
-    def get_publication_description(self):
-        try:
-            description_post_h1 = WebDriverWait(self.driver, 10).until(
-                EC.presence_of_element_located((By.XPATH, "//h1"))
-            )
-            return description_post_h1.text
-        except Exception:
-            # If publication does not have a description return empty string
-            return ''
-        
-
+    
     def scroll_comments(self):
-        return ''
-        
+        scroll = 400
+        height = 0
+        last_height = 0
+        new_height = 10
+        count = 0
+        general_comments = []
+        while True:
+            general_new_comments = WebDriverWait(self.driver, 10).until(
+                EC.presence_of_all_elements_located(
+                    (By.XPATH, "//div[contains(@class, '_a9zr')]"))
+            )
+            general_comments.extend(general_new_comments)               
+            time.sleep(2)
+            if (len(general_comments) == 0):
+                print('There is no comments')
+                break
+            # Get Comments
+            self.process_comments(general_comments)
+            last_height = height
+            self.driver.execute_script(
+                "document.querySelector('#react-root > div > div > section > main > div > div.ltEKP > article > div > div.qF0y9.Igw0E.IwRSH.eGOV_.acqo5._4EzTm > div > div.eo2As > div.EtaWk > ul').scrollTop = "+str(scroll))
+            height = int(self.driver.execute_script(
+                "return document.querySelector('#react-root > div > div > section > main > div > div.ltEKP > article > div > div.qF0y9.Igw0E.IwRSH.eGOV_.acqo5._4EzTm > div > div.eo2As > div.EtaWk > ul').scrollTop"))
+            new_height = height
+
+            if (last_height == new_height):
+                count = count+1
+            else:
+                count = 0
+            time.sleep(1)
+            if (height >= scroll):
+                scroll = scroll*height
+
+            if (count > 2):
+                try:
+                    more_comments_button = self.driver.find_element(
+                        By.XPATH, "//div[contains(@class, '             qF0y9          Igw0E     IwRSH        YBx95     acqo5   _4EzTm                                                                                                            NUiEW  ')]/button")
+                    more_comments_button.click()
+                    time.sleep(1)
+                except NoSuchElementException:
+                    break
+                except Exception as e:
+                    break                
+                
+    def process_comments(self, general_comments):
+        comments = []
+        for gc in (general_comments):
+            source = gc.get_attribute('innerHTML') 
+            soup = BeautifulSoup(source, "html.parser")
+            
+            owner=soup.find("a")                        
+                
+            text = soup.find("span",{"class":"_aacl _aaco _aacu _aacx _aad7 _aade"})
+            comments.append(text.text)
+            
+        return comments
+                        
+            
