@@ -96,10 +96,10 @@ class Scraper:
 
         while True:
             # TODO: Get From Database 10 in PENDING STATUS
-            users = ['pamela.moreno']
+            users = ['lesliedayana97']
             for user in users:
                 self.driver.get('https://www.instagram.com/' + user)
-                SCROLL_PAUSE_TIME = 1
+                SCROLL_PAUSE_TIME = 3
                 posts_urls = []
                 while True:
                     # Get scroll height
@@ -116,8 +116,9 @@ class Scraper:
                     # Calculate new scroll height and compare with last scroll height
                     new_height = self.driver.execute_script(
                         "return document.body.scrollHeight")
-                    posts_urls = self.driver.execute_script(
+                    new_posts = self.driver.execute_script(
                         "const posts_urls = []; document.querySelectorAll('div._aabd._aa8k._al3l').forEach(post => posts_urls.push('https://instagram.com' + post.querySelector('a').getAttribute('href'))); return posts_urls")
+                    posts_urls.extend(new_posts)
                     if new_height == last_height:
 
                         # try again (can be removed)
@@ -140,10 +141,16 @@ class Scraper:
                             last_height = new_height
                             continue
                 # Posts URLS
-                print(posts_urls)
+                # Delete duplicated
+                posts_urls = list(set(posts_urls))
+                print(len(posts_urls))
+                time.sleep(2000)
                 for post in posts_urls:
                     self.driver.get(post)
-                    time.sleep(5)
+                    description = self.get_publication_description()
+                    print(description)
+                    comments = self.scroll_comments()
+                    time.sleep(20)
 
     def buscar_botones(self, driver, botones):
         for boton in botones:
@@ -154,3 +161,18 @@ class Scraper:
             except TimeoutException:
                 continue
         raise TimeoutException("No se pudo encontrar ningún botón en la lista")
+
+    def get_publication_description(self):
+        try:
+            description_post_h1 = username_field = WebDriverWait(self.driver, 10).until(
+                EC.presence_of_element_located((By.XPATH, "//h1"))
+            )
+            return description_post_h1.text
+        except Exception:
+            # If publication does not have a description return empty string
+            return ''
+        
+
+    def scroll_comments(self):
+        return ''
+        
