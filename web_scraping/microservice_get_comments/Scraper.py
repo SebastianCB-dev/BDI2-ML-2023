@@ -164,7 +164,7 @@ class Scraper:
 
     def get_publication_description(self):
         try:
-            description_post_h1 = username_field = WebDriverWait(self.driver, 10).until(
+            description_post_h1 = WebDriverWait(self.driver, 10).until(
                 EC.presence_of_element_located((By.XPATH, "//h1"))
             )
             return description_post_h1.text
