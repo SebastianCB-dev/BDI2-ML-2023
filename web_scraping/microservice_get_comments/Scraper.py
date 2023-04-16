@@ -178,7 +178,8 @@ class Scraper:
                 print('There is no comments')
                 break
             # Get Comments
-            self.process_comments(general_comments)
+            comments = self.process_comments(general_comments)
+            print('comments', comments)
             last_height = height
             self.driver.execute_script(
                 "document.querySelector('#react-root > div > div > section > main > div > div.ltEKP > article > div > div.qF0y9.Igw0E.IwRSH.eGOV_.acqo5._4EzTm > div > div.eo2As > div.EtaWk > ul').scrollTop = "+str(scroll))
@@ -206,14 +207,16 @@ class Scraper:
                     break                
                 
     def process_comments(self, general_comments):
+        print('Processing comment')
         comments = []
         for gc in (general_comments):
             source = gc.get_attribute('innerHTML') 
-            soup = BeautifulSoup(source, "html.parser")
-            
-            owner=soup.find("a")                        
-                
-            text = soup.find("span",{"class":"_aacl _aaco _aacu _aacx _aad7 _aade"})
+            soup = BeautifulSoup(source, "html.parser") 
+
+            text = soup.find(
+                "span", {"class": "_aacl _aaco _aacu _aacx _aad7 _aade"})
+            if text == None:
+                text = soup.find("h1", {"class":"_aacl _aaco _aacu _aacx _aad7 _aade"})
             comments.append(text.text)
             
         return comments
