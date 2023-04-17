@@ -162,6 +162,7 @@ class Scraper:
     raise TimeoutException("No se pudo encontrar ningún botón en la lista")
 
   def scroll_comments(self):
+    # Updaste cause' button + to show more comments
     scroll = 400
     height = 0
     last_height = 0
@@ -179,9 +180,11 @@ class Scraper:
         print('There is no comments')
         break
       # Get Comments
-      comments = self.process_comments(general_comments)
+      comments_processed = self.process_comments(general_comments)
       # Delete duplicate
-      comments = list(set(comments))
+      comments = list(set(tuple(comment.items()) for comment in comments_processed))
+      comments = [dict(comment) for comment in comments]
+
       print('comments', comments)
       last_height = height
       self.driver.execute_script(
@@ -214,17 +217,16 @@ class Scraper:
           break
 
   def process_comments(self, general_comments):
-    # TODO: Get Username from comment
     comments = []
     for gc in general_comments:
       source = gc.get_attribute('innerHTML')
       soup = BeautifulSoup(source, "html.parser")
-
       text = soup.find(
         "span", {"class": "_aacl _aaco _aacu _aacx _aad7 _aade"})
-      # username = soup.find("a", {"class": "_aacl _aaco _aacu _aacx _aad7 _aade"})
+      username = soup.find("a")
       if text is None:
         text = soup.find("h1", {"class": "_aacl _aaco _aacu _aacx _aad7 _aade"})
-      comments.append(text.text)
+      comment_object = { "text": text.text, "username": username.text }
+      comments.append(comment_object)
 
     return comments
