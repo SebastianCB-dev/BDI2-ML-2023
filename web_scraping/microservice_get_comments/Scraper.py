@@ -144,7 +144,6 @@ class Scraper:
                 # Posts URLS
                 # Delete duplicated
                 posts_urls = list(set(posts_urls))
-                print(len(posts_urls))
                 for post in posts_urls:
                     self.driver.get(post)
                     comments = self.scroll_comments()
@@ -174,31 +173,35 @@ class Scraper:
             )
             general_comments.extend(general_new_comments)               
             time.sleep(2)
-            if (len(general_comments) == 0):
+            if len(general_comments) == 0:
                 print('There is no comments')
                 break
             # Get Comments
             comments = self.process_comments(general_comments)
+            # Delete duplicate
+            comments = list(set(comments))
             print('comments', comments)
             last_height = height
             self.driver.execute_script(
-                "document.querySelector('#react-root > div > div > section > main > div > div.ltEKP > article > div > div.qF0y9.Igw0E.IwRSH.eGOV_.acqo5._4EzTm > div > div.eo2As > div.EtaWk > ul').scrollTop = "+str(scroll))
+                "document.querySelector('ul._a9z6._a9za').scrollTop = "+str(
+                    scroll))
             height = int(self.driver.execute_script(
-                "return document.querySelector('#react-root > div > div > section > main > div > div.ltEKP > article > div > div.qF0y9.Igw0E.IwRSH.eGOV_.acqo5._4EzTm > div > div.eo2As > div.EtaWk > ul').scrollTop"))
+                "return document.querySelector('ul._a9z6._a9za').scrollTop"))
             new_height = height
 
-            if (last_height == new_height):
+            if last_height == new_height:
                 count = count+1
             else:
                 count = 0
             time.sleep(1)
-            if (height >= scroll):
+            if height >= scroll:
                 scroll = scroll*height
 
             if (count > 2):
                 try:
                     more_comments_button = self.driver.find_element(
                         By.XPATH, "//div[contains(@class, '             qF0y9          Igw0E     IwRSH        YBx95     acqo5   _4EzTm                                                                                                            NUiEW  ')]/button")
+
                     more_comments_button.click()
                     time.sleep(1)
                 except NoSuchElementException:
@@ -207,7 +210,6 @@ class Scraper:
                     break                
                 
     def process_comments(self, general_comments):
-        print('Processing comment')
         comments = []
         for gc in (general_comments):
             source = gc.get_attribute('innerHTML') 
@@ -215,7 +217,7 @@ class Scraper:
 
             text = soup.find(
                 "span", {"class": "_aacl _aaco _aacu _aacx _aad7 _aade"})
-            if text == None:
+            if text is None:
                 text = soup.find("h1", {"class":"_aacl _aaco _aacu _aacx _aad7 _aade"})
             comments.append(text.text)
             
