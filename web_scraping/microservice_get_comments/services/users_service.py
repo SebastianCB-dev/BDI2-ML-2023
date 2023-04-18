@@ -17,19 +17,21 @@ class UsersService:
     self.cur = self.conn.cursor()
 
 
-  def getUsers(self):
+  def get_comment(self):
     # This function gets all users from the database
-    self.cur.execute('SELECT username FROM users')    
+    self.cur.execute('SELECT comment FROM comments LIKE %s', '%test%')
     data = self.cur.fetchall()
     return [row[0] for row in data]
 
-  def createUser(self, username, fullname = None):
+  def create_comment(self, comment_data):
+    username = comment_data['username']
+    comment = comment_data['comment']
     # This function creates a new user in the database
     try:
-      self.cur.execute('INSERT INTO users (username, fullname) VALUES (%s, %s)', (username, fullname))
+      self.cur.execute('INSERT INTO comments (username, comment) VALUES (%s, %s)', (username, comment))
       self.conn.commit()
-      self.logger.info(f"User created: {username}")
+      self.logger.info(f"Comment created for {username}")
     except Exception as e:
-      self.logger.error(f"Error creating user: {username} {e.__str__()}")
+      self.logger.error(f"Error creating comment: {comment} {e.__str__()}")
       # Rollback in case there is any error
       self.conn.rollback()
