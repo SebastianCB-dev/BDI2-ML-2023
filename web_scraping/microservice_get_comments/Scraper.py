@@ -188,7 +188,7 @@ class Scraper:
       print('comments', comments)
       try:        
         div_more_comments = self.driver.find_element(
-            By.XPATH, "//div[contains(@class, 'x9f619 xjbqb8w x78zum5 x168nmei x13lgxp2 x5pf9jr xo71vjh xdj266r xat24cr x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh xl56j7k')]")
+            By.XPATH, "//div[@class='x9f619 xjbqb8w x78zum5 x168nmei x13lgxp2 x5pf9jr xo71vjh xdj266r xat24cr x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh xl56j7k']")
         button_more_comments = div_more_comments.find_element(By.XPATH, "//button")
         button_more_comments.click()    
       except:
@@ -203,7 +203,7 @@ class Scraper:
       new_height = height
       try:
         div_more_comments = self.driver.find_element(
-            By.XPATH, "//div[contains(@class, 'x9f619 xjbqb8w x78zum5 x168nmei x13lgxp2 x5pf9jr xo71vjh xdj266r xat24cr x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh xl56j7k')]")
+            By.XPATH, "//div[@class='x9f619 xjbqb8w x78zum5 x168nmei x13lgxp2 x5pf9jr xo71vjh xdj266r xat24cr x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh xl56j7k']")
         button_more_comments = div_more_comments.find_element(By.XPATH, "//button")
         button_more_comments.click()  
       except:
