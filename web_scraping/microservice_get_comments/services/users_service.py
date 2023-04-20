@@ -25,7 +25,7 @@ class UsersService:
 
   def create_comment(self, comment_data):
     username = comment_data['username']
-    comment = comment_data['comment']
+    comment = comment_data['text']
     # This function creates a new user in the database
     try:
       self.cur.execute('INSERT INTO comments (username, comment) VALUES (%s, %s)', (username, comment))

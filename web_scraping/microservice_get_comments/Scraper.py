@@ -186,6 +186,14 @@ class Scraper:
       comments = [dict(comment) for comment in comments]
 
       print('comments', comments)
+      try:        
+        div_more_comments = self.driver.find_element(
+            By.XPATH, "//div[contains(@class, 'x9f619 xjbqb8w x78zum5 x168nmei x13lgxp2 x5pf9jr xo71vjh xdj266r xat24cr x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh xl56j7k')]")
+        button_more_comments = div_more_comments.find_element(By.XPATH, "//button")
+        button_more_comments.click()    
+      except:
+        pass
+
       last_height = height
       self.driver.execute_script(
         "document.querySelector('ul._a9z6._a9za').scrollTop = " + str(
@@ -193,7 +201,14 @@ class Scraper:
       height = int(self.driver.execute_script(
         "return document.querySelector('ul._a9z6._a9za').scrollTop"))
       new_height = height
-
+      try:
+        div_more_comments = self.driver.find_element(
+            By.XPATH, "//div[contains(@class, 'x9f619 xjbqb8w x78zum5 x168nmei x13lgxp2 x5pf9jr xo71vjh xdj266r xat24cr x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh xl56j7k')]")
+        button_more_comments = div_more_comments.find_element(By.XPATH, "//button")
+        button_more_comments.click()  
+      except:
+        pass
+      time.sleep(3)
       if last_height == new_height:
         count = count + 1
       else:
@@ -215,6 +230,9 @@ class Scraper:
           break
         except Exception as e:
           break
+
+      # TODO: Save comments in database
+
 
   def process_comments(self, general_comments):
     comments = []
