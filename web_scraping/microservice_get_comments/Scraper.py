@@ -21,11 +21,11 @@ from services.logging_service import LoggingService
 class Scraper:
   driver = None
   logger = LoggingService().getLogging()
-
+  commentsService = None
   def __init__(self):
     # This function initializes the class
     self.setDriver()
-    # self.startDB()
+    self.startDB()
 
   def getLogger(self):
     # This function returns the logger
@@ -33,7 +33,7 @@ class Scraper:
 
   def startDB(self):
     # This function starts the database connection
-    self.usersService = CommentsService(
+    self.commentsService = CommentsService(
       os.getenv("DB_HOST"),
       os.getenv("DB_PORT"),
       os.getenv("DB_NAME"),
@@ -151,7 +151,7 @@ class Scraper:
           comments = self.scroll_comments()
           # Save comments in database
           for comment in comments:
-            self.usersService.saveComment(comment)
+            self.commentsService.create_comment(comment)
           time.sleep(20)
 
   def buscar_botones(self, driver, botones):
