@@ -248,3 +248,6 @@ class Scraper:
 
     # Ejecutar el script de JavaScript en Selenium
     self.driver.execute_script(script)
+
+  def clickReplyComments(self):
+    pass
