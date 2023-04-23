@@ -186,11 +186,8 @@ class Scraper:
       comments = [dict(comment) for comment in comments]
 
       print('comments', comments)
-      try:        
-        div_more_comments = self.driver.find_element(
-            By.XPATH, "//div[@class='x9f619 xjbqb8w x78zum5 x168nmei x13lgxp2 x5pf9jr xo71vjh xdj266r xat24cr x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh xl56j7k']")
-        button_more_comments = div_more_comments.find_element(By.XPATH, "//button")
-        button_more_comments.click()    
+      try:
+        self.clickButtonMoreComments()
       except:
         pass
 
@@ -202,10 +199,7 @@ class Scraper:
         "return document.querySelector('ul._a9z6._a9za').scrollTop"))
       new_height = height
       try:
-        div_more_comments = self.driver.find_element(
-            By.XPATH, "//div[@class='x9f619 xjbqb8w x78zum5 x168nmei x13lgxp2 x5pf9jr xo71vjh xdj266r xat24cr x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh xl56j7k']")
-        button_more_comments = div_more_comments.find_element(By.XPATH, "//button")
-        button_more_comments.click()  
+        self.clickButtonMoreComments()
       except:
         pass
       time.sleep(3)
@@ -219,13 +213,8 @@ class Scraper:
 
       if count > 2:
         try:
-          more_comments_button = self.driver.find_element(
-            By.XPATH, "//div[contains(@class, '             qF0y9          Igw0E     IwRSH        YBx95   "
-                      "  acqo5   _4EzTm                                                                   "
-                      "                                         NUiEW  ')]/button")
-
-          more_comments_button.click()
-          time.sleep(1)
+          self.clickButtonMoreComments()
+          time.sleep(3)
         except NoSuchElementException:
           break
         except Exception as e:
@@ -248,3 +237,14 @@ class Scraper:
       comments.append(comment_object)
 
     return comments
+  
+  def clickButtonMoreComments(self):
+    # Definir el script de JavaScript
+    script = """
+        var div_more_comments = document.querySelector("div.x9f619.xjbqb8w.x78zum5.x168nmei.x13lgxp2.x5pf9jr.xo71vjh.xdj266r.xat24cr.x1n2onr6.x1plvlek.xryxfnj.x1c4vz4f.x2lah0s.xdt5ytf.xqjyukv.x1qjc9v5.x1oa3qoh.xl56j7k");
+        var button_more_comments = div_more_comments.querySelector("button");
+        button_more_comments.click();
+    """
+
+    # Ejecutar el script de JavaScript en Selenium
+    self.driver.execute_script(script)
