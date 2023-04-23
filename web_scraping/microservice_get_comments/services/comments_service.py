@@ -26,9 +26,15 @@ class CommentsService:
   def create_comment(self, comment_data):
     username = comment_data['username']
     comment = comment_data['text']
+    print('comment', comment)
+    # Validate if comment doesn't exist
+    comment = self.cur.execute('SELECT user_comment FROM comment WHERE user_comment = %s', (comment,))
+    if comment is not None:
+      self.logger.info(f"Comment already exists: {comment}")
+      return
     # This function creates a new user in the database
     try:
-      self.cur.execute('INSERT INTO comments (username, comment) VALUES (%s, %s)', (username, comment))
+      self.cur.execute('INSERT INTO comment (username, user_comment) VALUES (%s, %s)', (username, comment))
       self.conn.commit()
       self.logger.info(f"Comment created for {username}")
     except Exception as e:
