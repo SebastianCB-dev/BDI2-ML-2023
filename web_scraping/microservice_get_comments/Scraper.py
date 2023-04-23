@@ -170,12 +170,17 @@ class Scraper:
     count = 0
     general_comments = []
     while True:
+      time.sleep(3)
+      try:
+        self.clickReplyComments()
+      except Exception as e:
+        print(e)
+        pass
       general_new_comments = WebDriverWait(self.driver, 10).until(
         EC.presence_of_all_elements_located(
           (By.XPATH, "//div[contains(@class, '_a9zr')]"))
       )
-      general_comments.extend(general_new_comments)
-      time.sleep(2)
+      general_comments.extend(general_new_comments)      
       if len(general_comments) == 0:
         print('There is no comments')
         break
@@ -250,4 +255,10 @@ class Scraper:
     self.driver.execute_script(script)
 
   def clickReplyComments(self):
-    pass
+    buttons = self.driver.find_elements(
+        By.CSS_SELECTOR, value='button._acan._acao._acas._aj1-')    
+    print(buttons)
+    for button in buttons:
+      if("View replies" in button.find_element(By.XPATH, ".//span").text):
+        button.click()      
+      time.sleep(2)
