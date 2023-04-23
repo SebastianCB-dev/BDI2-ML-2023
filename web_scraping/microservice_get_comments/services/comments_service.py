@@ -2,7 +2,7 @@ import psycopg2
 
 from .logging_service import LoggingService
 
-class UsersService:
+class CommentsService:
   logger = LoggingService().getLogging()
 
   def __init__(self, host, port, database, user, password):

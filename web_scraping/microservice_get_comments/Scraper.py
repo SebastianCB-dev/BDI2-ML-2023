@@ -14,7 +14,7 @@ from bs4 import BeautifulSoup
 # Custom libraries
 from helpers.platform import get_platform
 from helpers.data_transform import deleteVerified, text_to_unicode
-from services.users_service import UsersService
+from services.comments_service import CommentsService
 from services.logging_service import LoggingService
 
 
@@ -33,7 +33,7 @@ class Scraper:
 
   def startDB(self):
     # This function starts the database connection
-    self.usersService = UsersService(
+    self.usersService = CommentsService(
       os.getenv("DB_HOST"),
       os.getenv("DB_PORT"),
       os.getenv("DB_NAME"),
@@ -148,7 +148,10 @@ class Scraper:
         posts_urls = list(set(posts_urls))
         for post in posts_urls:
           self.driver.get(post)
-          self.scroll_comments()
+          comments = self.scroll_comments()
+          # Save comments in database
+          for comment in comments:
+            self.usersService.saveComment(comment)
           time.sleep(20)
 
   def buscar_botones(self, driver, botones):
@@ -225,7 +228,7 @@ class Scraper:
         except Exception as e:
           break
 
-      # TODO: Save comments in database
+      return comments
 
 
   def process_comments(self, general_comments):
@@ -259,6 +262,8 @@ class Scraper:
         By.CSS_SELECTOR, value='button._acan._acao._acas._aj1-')    
     print(buttons)
     for button in buttons:
-      if("View replies" in button.find_element(By.XPATH, ".//span").text):
+      span_element = button.find_element(By.XPATH, 
+                                         ".//span[contains(text(), 'View replies')]")
+      if(span_element is not None):
         button.click()      
       time.sleep(2)
