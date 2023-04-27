@@ -56,6 +56,7 @@ class Scraper:
         options = webdriver.ChromeOptions()
         if (platform == "Windows"):
             self.driver = webdriver.Chrome(executable_path=driver_path)
+            self.driver.maximize_window()
             return
         options.add_argument('--no-sandbox')
         options.add_argument('--disable-dev-shm-usage')
@@ -63,6 +64,7 @@ class Scraper:
         options.add_argument('--disable-gpu')
         options.add_argument('--incognito')
         self.driver = webdriver.Chrome(executable_path=driver_path, options=options)
+        self.driver.maximize_window()
 
     def getUsersFromInstagram(self):
         self.driver.delete_all_cookies()

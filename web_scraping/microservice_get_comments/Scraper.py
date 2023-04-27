@@ -57,6 +57,7 @@ class Scraper:
             Exception("Don't recognize the operating system")
         if platform == "Windows":
             self.driver = webdriver.Chrome(executable_path=driver_path)
+            self.driver.maximize_window()
             return
         options = webdriver.ChromeOptions()
         options.add_argument('--no-sandbox')
@@ -66,6 +67,7 @@ class Scraper:
         options.add_argument('--incognito')
         self.driver = webdriver.Chrome(
             executable_path=driver_path, options=options)
+        self.driver.maximize_window()
 
     def getCommentsFromInstagram(self):
         self.driver.delete_all_cookies()
