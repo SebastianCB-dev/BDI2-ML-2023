@@ -1,0 +1,158 @@
+2023-04-12 17:26:25,588 - root - INFO - Driver found to Windows
+2023-04-12 17:26:25,588 - root - INFO - Driver found to Windows
+2023-04-26 17:54:25,499 - root - INFO - Driver found to Windows
+2023-04-26 17:54:25,499 - root - INFO - Driver found to Windows
+2023-04-26 18:01:48,736 - root - INFO - Driver found to Windows
+2023-04-26 18:01:48,736 - root - INFO - Driver found to Windows
+2023-04-26 18:02:33,349 - root - INFO - Driver found to Windows
+2023-04-26 18:02:33,349 - root - INFO - Driver found to Windows
+2023-04-26 18:02:34,439 - root - INFO - Database connection started
+2023-04-26 18:02:34,439 - root - INFO - Database connection started
+2023-04-26 18:03:08,189 - root - INFO - Going to profile
+2023-04-26 18:03:08,189 - root - INFO - Going to profile
+2023-04-26 18:03:08,770 - root - INFO - Going to following
+2023-04-26 18:03:08,770 - root - INFO - Going to following
+2023-04-26 18:03:11,967 - root - INFO - Opening modal to get users
+2023-04-26 18:03:11,967 - root - INFO - Opening modal to get users
+2023-04-26 18:03:15,740 - root - INFO - User created: anabreco
+2023-04-26 18:03:15,740 - root - INFO - User created: anabreco
+2023-04-26 18:03:15,745 - root - INFO - User created: pamela.moreno
+2023-04-26 18:03:15,745 - root - INFO - User created: pamela.moreno
+2023-04-26 18:03:15,749 - root - INFO - User created: san27ivette
+2023-04-26 18:03:15,749 - root - INFO - User created: san27ivette
+2023-04-26 18:03:15,751 - root - INFO - User created: boqueronayole_
+2023-04-26 18:03:15,751 - root - INFO - User created: boqueronayole_
+2023-04-26 18:03:15,756 - root - INFO - User created: dr.ariguillen
+2023-04-26 18:03:15,756 - root - INFO - User created: dr.ariguillen
+2023-04-26 18:03:15,756 - root - INFO - User created: melissajoseb
+2023-04-26 18:03:15,756 - root - INFO - User created: melissajoseb
+2023-04-26 18:03:15,756 - root - INFO - User created: mariacristinamoya.v
+2023-04-26 18:03:15,756 - root - INFO - User created: mariacristinamoya.v
+2023-04-26 18:03:15,767 - root - INFO - User created: lesliedayana97
+2023-04-26 18:03:15,767 - root - INFO - User created: lesliedayana97
+2023-04-26 18:03:15,767 - root - INFO - User created: yeni.parker
+2023-04-26 18:03:15,767 - root - INFO - User created: yeni.parker
+2023-04-26 18:03:15,767 - root - INFO - User created: minimalistamente
+2023-04-26 18:03:15,767 - root - INFO - User created: minimalistamente
+2023-04-26 18:03:15,785 - root - INFO - User created: kar____lo
+2023-04-26 18:03:15,785 - root - INFO - User created: kar____lo
+2023-04-26 18:03:15,790 - root - INFO - User created: la.amarillista
+2023-04-26 18:03:15,790 - root - INFO - User created: la.amarillista
+2023-04-26 18:03:15,794 - root - INFO - User created: almudenasanchezz
+2023-04-26 18:03:15,794 - root - INFO - User created: almudenasanchezz
+2023-04-26 18:03:15,799 - root - INFO - User created: nataliaperassolo
+2023-04-26 18:03:15,799 - root - INFO - User created: nataliaperassolo
+2023-04-26 18:03:15,803 - root - INFO - User created: madre_jannette
+2023-04-26 18:03:15,803 - root - INFO - User created: madre_jannette
+2023-04-26 18:03:15,805 - root - INFO - User created: thefaerycottage
+2023-04-26 18:03:15,805 - root - INFO - User created: thefaerycottage
+2023-04-26 18:03:15,805 - root - INFO - User created: lesliedri1
+2023-04-26 18:03:15,805 - root - INFO - User created: lesliedri1
+2023-04-26 18:03:15,805 - root - INFO - User created: _mildos
+2023-04-26 18:03:15,805 - root - INFO - User created: _mildos
+2023-04-26 18:03:15,820 - root - INFO - User created: kalpsicologia
+2023-04-26 18:03:15,820 - root - INFO - User created: kalpsicologia
+2023-04-26 18:03:15,820 - root - INFO - User created: moryph__
+2023-04-26 18:03:15,820 - root - INFO - User created: moryph__
+2023-04-26 18:03:15,820 - root - INFO - User created: whho_is_she
+2023-04-26 18:03:15,820 - root - INFO - User created: whho_is_she
+2023-04-26 18:03:15,820 - root - INFO - Users added to database
+2023-04-26 18:03:15,820 - root - INFO - Users added to database
+2023-04-26 18:04:15,831 - root - INFO - Going to profile
+2023-04-26 18:04:15,831 - root - INFO - Going to profile
+2023-04-26 18:04:16,521 - root - INFO - Going to following
+2023-04-26 18:04:16,521 - root - INFO - Going to following
+2023-04-26 18:04:19,698 - root - INFO - Opening modal to get users
+2023-04-26 18:04:19,698 - root - INFO - Opening modal to get users
+2023-04-26 19:06:14,299 - root - INFO - Driver found to Windows
+2023-04-26 19:06:14,299 - root - INFO - Driver found to Windows
+2023-04-26 19:06:15,742 - root - INFO - Database connection started
+2023-04-26 19:06:15,742 - root - INFO - Database connection started
+2023-04-26 19:06:49,465 - root - INFO - Going to profile
+2023-04-26 19:06:49,465 - root - INFO - Going to profile
+2023-04-26 19:06:50,173 - root - INFO - Going to following
+2023-04-26 19:06:50,173 - root - INFO - Going to following
+2023-04-26 19:06:52,824 - root - INFO - Opening modal to get users
+2023-04-26 19:06:52,824 - root - INFO - Opening modal to get users
+2023-04-26 19:06:56,367 - root - ERROR - Error getting users relation "users" does not exist
+LINE 1: SELECT username FROM users
+                             ^
+
+2023-04-26 19:06:56,367 - root - ERROR - Error getting users relation "users" does not exist
+LINE 1: SELECT username FROM users
+                             ^
+
+2023-04-26 19:06:56,367 - root - INFO - Going to profile
+2023-04-26 19:06:56,367 - root - INFO - Going to profile
+2023-04-26 19:06:57,143 - root - INFO - Going to following
+2023-04-26 19:06:57,143 - root - INFO - Going to following
+2023-04-26 19:06:59,706 - root - INFO - Opening modal to get users
+2023-04-26 19:06:59,706 - root - INFO - Opening modal to get users
+2023-04-26 19:07:03,255 - root - ERROR - Error getting users current transaction is aborted, commands ignored until end of transaction block
+
+2023-04-26 19:07:03,255 - root - ERROR - Error getting users current transaction is aborted, commands ignored until end of transaction block
+
+2023-04-26 19:07:03,255 - root - INFO - Going to profile
+2023-04-26 19:07:03,255 - root - INFO - Going to profile
+2023-04-26 19:07:04,061 - root - INFO - Going to following
+2023-04-26 19:07:04,061 - root - INFO - Going to following
+2023-04-26 19:07:06,832 - root - INFO - Opening modal to get users
+2023-04-26 19:07:06,832 - root - INFO - Opening modal to get users
+2023-04-26 19:08:04,016 - root - INFO - Driver found to Windows
+2023-04-26 19:08:04,016 - root - INFO - Driver found to Windows
+2023-04-26 19:08:05,164 - root - INFO - Database connection started
+2023-04-26 19:08:05,164 - root - INFO - Database connection started
+2023-04-26 19:08:38,582 - root - INFO - Going to profile
+2023-04-26 19:08:38,582 - root - INFO - Going to profile
+2023-04-26 19:08:39,292 - root - INFO - Going to following
+2023-04-26 19:08:39,292 - root - INFO - Going to following
+2023-04-26 19:08:42,456 - root - INFO - Opening modal to get users
+2023-04-26 19:08:42,456 - root - INFO - Opening modal to get users
+2023-04-26 19:08:45,992 - root - INFO - User created: anabreco
+2023-04-26 19:08:45,992 - root - INFO - User created: anabreco
+2023-04-26 19:08:45,992 - root - INFO - User created: pamela.moreno
+2023-04-26 19:08:45,992 - root - INFO - User created: pamela.moreno
+2023-04-26 19:08:45,992 - root - INFO - User created: san27ivette
+2023-04-26 19:08:45,992 - root - INFO - User created: san27ivette
+2023-04-26 19:08:46,008 - root - INFO - User created: boqueronayole_
+2023-04-26 19:08:46,008 - root - INFO - User created: boqueronayole_
+2023-04-26 19:08:46,008 - root - INFO - User created: dr.ariguillen
+2023-04-26 19:08:46,008 - root - INFO - User created: dr.ariguillen
+2023-04-26 19:08:46,008 - root - INFO - User created: melissajoseb
+2023-04-26 19:08:46,008 - root - INFO - User created: melissajoseb
+2023-04-26 19:08:46,024 - root - INFO - User created: mariacristinamoya.v
+2023-04-26 19:08:46,024 - root - INFO - User created: mariacristinamoya.v
+2023-04-26 19:08:46,024 - root - INFO - User created: lesliedayana97
+2023-04-26 19:08:46,024 - root - INFO - User created: lesliedayana97
+2023-04-26 19:08:46,024 - root - INFO - User created: yeni.parker
+2023-04-26 19:08:46,024 - root - INFO - User created: yeni.parker
+2023-04-26 19:08:46,024 - root - INFO - User created: minimalistamente
+2023-04-26 19:08:46,024 - root - INFO - User created: minimalistamente
+2023-04-26 19:08:46,043 - root - INFO - User created: kar____lo
+2023-04-26 19:08:46,043 - root - INFO - User created: kar____lo
+2023-04-26 19:08:46,047 - root - INFO - User created: la.amarillista
+2023-04-26 19:08:46,047 - root - INFO - User created: la.amarillista
+2023-04-26 19:08:46,052 - root - INFO - User created: almudenasanchezz
+2023-04-26 19:08:46,052 - root - INFO - User created: almudenasanchezz
+2023-04-26 19:08:46,057 - root - INFO - User created: nataliaperassolo
+2023-04-26 19:08:46,057 - root - INFO - User created: nataliaperassolo
+2023-04-26 19:08:46,062 - root - INFO - User created: madre_jannette
+2023-04-26 19:08:46,062 - root - INFO - User created: madre_jannette
+2023-04-26 19:08:46,066 - root - INFO - User created: thefaerycottage
+2023-04-26 19:08:46,066 - root - INFO - User created: thefaerycottage
+2023-04-26 19:08:46,071 - root - INFO - User created: lesliedri1
+2023-04-26 19:08:46,071 - root - INFO - User created: lesliedri1
+2023-04-26 19:08:46,072 - root - INFO - User created: _mildos
+2023-04-26 19:08:46,072 - root - INFO - User created: _mildos
+2023-04-26 19:08:46,072 - root - INFO - User created: kalpsicologia
+2023-04-26 19:08:46,072 - root - INFO - User created: kalpsicologia
+2023-04-26 19:08:46,072 - root - INFO - User created: moryph__
+2023-04-26 19:08:46,072 - root - INFO - User created: moryph__
+2023-04-26 19:08:46,088 - root - INFO - User created: whho_is_she
+2023-04-26 19:08:46,088 - root - INFO - User created: whho_is_she
+2023-04-26 19:08:46,088 - root - INFO - Users added to database
+2023-04-26 19:08:46,088 - root - INFO - Users added to database
+2023-04-26 19:09:46,090 - root - INFO - Going to profile
+2023-04-26 19:09:46,090 - root - INFO - Going to profile
+2023-04-27 17:06:13,325 - root - INFO - Driver found to Windows
+2023-04-27 17:06:13,325 - root - INFO - Driver found to Windows
