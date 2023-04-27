@@ -68,4 +68,31 @@ class Scraper:
         self.driver.maximize_window()
 
     def getUsersFromInstagram(self):
-      pass
+        self.driver.delete_all_cookies()
+        # This function gets all users that the account is following from Instagram
+        self.driver.get("https://www.instagram.com/accounts/login")
+        # Login to Instagram fielding username and password
+        username_field = WebDriverWait(self.driver, 10).until(
+            EC.presence_of_element_located((By.NAME, "username"))
+        )
+        username_field.send_keys(os.getenv("IG_USERNAME"))
+        password_field = WebDriverWait(self.driver, 10).until(
+            EC.presence_of_element_located((By.NAME, "password"))
+        )
+        password_field.send_keys(os.getenv("IG_PASSWORD"))
+        # Click on login button
+        login_button = WebDriverWait(self.driver, 10).until(
+            EC.presence_of_element_located(
+                (By.XPATH, "//button[@type='submit']"))
+        )
+        login_button.click()
+        # Click on not now button
+        botones = [
+            "//button[contains(text(), 'Not Now')]",
+            "//div[contains(text(), 'Not Now')]",
+            "//span[contains(text(), 'Not Now')]",
+            "//div[contains(text(), 'Not now')]",
+        ]
+        not_now_button = self.buscar_botones(self.driver, botones)
+        not_now_button.click()
+        time.sleep(1200)
