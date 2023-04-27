@@ -1,0 +1,19 @@
+# Archivos y directorios generados por el entorno virtual de Python
+.venv/
+*.pyc
+*.pyo
+__pycache__/
+DB/
+
+# Archivos de log y caché
+*.log
+*.cache
+logs.txt
+
+# Archivos y directorios específicos de tu editor de código
+.vscode/
+.idea/
+
+# Otros archivos y directorios que no sean necesarios para la imagen Docker
+README.md
+LICENSE
