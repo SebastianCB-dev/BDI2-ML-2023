@@ -1,158 +1,155 @@
-2023-04-12 17:26:25,588 - root - INFO - Driver found to Windows
-2023-04-12 17:26:25,588 - root - INFO - Driver found to Windows
-2023-04-26 17:54:25,499 - root - INFO - Driver found to Windows
-2023-04-26 17:54:25,499 - root - INFO - Driver found to Windows
-2023-04-26 18:01:48,736 - root - INFO - Driver found to Windows
-2023-04-26 18:01:48,736 - root - INFO - Driver found to Windows
-2023-04-26 18:02:33,349 - root - INFO - Driver found to Windows
-2023-04-26 18:02:33,349 - root - INFO - Driver found to Windows
-2023-04-26 18:02:34,439 - root - INFO - Database connection started
-2023-04-26 18:02:34,439 - root - INFO - Database connection started
-2023-04-26 18:03:08,189 - root - INFO - Going to profile
-2023-04-26 18:03:08,189 - root - INFO - Going to profile
-2023-04-26 18:03:08,770 - root - INFO - Going to following
-2023-04-26 18:03:08,770 - root - INFO - Going to following
-2023-04-26 18:03:11,967 - root - INFO - Opening modal to get users
-2023-04-26 18:03:11,967 - root - INFO - Opening modal to get users
-2023-04-26 18:03:15,740 - root - INFO - User created: anabreco
-2023-04-26 18:03:15,740 - root - INFO - User created: anabreco
-2023-04-26 18:03:15,745 - root - INFO - User created: pamela.moreno
-2023-04-26 18:03:15,745 - root - INFO - User created: pamela.moreno
-2023-04-26 18:03:15,749 - root - INFO - User created: san27ivette
-2023-04-26 18:03:15,749 - root - INFO - User created: san27ivette
-2023-04-26 18:03:15,751 - root - INFO - User created: boqueronayole_
-2023-04-26 18:03:15,751 - root - INFO - User created: boqueronayole_
-2023-04-26 18:03:15,756 - root - INFO - User created: dr.ariguillen
-2023-04-26 18:03:15,756 - root - INFO - User created: dr.ariguillen
-2023-04-26 18:03:15,756 - root - INFO - User created: melissajoseb
-2023-04-26 18:03:15,756 - root - INFO - User created: melissajoseb
-2023-04-26 18:03:15,756 - root - INFO - User created: mariacristinamoya.v
-2023-04-26 18:03:15,756 - root - INFO - User created: mariacristinamoya.v
-2023-04-26 18:03:15,767 - root - INFO - User created: lesliedayana97
-2023-04-26 18:03:15,767 - root - INFO - User created: lesliedayana97
-2023-04-26 18:03:15,767 - root - INFO - User created: yeni.parker
-2023-04-26 18:03:15,767 - root - INFO - User created: yeni.parker
-2023-04-26 18:03:15,767 - root - INFO - User created: minimalistamente
-2023-04-26 18:03:15,767 - root - INFO - User created: minimalistamente
-2023-04-26 18:03:15,785 - root - INFO - User created: kar____lo
-2023-04-26 18:03:15,785 - root - INFO - User created: kar____lo
-2023-04-26 18:03:15,790 - root - INFO - User created: la.amarillista
-2023-04-26 18:03:15,790 - root - INFO - User created: la.amarillista
-2023-04-26 18:03:15,794 - root - INFO - User created: almudenasanchezz
-2023-04-26 18:03:15,794 - root - INFO - User created: almudenasanchezz
-2023-04-26 18:03:15,799 - root - INFO - User created: nataliaperassolo
-2023-04-26 18:03:15,799 - root - INFO - User created: nataliaperassolo
-2023-04-26 18:03:15,803 - root - INFO - User created: madre_jannette
-2023-04-26 18:03:15,803 - root - INFO - User created: madre_jannette
-2023-04-26 18:03:15,805 - root - INFO - User created: thefaerycottage
-2023-04-26 18:03:15,805 - root - INFO - User created: thefaerycottage
-2023-04-26 18:03:15,805 - root - INFO - User created: lesliedri1
-2023-04-26 18:03:15,805 - root - INFO - User created: lesliedri1
-2023-04-26 18:03:15,805 - root - INFO - User created: _mildos
-2023-04-26 18:03:15,805 - root - INFO - User created: _mildos
-2023-04-26 18:03:15,820 - root - INFO - User created: kalpsicologia
-2023-04-26 18:03:15,820 - root - INFO - User created: kalpsicologia
-2023-04-26 18:03:15,820 - root - INFO - User created: moryph__
-2023-04-26 18:03:15,820 - root - INFO - User created: moryph__
-2023-04-26 18:03:15,820 - root - INFO - User created: whho_is_she
-2023-04-26 18:03:15,820 - root - INFO - User created: whho_is_she
-2023-04-26 18:03:15,820 - root - INFO - Users added to database
-2023-04-26 18:03:15,820 - root - INFO - Users added to database
-2023-04-26 18:04:15,831 - root - INFO - Going to profile
-2023-04-26 18:04:15,831 - root - INFO - Going to profile
-2023-04-26 18:04:16,521 - root - INFO - Going to following
-2023-04-26 18:04:16,521 - root - INFO - Going to following
-2023-04-26 18:04:19,698 - root - INFO - Opening modal to get users
-2023-04-26 18:04:19,698 - root - INFO - Opening modal to get users
-2023-04-26 19:06:14,299 - root - INFO - Driver found to Windows
-2023-04-26 19:06:14,299 - root - INFO - Driver found to Windows
-2023-04-26 19:06:15,742 - root - INFO - Database connection started
-2023-04-26 19:06:15,742 - root - INFO - Database connection started
-2023-04-26 19:06:49,465 - root - INFO - Going to profile
-2023-04-26 19:06:49,465 - root - INFO - Going to profile
-2023-04-26 19:06:50,173 - root - INFO - Going to following
-2023-04-26 19:06:50,173 - root - INFO - Going to following
-2023-04-26 19:06:52,824 - root - INFO - Opening modal to get users
-2023-04-26 19:06:52,824 - root - INFO - Opening modal to get users
-2023-04-26 19:06:56,367 - root - ERROR - Error getting users relation "users" does not exist
-LINE 1: SELECT username FROM users
-                             ^
+2023-04-27 19:25:16,201 - root - INFO - Driver found to Windows
+2023-04-27 19:25:16,201 - root - INFO - Driver found to Windows
+2023-04-27 19:28:03,297 - root - INFO - Driver found to Windows
+2023-04-27 19:28:03,297 - root - INFO - Driver found to Windows
+2023-04-27 19:28:57,660 - root - INFO - Driver found to Windows
+2023-04-27 19:28:57,660 - root - INFO - Driver found to Windows
+2023-04-27 19:29:17,535 - root - INFO - Driver found to Windows
+2023-04-27 19:29:17,535 - root - INFO - Driver found to Windows
+2023-04-27 19:29:20,928 - root - INFO - Database connection started
+2023-04-27 19:29:20,928 - root - INFO - Database connection started
+2023-04-27 19:42:25,399 - root - INFO - Driver found to Windows
+2023-04-27 19:43:05,674 - root - CRITICAL - Error with the Scraper 'WebDriver' object has no attribute 'find_elements_by_xpath'
+2023-04-27 19:44:36,679 - root - INFO - Driver found to Windows
+2023-04-27 19:49:37,423 - root - INFO - Driver found to Windows
+2023-04-27 19:50:28,837 - root - ERROR - Error: Message: 
 
-2023-04-26 19:06:56,367 - root - ERROR - Error getting users relation "users" does not exist
-LINE 1: SELECT username FROM users
-                             ^
+2023-04-27 19:56:04,736 - root - INFO - Driver found to Windows
+2023-04-27 19:56:45,557 - root - ERROR - Error: type object 'By' has no attribute 'CSS'
+2023-04-27 19:56:59,375 - root - INFO - Driver found to Windows
+2023-04-27 20:05:15,292 - root - INFO - Driver found to Windows
+2023-04-27 20:17:18,978 - root - INFO - Driver found to Windows
+2023-04-27 20:21:08,397 - root - INFO - Driver found to Windows
+2023-04-27 20:23:32,606 - root - INFO - Driver found to Windows
+2023-04-27 20:24:13,372 - root - ERROR - Error: Message: invalid selector: Unable to locate an element with the xpath expression @class='._aacl._aacn._aacw._aad6' because of the following error:
+TypeError: Failed to execute 'evaluate' on 'Document': The result is not a node set, and therefore cannot be converted to the desired type.
+  (Session info: chrome=112.0.5615.138)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x0089DCE3+50899]
+	(No symbol) [0x0082E111]
+	(No symbol) [0x00735588]
+	(No symbol) [0x00737EDB]
+	(No symbol) [0x00737DB0]
+	(No symbol) [0x00738030]
+	(No symbol) [0x00760552]
+	(No symbol) [0x00760AFB]
+	(No symbol) [0x00758F71]
+	(No symbol) [0x0077B944]
+	(No symbol) [0x00758EC6]
+	(No symbol) [0x0077BC54]
+	(No symbol) [0x0078E01C]
+	(No symbol) [0x0077B6F6]
+	(No symbol) [0x00757708]
+	(No symbol) [0x0075886D]
+	GetHandleVerifier [0x00B03EAE+2566302]
+	GetHandleVerifier [0x00B392B1+2784417]
+	GetHandleVerifier [0x00B3327C+2759788]
+	GetHandleVerifier [0x00935740+672048]
+	(No symbol) [0x00838872]
+	(No symbol) [0x008341C8]
+	(No symbol) [0x008342AB]
+	(No symbol) [0x008271B7]
+	BaseThreadInitThunk [0x762C7D49+25]
+	RtlInitializeExceptionChain [0x779CB74B+107]
+	RtlClearBits [0x779CB6CF+191]
 
-2023-04-26 19:06:56,367 - root - INFO - Going to profile
-2023-04-26 19:06:56,367 - root - INFO - Going to profile
-2023-04-26 19:06:57,143 - root - INFO - Going to following
-2023-04-26 19:06:57,143 - root - INFO - Going to following
-2023-04-26 19:06:59,706 - root - INFO - Opening modal to get users
-2023-04-26 19:06:59,706 - root - INFO - Opening modal to get users
-2023-04-26 19:07:03,255 - root - ERROR - Error getting users current transaction is aborted, commands ignored until end of transaction block
+2023-04-27 20:24:57,268 - root - INFO - Driver found to Windows
+2023-04-27 20:25:37,304 - root - ERROR - Error: Message: invalid selector: Unable to locate an element with the xpath expression @class='_aacl _aacn _aacw _aad6' because of the following error:
+TypeError: Failed to execute 'evaluate' on 'Document': The result is not a node set, and therefore cannot be converted to the desired type.
+  (Session info: chrome=112.0.5615.138)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x0089DCE3+50899]
+	(No symbol) [0x0082E111]
+	(No symbol) [0x00735588]
+	(No symbol) [0x00737EDB]
+	(No symbol) [0x00737DB0]
+	(No symbol) [0x00738030]
+	(No symbol) [0x00760552]
+	(No symbol) [0x00760AFB]
+	(No symbol) [0x00758F71]
+	(No symbol) [0x0077B944]
+	(No symbol) [0x00758EC6]
+	(No symbol) [0x0077BC54]
+	(No symbol) [0x0078E01C]
+	(No symbol) [0x0077B6F6]
+	(No symbol) [0x00757708]
+	(No symbol) [0x0075886D]
+	GetHandleVerifier [0x00B03EAE+2566302]
+	GetHandleVerifier [0x00B392B1+2784417]
+	GetHandleVerifier [0x00B3327C+2759788]
+	GetHandleVerifier [0x00935740+672048]
+	(No symbol) [0x00838872]
+	(No symbol) [0x008341C8]
+	(No symbol) [0x008342AB]
+	(No symbol) [0x008271B7]
+	BaseThreadInitThunk [0x762C7D49+25]
+	RtlInitializeExceptionChain [0x779CB74B+107]
+	RtlClearBits [0x779CB6CF+191]
 
-2023-04-26 19:07:03,255 - root - ERROR - Error getting users current transaction is aborted, commands ignored until end of transaction block
+2023-04-27 20:27:43,416 - root - ERROR - Error: Message: invalid selector: Unable to locate an element with the xpath expression @class='_aacl _aacn _aacw _aad6' because of the following error:
+TypeError: Failed to execute 'evaluate' on 'Document': The result is not a node set, and therefore cannot be converted to the desired type.
+  (Session info: chrome=112.0.5615.138)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x0089DCE3+50899]
+	(No symbol) [0x0082E111]
+	(No symbol) [0x00735588]
+	(No symbol) [0x00737EDB]
+	(No symbol) [0x00737DB0]
+	(No symbol) [0x00738030]
+	(No symbol) [0x00760552]
+	(No symbol) [0x00760AFB]
+	(No symbol) [0x00758F71]
+	(No symbol) [0x0077B944]
+	(No symbol) [0x00758EC6]
+	(No symbol) [0x0077BC54]
+	(No symbol) [0x0078E01C]
+	(No symbol) [0x0077B6F6]
+	(No symbol) [0x00757708]
+	(No symbol) [0x0075886D]
+	GetHandleVerifier [0x00B03EAE+2566302]
+	GetHandleVerifier [0x00B392B1+2784417]
+	GetHandleVerifier [0x00B3327C+2759788]
+	GetHandleVerifier [0x00935740+672048]
+	(No symbol) [0x00838872]
+	(No symbol) [0x008341C8]
+	(No symbol) [0x008342AB]
+	(No symbol) [0x008271B7]
+	BaseThreadInitThunk [0x762C7D49+25]
+	RtlInitializeExceptionChain [0x779CB74B+107]
+	RtlClearBits [0x779CB6CF+191]
 
-2023-04-26 19:07:03,255 - root - INFO - Going to profile
-2023-04-26 19:07:03,255 - root - INFO - Going to profile
-2023-04-26 19:07:04,061 - root - INFO - Going to following
-2023-04-26 19:07:04,061 - root - INFO - Going to following
-2023-04-26 19:07:06,832 - root - INFO - Opening modal to get users
-2023-04-26 19:07:06,832 - root - INFO - Opening modal to get users
-2023-04-26 19:08:04,016 - root - INFO - Driver found to Windows
-2023-04-26 19:08:04,016 - root - INFO - Driver found to Windows
-2023-04-26 19:08:05,164 - root - INFO - Database connection started
-2023-04-26 19:08:05,164 - root - INFO - Database connection started
-2023-04-26 19:08:38,582 - root - INFO - Going to profile
-2023-04-26 19:08:38,582 - root - INFO - Going to profile
-2023-04-26 19:08:39,292 - root - INFO - Going to following
-2023-04-26 19:08:39,292 - root - INFO - Going to following
-2023-04-26 19:08:42,456 - root - INFO - Opening modal to get users
-2023-04-26 19:08:42,456 - root - INFO - Opening modal to get users
-2023-04-26 19:08:45,992 - root - INFO - User created: anabreco
-2023-04-26 19:08:45,992 - root - INFO - User created: anabreco
-2023-04-26 19:08:45,992 - root - INFO - User created: pamela.moreno
-2023-04-26 19:08:45,992 - root - INFO - User created: pamela.moreno
-2023-04-26 19:08:45,992 - root - INFO - User created: san27ivette
-2023-04-26 19:08:45,992 - root - INFO - User created: san27ivette
-2023-04-26 19:08:46,008 - root - INFO - User created: boqueronayole_
-2023-04-26 19:08:46,008 - root - INFO - User created: boqueronayole_
-2023-04-26 19:08:46,008 - root - INFO - User created: dr.ariguillen
-2023-04-26 19:08:46,008 - root - INFO - User created: dr.ariguillen
-2023-04-26 19:08:46,008 - root - INFO - User created: melissajoseb
-2023-04-26 19:08:46,008 - root - INFO - User created: melissajoseb
-2023-04-26 19:08:46,024 - root - INFO - User created: mariacristinamoya.v
-2023-04-26 19:08:46,024 - root - INFO - User created: mariacristinamoya.v
-2023-04-26 19:08:46,024 - root - INFO - User created: lesliedayana97
-2023-04-26 19:08:46,024 - root - INFO - User created: lesliedayana97
-2023-04-26 19:08:46,024 - root - INFO - User created: yeni.parker
-2023-04-26 19:08:46,024 - root - INFO - User created: yeni.parker
-2023-04-26 19:08:46,024 - root - INFO - User created: minimalistamente
-2023-04-26 19:08:46,024 - root - INFO - User created: minimalistamente
-2023-04-26 19:08:46,043 - root - INFO - User created: kar____lo
-2023-04-26 19:08:46,043 - root - INFO - User created: kar____lo
-2023-04-26 19:08:46,047 - root - INFO - User created: la.amarillista
-2023-04-26 19:08:46,047 - root - INFO - User created: la.amarillista
-2023-04-26 19:08:46,052 - root - INFO - User created: almudenasanchezz
-2023-04-26 19:08:46,052 - root - INFO - User created: almudenasanchezz
-2023-04-26 19:08:46,057 - root - INFO - User created: nataliaperassolo
-2023-04-26 19:08:46,057 - root - INFO - User created: nataliaperassolo
-2023-04-26 19:08:46,062 - root - INFO - User created: madre_jannette
-2023-04-26 19:08:46,062 - root - INFO - User created: madre_jannette
-2023-04-26 19:08:46,066 - root - INFO - User created: thefaerycottage
-2023-04-26 19:08:46,066 - root - INFO - User created: thefaerycottage
-2023-04-26 19:08:46,071 - root - INFO - User created: lesliedri1
-2023-04-26 19:08:46,071 - root - INFO - User created: lesliedri1
-2023-04-26 19:08:46,072 - root - INFO - User created: _mildos
-2023-04-26 19:08:46,072 - root - INFO - User created: _mildos
-2023-04-26 19:08:46,072 - root - INFO - User created: kalpsicologia
-2023-04-26 19:08:46,072 - root - INFO - User created: kalpsicologia
-2023-04-26 19:08:46,072 - root - INFO - User created: moryph__
-2023-04-26 19:08:46,072 - root - INFO - User created: moryph__
-2023-04-26 19:08:46,088 - root - INFO - User created: whho_is_she
-2023-04-26 19:08:46,088 - root - INFO - User created: whho_is_she
-2023-04-26 19:08:46,088 - root - INFO - Users added to database
-2023-04-26 19:08:46,088 - root - INFO - Users added to database
-2023-04-26 19:09:46,090 - root - INFO - Going to profile
-2023-04-26 19:09:46,090 - root - INFO - Going to profile
-2023-04-27 17:06:13,325 - root - INFO - Driver found to Windows
-2023-04-27 17:06:13,325 - root - INFO - Driver found to Windows
+2023-04-27 20:28:35,071 - root - INFO - Driver found to Windows
+2023-04-27 20:29:16,827 - root - ERROR - Error: Message: no such element: Unable to locate element: {"method":"xpath","selector":".//span[contains(text(), 'View replies')]"}
+  (Session info: chrome=112.0.5615.138)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x0089DCE3+50899]
+	(No symbol) [0x0082E111]
+	(No symbol) [0x00735588]
+	(No symbol) [0x007608F9]
+	(No symbol) [0x00760AFB]
+	(No symbol) [0x00758F71]
+	(No symbol) [0x0077B944]
+	(No symbol) [0x00758EC6]
+	(No symbol) [0x0077BC54]
+	(No symbol) [0x0078E01C]
+	(No symbol) [0x0077B6F6]
+	(No symbol) [0x00757708]
+	(No symbol) [0x0075886D]
+	GetHandleVerifier [0x00B03EAE+2566302]
+	GetHandleVerifier [0x00B392B1+2784417]
+	GetHandleVerifier [0x00B3327C+2759788]
+	GetHandleVerifier [0x00935740+672048]
+	(No symbol) [0x00838872]
+	(No symbol) [0x008341C8]
+	(No symbol) [0x008342AB]
+	(No symbol) [0x008271B7]
+	BaseThreadInitThunk [0x762C7D49+25]
+	RtlInitializeExceptionChain [0x779CB74B+107]
+	RtlClearBits [0x779CB6CF+191]
+
+2023-04-27 20:31:00,017 - root - INFO - Driver found to Windows
+2023-04-27 20:32:49,449 - root - INFO - Driver found to Windows

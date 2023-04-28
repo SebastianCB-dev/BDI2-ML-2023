@@ -12,9 +12,8 @@ from selenium.webdriver.support.ui import WebDriverWait
 
 # Custom libraries
 from helpers.platform import get_platform
-# from helpers.data_transform import deleteVerified, text_to_unicode
-# from services.users_service import UsersService
-# from services.logging_service import LoggingService
+from helpers.data_transform import deleteVerified, text_to_unicode
+from services.logging_service import LoggingService
 
 
 class Scraper:
@@ -24,22 +23,10 @@ class Scraper:
     def __init__(self):
         # This function initializes the class
         self.setDriver()
-        self.startDB()
 
     def getLogger(self):
         # This function returns the logger
         return self.logger
-
-    def startDB(self):
-        # This function starts the database connection
-        self.usersService = UsersService(
-            os.getenv("DB_HOST"),
-            os.getenv("DB_PORT"),
-            os.getenv("DB_NAME"),
-            os.getenv("DB_USER"),
-            os.getenv("DB_PASSWORD"),
-        )
-        self.logger.info("Database connection started")
 
     def setDriver(self):
         # This function sets the driver for the browser
@@ -63,14 +50,13 @@ class Scraper:
         options.add_argument('--headless')
         options.add_argument('--disable-gpu')
         options.add_argument('--incognito')
-        self.driver = webdriver.Chrome(
-            executable_path=driver_path, options=options)
+        self.driver = webdriver.Chrome(executable_path=driver_path, options=options)
         self.driver.maximize_window()
 
     def getUsersFromInstagram(self):
         self.driver.delete_all_cookies()
         # This function gets all users that the account is following from Instagram
-        self.driver.get("https://www.instagram.com/accounts/login")
+        self.driver.get("https://www.instagram.com/")
         # Login to Instagram fielding username and password
         username_field = WebDriverWait(self.driver, 10).until(
             EC.presence_of_element_located((By.NAME, "username"))
@@ -82,8 +68,7 @@ class Scraper:
         password_field.send_keys(os.getenv("IG_PASSWORD"))
         # Click on login button
         login_button = WebDriverWait(self.driver, 10).until(
-            EC.presence_of_element_located(
-                (By.XPATH, "//button[@type='submit']"))
+            EC.presence_of_element_located((By.XPATH, "//button[@type='submit']"))
         )
         login_button.click()
         # Click on not now button
@@ -95,4 +80,38 @@ class Scraper:
         ]
         not_now_button = self.buscar_botones(self.driver, botones)
         not_now_button.click()
-        time.sleep(1200)
+
+        # Go to main page
+        while True:
+            self.driver.get("https://www.instagram.com/")
+            time.sleep(3)
+            # document.querySelectorAll('button._acan._acao._acas._aj1-') Get buttons
+            try:
+                wait = WebDriverWait(self.driver, 10)
+                buttons = wait.until(EC.presence_of_all_elements_located(
+                    (By.CSS_SELECTOR, "button._acan._acao._acas._aj1-")))
+                print(buttons)
+                for button in buttons:                  
+                    try:
+                        div = button.find_element(By.XPATH, ".//div[contains(text(), 'Follow')]")
+                        print('Button found')
+                        # button.click()
+                        time.sleep(2)
+                    except Exception as e:
+                        continue
+                # Wait 2 minutes until next iteration to avoid being blocked
+                time.sleep(120)
+            except Exception as e:
+                self.logger.error(f"Error: {e}")
+                time.sleep(120)
+                continue
+
+    def buscar_botones(self, driver, botones):
+        for boton in botones:
+            try:
+                return WebDriverWait(driver, 10).until(
+                    EC.presence_of_element_located((By.XPATH, boton))
+                )
+            except TimeoutException:
+                continue
+        raise TimeoutException("No se pudo encontrar ningún botón en la lista")

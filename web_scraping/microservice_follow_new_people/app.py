@@ -9,6 +9,6 @@ scraper = Scraper()
 
 # Start the scraper
 try:  
-  scraper.follow_new_users()
+  scraper.getUsersFromInstagram()
 except Exception as e:
   scraper.getLogger().critical(f"Error with the Scraper {e.__str__()}")
