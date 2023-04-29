@@ -90,14 +90,13 @@ class Scraper:
                 wait = WebDriverWait(self.driver, 10)
                 buttons = wait.until(EC.presence_of_all_elements_located(
                     (By.CSS_SELECTOR, "button._acan._acao._acas._aj1-")))
-                print(buttons)
                 for button in buttons:                  
                     try:
                         div = button.find_element(By.XPATH, ".//div[contains(text(), 'Follow')]")
-                        print('Button found')
-                        # button.click()
+                        button.click()
                         time.sleep(2)
                     except Exception as e:
+                        print('Error getting Button')
                         continue
                 # Wait 2 minutes until next iteration to avoid being blocked
                 time.sleep(120)
