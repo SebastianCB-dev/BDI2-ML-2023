@@ -84,8 +84,7 @@ class Scraper:
         # Go to main page
         while True:
             self.driver.get("https://www.instagram.com/")
-            time.sleep(3)
-            # document.querySelectorAll('button._acan._acao._acas._aj1-') Get buttons
+            time.sleep(3)            
             try:
                 wait = WebDriverWait(self.driver, 10)
                 buttons = wait.until(EC.presence_of_all_elements_located(
@@ -96,7 +95,6 @@ class Scraper:
                         button.click()
                         time.sleep(2)
                     except Exception as e:
-                        print('Error getting Button')
                         continue
                 # Wait 2 minutes until next iteration to avoid being blocked
                 time.sleep(120)
