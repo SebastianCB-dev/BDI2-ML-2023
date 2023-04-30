@@ -18,11 +18,15 @@ from services.logging_service import LoggingService
 
 
 class Scraper:
+    # Public Properties
     driver = None
     logger = LoggingService().getLogging()
 
     def __init__(self):
-        # This function initializes the class
+        """Constructor
+            This function initializes the class
+            Set the driver and connect to the database
+        """
         self.setDriver()
         self.startDB()
 
@@ -31,7 +35,10 @@ class Scraper:
         return self.logger
 
     def startDB(self):
-        # This function starts the database connection
+        """Database
+            This function starts the database connection
+            * Set variables from .env file
+        """
         self.usersService = UsersService(
             os.getenv("DB_HOST"),
             os.getenv("DB_PORT"),
@@ -42,9 +49,14 @@ class Scraper:
         self.logger.info("Database connection started")
 
     def setDriver(self):
-        # This function sets the driver for the browser
+        """Driver
+            This function sets the driver
+            The driver allows to use the browser and navigate through the web            
+        """
+        # get_platform() returns the operating system
         platform = get_platform()
         driver_path = None
+        # Load the drivers' paths from the json file
         with open("./helpers/drivers.json") as f:
             drivers = json.load(f)
         if drivers[platform] != None:
@@ -58,6 +70,7 @@ class Scraper:
             self.driver = webdriver.Chrome(executable_path=driver_path)
             self.driver.maximize_window()
             return
+        # If the operating system is Linux, then set the options
         options.add_argument('--no-sandbox')
         options.add_argument('--disable-dev-shm-usage')
         options.add_argument('--headless')
@@ -67,8 +80,12 @@ class Scraper:
         self.driver.maximize_window()
 
     def getUsersFromInstagram(self):
-        self.driver.delete_all_cookies()
-        # This function gets all users that the account is following from Instagram
+        """Get Users From Instagram
+            This function gets all users from Instagram that the account follows
+            It is necessary to be logged in to get the users.
+            You have only to set the credentials in the .env file
+        """
+        self.driver.delete_all_cookies()        
         self.driver.get("https://www.instagram.com/")
         # Login to Instagram fielding username and password
         username_field = WebDriverWait(self.driver, 10).until(
@@ -92,16 +109,15 @@ class Scraper:
             "//div[contains(text(), 'Not now')]",
         ]
         not_now_button = self.buscar_botones(self.driver, botones)
-
         not_now_button.click()
+
         # Go to profile
         # Loop to get all users from following list every 2 minutes
         while True:
             self.logger.info("Going to profile")
             self.driver.get(
                 "https://www.instagram.com/" + os.getenv("IG_USERNAME") + "/"
-            )
-            self.logger.info("Going to following")
+            )            
             # Go to Following
             following_button = WebDriverWait(self.driver, 10).until(
                 EC.presence_of_element_located(
@@ -132,6 +148,7 @@ class Scraper:
                 names = [deleteVerified(name) for name in names]
                 names = [text_to_unicode(name) for name in names]
                 usernamesDB = self.usersService.getUsers()
+                # Add users to database
                 for username in usernames:
                     if username not in usernamesDB:
                         self.usersService.createUser(
@@ -175,6 +192,7 @@ class Scraper:
                 break
 
     def buscar_botones(self, driver, botones):
+        # This function search for buttons in a list of XPATH
         for boton in botones:
             try:
                 return WebDriverWait(driver, 10).until(
