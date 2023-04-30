@@ -1,5 +1,5 @@
-DROP TYPE IF EXISTS comment_status;
-CREATE TYPE comment_status AS ENUM ('PENDING', 'REVIEWED');
+DROP TYPE IF EXISTS post_status;
+CREATE TYPE post_status AS ENUM ('PENDING', 'REVIEWED');
 
 CREATE TABLE "posts" (
 	id SERIAL PRIMARY KEY,
@@ -11,7 +11,7 @@ CREATE TABLE "posts" (
 COMMENT ON TABLE "posts" IS 'Table that stores the system users';
 COMMENT ON COLUMN "posts".id IS 'Unique identifier of the user';
 COMMENT ON COLUMN "posts".username IS 'Username of the user';
-COMMENT ON COLUMN "posts".comment_status IS 'Current status of the comment';
+COMMENT ON COLUMN "posts".post_status IS 'Current status of the post';
 
 CREATE INDEX idx_posts_post_url ON "posts" (post_url);
 CREATE INDEX idx_posts_username ON "posts" (username);
@@ -21,4 +21,4 @@ COMMENT ON INDEX idx_posts_username IS 'Index on the "username" column to improv
 
 ALTER TABLE "posts" ADD registration_date TIMESTAMP DEFAULT NOW();
 
-SELECT post_url FROM "comment";
+SELECT post_url FROM "posts";
