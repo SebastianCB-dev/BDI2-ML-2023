@@ -1,0 +1,1842 @@
+2023-04-15 11:49:37,278 - root - INFO - Driver found to Windows
+2023-04-15 11:49:37,278 - root - INFO - Driver found to Windows
+2023-04-15 11:53:55,171 - root - INFO - Driver found to Windows
+2023-04-15 11:53:55,171 - root - INFO - Driver found to Windows
+2023-04-15 11:57:49,832 - root - INFO - Driver found to Windows
+2023-04-15 11:57:49,832 - root - INFO - Driver found to Windows
+2023-04-15 12:07:53,205 - root - INFO - Driver found to Windows
+2023-04-15 12:07:53,205 - root - INFO - Driver found to Windows
+2023-04-15 12:08:42,779 - root - CRITICAL - Error with the Scraper Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=112.0.5615.87)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x004CDCE3+50899]
+	(No symbol) [0x0045E111]
+	(No symbol) [0x00365588]
+	(No symbol) [0x0034D333]
+	(No symbol) [0x003AF4DB]
+	(No symbol) [0x003BDB33]
+	(No symbol) [0x003AB6F6]
+	(No symbol) [0x00387708]
+	(No symbol) [0x0038886D]
+	GetHandleVerifier [0x00733EAE+2566302]
+	GetHandleVerifier [0x007692B1+2784417]
+	GetHandleVerifier [0x0076327C+2759788]
+	GetHandleVerifier [0x00565740+672048]
+	(No symbol) [0x00468872]
+	(No symbol) [0x004641C8]
+	(No symbol) [0x004642AB]
+	(No symbol) [0x004571B7]
+	BaseThreadInitThunk [0x76790099+25]
+	RtlGetAppContainerNamedObjectPath [0x779F7B6E+286]
+	RtlGetAppContainerNamedObjectPath [0x779F7B3E+238]
+
+2023-04-15 12:08:42,779 - root - CRITICAL - Error with the Scraper Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=112.0.5615.87)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x004CDCE3+50899]
+	(No symbol) [0x0045E111]
+	(No symbol) [0x00365588]
+	(No symbol) [0x0034D333]
+	(No symbol) [0x003AF4DB]
+	(No symbol) [0x003BDB33]
+	(No symbol) [0x003AB6F6]
+	(No symbol) [0x00387708]
+	(No symbol) [0x0038886D]
+	GetHandleVerifier [0x00733EAE+2566302]
+	GetHandleVerifier [0x007692B1+2784417]
+	GetHandleVerifier [0x0076327C+2759788]
+	GetHandleVerifier [0x00565740+672048]
+	(No symbol) [0x00468872]
+	(No symbol) [0x004641C8]
+	(No symbol) [0x004642AB]
+	(No symbol) [0x004571B7]
+	BaseThreadInitThunk [0x76790099+25]
+	RtlGetAppContainerNamedObjectPath [0x779F7B6E+286]
+	RtlGetAppContainerNamedObjectPath [0x779F7B3E+238]
+
+2023-04-15 12:10:20,953 - root - INFO - Driver found to Windows
+2023-04-15 12:10:20,953 - root - INFO - Driver found to Windows
+2023-04-15 12:12:31,316 - root - INFO - Driver found to Windows
+2023-04-15 12:12:31,316 - root - INFO - Driver found to Windows
+2023-04-15 12:13:17,286 - root - INFO - Driver found to Windows
+2023-04-15 12:13:17,286 - root - INFO - Driver found to Windows
+2023-04-15 12:17:28,620 - root - INFO - Driver found to Windows
+2023-04-15 12:17:28,620 - root - INFO - Driver found to Windows
+2023-04-15 12:18:32,226 - root - CRITICAL - Error with the Scraper unhashable type: 'list'
+2023-04-15 12:18:32,226 - root - CRITICAL - Error with the Scraper unhashable type: 'list'
+2023-04-15 12:19:52,712 - root - INFO - Driver found to Windows
+2023-04-15 12:19:52,712 - root - INFO - Driver found to Windows
+2023-04-15 12:21:16,800 - root - INFO - Driver found to Windows
+2023-04-15 12:21:16,800 - root - INFO - Driver found to Windows
+2023-04-15 13:29:30,062 - root - INFO - Driver found to Windows
+2023-04-15 13:29:30,062 - root - INFO - Driver found to Windows
+2023-04-15 13:30:55,744 - root - INFO - Driver found to Windows
+2023-04-15 13:30:55,744 - root - INFO - Driver found to Windows
+2023-04-15 13:32:48,554 - root - INFO - Driver found to Windows
+2023-04-15 13:32:48,554 - root - INFO - Driver found to Windows
+2023-04-15 13:37:51,620 - root - INFO - Driver found to Windows
+2023-04-15 13:37:51,620 - root - INFO - Driver found to Windows
+2023-04-16 17:19:51,392 - root - INFO - Driver found to Windows
+2023-04-16 17:19:51,392 - root - INFO - Driver found to Windows
+2023-04-16 17:21:01,787 - root - CRITICAL - Error with the Scraper 'NoneType' object has no attribute 'text'
+2023-04-16 17:21:01,787 - root - CRITICAL - Error with the Scraper 'NoneType' object has no attribute 'text'
+2023-04-16 17:22:59,280 - root - INFO - Driver found to Windows
+2023-04-16 17:22:59,280 - root - INFO - Driver found to Windows
+2023-04-16 17:24:06,421 - root - CRITICAL - Error with the Scraper 'NoneType' object has no attribute 'text'
+2023-04-16 17:24:06,421 - root - CRITICAL - Error with the Scraper 'NoneType' object has no attribute 'text'
+2023-04-16 17:24:27,789 - root - INFO - Driver found to Windows
+2023-04-16 17:24:27,789 - root - INFO - Driver found to Windows
+2023-04-16 17:30:15,746 - root - INFO - Driver found to Windows
+2023-04-16 17:30:15,746 - root - INFO - Driver found to Windows
+2023-04-16 17:30:54,824 - root - CRITICAL - Error with the Scraper 'NoneType' object has no attribute 'text'
+2023-04-16 17:30:54,824 - root - CRITICAL - Error with the Scraper 'NoneType' object has no attribute 'text'
+2023-04-16 17:33:19,295 - root - INFO - Driver found to Windows
+2023-04-16 17:33:19,295 - root - INFO - Driver found to Windows
+2023-04-16 17:34:25,864 - root - CRITICAL - Error with the Scraper 'NoneType' object has no attribute 'text'
+2023-04-16 17:34:25,864 - root - CRITICAL - Error with the Scraper 'NoneType' object has no attribute 'text'
+2023-04-16 17:35:02,364 - root - INFO - Driver found to Windows
+2023-04-16 17:35:02,364 - root - INFO - Driver found to Windows
+2023-04-16 17:36:09,577 - root - CRITICAL - Error with the Scraper 'NoneType' object has no attribute 'text'
+2023-04-16 17:36:09,577 - root - CRITICAL - Error with the Scraper 'NoneType' object has no attribute 'text'
+2023-04-16 17:36:47,748 - root - INFO - Driver found to Windows
+2023-04-16 17:36:47,748 - root - INFO - Driver found to Windows
+2023-04-16 17:37:54,800 - root - CRITICAL - Error with the Scraper 'NoneType' object has no attribute 'text'
+2023-04-16 17:37:54,800 - root - CRITICAL - Error with the Scraper 'NoneType' object has no attribute 'text'
+2023-04-16 17:38:40,294 - root - INFO - Driver found to Windows
+2023-04-16 17:38:40,294 - root - INFO - Driver found to Windows
+2023-04-16 17:41:58,699 - root - INFO - Driver found to Windows
+2023-04-16 17:41:58,699 - root - INFO - Driver found to Windows
+2023-04-16 17:44:23,875 - root - INFO - Driver found to Windows
+2023-04-16 17:44:23,875 - root - INFO - Driver found to Windows
+2023-04-16 17:47:34,209 - root - INFO - Driver found to Windows
+2023-04-16 17:47:34,209 - root - INFO - Driver found to Windows
+2023-04-16 17:49:06,669 - root - INFO - Driver found to Windows
+2023-04-16 17:49:06,669 - root - INFO - Driver found to Windows
+2023-04-16 17:52:25,437 - root - INFO - Driver found to Windows
+2023-04-16 17:52:25,437 - root - INFO - Driver found to Windows
+2023-04-16 17:53:04,543 - root - CRITICAL - Error with the Scraper Message: javascript error: Cannot set properties of null (setting 'scrollTop')
+  (Session info: chrome=112.0.5615.87)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x003FDCE3+50899]
+	(No symbol) [0x0038E111]
+	(No symbol) [0x00295588]
+	(No symbol) [0x00297EDB]
+	(No symbol) [0x00297DB0]
+	(No symbol) [0x00298690]
+	(No symbol) [0x002EE98D]
+	(No symbol) [0x002DB8FC]
+	(No symbol) [0x002EE01C]
+	(No symbol) [0x002DB6F6]
+	(No symbol) [0x002B7708]
+	(No symbol) [0x002B886D]
+	GetHandleVerifier [0x00663EAE+2566302]
+	GetHandleVerifier [0x006992B1+2784417]
+	GetHandleVerifier [0x0069327C+2759788]
+	GetHandleVerifier [0x00495740+672048]
+	(No symbol) [0x00398872]
+	(No symbol) [0x003941C8]
+	(No symbol) [0x003942AB]
+	(No symbol) [0x003871B7]
+	BaseThreadInitThunk [0x76BC0099+25]
+	RtlGetAppContainerNamedObjectPath [0x77C97B6E+286]
+	RtlGetAppContainerNamedObjectPath [0x77C97B3E+238]
+
+2023-04-16 17:53:04,543 - root - CRITICAL - Error with the Scraper Message: javascript error: Cannot set properties of null (setting 'scrollTop')
+  (Session info: chrome=112.0.5615.87)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x003FDCE3+50899]
+	(No symbol) [0x0038E111]
+	(No symbol) [0x00295588]
+	(No symbol) [0x00297EDB]
+	(No symbol) [0x00297DB0]
+	(No symbol) [0x00298690]
+	(No symbol) [0x002EE98D]
+	(No symbol) [0x002DB8FC]
+	(No symbol) [0x002EE01C]
+	(No symbol) [0x002DB6F6]
+	(No symbol) [0x002B7708]
+	(No symbol) [0x002B886D]
+	GetHandleVerifier [0x00663EAE+2566302]
+	GetHandleVerifier [0x006992B1+2784417]
+	GetHandleVerifier [0x0069327C+2759788]
+	GetHandleVerifier [0x00495740+672048]
+	(No symbol) [0x00398872]
+	(No symbol) [0x003941C8]
+	(No symbol) [0x003942AB]
+	(No symbol) [0x003871B7]
+	BaseThreadInitThunk [0x76BC0099+25]
+	RtlGetAppContainerNamedObjectPath [0x77C97B6E+286]
+	RtlGetAppContainerNamedObjectPath [0x77C97B3E+238]
+
+2023-04-17 13:47:09,067 - root - INFO - Driver found to Windows
+2023-04-17 13:47:09,067 - root - INFO - Driver found to Windows
+2023-04-17 13:48:19,766 - root - CRITICAL - Error with the Scraper Message: javascript error: Cannot set properties of null (setting 'scrollTop')
+  (Session info: chrome=112.0.5615.87)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x0052DCE3+50899]
+	(No symbol) [0x004BE111]
+	(No symbol) [0x003C5588]
+	(No symbol) [0x003C7EDB]
+	(No symbol) [0x003C7DB0]
+	(No symbol) [0x003C8690]
+	(No symbol) [0x0041E98D]
+	(No symbol) [0x0040B8FC]
+	(No symbol) [0x0041E01C]
+	(No symbol) [0x0040B6F6]
+	(No symbol) [0x003E7708]
+	(No symbol) [0x003E886D]
+	GetHandleVerifier [0x00793EAE+2566302]
+	GetHandleVerifier [0x007C92B1+2784417]
+	GetHandleVerifier [0x007C327C+2759788]
+	GetHandleVerifier [0x005C5740+672048]
+	(No symbol) [0x004C8872]
+	(No symbol) [0x004C41C8]
+	(No symbol) [0x004C42AB]
+	(No symbol) [0x004B71B7]
+	BaseThreadInitThunk [0x75AE0099+25]
+	RtlGetAppContainerNamedObjectPath [0x76FB7B6E+286]
+	RtlGetAppContainerNamedObjectPath [0x76FB7B3E+238]
+
+2023-04-17 13:48:19,766 - root - CRITICAL - Error with the Scraper Message: javascript error: Cannot set properties of null (setting 'scrollTop')
+  (Session info: chrome=112.0.5615.87)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x0052DCE3+50899]
+	(No symbol) [0x004BE111]
+	(No symbol) [0x003C5588]
+	(No symbol) [0x003C7EDB]
+	(No symbol) [0x003C7DB0]
+	(No symbol) [0x003C8690]
+	(No symbol) [0x0041E98D]
+	(No symbol) [0x0040B8FC]
+	(No symbol) [0x0041E01C]
+	(No symbol) [0x0040B6F6]
+	(No symbol) [0x003E7708]
+	(No symbol) [0x003E886D]
+	GetHandleVerifier [0x00793EAE+2566302]
+	GetHandleVerifier [0x007C92B1+2784417]
+	GetHandleVerifier [0x007C327C+2759788]
+	GetHandleVerifier [0x005C5740+672048]
+	(No symbol) [0x004C8872]
+	(No symbol) [0x004C41C8]
+	(No symbol) [0x004C42AB]
+	(No symbol) [0x004B71B7]
+	BaseThreadInitThunk [0x75AE0099+25]
+	RtlGetAppContainerNamedObjectPath [0x76FB7B6E+286]
+	RtlGetAppContainerNamedObjectPath [0x76FB7B3E+238]
+
+2023-04-17 13:51:51,838 - root - INFO - Driver found to Windows
+2023-04-17 13:51:51,838 - root - INFO - Driver found to Windows
+2023-04-17 13:53:01,417 - root - CRITICAL - Error with the Scraper Message: javascript error: Cannot set properties of null (setting 'scrollTop')
+  (Session info: chrome=112.0.5615.87)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x004FDCE3+50899]
+	(No symbol) [0x0048E111]
+	(No symbol) [0x00395588]
+	(No symbol) [0x00397EDB]
+	(No symbol) [0x00397DB0]
+	(No symbol) [0x00398690]
+	(No symbol) [0x003EE98D]
+	(No symbol) [0x003DB8FC]
+	(No symbol) [0x003EE01C]
+	(No symbol) [0x003DB6F6]
+	(No symbol) [0x003B7708]
+	(No symbol) [0x003B886D]
+	GetHandleVerifier [0x00763EAE+2566302]
+	GetHandleVerifier [0x007992B1+2784417]
+	GetHandleVerifier [0x0079327C+2759788]
+	GetHandleVerifier [0x00595740+672048]
+	(No symbol) [0x00498872]
+	(No symbol) [0x004941C8]
+	(No symbol) [0x004942AB]
+	(No symbol) [0x004871B7]
+	BaseThreadInitThunk [0x75AE0099+25]
+	RtlGetAppContainerNamedObjectPath [0x76FB7B6E+286]
+	RtlGetAppContainerNamedObjectPath [0x76FB7B3E+238]
+
+2023-04-17 13:53:01,417 - root - CRITICAL - Error with the Scraper Message: javascript error: Cannot set properties of null (setting 'scrollTop')
+  (Session info: chrome=112.0.5615.87)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x004FDCE3+50899]
+	(No symbol) [0x0048E111]
+	(No symbol) [0x00395588]
+	(No symbol) [0x00397EDB]
+	(No symbol) [0x00397DB0]
+	(No symbol) [0x00398690]
+	(No symbol) [0x003EE98D]
+	(No symbol) [0x003DB8FC]
+	(No symbol) [0x003EE01C]
+	(No symbol) [0x003DB6F6]
+	(No symbol) [0x003B7708]
+	(No symbol) [0x003B886D]
+	GetHandleVerifier [0x00763EAE+2566302]
+	GetHandleVerifier [0x007992B1+2784417]
+	GetHandleVerifier [0x0079327C+2759788]
+	GetHandleVerifier [0x00595740+672048]
+	(No symbol) [0x00498872]
+	(No symbol) [0x004941C8]
+	(No symbol) [0x004942AB]
+	(No symbol) [0x004871B7]
+	BaseThreadInitThunk [0x75AE0099+25]
+	RtlGetAppContainerNamedObjectPath [0x76FB7B6E+286]
+	RtlGetAppContainerNamedObjectPath [0x76FB7B3E+238]
+
+2023-04-17 13:53:28,288 - root - INFO - Driver found to Windows
+2023-04-17 13:53:28,288 - root - INFO - Driver found to Windows
+2023-04-17 13:54:36,563 - root - CRITICAL - Error with the Scraper Message: javascript error: Cannot set properties of null (setting 'scrollTop')
+  (Session info: chrome=112.0.5615.87)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x004FDCE3+50899]
+	(No symbol) [0x0048E111]
+	(No symbol) [0x00395588]
+	(No symbol) [0x00397EDB]
+	(No symbol) [0x00397DB0]
+	(No symbol) [0x00398690]
+	(No symbol) [0x003EE98D]
+	(No symbol) [0x003DB8FC]
+	(No symbol) [0x003EE01C]
+	(No symbol) [0x003DB6F6]
+	(No symbol) [0x003B7708]
+	(No symbol) [0x003B886D]
+	GetHandleVerifier [0x00763EAE+2566302]
+	GetHandleVerifier [0x007992B1+2784417]
+	GetHandleVerifier [0x0079327C+2759788]
+	GetHandleVerifier [0x00595740+672048]
+	(No symbol) [0x00498872]
+	(No symbol) [0x004941C8]
+	(No symbol) [0x004942AB]
+	(No symbol) [0x004871B7]
+	BaseThreadInitThunk [0x75AE0099+25]
+	RtlGetAppContainerNamedObjectPath [0x76FB7B6E+286]
+	RtlGetAppContainerNamedObjectPath [0x76FB7B3E+238]
+
+2023-04-17 13:54:36,563 - root - CRITICAL - Error with the Scraper Message: javascript error: Cannot set properties of null (setting 'scrollTop')
+  (Session info: chrome=112.0.5615.87)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x004FDCE3+50899]
+	(No symbol) [0x0048E111]
+	(No symbol) [0x00395588]
+	(No symbol) [0x00397EDB]
+	(No symbol) [0x00397DB0]
+	(No symbol) [0x00398690]
+	(No symbol) [0x003EE98D]
+	(No symbol) [0x003DB8FC]
+	(No symbol) [0x003EE01C]
+	(No symbol) [0x003DB6F6]
+	(No symbol) [0x003B7708]
+	(No symbol) [0x003B886D]
+	GetHandleVerifier [0x00763EAE+2566302]
+	GetHandleVerifier [0x007992B1+2784417]
+	GetHandleVerifier [0x0079327C+2759788]
+	GetHandleVerifier [0x00595740+672048]
+	(No symbol) [0x00498872]
+	(No symbol) [0x004941C8]
+	(No symbol) [0x004942AB]
+	(No symbol) [0x004871B7]
+	BaseThreadInitThunk [0x75AE0099+25]
+	RtlGetAppContainerNamedObjectPath [0x76FB7B6E+286]
+	RtlGetAppContainerNamedObjectPath [0x76FB7B3E+238]
+
+2023-04-17 13:54:59,488 - root - INFO - Driver found to Windows
+2023-04-17 13:54:59,488 - root - INFO - Driver found to Windows
+2023-04-17 13:58:20,190 - root - INFO - Driver found to Windows
+2023-04-17 13:58:20,190 - root - INFO - Driver found to Windows
+2023-04-17 14:00:34,347 - root - INFO - Driver found to Windows
+2023-04-17 14:00:34,347 - root - INFO - Driver found to Windows
+2023-04-17 14:03:46,513 - root - INFO - Driver found to Windows
+2023-04-17 14:03:46,513 - root - INFO - Driver found to Windows
+2023-04-17 15:00:27,621 - root - INFO - Driver found to Windows
+2023-04-17 15:00:27,621 - root - INFO - Driver found to Windows
+2023-04-17 15:02:32,366 - root - INFO - Driver found to Windows
+2023-04-17 15:02:32,366 - root - INFO - Driver found to Windows
+2023-04-17 15:02:49,575 - root - INFO - Driver found to Windows
+2023-04-17 15:02:49,575 - root - INFO - Driver found to Windows
+2023-04-17 15:03:57,152 - root - CRITICAL - Error with the Scraper 'NoneType' object has no attribute 'text'
+2023-04-17 15:03:57,152 - root - CRITICAL - Error with the Scraper 'NoneType' object has no attribute 'text'
+2023-04-17 15:04:35,781 - root - INFO - Driver found to Windows
+2023-04-17 15:04:35,781 - root - INFO - Driver found to Windows
+2023-04-17 15:06:34,015 - root - INFO - Driver found to Windows
+2023-04-17 15:06:34,015 - root - INFO - Driver found to Windows
+2023-04-17 15:07:42,320 - root - CRITICAL - Error with the Scraper unhashable type: 'dict'
+2023-04-17 15:07:42,320 - root - CRITICAL - Error with the Scraper unhashable type: 'dict'
+2023-04-17 15:08:36,647 - root - INFO - Driver found to Windows
+2023-04-17 15:08:36,647 - root - INFO - Driver found to Windows
+2023-04-17 15:09:45,002 - root - CRITICAL - Error with the Scraper name 'a' is not defined
+2023-04-17 15:09:45,002 - root - CRITICAL - Error with the Scraper name 'a' is not defined
+2023-04-17 15:10:39,436 - root - INFO - Driver found to Windows
+2023-04-17 15:10:39,436 - root - INFO - Driver found to Windows
+2023-04-17 15:11:46,774 - root - CRITICAL - Error with the Scraper unhashable type: 'dict'
+2023-04-17 15:11:46,774 - root - CRITICAL - Error with the Scraper unhashable type: 'dict'
+2023-04-17 15:14:34,770 - root - INFO - Driver found to Windows
+2023-04-17 15:14:34,770 - root - INFO - Driver found to Windows
+2023-04-17 15:15:42,493 - root - CRITICAL - Error with the Scraper unhashable type: 'dict'
+2023-04-17 15:15:42,493 - root - CRITICAL - Error with the Scraper unhashable type: 'dict'
+2023-04-17 15:16:07,957 - root - INFO - Driver found to Windows
+2023-04-17 15:16:07,957 - root - INFO - Driver found to Windows
+2023-04-17 15:17:15,924 - root - CRITICAL - Error with the Scraper unhashable type: 'dict'
+2023-04-17 15:17:15,924 - root - CRITICAL - Error with the Scraper unhashable type: 'dict'
+2023-04-17 15:18:25,883 - root - INFO - Driver found to Windows
+2023-04-17 15:18:25,883 - root - INFO - Driver found to Windows
+2023-04-17 15:19:33,544 - root - CRITICAL - Error with the Scraper unhashable type: 'dict'
+2023-04-17 15:19:33,544 - root - CRITICAL - Error with the Scraper unhashable type: 'dict'
+2023-04-17 15:22:19,495 - root - INFO - Driver found to Windows
+2023-04-17 15:22:19,495 - root - INFO - Driver found to Windows
+2023-04-17 15:24:13,589 - root - CRITICAL - Error with the Scraper Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=112.0.5615.87)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x0093DCE3+50899]
+	(No symbol) [0x008CE111]
+	(No symbol) [0x007D5588]
+	(No symbol) [0x007BD333]
+	(No symbol) [0x0081F4DB]
+	(No symbol) [0x0082DB33]
+	(No symbol) [0x0081B6F6]
+	(No symbol) [0x007F7708]
+	(No symbol) [0x007F886D]
+	GetHandleVerifier [0x00BA3EAE+2566302]
+	GetHandleVerifier [0x00BD92B1+2784417]
+	GetHandleVerifier [0x00BD327C+2759788]
+	GetHandleVerifier [0x009D5740+672048]
+	(No symbol) [0x008D8872]
+	(No symbol) [0x008D41C8]
+	(No symbol) [0x008D42AB]
+	(No symbol) [0x008C71B7]
+	BaseThreadInitThunk [0x75AE0099+25]
+	RtlGetAppContainerNamedObjectPath [0x76FB7B6E+286]
+	RtlGetAppContainerNamedObjectPath [0x76FB7B3E+238]
+
+2023-04-17 15:24:13,589 - root - CRITICAL - Error with the Scraper Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=112.0.5615.87)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x0093DCE3+50899]
+	(No symbol) [0x008CE111]
+	(No symbol) [0x007D5588]
+	(No symbol) [0x007BD333]
+	(No symbol) [0x0081F4DB]
+	(No symbol) [0x0082DB33]
+	(No symbol) [0x0081B6F6]
+	(No symbol) [0x007F7708]
+	(No symbol) [0x007F886D]
+	GetHandleVerifier [0x00BA3EAE+2566302]
+	GetHandleVerifier [0x00BD92B1+2784417]
+	GetHandleVerifier [0x00BD327C+2759788]
+	GetHandleVerifier [0x009D5740+672048]
+	(No symbol) [0x008D8872]
+	(No symbol) [0x008D41C8]
+	(No symbol) [0x008D42AB]
+	(No symbol) [0x008C71B7]
+	BaseThreadInitThunk [0x75AE0099+25]
+	RtlGetAppContainerNamedObjectPath [0x76FB7B6E+286]
+	RtlGetAppContainerNamedObjectPath [0x76FB7B3E+238]
+
+2023-04-17 16:01:46,721 - root - INFO - Driver found to Windows
+2023-04-17 16:01:46,721 - root - INFO - Driver found to Windows
+2023-04-19 19:47:47,267 - root - INFO - Driver found to Windows
+2023-04-19 19:47:47,267 - root - INFO - Driver found to Windows
+2023-04-19 19:53:09,922 - root - INFO - Driver found to Windows
+2023-04-19 19:53:09,922 - root - INFO - Driver found to Windows
+2023-04-19 19:53:49,541 - root - CRITICAL - Error with the Scraper presence_of_element_located() missing 1 required positional argument: 'locator'
+2023-04-19 19:53:49,541 - root - CRITICAL - Error with the Scraper presence_of_element_located() missing 1 required positional argument: 'locator'
+2023-04-19 19:54:17,336 - root - INFO - Driver found to Windows
+2023-04-19 19:54:17,336 - root - INFO - Driver found to Windows
+2023-04-19 19:56:41,640 - root - CRITICAL - Error with the Scraper Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=112.0.5615.137)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x0087DCE3+50899]
+	(No symbol) [0x0080E111]
+	(No symbol) [0x00715588]
+	(No symbol) [0x006FD333]
+	(No symbol) [0x0075F4DB]
+	(No symbol) [0x0076DB33]
+	(No symbol) [0x0075B6F6]
+	(No symbol) [0x00737708]
+	(No symbol) [0x0073886D]
+	GetHandleVerifier [0x00AE3EAE+2566302]
+	GetHandleVerifier [0x00B192B1+2784417]
+	GetHandleVerifier [0x00B1327C+2759788]
+	GetHandleVerifier [0x00915740+672048]
+	(No symbol) [0x00818872]
+	(No symbol) [0x008141C8]
+	(No symbol) [0x008142AB]
+	(No symbol) [0x008071B7]
+	BaseThreadInitThunk [0x76857D49+25]
+	RtlInitializeExceptionChain [0x77E0B74B+107]
+	RtlClearBits [0x77E0B6CF+191]
+
+2023-04-19 19:56:41,640 - root - CRITICAL - Error with the Scraper Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=112.0.5615.137)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x0087DCE3+50899]
+	(No symbol) [0x0080E111]
+	(No symbol) [0x00715588]
+	(No symbol) [0x006FD333]
+	(No symbol) [0x0075F4DB]
+	(No symbol) [0x0076DB33]
+	(No symbol) [0x0075B6F6]
+	(No symbol) [0x00737708]
+	(No symbol) [0x0073886D]
+	GetHandleVerifier [0x00AE3EAE+2566302]
+	GetHandleVerifier [0x00B192B1+2784417]
+	GetHandleVerifier [0x00B1327C+2759788]
+	GetHandleVerifier [0x00915740+672048]
+	(No symbol) [0x00818872]
+	(No symbol) [0x008141C8]
+	(No symbol) [0x008142AB]
+	(No symbol) [0x008071B7]
+	BaseThreadInitThunk [0x76857D49+25]
+	RtlInitializeExceptionChain [0x77E0B74B+107]
+	RtlClearBits [0x77E0B6CF+191]
+
+2023-04-19 19:56:45,402 - root - INFO - Driver found to Windows
+2023-04-19 19:56:45,402 - root - INFO - Driver found to Windows
+2023-04-19 20:14:33,084 - root - INFO - Driver found to Windows
+2023-04-19 20:14:33,084 - root - INFO - Driver found to Windows
+2023-04-19 20:30:56,467 - root - INFO - Driver found to Windows
+2023-04-19 20:30:56,467 - root - INFO - Driver found to Windows
+2023-04-19 20:36:54,809 - root - INFO - Driver found to Windows
+2023-04-19 20:36:54,809 - root - INFO - Driver found to Windows
+2023-04-19 20:39:12,516 - root - CRITICAL - Error with the Scraper Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=112.0.5615.137)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x0087DCE3+50899]
+	(No symbol) [0x0080E111]
+	(No symbol) [0x00715588]
+	(No symbol) [0x006FD333]
+	(No symbol) [0x0075F4DB]
+	(No symbol) [0x0076DB33]
+	(No symbol) [0x0075B6F6]
+	(No symbol) [0x00737708]
+	(No symbol) [0x0073886D]
+	GetHandleVerifier [0x00AE3EAE+2566302]
+	GetHandleVerifier [0x00B192B1+2784417]
+	GetHandleVerifier [0x00B1327C+2759788]
+	GetHandleVerifier [0x00915740+672048]
+	(No symbol) [0x00818872]
+	(No symbol) [0x008141C8]
+	(No symbol) [0x008142AB]
+	(No symbol) [0x008071B7]
+	BaseThreadInitThunk [0x76857D49+25]
+	RtlInitializeExceptionChain [0x77E0B74B+107]
+	RtlClearBits [0x77E0B6CF+191]
+
+2023-04-19 20:39:12,516 - root - CRITICAL - Error with the Scraper Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=112.0.5615.137)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x0087DCE3+50899]
+	(No symbol) [0x0080E111]
+	(No symbol) [0x00715588]
+	(No symbol) [0x006FD333]
+	(No symbol) [0x0075F4DB]
+	(No symbol) [0x0076DB33]
+	(No symbol) [0x0075B6F6]
+	(No symbol) [0x00737708]
+	(No symbol) [0x0073886D]
+	GetHandleVerifier [0x00AE3EAE+2566302]
+	GetHandleVerifier [0x00B192B1+2784417]
+	GetHandleVerifier [0x00B1327C+2759788]
+	GetHandleVerifier [0x00915740+672048]
+	(No symbol) [0x00818872]
+	(No symbol) [0x008141C8]
+	(No symbol) [0x008142AB]
+	(No symbol) [0x008071B7]
+	BaseThreadInitThunk [0x76857D49+25]
+	RtlInitializeExceptionChain [0x77E0B74B+107]
+	RtlClearBits [0x77E0B6CF+191]
+
+2023-04-20 17:12:44,447 - root - INFO - Driver found to Windows
+2023-04-20 17:12:44,447 - root - INFO - Driver found to Windows
+2023-04-20 17:17:49,271 - root - INFO - Driver found to Windows
+2023-04-20 17:17:49,271 - root - INFO - Driver found to Windows
+2023-04-22 13:58:59,349 - root - INFO - Driver found to Windows
+2023-04-22 13:58:59,349 - root - INFO - Driver found to Windows
+2023-04-22 13:59:03,290 - root - CRITICAL - Error with the Scraper Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=112.0.5615.138)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00F0DCE3+50899]
+	(No symbol) [0x00E9E111]
+	(No symbol) [0x00DA5588]
+	(No symbol) [0x00D8D333]
+	(No symbol) [0x00DEF4DB]
+	(No symbol) [0x00DFDB33]
+	(No symbol) [0x00DEB6F6]
+	(No symbol) [0x00DC7708]
+	(No symbol) [0x00DC886D]
+	GetHandleVerifier [0x01173EAE+2566302]
+	GetHandleVerifier [0x011A92B1+2784417]
+	GetHandleVerifier [0x011A327C+2759788]
+	GetHandleVerifier [0x00FA5740+672048]
+	(No symbol) [0x00EA8872]
+	(No symbol) [0x00EA41C8]
+	(No symbol) [0x00EA42AB]
+	(No symbol) [0x00E971B7]
+	BaseThreadInitThunk [0x760C7D49+25]
+	RtlInitializeExceptionChain [0x776BB74B+107]
+	RtlClearBits [0x776BB6CF+191]
+
+2023-04-22 13:59:03,290 - root - CRITICAL - Error with the Scraper Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=112.0.5615.138)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00F0DCE3+50899]
+	(No symbol) [0x00E9E111]
+	(No symbol) [0x00DA5588]
+	(No symbol) [0x00D8D333]
+	(No symbol) [0x00DEF4DB]
+	(No symbol) [0x00DFDB33]
+	(No symbol) [0x00DEB6F6]
+	(No symbol) [0x00DC7708]
+	(No symbol) [0x00DC886D]
+	GetHandleVerifier [0x01173EAE+2566302]
+	GetHandleVerifier [0x011A92B1+2784417]
+	GetHandleVerifier [0x011A327C+2759788]
+	GetHandleVerifier [0x00FA5740+672048]
+	(No symbol) [0x00EA8872]
+	(No symbol) [0x00EA41C8]
+	(No symbol) [0x00EA42AB]
+	(No symbol) [0x00E971B7]
+	BaseThreadInitThunk [0x760C7D49+25]
+	RtlInitializeExceptionChain [0x776BB74B+107]
+	RtlClearBits [0x776BB6CF+191]
+
+2023-04-22 14:24:07,726 - root - INFO - Driver found to Windows
+2023-04-22 14:24:07,726 - root - INFO - Driver found to Windows
+2023-04-22 14:32:57,934 - root - INFO - Driver found to Windows
+2023-04-22 14:32:57,934 - root - INFO - Driver found to Windows
+2023-04-22 14:34:33,500 - root - INFO - Driver found to Windows
+2023-04-22 14:34:33,500 - root - INFO - Driver found to Windows
+2023-04-22 14:51:09,250 - root - CRITICAL - Error with the Scraper Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=112.0.5615.138)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00F0DCE3+50899]
+	(No symbol) [0x00E9E111]
+	(No symbol) [0x00DA5588]
+	(No symbol) [0x00DA7EDB]
+	(No symbol) [0x00DA7DB0]
+	(No symbol) [0x00DA8690]
+	(No symbol) [0x00DFE98D]
+	(No symbol) [0x00DEB8FC]
+	(No symbol) [0x00DFE01C]
+	(No symbol) [0x00DEB6F6]
+	(No symbol) [0x00DC7708]
+	(No symbol) [0x00DC886D]
+	GetHandleVerifier [0x01173EAE+2566302]
+	GetHandleVerifier [0x011A92B1+2784417]
+	GetHandleVerifier [0x011A327C+2759788]
+	GetHandleVerifier [0x00FA5740+672048]
+	(No symbol) [0x00EA8872]
+	(No symbol) [0x00EA41C8]
+	(No symbol) [0x00EA42AB]
+	(No symbol) [0x00E971B7]
+	BaseThreadInitThunk [0x760C7D49+25]
+	RtlInitializeExceptionChain [0x776BB74B+107]
+	RtlClearBits [0x776BB6CF+191]
+
+2023-04-22 14:51:09,250 - root - CRITICAL - Error with the Scraper Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=112.0.5615.138)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00F0DCE3+50899]
+	(No symbol) [0x00E9E111]
+	(No symbol) [0x00DA5588]
+	(No symbol) [0x00DA7EDB]
+	(No symbol) [0x00DA7DB0]
+	(No symbol) [0x00DA8690]
+	(No symbol) [0x00DFE98D]
+	(No symbol) [0x00DEB8FC]
+	(No symbol) [0x00DFE01C]
+	(No symbol) [0x00DEB6F6]
+	(No symbol) [0x00DC7708]
+	(No symbol) [0x00DC886D]
+	GetHandleVerifier [0x01173EAE+2566302]
+	GetHandleVerifier [0x011A92B1+2784417]
+	GetHandleVerifier [0x011A327C+2759788]
+	GetHandleVerifier [0x00FA5740+672048]
+	(No symbol) [0x00EA8872]
+	(No symbol) [0x00EA41C8]
+	(No symbol) [0x00EA42AB]
+	(No symbol) [0x00E971B7]
+	BaseThreadInitThunk [0x760C7D49+25]
+	RtlInitializeExceptionChain [0x776BB74B+107]
+	RtlClearBits [0x776BB6CF+191]
+
+2023-04-22 15:03:31,711 - root - INFO - Driver found to Windows
+2023-04-22 15:03:31,711 - root - INFO - Driver found to Windows
+2023-04-22 15:04:15,192 - root - CRITICAL - Error with the Scraper Message: No se pudo encontrar ningún botón en la lista
+
+2023-04-22 15:04:15,192 - root - CRITICAL - Error with the Scraper Message: No se pudo encontrar ningún botón en la lista
+
+2023-04-22 15:04:28,500 - root - INFO - Driver found to Windows
+2023-04-22 15:04:28,500 - root - INFO - Driver found to Windows
+2023-04-22 15:04:54,253 - root - CRITICAL - Error with the Scraper Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=112.0.5615.138)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00F0DCE3+50899]
+	(No symbol) [0x00E9E111]
+	(No symbol) [0x00DA5588]
+	(No symbol) [0x00D8D333]
+	(No symbol) [0x00DEF4DB]
+	(No symbol) [0x00DFDB33]
+	(No symbol) [0x00DEB6F6]
+	(No symbol) [0x00DC7708]
+	(No symbol) [0x00DC886D]
+	GetHandleVerifier [0x01173EAE+2566302]
+	GetHandleVerifier [0x011A92B1+2784417]
+	GetHandleVerifier [0x011A327C+2759788]
+	GetHandleVerifier [0x00FA5740+672048]
+	(No symbol) [0x00EA8872]
+	(No symbol) [0x00EA41C8]
+	(No symbol) [0x00EA42AB]
+	(No symbol) [0x00E971B7]
+	BaseThreadInitThunk [0x760C7D49+25]
+	RtlInitializeExceptionChain [0x776BB74B+107]
+	RtlClearBits [0x776BB6CF+191]
+
+2023-04-22 15:04:54,253 - root - CRITICAL - Error with the Scraper Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=112.0.5615.138)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00F0DCE3+50899]
+	(No symbol) [0x00E9E111]
+	(No symbol) [0x00DA5588]
+	(No symbol) [0x00D8D333]
+	(No symbol) [0x00DEF4DB]
+	(No symbol) [0x00DFDB33]
+	(No symbol) [0x00DEB6F6]
+	(No symbol) [0x00DC7708]
+	(No symbol) [0x00DC886D]
+	GetHandleVerifier [0x01173EAE+2566302]
+	GetHandleVerifier [0x011A92B1+2784417]
+	GetHandleVerifier [0x011A327C+2759788]
+	GetHandleVerifier [0x00FA5740+672048]
+	(No symbol) [0x00EA8872]
+	(No symbol) [0x00EA41C8]
+	(No symbol) [0x00EA42AB]
+	(No symbol) [0x00E971B7]
+	BaseThreadInitThunk [0x760C7D49+25]
+	RtlInitializeExceptionChain [0x776BB74B+107]
+	RtlClearBits [0x776BB6CF+191]
+
+2023-04-22 15:05:11,575 - root - INFO - Driver found to Windows
+2023-04-22 15:05:11,575 - root - INFO - Driver found to Windows
+2023-04-22 15:05:18,846 - root - CRITICAL - Error with the Scraper Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=112.0.5615.138)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00F0DCE3+50899]
+	(No symbol) [0x00E9E111]
+	(No symbol) [0x00DA5588]
+	(No symbol) [0x00D8D333]
+	(No symbol) [0x00DEF4DB]
+	(No symbol) [0x00DFDB33]
+	(No symbol) [0x00DEB6F6]
+	(No symbol) [0x00DC7708]
+	(No symbol) [0x00DC886D]
+	GetHandleVerifier [0x01173EAE+2566302]
+	GetHandleVerifier [0x011A92B1+2784417]
+	GetHandleVerifier [0x011A327C+2759788]
+	GetHandleVerifier [0x00FA5740+672048]
+	(No symbol) [0x00EA8872]
+	(No symbol) [0x00EA41C8]
+	(No symbol) [0x00EA42AB]
+	(No symbol) [0x00E971B7]
+	BaseThreadInitThunk [0x760C7D49+25]
+	RtlInitializeExceptionChain [0x776BB74B+107]
+	RtlClearBits [0x776BB6CF+191]
+
+2023-04-22 15:05:18,846 - root - CRITICAL - Error with the Scraper Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=112.0.5615.138)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00F0DCE3+50899]
+	(No symbol) [0x00E9E111]
+	(No symbol) [0x00DA5588]
+	(No symbol) [0x00D8D333]
+	(No symbol) [0x00DEF4DB]
+	(No symbol) [0x00DFDB33]
+	(No symbol) [0x00DEB6F6]
+	(No symbol) [0x00DC7708]
+	(No symbol) [0x00DC886D]
+	GetHandleVerifier [0x01173EAE+2566302]
+	GetHandleVerifier [0x011A92B1+2784417]
+	GetHandleVerifier [0x011A327C+2759788]
+	GetHandleVerifier [0x00FA5740+672048]
+	(No symbol) [0x00EA8872]
+	(No symbol) [0x00EA41C8]
+	(No symbol) [0x00EA42AB]
+	(No symbol) [0x00E971B7]
+	BaseThreadInitThunk [0x760C7D49+25]
+	RtlInitializeExceptionChain [0x776BB74B+107]
+	RtlClearBits [0x776BB6CF+191]
+
+2023-04-22 15:05:22,344 - root - INFO - Driver found to Windows
+2023-04-22 15:05:22,344 - root - INFO - Driver found to Windows
+2023-04-22 15:05:27,777 - root - CRITICAL - Error with the Scraper Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=112.0.5615.138)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00F0DCE3+50899]
+	(No symbol) [0x00E9E111]
+	(No symbol) [0x00DA5588]
+	(No symbol) [0x00D8D333]
+	(No symbol) [0x00DEF4DB]
+	(No symbol) [0x00DFDB33]
+	(No symbol) [0x00DEB6F6]
+	(No symbol) [0x00DC7708]
+	(No symbol) [0x00DC886D]
+	GetHandleVerifier [0x01173EAE+2566302]
+	GetHandleVerifier [0x011A92B1+2784417]
+	GetHandleVerifier [0x011A327C+2759788]
+	GetHandleVerifier [0x00FA5740+672048]
+	(No symbol) [0x00EA8872]
+	(No symbol) [0x00EA41C8]
+	(No symbol) [0x00EA42AB]
+	(No symbol) [0x00E971B7]
+	BaseThreadInitThunk [0x760C7D49+25]
+	RtlInitializeExceptionChain [0x776BB74B+107]
+	RtlClearBits [0x776BB6CF+191]
+
+2023-04-22 15:05:27,777 - root - CRITICAL - Error with the Scraper Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=112.0.5615.138)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00F0DCE3+50899]
+	(No symbol) [0x00E9E111]
+	(No symbol) [0x00DA5588]
+	(No symbol) [0x00D8D333]
+	(No symbol) [0x00DEF4DB]
+	(No symbol) [0x00DFDB33]
+	(No symbol) [0x00DEB6F6]
+	(No symbol) [0x00DC7708]
+	(No symbol) [0x00DC886D]
+	GetHandleVerifier [0x01173EAE+2566302]
+	GetHandleVerifier [0x011A92B1+2784417]
+	GetHandleVerifier [0x011A327C+2759788]
+	GetHandleVerifier [0x00FA5740+672048]
+	(No symbol) [0x00EA8872]
+	(No symbol) [0x00EA41C8]
+	(No symbol) [0x00EA42AB]
+	(No symbol) [0x00E971B7]
+	BaseThreadInitThunk [0x760C7D49+25]
+	RtlInitializeExceptionChain [0x776BB74B+107]
+	RtlClearBits [0x776BB6CF+191]
+
+2023-04-22 15:05:52,014 - root - INFO - Driver found to Windows
+2023-04-22 15:05:52,014 - root - INFO - Driver found to Windows
+2023-04-22 15:05:56,958 - root - CRITICAL - Error with the Scraper Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=112.0.5615.138)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00F0DCE3+50899]
+	(No symbol) [0x00E9E111]
+	(No symbol) [0x00DA5588]
+	(No symbol) [0x00D8D333]
+	(No symbol) [0x00DEF4DB]
+	(No symbol) [0x00DFDB33]
+	(No symbol) [0x00DEB6F6]
+	(No symbol) [0x00DC7708]
+	(No symbol) [0x00DC886D]
+	GetHandleVerifier [0x01173EAE+2566302]
+	GetHandleVerifier [0x011A92B1+2784417]
+	GetHandleVerifier [0x011A327C+2759788]
+	GetHandleVerifier [0x00FA5740+672048]
+	(No symbol) [0x00EA8872]
+	(No symbol) [0x00EA41C8]
+	(No symbol) [0x00EA42AB]
+	(No symbol) [0x00E971B7]
+	BaseThreadInitThunk [0x760C7D49+25]
+	RtlInitializeExceptionChain [0x776BB74B+107]
+	RtlClearBits [0x776BB6CF+191]
+
+2023-04-22 15:05:56,958 - root - CRITICAL - Error with the Scraper Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=112.0.5615.138)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00F0DCE3+50899]
+	(No symbol) [0x00E9E111]
+	(No symbol) [0x00DA5588]
+	(No symbol) [0x00D8D333]
+	(No symbol) [0x00DEF4DB]
+	(No symbol) [0x00DFDB33]
+	(No symbol) [0x00DEB6F6]
+	(No symbol) [0x00DC7708]
+	(No symbol) [0x00DC886D]
+	GetHandleVerifier [0x01173EAE+2566302]
+	GetHandleVerifier [0x011A92B1+2784417]
+	GetHandleVerifier [0x011A327C+2759788]
+	GetHandleVerifier [0x00FA5740+672048]
+	(No symbol) [0x00EA8872]
+	(No symbol) [0x00EA41C8]
+	(No symbol) [0x00EA42AB]
+	(No symbol) [0x00E971B7]
+	BaseThreadInitThunk [0x760C7D49+25]
+	RtlInitializeExceptionChain [0x776BB74B+107]
+	RtlClearBits [0x776BB6CF+191]
+
+2023-04-22 15:18:21,570 - root - INFO - Driver found to Windows
+2023-04-22 15:18:21,570 - root - INFO - Driver found to Windows
+2023-04-22 15:18:26,997 - root - CRITICAL - Error with the Scraper Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=112.0.5615.138)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00F0DCE3+50899]
+	(No symbol) [0x00E9E111]
+	(No symbol) [0x00DA5588]
+	(No symbol) [0x00D8D333]
+	(No symbol) [0x00DEF4DB]
+	(No symbol) [0x00DFDB33]
+	(No symbol) [0x00DEB6F6]
+	(No symbol) [0x00DC7708]
+	(No symbol) [0x00DC886D]
+	GetHandleVerifier [0x01173EAE+2566302]
+	GetHandleVerifier [0x011A92B1+2784417]
+	GetHandleVerifier [0x011A327C+2759788]
+	GetHandleVerifier [0x00FA5740+672048]
+	(No symbol) [0x00EA8872]
+	(No symbol) [0x00EA41C8]
+	(No symbol) [0x00EA42AB]
+	(No symbol) [0x00E971B7]
+	BaseThreadInitThunk [0x760C7D49+25]
+	RtlInitializeExceptionChain [0x776BB74B+107]
+	RtlClearBits [0x776BB6CF+191]
+
+2023-04-22 15:18:26,997 - root - CRITICAL - Error with the Scraper Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=112.0.5615.138)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00F0DCE3+50899]
+	(No symbol) [0x00E9E111]
+	(No symbol) [0x00DA5588]
+	(No symbol) [0x00D8D333]
+	(No symbol) [0x00DEF4DB]
+	(No symbol) [0x00DFDB33]
+	(No symbol) [0x00DEB6F6]
+	(No symbol) [0x00DC7708]
+	(No symbol) [0x00DC886D]
+	GetHandleVerifier [0x01173EAE+2566302]
+	GetHandleVerifier [0x011A92B1+2784417]
+	GetHandleVerifier [0x011A327C+2759788]
+	GetHandleVerifier [0x00FA5740+672048]
+	(No symbol) [0x00EA8872]
+	(No symbol) [0x00EA41C8]
+	(No symbol) [0x00EA42AB]
+	(No symbol) [0x00E971B7]
+	BaseThreadInitThunk [0x760C7D49+25]
+	RtlInitializeExceptionChain [0x776BB74B+107]
+	RtlClearBits [0x776BB6CF+191]
+
+2023-04-23 10:06:45,520 - root - INFO - Driver found to Windows
+2023-04-23 10:06:45,520 - root - INFO - Driver found to Windows
+2023-04-23 10:33:38,138 - root - INFO - Driver found to Windows
+2023-04-23 10:33:38,138 - root - INFO - Driver found to Windows
+2023-04-23 10:39:12,390 - root - INFO - Driver found to Windows
+2023-04-23 10:39:12,390 - root - INFO - Driver found to Windows
+2023-04-23 10:40:31,941 - root - CRITICAL - Error with the Scraper Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=112.0.5615.138)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00EFDCE3+50899]
+	(No symbol) [0x00E8E111]
+	(No symbol) [0x00D95588]
+	(No symbol) [0x00D97EDB]
+	(No symbol) [0x00D97DB0]
+	(No symbol) [0x00D98690]
+	(No symbol) [0x00DEE98D]
+	(No symbol) [0x00DDB8FC]
+	(No symbol) [0x00DEE01C]
+	(No symbol) [0x00DDB6F6]
+	(No symbol) [0x00DB7708]
+	(No symbol) [0x00DB886D]
+	GetHandleVerifier [0x01163EAE+2566302]
+	GetHandleVerifier [0x011992B1+2784417]
+	GetHandleVerifier [0x0119327C+2759788]
+	GetHandleVerifier [0x00F95740+672048]
+	(No symbol) [0x00E98872]
+	(No symbol) [0x00E941C8]
+	(No symbol) [0x00E942AB]
+	(No symbol) [0x00E871B7]
+	BaseThreadInitThunk [0x760C7D49+25]
+	RtlInitializeExceptionChain [0x776BB74B+107]
+	RtlClearBits [0x776BB6CF+191]
+
+2023-04-23 10:40:31,941 - root - CRITICAL - Error with the Scraper Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=112.0.5615.138)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00EFDCE3+50899]
+	(No symbol) [0x00E8E111]
+	(No symbol) [0x00D95588]
+	(No symbol) [0x00D97EDB]
+	(No symbol) [0x00D97DB0]
+	(No symbol) [0x00D98690]
+	(No symbol) [0x00DEE98D]
+	(No symbol) [0x00DDB8FC]
+	(No symbol) [0x00DEE01C]
+	(No symbol) [0x00DDB6F6]
+	(No symbol) [0x00DB7708]
+	(No symbol) [0x00DB886D]
+	GetHandleVerifier [0x01163EAE+2566302]
+	GetHandleVerifier [0x011992B1+2784417]
+	GetHandleVerifier [0x0119327C+2759788]
+	GetHandleVerifier [0x00F95740+672048]
+	(No symbol) [0x00E98872]
+	(No symbol) [0x00E941C8]
+	(No symbol) [0x00E942AB]
+	(No symbol) [0x00E871B7]
+	BaseThreadInitThunk [0x760C7D49+25]
+	RtlInitializeExceptionChain [0x776BB74B+107]
+	RtlClearBits [0x776BB6CF+191]
+
+2023-04-23 10:41:01,090 - root - INFO - Driver found to Windows
+2023-04-23 10:41:01,090 - root - INFO - Driver found to Windows
+2023-04-23 10:41:20,879 - root - INFO - Driver found to Windows
+2023-04-23 10:41:20,879 - root - INFO - Driver found to Windows
+2023-04-23 10:42:41,188 - root - CRITICAL - Error with the Scraper Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=112.0.5615.138)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00EFDCE3+50899]
+	(No symbol) [0x00E8E111]
+	(No symbol) [0x00D95588]
+	(No symbol) [0x00D97EDB]
+	(No symbol) [0x00D97DB0]
+	(No symbol) [0x00D98690]
+	(No symbol) [0x00DEE98D]
+	(No symbol) [0x00DDB8FC]
+	(No symbol) [0x00DEE01C]
+	(No symbol) [0x00DDB6F6]
+	(No symbol) [0x00DB7708]
+	(No symbol) [0x00DB886D]
+	GetHandleVerifier [0x01163EAE+2566302]
+	GetHandleVerifier [0x011992B1+2784417]
+	GetHandleVerifier [0x0119327C+2759788]
+	GetHandleVerifier [0x00F95740+672048]
+	(No symbol) [0x00E98872]
+	(No symbol) [0x00E941C8]
+	(No symbol) [0x00E942AB]
+	(No symbol) [0x00E871B7]
+	BaseThreadInitThunk [0x760C7D49+25]
+	RtlInitializeExceptionChain [0x776BB74B+107]
+	RtlClearBits [0x776BB6CF+191]
+
+2023-04-23 10:42:41,188 - root - CRITICAL - Error with the Scraper Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=112.0.5615.138)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00EFDCE3+50899]
+	(No symbol) [0x00E8E111]
+	(No symbol) [0x00D95588]
+	(No symbol) [0x00D97EDB]
+	(No symbol) [0x00D97DB0]
+	(No symbol) [0x00D98690]
+	(No symbol) [0x00DEE98D]
+	(No symbol) [0x00DDB8FC]
+	(No symbol) [0x00DEE01C]
+	(No symbol) [0x00DDB6F6]
+	(No symbol) [0x00DB7708]
+	(No symbol) [0x00DB886D]
+	GetHandleVerifier [0x01163EAE+2566302]
+	GetHandleVerifier [0x011992B1+2784417]
+	GetHandleVerifier [0x0119327C+2759788]
+	GetHandleVerifier [0x00F95740+672048]
+	(No symbol) [0x00E98872]
+	(No symbol) [0x00E941C8]
+	(No symbol) [0x00E942AB]
+	(No symbol) [0x00E871B7]
+	BaseThreadInitThunk [0x760C7D49+25]
+	RtlInitializeExceptionChain [0x776BB74B+107]
+	RtlClearBits [0x776BB6CF+191]
+
+2023-04-23 10:44:18,922 - root - INFO - Driver found to Windows
+2023-04-23 10:44:18,922 - root - INFO - Driver found to Windows
+2023-04-23 10:46:11,431 - root - INFO - Driver found to Windows
+2023-04-23 10:46:11,431 - root - INFO - Driver found to Windows
+2023-04-23 10:47:31,542 - root - CRITICAL - Error with the Scraper Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=112.0.5615.138)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00EFDCE3+50899]
+	(No symbol) [0x00E8E111]
+	(No symbol) [0x00D95588]
+	(No symbol) [0x00D97EDB]
+	(No symbol) [0x00D97DB0]
+	(No symbol) [0x00D98690]
+	(No symbol) [0x00DEE98D]
+	(No symbol) [0x00DDB8FC]
+	(No symbol) [0x00DEE01C]
+	(No symbol) [0x00DDB6F6]
+	(No symbol) [0x00DB7708]
+	(No symbol) [0x00DB886D]
+	GetHandleVerifier [0x01163EAE+2566302]
+	GetHandleVerifier [0x011992B1+2784417]
+	GetHandleVerifier [0x0119327C+2759788]
+	GetHandleVerifier [0x00F95740+672048]
+	(No symbol) [0x00E98872]
+	(No symbol) [0x00E941C8]
+	(No symbol) [0x00E942AB]
+	(No symbol) [0x00E871B7]
+	BaseThreadInitThunk [0x760C7D49+25]
+	RtlInitializeExceptionChain [0x776BB74B+107]
+	RtlClearBits [0x776BB6CF+191]
+
+2023-04-23 10:47:31,542 - root - CRITICAL - Error with the Scraper Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=112.0.5615.138)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00EFDCE3+50899]
+	(No symbol) [0x00E8E111]
+	(No symbol) [0x00D95588]
+	(No symbol) [0x00D97EDB]
+	(No symbol) [0x00D97DB0]
+	(No symbol) [0x00D98690]
+	(No symbol) [0x00DEE98D]
+	(No symbol) [0x00DDB8FC]
+	(No symbol) [0x00DEE01C]
+	(No symbol) [0x00DDB6F6]
+	(No symbol) [0x00DB7708]
+	(No symbol) [0x00DB886D]
+	GetHandleVerifier [0x01163EAE+2566302]
+	GetHandleVerifier [0x011992B1+2784417]
+	GetHandleVerifier [0x0119327C+2759788]
+	GetHandleVerifier [0x00F95740+672048]
+	(No symbol) [0x00E98872]
+	(No symbol) [0x00E941C8]
+	(No symbol) [0x00E942AB]
+	(No symbol) [0x00E871B7]
+	BaseThreadInitThunk [0x760C7D49+25]
+	RtlInitializeExceptionChain [0x776BB74B+107]
+	RtlClearBits [0x776BB6CF+191]
+
+2023-04-23 10:48:49,855 - root - INFO - Driver found to Windows
+2023-04-23 10:48:49,855 - root - INFO - Driver found to Windows
+2023-04-23 10:50:09,025 - root - CRITICAL - Error with the Scraper Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=112.0.5615.138)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00EFDCE3+50899]
+	(No symbol) [0x00E8E111]
+	(No symbol) [0x00D95588]
+	(No symbol) [0x00D97EDB]
+	(No symbol) [0x00D97DB0]
+	(No symbol) [0x00D98690]
+	(No symbol) [0x00DEE98D]
+	(No symbol) [0x00DDB8FC]
+	(No symbol) [0x00DEE01C]
+	(No symbol) [0x00DDB6F6]
+	(No symbol) [0x00DB7708]
+	(No symbol) [0x00DB886D]
+	GetHandleVerifier [0x01163EAE+2566302]
+	GetHandleVerifier [0x011992B1+2784417]
+	GetHandleVerifier [0x0119327C+2759788]
+	GetHandleVerifier [0x00F95740+672048]
+	(No symbol) [0x00E98872]
+	(No symbol) [0x00E941C8]
+	(No symbol) [0x00E942AB]
+	(No symbol) [0x00E871B7]
+	BaseThreadInitThunk [0x760C7D49+25]
+	RtlInitializeExceptionChain [0x776BB74B+107]
+	RtlClearBits [0x776BB6CF+191]
+
+2023-04-23 10:50:09,025 - root - CRITICAL - Error with the Scraper Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=112.0.5615.138)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00EFDCE3+50899]
+	(No symbol) [0x00E8E111]
+	(No symbol) [0x00D95588]
+	(No symbol) [0x00D97EDB]
+	(No symbol) [0x00D97DB0]
+	(No symbol) [0x00D98690]
+	(No symbol) [0x00DEE98D]
+	(No symbol) [0x00DDB8FC]
+	(No symbol) [0x00DEE01C]
+	(No symbol) [0x00DDB6F6]
+	(No symbol) [0x00DB7708]
+	(No symbol) [0x00DB886D]
+	GetHandleVerifier [0x01163EAE+2566302]
+	GetHandleVerifier [0x011992B1+2784417]
+	GetHandleVerifier [0x0119327C+2759788]
+	GetHandleVerifier [0x00F95740+672048]
+	(No symbol) [0x00E98872]
+	(No symbol) [0x00E941C8]
+	(No symbol) [0x00E942AB]
+	(No symbol) [0x00E871B7]
+	BaseThreadInitThunk [0x760C7D49+25]
+	RtlInitializeExceptionChain [0x776BB74B+107]
+	RtlClearBits [0x776BB6CF+191]
+
+2023-04-23 10:50:49,499 - root - INFO - Driver found to Windows
+2023-04-23 10:50:49,499 - root - INFO - Driver found to Windows
+2023-04-23 10:54:22,146 - root - CRITICAL - Error with the Scraper Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=112.0.5615.138)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00EFDCE3+50899]
+	(No symbol) [0x00E8E111]
+	(No symbol) [0x00D95588]
+	(No symbol) [0x00D97EDB]
+	(No symbol) [0x00D97DB0]
+	(No symbol) [0x00D98690]
+	(No symbol) [0x00DEE98D]
+	(No symbol) [0x00DDB8FC]
+	(No symbol) [0x00DEE01C]
+	(No symbol) [0x00DDB6F6]
+	(No symbol) [0x00DB7708]
+	(No symbol) [0x00DB886D]
+	GetHandleVerifier [0x01163EAE+2566302]
+	GetHandleVerifier [0x011992B1+2784417]
+	GetHandleVerifier [0x0119327C+2759788]
+	GetHandleVerifier [0x00F95740+672048]
+	(No symbol) [0x00E98872]
+	(No symbol) [0x00E941C8]
+	(No symbol) [0x00E942AB]
+	(No symbol) [0x00E871B7]
+	BaseThreadInitThunk [0x760C7D49+25]
+	RtlInitializeExceptionChain [0x776BB74B+107]
+	RtlClearBits [0x776BB6CF+191]
+
+2023-04-23 10:54:22,146 - root - CRITICAL - Error with the Scraper Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=112.0.5615.138)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00EFDCE3+50899]
+	(No symbol) [0x00E8E111]
+	(No symbol) [0x00D95588]
+	(No symbol) [0x00D97EDB]
+	(No symbol) [0x00D97DB0]
+	(No symbol) [0x00D98690]
+	(No symbol) [0x00DEE98D]
+	(No symbol) [0x00DDB8FC]
+	(No symbol) [0x00DEE01C]
+	(No symbol) [0x00DDB6F6]
+	(No symbol) [0x00DB7708]
+	(No symbol) [0x00DB886D]
+	GetHandleVerifier [0x01163EAE+2566302]
+	GetHandleVerifier [0x011992B1+2784417]
+	GetHandleVerifier [0x0119327C+2759788]
+	GetHandleVerifier [0x00F95740+672048]
+	(No symbol) [0x00E98872]
+	(No symbol) [0x00E941C8]
+	(No symbol) [0x00E942AB]
+	(No symbol) [0x00E871B7]
+	BaseThreadInitThunk [0x760C7D49+25]
+	RtlInitializeExceptionChain [0x776BB74B+107]
+	RtlClearBits [0x776BB6CF+191]
+
+2023-04-23 10:55:49,183 - root - INFO - Driver found to Windows
+2023-04-23 10:55:49,183 - root - INFO - Driver found to Windows
+2023-04-23 10:57:09,684 - root - CRITICAL - Error with the Scraper Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=112.0.5615.138)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00EFDCE3+50899]
+	(No symbol) [0x00E8E111]
+	(No symbol) [0x00D95588]
+	(No symbol) [0x00D97EDB]
+	(No symbol) [0x00D97DB0]
+	(No symbol) [0x00D98690]
+	(No symbol) [0x00DEE98D]
+	(No symbol) [0x00DDB8FC]
+	(No symbol) [0x00DEE01C]
+	(No symbol) [0x00DDB6F6]
+	(No symbol) [0x00DB7708]
+	(No symbol) [0x00DB886D]
+	GetHandleVerifier [0x01163EAE+2566302]
+	GetHandleVerifier [0x011992B1+2784417]
+	GetHandleVerifier [0x0119327C+2759788]
+	GetHandleVerifier [0x00F95740+672048]
+	(No symbol) [0x00E98872]
+	(No symbol) [0x00E941C8]
+	(No symbol) [0x00E942AB]
+	(No symbol) [0x00E871B7]
+	BaseThreadInitThunk [0x760C7D49+25]
+	RtlInitializeExceptionChain [0x776BB74B+107]
+	RtlClearBits [0x776BB6CF+191]
+
+2023-04-23 10:57:09,684 - root - CRITICAL - Error with the Scraper Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=112.0.5615.138)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00EFDCE3+50899]
+	(No symbol) [0x00E8E111]
+	(No symbol) [0x00D95588]
+	(No symbol) [0x00D97EDB]
+	(No symbol) [0x00D97DB0]
+	(No symbol) [0x00D98690]
+	(No symbol) [0x00DEE98D]
+	(No symbol) [0x00DDB8FC]
+	(No symbol) [0x00DEE01C]
+	(No symbol) [0x00DDB6F6]
+	(No symbol) [0x00DB7708]
+	(No symbol) [0x00DB886D]
+	GetHandleVerifier [0x01163EAE+2566302]
+	GetHandleVerifier [0x011992B1+2784417]
+	GetHandleVerifier [0x0119327C+2759788]
+	GetHandleVerifier [0x00F95740+672048]
+	(No symbol) [0x00E98872]
+	(No symbol) [0x00E941C8]
+	(No symbol) [0x00E942AB]
+	(No symbol) [0x00E871B7]
+	BaseThreadInitThunk [0x760C7D49+25]
+	RtlInitializeExceptionChain [0x776BB74B+107]
+	RtlClearBits [0x776BB6CF+191]
+
+2023-04-23 12:51:36,696 - root - INFO - Driver found to Windows
+2023-04-23 12:51:36,696 - root - INFO - Driver found to Windows
+2023-04-23 12:59:20,941 - root - INFO - Driver found to Windows
+2023-04-23 12:59:20,941 - root - INFO - Driver found to Windows
+2023-04-23 13:02:56,810 - root - CRITICAL - Error with the Scraper ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+2023-04-23 13:02:56,810 - root - CRITICAL - Error with the Scraper ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+2023-04-23 13:03:23,011 - root - INFO - Driver found to Windows
+2023-04-23 13:03:23,011 - root - INFO - Driver found to Windows
+2023-04-23 13:04:38,001 - root - CRITICAL - Error with the Scraper cannot access local variable 'e' where it is not associated with a value
+2023-04-23 13:04:38,001 - root - CRITICAL - Error with the Scraper cannot access local variable 'e' where it is not associated with a value
+2023-04-23 13:04:52,147 - root - INFO - Driver found to Windows
+2023-04-23 13:04:52,147 - root - INFO - Driver found to Windows
+2023-04-23 13:10:11,492 - root - INFO - Driver found to Windows
+2023-04-23 13:10:11,492 - root - INFO - Driver found to Windows
+2023-04-23 13:14:39,604 - root - INFO - Driver found to Windows
+2023-04-23 13:14:39,604 - root - INFO - Driver found to Windows
+2023-04-23 13:18:32,663 - root - INFO - Driver found to Windows
+2023-04-23 13:18:32,663 - root - INFO - Driver found to Windows
+2023-04-23 13:21:02,002 - root - INFO - Driver found to Windows
+2023-04-23 13:21:02,002 - root - INFO - Driver found to Windows
+2023-04-23 13:22:48,432 - root - INFO - Driver found to Windows
+2023-04-23 13:22:48,432 - root - INFO - Driver found to Windows
+2023-04-23 13:24:07,352 - root - CRITICAL - Error with the Scraper Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=112.0.5615.138)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x003BDCE3+50899]
+	(No symbol) [0x0034E111]
+	(No symbol) [0x00255588]
+	(No symbol) [0x00257EDB]
+	(No symbol) [0x00257DB0]
+	(No symbol) [0x00258690]
+	(No symbol) [0x002AE98D]
+	(No symbol) [0x0029B8FC]
+	(No symbol) [0x002AE01C]
+	(No symbol) [0x0029B6F6]
+	(No symbol) [0x00277708]
+	(No symbol) [0x0027886D]
+	GetHandleVerifier [0x00623EAE+2566302]
+	GetHandleVerifier [0x006592B1+2784417]
+	GetHandleVerifier [0x0065327C+2759788]
+	GetHandleVerifier [0x00455740+672048]
+	(No symbol) [0x00358872]
+	(No symbol) [0x003541C8]
+	(No symbol) [0x003542AB]
+	(No symbol) [0x003471B7]
+	BaseThreadInitThunk [0x760C7D49+25]
+	RtlInitializeExceptionChain [0x776BB74B+107]
+	RtlClearBits [0x776BB6CF+191]
+
+2023-04-23 13:24:07,352 - root - CRITICAL - Error with the Scraper Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=112.0.5615.138)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x003BDCE3+50899]
+	(No symbol) [0x0034E111]
+	(No symbol) [0x00255588]
+	(No symbol) [0x00257EDB]
+	(No symbol) [0x00257DB0]
+	(No symbol) [0x00258690]
+	(No symbol) [0x002AE98D]
+	(No symbol) [0x0029B8FC]
+	(No symbol) [0x002AE01C]
+	(No symbol) [0x0029B6F6]
+	(No symbol) [0x00277708]
+	(No symbol) [0x0027886D]
+	GetHandleVerifier [0x00623EAE+2566302]
+	GetHandleVerifier [0x006592B1+2784417]
+	GetHandleVerifier [0x0065327C+2759788]
+	GetHandleVerifier [0x00455740+672048]
+	(No symbol) [0x00358872]
+	(No symbol) [0x003541C8]
+	(No symbol) [0x003542AB]
+	(No symbol) [0x003471B7]
+	BaseThreadInitThunk [0x760C7D49+25]
+	RtlInitializeExceptionChain [0x776BB74B+107]
+	RtlClearBits [0x776BB6CF+191]
+
+2023-04-23 13:29:43,052 - root - INFO - Driver found to Windows
+2023-04-23 13:29:43,052 - root - INFO - Driver found to Windows
+2023-04-23 13:31:47,088 - root - INFO - Driver found to Windows
+2023-04-23 13:31:47,088 - root - INFO - Driver found to Windows
+2023-04-23 13:35:18,119 - root - CRITICAL - Error with the Scraper Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=112.0.5615.138)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x003BDCE3+50899]
+	(No symbol) [0x0034E111]
+	(No symbol) [0x00255588]
+	(No symbol) [0x00257EDB]
+	(No symbol) [0x00257DB0]
+	(No symbol) [0x00258690]
+	(No symbol) [0x002AE98D]
+	(No symbol) [0x0029B8FC]
+	(No symbol) [0x002AE01C]
+	(No symbol) [0x0029B6F6]
+	(No symbol) [0x00277708]
+	(No symbol) [0x0027886D]
+	GetHandleVerifier [0x00623EAE+2566302]
+	GetHandleVerifier [0x006592B1+2784417]
+	GetHandleVerifier [0x0065327C+2759788]
+	GetHandleVerifier [0x00455740+672048]
+	(No symbol) [0x00358872]
+	(No symbol) [0x003541C8]
+	(No symbol) [0x003542AB]
+	(No symbol) [0x003471B7]
+	BaseThreadInitThunk [0x760C7D49+25]
+	RtlInitializeExceptionChain [0x776BB74B+107]
+	RtlClearBits [0x776BB6CF+191]
+
+2023-04-23 13:35:18,119 - root - CRITICAL - Error with the Scraper Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=112.0.5615.138)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x003BDCE3+50899]
+	(No symbol) [0x0034E111]
+	(No symbol) [0x00255588]
+	(No symbol) [0x00257EDB]
+	(No symbol) [0x00257DB0]
+	(No symbol) [0x00258690]
+	(No symbol) [0x002AE98D]
+	(No symbol) [0x0029B8FC]
+	(No symbol) [0x002AE01C]
+	(No symbol) [0x0029B6F6]
+	(No symbol) [0x00277708]
+	(No symbol) [0x0027886D]
+	GetHandleVerifier [0x00623EAE+2566302]
+	GetHandleVerifier [0x006592B1+2784417]
+	GetHandleVerifier [0x0065327C+2759788]
+	GetHandleVerifier [0x00455740+672048]
+	(No symbol) [0x00358872]
+	(No symbol) [0x003541C8]
+	(No symbol) [0x003542AB]
+	(No symbol) [0x003471B7]
+	BaseThreadInitThunk [0x760C7D49+25]
+	RtlInitializeExceptionChain [0x776BB74B+107]
+	RtlClearBits [0x776BB6CF+191]
+
+2023-04-23 13:36:47,375 - root - INFO - Driver found to Windows
+2023-04-23 13:36:47,375 - root - INFO - Driver found to Windows
+2023-04-23 13:38:16,290 - root - INFO - Driver found to Windows
+2023-04-23 13:38:16,290 - root - INFO - Driver found to Windows
+2023-04-23 14:07:07,841 - root - INFO - Driver found to Windows
+2023-04-23 14:07:07,841 - root - INFO - Driver found to Windows
+2023-04-23 14:13:39,434 - root - INFO - Driver found to Windows
+2023-04-23 14:13:39,434 - root - INFO - Driver found to Windows
+2023-04-23 14:22:32,802 - root - INFO - Driver found to Windows
+2023-04-23 14:22:32,802 - root - INFO - Driver found to Windows
+2023-04-23 14:23:45,114 - root - CRITICAL - Error with the Scraper 'Scraper' object has no attribute 'commentsService'
+2023-04-23 14:23:45,114 - root - CRITICAL - Error with the Scraper 'Scraper' object has no attribute 'commentsService'
+2023-04-23 14:24:52,942 - root - INFO - Driver found to Windows
+2023-04-23 14:24:52,942 - root - INFO - Driver found to Windows
+2023-04-23 14:26:06,373 - root - CRITICAL - Error with the Scraper 'NoneType' object has no attribute 'create_comment'
+2023-04-23 14:26:06,373 - root - CRITICAL - Error with the Scraper 'NoneType' object has no attribute 'create_comment'
+2023-04-23 14:26:51,958 - root - INFO - Driver found to Windows
+2023-04-23 14:26:51,958 - root - INFO - Driver found to Windows
+2023-04-23 14:27:35,526 - root - INFO - Driver found to Windows
+2023-04-23 14:27:35,526 - root - INFO - Driver found to Windows
+2023-04-23 14:28:50,158 - root - CRITICAL - Error with the Scraper 'NoneType' object has no attribute 'create_comment'
+2023-04-23 14:28:50,158 - root - CRITICAL - Error with the Scraper 'NoneType' object has no attribute 'create_comment'
+2023-04-23 14:30:41,037 - root - INFO - Driver found to Windows
+2023-04-23 14:30:41,037 - root - INFO - Driver found to Windows
+2023-04-23 14:30:42,237 - root - INFO - Database connection started
+2023-04-23 14:30:42,237 - root - INFO - Database connection started
+2023-04-23 14:31:35,543 - root - CRITICAL - Error with the Scraper relation "comments" does not exist
+LINE 1: SELECT comment FROM comments WHERE comment = 'Tu estas bien ...
+                            ^
+
+2023-04-23 14:31:35,543 - root - CRITICAL - Error with the Scraper relation "comments" does not exist
+LINE 1: SELECT comment FROM comments WHERE comment = 'Tu estas bien ...
+                            ^
+
+2023-04-23 14:35:13,512 - root - INFO - Driver found to Windows
+2023-04-23 14:35:13,512 - root - INFO - Driver found to Windows
+2023-04-23 14:35:14,858 - root - INFO - Database connection started
+2023-04-23 14:35:14,858 - root - INFO - Database connection started
+2023-04-23 14:36:43,848 - root - INFO - Driver found to Windows
+2023-04-23 14:36:43,848 - root - INFO - Driver found to Windows
+2023-04-23 14:36:44,964 - root - INFO - Database connection started
+2023-04-23 14:36:44,964 - root - INFO - Database connection started
+2023-04-23 14:37:56,166 - root - CRITICAL - Error with the Scraper relation "comment" does not exist
+LINE 1: SELECT user_comment FROM comment WHERE comment = '*No hay el...
+                                 ^
+
+2023-04-23 14:37:56,166 - root - CRITICAL - Error with the Scraper relation "comment" does not exist
+LINE 1: SELECT user_comment FROM comment WHERE comment = '*No hay el...
+                                 ^
+
+2023-04-23 14:41:32,198 - root - INFO - Driver found to Windows
+2023-04-23 14:41:32,198 - root - INFO - Driver found to Windows
+2023-04-23 14:41:33,309 - root - INFO - Database connection started
+2023-04-23 14:41:33,309 - root - INFO - Database connection started
+2023-04-23 14:42:43,965 - root - ERROR - Error creating comment: None relation "comments" does not exist
+LINE 1: INSERT INTO comments (username, comment) VALUES ('andresnico...
+                    ^
+
+2023-04-23 14:42:43,965 - root - ERROR - Error creating comment: None relation "comments" does not exist
+LINE 1: INSERT INTO comments (username, comment) VALUES ('andresnico...
+                    ^
+
+2023-04-23 14:42:43,971 - root - ERROR - Error creating comment: None relation "comments" does not exist
+LINE 1: INSERT INTO comments (username, comment) VALUES ('lesliedaya...
+                    ^
+
+2023-04-23 14:42:43,971 - root - ERROR - Error creating comment: None relation "comments" does not exist
+LINE 1: INSERT INTO comments (username, comment) VALUES ('lesliedaya...
+                    ^
+
+2023-04-23 14:42:43,979 - root - ERROR - Error creating comment: None relation "comments" does not exist
+LINE 1: INSERT INTO comments (username, comment) VALUES ('diego.vela...
+                    ^
+
+2023-04-23 14:42:43,979 - root - ERROR - Error creating comment: None relation "comments" does not exist
+LINE 1: INSERT INTO comments (username, comment) VALUES ('diego.vela...
+                    ^
+
+2023-04-23 14:43:16,027 - root - INFO - Driver found to Windows
+2023-04-23 14:43:16,027 - root - INFO - Driver found to Windows
+2023-04-23 14:43:17,184 - root - INFO - Database connection started
+2023-04-23 14:43:17,184 - root - INFO - Database connection started
+2023-04-23 14:44:27,013 - root - ERROR - Error creating comment: None column "comment" of relation "comment" does not exist
+LINE 1: INSERT INTO comment (username, comment) VALUES ('jairomar197...
+                                       ^
+
+2023-04-23 14:44:27,013 - root - ERROR - Error creating comment: None column "comment" of relation "comment" does not exist
+LINE 1: INSERT INTO comment (username, comment) VALUES ('jairomar197...
+                                       ^
+
+2023-04-23 14:44:27,019 - root - ERROR - Error creating comment: None column "comment" of relation "comment" does not exist
+LINE 1: INSERT INTO comment (username, comment) VALUES ('ulises_g30'...
+                                       ^
+
+2023-04-23 14:44:27,019 - root - ERROR - Error creating comment: None column "comment" of relation "comment" does not exist
+LINE 1: INSERT INTO comment (username, comment) VALUES ('ulises_g30'...
+                                       ^
+
+2023-04-23 14:44:27,027 - root - ERROR - Error creating comment: None column "comment" of relation "comment" does not exist
+LINE 1: INSERT INTO comment (username, comment) VALUES ('lesliedayan...
+                                       ^
+
+2023-04-23 14:44:27,027 - root - ERROR - Error creating comment: None column "comment" of relation "comment" does not exist
+LINE 1: INSERT INTO comment (username, comment) VALUES ('lesliedayan...
+                                       ^
+
+2023-04-23 14:44:27,031 - root - ERROR - Error creating comment: None column "comment" of relation "comment" does not exist
+LINE 1: INSERT INTO comment (username, comment) VALUES ('djeveryday'...
+                                       ^
+
+2023-04-23 14:44:27,031 - root - ERROR - Error creating comment: None column "comment" of relation "comment" does not exist
+LINE 1: INSERT INTO comment (username, comment) VALUES ('djeveryday'...
+                                       ^
+
+2023-04-23 14:44:45,424 - root - INFO - Driver found to Windows
+2023-04-23 14:44:45,424 - root - INFO - Driver found to Windows
+2023-04-23 14:44:46,565 - root - INFO - Database connection started
+2023-04-23 14:44:46,565 - root - INFO - Database connection started
+2023-04-23 14:45:57,179 - root - INFO - Comment created for diegovela_5102018
+2023-04-23 14:45:57,179 - root - INFO - Comment created for diegovela_5102018
+2023-04-23 14:45:57,184 - root - INFO - Comment created for lesliedayana97
+2023-04-23 14:45:57,184 - root - INFO - Comment created for lesliedayana97
+2023-04-23 14:45:57,192 - root - INFO - Comment created for paulinho_491
+2023-04-23 14:45:57,192 - root - INFO - Comment created for paulinho_491
+2023-04-23 14:46:25,052 - root - INFO - Comment created for lesliedayana97
+2023-04-23 14:46:25,052 - root - INFO - Comment created for lesliedayana97
+2023-04-23 14:47:19,492 - root - INFO - Driver found to Windows
+2023-04-23 14:47:19,492 - root - INFO - Driver found to Windows
+2023-04-23 14:47:20,654 - root - INFO - Database connection started
+2023-04-23 14:47:20,654 - root - INFO - Database connection started
+2023-04-23 14:48:33,132 - root - INFO - Comment created for kimberly__borja
+2023-04-23 14:48:33,132 - root - INFO - Comment created for kimberly__borja
+2023-04-23 14:48:33,139 - root - INFO - Comment created for kimberly__borja
+2023-04-23 14:48:33,139 - root - INFO - Comment created for kimberly__borja
+2023-04-23 14:48:33,148 - root - INFO - Comment created for lesliedayana97
+2023-04-23 14:48:33,148 - root - INFO - Comment created for lesliedayana97
+2023-04-23 14:48:33,158 - root - INFO - Comment created for juansanchezmineria
+2023-04-23 14:48:33,158 - root - INFO - Comment created for juansanchezmineria
+2023-04-23 14:48:33,165 - root - INFO - Comment created for andresnicolascueva
+2023-04-23 14:48:33,165 - root - INFO - Comment created for andresnicolascueva
+2023-04-23 14:48:33,174 - root - INFO - Comment created for diegovela_5102018
+2023-04-23 14:48:33,174 - root - INFO - Comment created for diegovela_5102018
+2023-04-23 14:48:33,181 - root - INFO - Comment created for lesliedayana97
+2023-04-23 14:48:33,181 - root - INFO - Comment created for lesliedayana97
+2023-04-26 18:56:51,566 - root - INFO - Driver found to Windows
+2023-04-26 18:56:51,566 - root - INFO - Driver found to Windows
+2023-04-26 18:56:52,768 - root - INFO - Database connection started
+2023-04-26 18:56:52,768 - root - INFO - Database connection started
+2023-04-26 18:57:45,200 - root - INFO - Comment created for whho_is_she
+2023-04-26 18:57:45,200 - root - INFO - Comment created for whho_is_she
+2023-04-26 18:57:54,939 - root - INFO - Comment created for _adadai_
+2023-04-26 18:57:54,939 - root - INFO - Comment created for _adadai_
+2023-04-26 18:57:54,946 - root - INFO - Comment created for mahoyo75
+2023-04-26 18:57:54,946 - root - INFO - Comment created for mahoyo75
+2023-04-26 18:57:54,954 - root - INFO - Comment created for ananoguess
+2023-04-26 18:57:54,954 - root - INFO - Comment created for ananoguess
+2023-04-26 18:57:54,961 - root - INFO - Comment created for masaje_acupuntura_quiropraxia
+2023-04-26 18:57:54,961 - root - INFO - Comment created for masaje_acupuntura_quiropraxia
+2023-04-26 18:57:54,967 - root - INFO - Comment created for carootetuan
+2023-04-26 18:57:54,967 - root - INFO - Comment created for carootetuan
+2023-04-26 18:57:54,974 - root - INFO - Comment created for sarairenedelasnieves
+2023-04-26 18:57:54,974 - root - INFO - Comment created for sarairenedelasnieves
+2023-04-26 18:57:54,980 - root - INFO - Comment created for sandrabarreirom_
+2023-04-26 18:57:54,980 - root - INFO - Comment created for sandrabarreirom_
+2023-04-26 18:57:54,986 - root - INFO - Comment created for mafe_cuadros1923
+2023-04-26 18:57:54,986 - root - INFO - Comment created for mafe_cuadros1923
+2023-04-26 18:57:54,993 - root - INFO - Comment created for meb_contemporanea
+2023-04-26 18:57:54,993 - root - INFO - Comment created for meb_contemporanea
+2023-04-26 18:57:55,001 - root - INFO - Comment created for maytelizondo
+2023-04-26 18:57:55,001 - root - INFO - Comment created for maytelizondo
+2023-04-26 18:57:55,007 - root - INFO - Comment created for galleta_nena82
+2023-04-26 18:57:55,007 - root - INFO - Comment created for galleta_nena82
+2023-04-26 18:57:55,014 - root - INFO - Comment created for sonrielisa
+2023-04-26 18:57:55,014 - root - INFO - Comment created for sonrielisa
+2023-04-26 18:57:55,020 - root - INFO - Comment created for lachica_delsur
+2023-04-26 18:57:55,020 - root - INFO - Comment created for lachica_delsur
+2023-04-26 18:57:55,026 - root - INFO - Comment created for pequesymamis
+2023-04-26 18:57:55,026 - root - INFO - Comment created for pequesymamis
+2023-04-26 18:57:55,033 - root - INFO - Comment created for simona_maria27
+2023-04-26 18:57:55,033 - root - INFO - Comment created for simona_maria27
+2023-04-26 18:57:55,041 - root - INFO - Comment created for whho_is_she
+2023-04-26 18:57:55,041 - root - INFO - Comment created for whho_is_she
+2023-04-26 18:57:55,041 - root - CRITICAL - Error with the Scraper 'DatabaseService' object has no attribute 'update_users_status'
+2023-04-26 18:57:55,041 - root - CRITICAL - Error with the Scraper 'DatabaseService' object has no attribute 'update_users_status'
+2023-04-26 19:10:08,195 - root - INFO - Driver found to Windows
+2023-04-26 19:10:08,195 - root - INFO - Driver found to Windows
+2023-04-26 19:10:09,341 - root - INFO - Database connection started
+2023-04-26 19:10:09,341 - root - INFO - Database connection started
+2023-04-26 19:10:34,675 - root - INFO - Comment created for _adadai_
+2023-04-26 19:10:34,675 - root - INFO - Comment created for _adadai_
+2023-04-26 19:10:34,692 - root - INFO - Comment created for el_pais_denuncajamas
+2023-04-26 19:10:34,692 - root - INFO - Comment created for el_pais_denuncajamas
+2023-04-26 19:10:34,697 - root - INFO - Comment created for simona_maria27
+2023-04-26 19:10:34,697 - root - INFO - Comment created for simona_maria27
+2023-04-26 19:10:34,703 - root - INFO - Comment created for pequesymamis
+2023-04-26 19:10:34,703 - root - INFO - Comment created for pequesymamis
+2023-04-26 19:10:34,710 - root - INFO - Comment created for carootetuan
+2023-04-26 19:10:34,710 - root - INFO - Comment created for carootetuan
+2023-04-26 19:10:34,716 - root - INFO - Comment created for mahoyo75
+2023-04-26 19:10:34,716 - root - INFO - Comment created for mahoyo75
+2023-04-26 19:10:34,721 - root - INFO - Comment created for whho_is_she
+2023-04-26 19:10:34,721 - root - INFO - Comment created for whho_is_she
+2023-04-26 19:10:34,729 - root - INFO - Comment created for ananoguess
+2023-04-26 19:10:34,729 - root - INFO - Comment created for ananoguess
+2023-04-26 19:10:34,733 - root - INFO - Comment created for lachica_delsur
+2023-04-26 19:10:34,733 - root - INFO - Comment created for lachica_delsur
+2023-04-26 19:10:34,740 - root - INFO - Comment created for meb_contemporanea
+2023-04-26 19:10:34,740 - root - INFO - Comment created for meb_contemporanea
+2023-04-26 19:10:34,745 - root - INFO - Comment created for sonrielisa
+2023-04-26 19:10:34,745 - root - INFO - Comment created for sonrielisa
+2023-04-26 19:10:34,752 - root - INFO - Comment created for sandrabarreirom_
+2023-04-26 19:10:34,752 - root - INFO - Comment created for sandrabarreirom_
+2023-04-26 19:10:34,758 - root - INFO - Comment created for masaje_acupuntura_quiropraxia
+2023-04-26 19:10:34,758 - root - INFO - Comment created for masaje_acupuntura_quiropraxia
+2023-04-26 19:10:34,762 - root - INFO - Comment created for galleta_nena82
+2023-04-26 19:10:34,762 - root - INFO - Comment created for galleta_nena82
+2023-04-26 19:10:34,762 - root - INFO - Comment created for sarairenedelasnieves
+2023-04-26 19:10:34,762 - root - INFO - Comment created for sarairenedelasnieves
+2023-04-26 19:10:34,762 - root - INFO - Comment created for maytelizondo
+2023-04-26 19:10:34,762 - root - INFO - Comment created for maytelizondo
+2023-04-26 19:10:43,741 - root - INFO - Comment created for whho_is_she
+2023-04-26 19:10:43,741 - root - INFO - Comment created for whho_is_she
+2023-04-26 19:10:43,748 - root - INFO - User whho_is_she set as REVIEWED
+2023-04-26 19:10:43,748 - root - INFO - User whho_is_she set as REVIEWED
+2023-04-26 19:11:29,611 - root - INFO - Driver found to Windows
+2023-04-26 19:11:29,611 - root - INFO - Driver found to Windows
+2023-04-26 19:11:30,811 - root - INFO - Database connection started
+2023-04-26 19:11:30,811 - root - INFO - Database connection started
+2023-04-26 19:12:24,469 - root - INFO - Comment created for whho_is_she
+2023-04-26 19:12:24,469 - root - INFO - Comment created for whho_is_she
+2023-04-26 19:12:33,447 - root - INFO - Comment created for galleta_nena82
+2023-04-26 19:12:33,447 - root - INFO - Comment created for galleta_nena82
+2023-04-26 19:12:33,453 - root - INFO - Comment created for _adadai_
+2023-04-26 19:12:33,453 - root - INFO - Comment created for _adadai_
+2023-04-26 19:12:33,461 - root - INFO - Comment created for sandrabarreirom_
+2023-04-26 19:12:33,461 - root - INFO - Comment created for sandrabarreirom_
+2023-04-26 19:12:33,466 - root - INFO - Comment created for ananoguess
+2023-04-26 19:12:33,466 - root - INFO - Comment created for ananoguess
+2023-04-26 19:12:33,473 - root - INFO - Comment created for masaje_acupuntura_quiropraxia
+2023-04-26 19:12:33,473 - root - INFO - Comment created for masaje_acupuntura_quiropraxia
+2023-04-26 19:12:33,479 - root - INFO - Comment created for sonrielisa
+2023-04-26 19:12:33,479 - root - INFO - Comment created for sonrielisa
+2023-04-26 19:12:33,485 - root - INFO - Comment created for lachica_delsur
+2023-04-26 19:12:33,485 - root - INFO - Comment created for lachica_delsur
+2023-04-26 19:12:33,491 - root - INFO - Comment created for maytelizondo
+2023-04-26 19:12:33,491 - root - INFO - Comment created for maytelizondo
+2023-04-26 19:12:33,498 - root - INFO - Comment created for carootetuan
+2023-04-26 19:12:33,498 - root - INFO - Comment created for carootetuan
+2023-04-26 19:12:33,504 - root - INFO - Comment created for meb_contemporanea
+2023-04-26 19:12:33,504 - root - INFO - Comment created for meb_contemporanea
+2023-04-26 19:12:33,510 - root - INFO - Comment created for el_pais_denuncajamas
+2023-04-26 19:12:33,510 - root - INFO - Comment created for el_pais_denuncajamas
+2023-04-26 19:12:33,517 - root - INFO - Comment created for pequesymamis
+2023-04-26 19:12:33,517 - root - INFO - Comment created for pequesymamis
+2023-04-26 19:12:33,524 - root - INFO - Comment created for whho_is_she
+2023-04-26 19:12:33,524 - root - INFO - Comment created for whho_is_she
+2023-04-26 19:12:33,530 - root - INFO - Comment created for sarairenedelasnieves
+2023-04-26 19:12:33,530 - root - INFO - Comment created for sarairenedelasnieves
+2023-04-26 19:12:33,537 - root - INFO - Comment created for simona_maria27
+2023-04-26 19:12:33,537 - root - INFO - Comment created for simona_maria27
+2023-04-26 19:12:33,544 - root - INFO - Comment created for mahoyo75
+2023-04-26 19:12:33,544 - root - INFO - Comment created for mahoyo75
+2023-04-26 19:12:33,551 - root - INFO - User whho_is_she set as REVIEWED
+2023-04-26 19:12:33,551 - root - INFO - User whho_is_she set as REVIEWED
+2023-04-26 19:13:25,014 - root - INFO - Driver found to Windows
+2023-04-26 19:13:25,014 - root - INFO - Driver found to Windows
+2023-04-26 19:13:26,102 - root - INFO - Database connection started
+2023-04-26 19:13:26,102 - root - INFO - Database connection started
+2023-04-26 19:13:50,304 - root - CRITICAL - Error with the Scraper cannot access local variable 'comment' where it is not associated with a value
+2023-04-26 19:13:50,304 - root - CRITICAL - Error with the Scraper cannot access local variable 'comment' where it is not associated with a value
+2023-04-26 19:14:22,176 - root - INFO - Driver found to Windows
+2023-04-26 19:14:22,176 - root - INFO - Driver found to Windows
+2023-04-26 19:14:23,276 - root - INFO - Database connection started
+2023-04-26 19:14:23,276 - root - INFO - Database connection started
+2023-04-26 19:15:18,081 - root - CRITICAL - Error with the Scraper cannot access local variable 'comment' where it is not associated with a value
+2023-04-26 19:15:18,081 - root - CRITICAL - Error with the Scraper cannot access local variable 'comment' where it is not associated with a value
+2023-04-26 19:15:59,127 - root - INFO - Driver found to Windows
+2023-04-26 19:15:59,127 - root - INFO - Driver found to Windows
+2023-04-26 19:16:00,218 - root - INFO - Database connection started
+2023-04-26 19:16:00,218 - root - INFO - Database connection started
+2023-04-26 19:16:53,953 - root - INFO - Comment already exists: Un nuevo comienzo siempre da un poco de vértigo pero a por ello con ánimo
+2023-04-26 19:16:53,953 - root - INFO - Comment already exists: Un nuevo comienzo siempre da un poco de vértigo pero a por ello con ánimo
+2023-04-26 19:16:53,955 - root - INFO - Comment already exists: Que bonito collar y el colgante con la inicial
+2023-04-26 19:16:53,955 - root - INFO - Comment already exists: Que bonito collar y el colgante con la inicial
+2023-04-26 19:16:53,960 - root - INFO - Comment already exists: Has borrado todos tus post? Q lástima
+2023-04-26 19:16:53,960 - root - INFO - Comment already exists: Has borrado todos tus post? Q lástima
+2023-04-26 19:16:53,981 - root - INFO - Comment already exists: El colgante es muy bonito. A por los nuevos comienzos
+2023-04-26 19:16:53,981 - root - INFO - Comment already exists: El colgante es muy bonito. A por los nuevos comienzos
+2023-04-26 19:16:53,983 - root - INFO - Comment already exists: Así es, a empezar de nuevo pero nunca olvidar
+2023-04-26 19:16:53,983 - root - INFO - Comment already exists: Así es, a empezar de nuevo pero nunca olvidar
+2023-04-26 19:16:53,986 - root - INFO - Comment already exists: Que bonitas palabras y frase
+2023-04-26 19:16:53,986 - root - INFO - Comment already exists: Que bonitas palabras y frase
+2023-04-26 19:17:02,895 - root - INFO - Comment already exists: Quien es ella...?.......................................#nuevaeninstagram #blogger #vivircondepresión #depresion #ansiedad #lifestyle #vlog #nuevablogger #followforfollowback #siguemeytesigo
+2023-04-26 19:17:02,895 - root - INFO - Comment already exists: Quien es ella...?.......................................#nuevaeninstagram #blogger #vivircondepresión #depresion #ansiedad #lifestyle #vlog #nuevablogger #followforfollowback #siguemeytesigo
+2023-04-26 19:17:02,902 - root - INFO - User whho_is_she set as REVIEWED
+2023-04-26 19:17:02,902 - root - INFO - User whho_is_she set as REVIEWED
+2023-04-26 19:17:41,673 - root - INFO - Comment already exists: Un nuevo comienzo siempre da un poco de vértigo pero a por ello con ánimo
+2023-04-26 19:17:41,673 - root - INFO - Comment already exists: Un nuevo comienzo siempre da un poco de vértigo pero a por ello con ánimo
+2023-04-26 19:17:41,675 - root - INFO - Comment already exists: Que bonito collar y el colgante con la inicial
+2023-04-26 19:17:41,675 - root - INFO - Comment already exists: Que bonito collar y el colgante con la inicial
+2023-04-26 19:17:41,679 - root - INFO - Comment already exists: Has borrado todos tus post? Q lástima
+2023-04-26 19:17:41,679 - root - INFO - Comment already exists: Has borrado todos tus post? Q lástima
+2023-04-26 19:17:41,699 - root - INFO - Comment already exists: El colgante es muy bonito. A por los nuevos comienzos
+2023-04-26 19:17:41,699 - root - INFO - Comment already exists: El colgante es muy bonito. A por los nuevos comienzos
+2023-04-26 19:17:41,700 - root - INFO - Comment already exists: Así es, a empezar de nuevo pero nunca olvidar
+2023-04-26 19:17:41,700 - root - INFO - Comment already exists: Así es, a empezar de nuevo pero nunca olvidar
+2023-04-26 19:17:41,706 - root - INFO - Comment already exists: Que bonitas palabras y frase
+2023-04-26 19:17:41,706 - root - INFO - Comment already exists: Que bonitas palabras y frase
+2023-04-26 19:17:50,866 - root - INFO - Comment already exists: Quien es ella...?.......................................#nuevaeninstagram #blogger #vivircondepresión #depresion #ansiedad #lifestyle #vlog #nuevablogger #followforfollowback #siguemeytesigo
+2023-04-26 19:17:50,866 - root - INFO - Comment already exists: Quien es ella...?.......................................#nuevaeninstagram #blogger #vivircondepresión #depresion #ansiedad #lifestyle #vlog #nuevablogger #followforfollowback #siguemeytesigo
+2023-04-26 19:17:50,870 - root - INFO - User whho_is_she set as REVIEWED
+2023-04-26 19:17:50,870 - root - INFO - User whho_is_she set as REVIEWED
+2023-04-26 19:18:31,069 - root - INFO - Driver found to Windows
+2023-04-26 19:18:31,069 - root - INFO - Driver found to Windows
+2023-04-26 19:18:32,197 - root - INFO - Database connection started
+2023-04-26 19:18:32,197 - root - INFO - Database connection started
+2023-04-26 19:19:25,030 - root - INFO - Comment created for pequesymamis
+2023-04-26 19:19:25,030 - root - INFO - Comment created for pequesymamis
+2023-04-26 19:19:25,035 - root - INFO - Comment created for simona_maria27
+2023-04-26 19:19:25,035 - root - INFO - Comment created for simona_maria27
+2023-04-26 19:19:25,041 - root - INFO - Comment created for meb_contemporanea
+2023-04-26 19:19:25,041 - root - INFO - Comment created for meb_contemporanea
+2023-04-26 19:19:25,047 - root - INFO - Comment created for sonrielisa
+2023-04-26 19:19:25,047 - root - INFO - Comment created for sonrielisa
+2023-04-26 19:19:25,054 - root - INFO - Comment created for sarairenedelasnieves
+2023-04-26 19:19:25,054 - root - INFO - Comment created for sarairenedelasnieves
+2023-04-26 19:19:25,061 - root - INFO - Comment created for maytelizondo
+2023-04-26 19:19:25,061 - root - INFO - Comment created for maytelizondo
+2023-04-26 19:19:25,067 - root - INFO - Comment created for ananoguess
+2023-04-26 19:19:25,067 - root - INFO - Comment created for ananoguess
+2023-04-26 19:19:25,074 - root - INFO - Comment created for galleta_nena82
+2023-04-26 19:19:25,074 - root - INFO - Comment created for galleta_nena82
+2023-04-26 19:19:25,080 - root - INFO - Comment created for sandrabarreirom_
+2023-04-26 19:19:25,080 - root - INFO - Comment created for sandrabarreirom_
+2023-04-26 19:19:25,085 - root - INFO - Comment created for whho_is_she
+2023-04-26 19:19:25,085 - root - INFO - Comment created for whho_is_she
+2023-04-26 19:19:25,092 - root - INFO - Comment created for masaje_acupuntura_quiropraxia
+2023-04-26 19:19:25,092 - root - INFO - Comment created for masaje_acupuntura_quiropraxia
+2023-04-26 19:19:25,097 - root - INFO - Comment created for lachica_delsur
+2023-04-26 19:19:25,097 - root - INFO - Comment created for lachica_delsur
+2023-04-26 19:19:25,102 - root - INFO - Comment created for _adadai_
+2023-04-26 19:19:25,102 - root - INFO - Comment created for _adadai_
+2023-04-26 19:19:25,108 - root - INFO - Comment created for carootetuan
+2023-04-26 19:19:25,108 - root - INFO - Comment created for carootetuan
+2023-04-26 19:19:25,114 - root - INFO - Comment created for mahoyo75
+2023-04-26 19:19:25,114 - root - INFO - Comment created for mahoyo75
+2023-04-26 19:19:25,119 - root - INFO - Comment created for el_pais_denuncajamas
+2023-04-26 19:19:25,119 - root - INFO - Comment created for el_pais_denuncajamas
+2023-04-26 19:19:34,793 - root - INFO - Comment created for whho_is_she
+2023-04-26 19:19:34,793 - root - INFO - Comment created for whho_is_she
+2023-04-26 19:19:34,799 - root - INFO - User whho_is_she set as REVIEWED
+2023-04-26 19:19:34,799 - root - INFO - User whho_is_she set as REVIEWED
+2023-04-26 19:20:13,883 - root - INFO - Comment created for pequesymamis
+2023-04-26 19:20:13,883 - root - INFO - Comment created for pequesymamis
+2023-04-26 19:20:13,889 - root - INFO - Comment created for simona_maria27
+2023-04-26 19:20:13,889 - root - INFO - Comment created for simona_maria27
+2023-04-26 19:20:13,894 - root - INFO - Comment created for meb_contemporanea
+2023-04-26 19:20:13,894 - root - INFO - Comment created for meb_contemporanea
+2023-04-26 19:20:13,899 - root - INFO - Comment created for sonrielisa
+2023-04-26 19:20:13,899 - root - INFO - Comment created for sonrielisa
+2023-04-26 19:20:13,905 - root - INFO - Comment created for sarairenedelasnieves
+2023-04-26 19:20:13,905 - root - INFO - Comment created for sarairenedelasnieves
+2023-04-26 19:20:13,910 - root - INFO - Comment created for maytelizondo
+2023-04-26 19:20:13,910 - root - INFO - Comment created for maytelizondo
+2023-04-26 19:20:13,916 - root - INFO - Comment created for ananoguess
+2023-04-26 19:20:13,916 - root - INFO - Comment created for ananoguess
+2023-04-26 19:20:13,921 - root - INFO - Comment created for galleta_nena82
+2023-04-26 19:20:13,921 - root - INFO - Comment created for galleta_nena82
+2023-04-26 19:20:13,926 - root - INFO - Comment created for sandrabarreirom_
+2023-04-26 19:20:13,926 - root - INFO - Comment created for sandrabarreirom_
+2023-04-26 19:20:13,932 - root - INFO - Comment created for whho_is_she
+2023-04-26 19:20:13,932 - root - INFO - Comment created for whho_is_she
+2023-04-26 19:20:13,938 - root - INFO - Comment created for masaje_acupuntura_quiropraxia
+2023-04-26 19:20:13,938 - root - INFO - Comment created for masaje_acupuntura_quiropraxia
+2023-04-26 19:20:13,944 - root - INFO - Comment created for lachica_delsur
+2023-04-26 19:20:13,944 - root - INFO - Comment created for lachica_delsur
+2023-04-26 19:20:13,950 - root - INFO - Comment created for _adadai_
+2023-04-26 19:20:13,950 - root - INFO - Comment created for _adadai_
+2023-04-26 19:20:13,955 - root - INFO - Comment created for carootetuan
+2023-04-26 19:20:13,955 - root - INFO - Comment created for carootetuan
+2023-04-26 19:20:13,961 - root - INFO - Comment created for mahoyo75
+2023-04-26 19:20:13,961 - root - INFO - Comment created for mahoyo75
+2023-04-26 19:20:13,967 - root - INFO - Comment created for el_pais_denuncajamas
+2023-04-26 19:20:13,967 - root - INFO - Comment created for el_pais_denuncajamas
