@@ -76,7 +76,8 @@ class Scraper:
         options.add_argument('--headless')
         options.add_argument('--disable-gpu')
         options.add_argument('--incognito')
-        self.driver = webdriver.Chrome(executable_path=driver_path, options=options)
+        self.driver = webdriver.Chrome(
+            executable_path=driver_path, options=options)
         self.driver.maximize_window()
 
     def getUsersFromInstagram(self):
@@ -85,7 +86,7 @@ class Scraper:
             It is necessary to be logged in to get the users.
             You have only to set the credentials in the .env file
         """
-        self.driver.delete_all_cookies()        
+        self.driver.delete_all_cookies()
         self.driver.get("https://www.instagram.com/")
         # Login to Instagram fielding username and password
         username_field = WebDriverWait(self.driver, 10).until(
@@ -98,7 +99,8 @@ class Scraper:
         password_field.send_keys(os.getenv("IG_PASSWORD"))
         # Click on login button
         login_button = WebDriverWait(self.driver, 10).until(
-            EC.presence_of_element_located((By.XPATH, "//button[@type='submit']"))
+            EC.presence_of_element_located(
+                (By.XPATH, "//button[@type='submit']"))
         )
         login_button.click()
         # Click on not now button
@@ -117,7 +119,7 @@ class Scraper:
             self.logger.info("Going to profile")
             self.driver.get(
                 "https://www.instagram.com/" + os.getenv("IG_USERNAME") + "/"
-            )            
+            )
             # Go to Following
             following_button = WebDriverWait(self.driver, 10).until(
                 EC.presence_of_element_located(
@@ -136,8 +138,10 @@ class Scraper:
                 )
                 usernames = [username.text for username in usernames]
                 usernames = usernames[1:]
-                usernames = [deleteVerified(username) for username in usernames]
-                usernames = [text_to_unicode(username) for username in usernames]
+                usernames = [deleteVerified(username)
+                             for username in usernames]
+                usernames = [text_to_unicode(username)
+                             for username in usernames]
 
                 # Get Names
                 # Get username and name
