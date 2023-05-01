@@ -100,7 +100,8 @@ class Scraper:
 
         while True:
             # Get 4 users with status PENDING
-            users = self.databaseService.get_users()
+            # users = self.databaseService.get_users()
+            users = ['sebastian_carrillob']
             for user in users:
                 self.driver.get('https://www.instagram.com/' + user)
                 SCROLL_PAUSE_TIME = 3
@@ -151,7 +152,9 @@ class Scraper:
                 posts_urls = list(set(posts_urls))
                 # Save Posts in database
                 for post in posts_urls:
-                    self.databaseService.create_post(post, user)            
+                    self.databaseService.create_post(post, user)     
+                # Update user status to DONE
+                self.databaseService.set_done_user(user)
                 time.sleep(20)
 
     def buscar_botones(self, driver, botones):
