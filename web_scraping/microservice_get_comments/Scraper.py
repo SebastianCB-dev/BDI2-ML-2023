@@ -99,65 +99,18 @@ class Scraper:
         not_now_button.click()
 
         while True:
-            # Get 4 users with status PENDING
-            users = self.databaseService.get_users()
-            for user in users:
-                self.driver.get('https://www.instagram.com/' + user)
-                SCROLL_PAUSE_TIME = 3
-                posts_urls = []
-                while True:
-                    # Get scroll height
-                    # This is the difference. Moving this *inside* the loop
-                    # means that it checks if scrollTo is still scrolling
-                    last_height = self.driver.execute_script(
-                        "return document.body.scrollHeight")
-                    # print(last_height)
-                    # Scroll down to bottom
-                    self.driver.execute_script(
-                        "window.scrollTo(0, document.body.scrollHeight);")
-                    # Wait to load page
-                    time.sleep(SCROLL_PAUSE_TIME)
-                    # Calculate new scroll height and compare with last scroll height
-                    new_height = self.driver.execute_script(
-                        "return document.body.scrollHeight")
-                    new_posts = self.driver.execute_script(
-                        "const posts_urls = []; document.querySelectorAll('div._aabd._aa8k._al3l').forEach(post => "
-                        "posts_urls.push('https://instagram.com' + post.querySelector('a').getAttribute('href'))); "
-                        "return posts_urls")
-                    posts_urls.extend(new_posts)
-                    if new_height == last_height:
-
-                        # try again (can be removed)
-                        self.driver.execute_script(
-                            "window.scrollTo(0, document.body.scrollHeight);")
-
-                        # Wait to load page
-                        time.sleep(SCROLL_PAUSE_TIME)
-
-                        # Calculate new scroll height and compare with last scroll height
-                        new_height = self.driver.execute_script(
-                            "return document.body.scrollHeight")
-
-                        # check if the page height has remained the same
-                        if new_height == last_height:
-                            # if so, you are done
-                            break
-                        # if not, move on to the next loop
-                        else:
-                            last_height = new_height
-                            continue
-                # Posts URLS
-                # Delete duplicated
-                posts_urls = list(set(posts_urls))
-                for post in posts_urls:
-                    self.driver.get(post)
-                    comments = self.scroll_comments()
-                    # Save comments in database
-                    for comment in comments:
-                        self.databaseService.create_comment(comment)
-                # Update user status to DONE
-                self.databaseService.setDoneUser(user)
-                time.sleep(20)
+            # Get 4 posts with status PENDING
+            posts = self.databaseService.get_posts()
+            print(posts)
+            for post in posts:
+                self.driver.get(post)
+                comments = self.scroll_comments()
+                # Save comments in database
+                for comment in comments:
+                    self.databaseService.create_comment(comment)
+            # Update user status to DONE
+            self.databaseService.set_comment_done(comment)
+            time.sleep(20)
 
     def buscar_botones(self, driver, botones):
         for boton in botones:
@@ -243,10 +196,15 @@ class Scraper:
             text = soup.find(
                 "span", {"class": "_aacl _aaco _aacu _aacx _aad7 _aade"})
             username = soup.find("a")
+            username = username.text
+            print(username)
+            username = deleteVerified(username)
             if text is None:
                 text = soup.find(
                     "h1", {"class": "_aacl _aaco _aacu _aacx _aad7 _aade"})
-            comment_object = {"text": text.text, "username": username.text}
+                text = text.text
+                text = text_to_unicode(text)
+            comment_object = {"text": text, "username": username}
             comments.append(comment_object)
 
         return comments

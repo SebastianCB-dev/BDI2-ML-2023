@@ -16,18 +16,21 @@ class DatabaseService:
     )
     self.cur = self.conn.cursor()
 
-
-  def get_comment(self):
-    # This function gets all users from the database
-    self.cur.execute('SELECT comment FROM comments LIKE %s', '%test%')
-    data = self.cur.fetchall()
-    return [row[0] for row in data]
+  def get_posts(self):
+    # This function gets all the posts
+    try:
+      self.cur.execute("SELECT post_url FROM posts WHERE post_status='PENDING' LIMIT 4;")
+      posts = self.cur.fetchall()
+      posts = [post[0] for post in posts]
+      return posts
+    except Exception as e:
+      self.logger.error(f"Error getting posts: {e.__str__()}")
 
   def create_comment(self, comment_data):
     username = comment_data['username']
     comment_text = comment_data['text']
     # Validate if comment doesn't exist
-    comment = self.cur.execute('SELECT user_comment FROM comment WHERE user_comment = %s', (comment_text,))
+    comment = self.cur.execute('SELECT user_comment FROM comments WHERE user_comment = %s', (comment_text,))
     if comment is not None:
       self.logger.info(f"Comment already exists: {comment_text}")
       return
@@ -40,23 +43,16 @@ class DatabaseService:
       self.logger.error(f"Error creating comment: {comment_text} {e.__str__()}")
       # Rollback in case there is any error
       self.conn.rollback()
-
-  def get_users(self):
-    # This function gets all users from the database
-    self.cur.execute(
-        "SELECT username FROM users WHERE user_status = 'PENDING' LIMIT 4;")
-    data = self.cur.fetchall()
-    return [row[0] for row in data]
   
-  def set_done_user(self, username):
+  def set_comment_user(self, comment):
     # This function sets the user as reviewed
     try:
       self.cur.execute(
-        "UPDATE users SET user_status = 'REVIEWED' WHERE username = %s;", (username,))
+          "UPDATE comment SET comment_status = 'REVIEWED' WHERE user_comment = %s;", (comment,))
       self.conn.commit()
-      self.logger.info(f"User {username} set as REVIEWED")
+      self.logger.info(f"Comment {comment} set as REVIEWED")
     except Exception as e:
       self.logger.error(
-          f"Error setting user as REVIEWED: {username} {e.__str__()}")
+          f"Error setting user as REVIEWED: {comment} {e.__str__()}")
       # Rollback in case there is any error
       self.conn.rollback()
