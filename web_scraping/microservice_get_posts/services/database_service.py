@@ -27,6 +27,13 @@ class DatabaseService:
       self.logger.error(
         f"Error creating post: {post_url} {e.__str__()}")
   
+  def get_users(self):
+      # This function gets all users from the database
+    self.cur.execute(
+        "SELECT username FROM users WHERE user_status = 'PENDING' LIMIT 4;")
+    data = self.cur.fetchall()
+    return [row[0] for row in data]
+  
   def set_done_user(self, username):
     # This function sets the user as reviewed
     try:

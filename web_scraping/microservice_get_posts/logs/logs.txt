@@ -1840,3 +1840,65 @@ LINE 1: INSERT INTO comment (username, comment) VALUES ('djeveryday'...
 2023-04-26 19:20:13,961 - root - INFO - Comment created for mahoyo75
 2023-04-26 19:20:13,967 - root - INFO - Comment created for el_pais_denuncajamas
 2023-04-26 19:20:13,967 - root - INFO - Comment created for el_pais_denuncajamas
+2023-04-30 18:59:07,805 - root - INFO - Driver found to Windows
+2023-04-30 18:59:07,805 - root - INFO - Driver found to Windows
+2023-04-30 18:59:10,871 - root - INFO - Database connection started
+2023-04-30 18:59:10,871 - root - INFO - Database connection started
+2023-04-30 18:59:24,665 - root - CRITICAL - Error with the Scraper Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=112.0.5615.138)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x0088DCE3+50899]
+	(No symbol) [0x0081E111]
+	(No symbol) [0x00725588]
+	(No symbol) [0x0070D333]
+	(No symbol) [0x0076F4DB]
+	(No symbol) [0x0077DB33]
+	(No symbol) [0x0076B6F6]
+	(No symbol) [0x00747708]
+	(No symbol) [0x0074886D]
+	GetHandleVerifier [0x00AF3EAE+2566302]
+	GetHandleVerifier [0x00B292B1+2784417]
+	GetHandleVerifier [0x00B2327C+2759788]
+	GetHandleVerifier [0x00925740+672048]
+	(No symbol) [0x00828872]
+	(No symbol) [0x008241C8]
+	(No symbol) [0x008242AB]
+	(No symbol) [0x008171B7]
+	BaseThreadInitThunk [0x75FE7D49+25]
+	RtlInitializeExceptionChain [0x7719B74B+107]
+	RtlClearBits [0x7719B6CF+191]
+
+2023-04-30 18:59:24,665 - root - CRITICAL - Error with the Scraper Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=112.0.5615.138)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x0088DCE3+50899]
+	(No symbol) [0x0081E111]
+	(No symbol) [0x00725588]
+	(No symbol) [0x0070D333]
+	(No symbol) [0x0076F4DB]
+	(No symbol) [0x0077DB33]
+	(No symbol) [0x0076B6F6]
+	(No symbol) [0x00747708]
+	(No symbol) [0x0074886D]
+	GetHandleVerifier [0x00AF3EAE+2566302]
+	GetHandleVerifier [0x00B292B1+2784417]
+	GetHandleVerifier [0x00B2327C+2759788]
+	GetHandleVerifier [0x00925740+672048]
+	(No symbol) [0x00828872]
+	(No symbol) [0x008241C8]
+	(No symbol) [0x008242AB]
+	(No symbol) [0x008171B7]
+	BaseThreadInitThunk [0x75FE7D49+25]
+	RtlInitializeExceptionChain [0x7719B74B+107]
+	RtlClearBits [0x7719B6CF+191]
+
+2023-04-30 19:01:38,182 - root - INFO - Driver found to Windows
+2023-04-30 19:01:38,182 - root - INFO - Driver found to Windows
+2023-04-30 19:01:39,647 - root - INFO - Database connection started
+2023-04-30 19:01:39,647 - root - INFO - Database connection started
+2023-04-30 19:02:14,031 - root - CRITICAL - Error with the Scraper 'DatabaseService' object has no attribute 'get_users'
+2023-04-30 19:02:14,031 - root - CRITICAL - Error with the Scraper 'DatabaseService' object has no attribute 'get_users'
