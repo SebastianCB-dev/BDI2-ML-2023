@@ -36,7 +36,7 @@ class DatabaseService:
       return
     # This function creates a new user in the database
     try:
-      self.cur.execute('INSERT INTO comment (username, user_comment) VALUES (%s, %s)', (username, comment_text))
+      self.cur.execute('INSERT INTO comments (username, user_comment) VALUES (%s, %s)', (username, comment_text))
       self.conn.commit()
       self.logger.info(f"Comment created for {username}")
     except Exception as e:
@@ -44,15 +44,15 @@ class DatabaseService:
       # Rollback in case there is any error
       self.conn.rollback()
   
-  def set_comment_user(self, comment):
+  def set_post_done(self, post):
     # This function sets the user as reviewed
     try:
       self.cur.execute(
-          "UPDATE comment SET comment_status = 'REVIEWED' WHERE user_comment = %s;", (comment,))
+          "UPDATE posts SET post_status = 'REVIEWED' WHERE post_url = %s;", (post,))
       self.conn.commit()
-      self.logger.info(f"Comment {comment} set as REVIEWED")
+      self.logger.info(f"Post {post} set as REVIEWED")
     except Exception as e:
       self.logger.error(
-          f"Error setting user as REVIEWED: {comment} {e.__str__()}")
+          f"Error setting post as REVIEWED: {post} {e.__str__()}")
       # Rollback in case there is any error
       self.conn.rollback()

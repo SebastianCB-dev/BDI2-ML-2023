@@ -105,11 +105,12 @@ class Scraper:
             for post in posts:
                 self.driver.get(post)
                 comments = self.scroll_comments()
+                print(comments)
                 # Save comments in database
                 for comment in comments:
                     self.databaseService.create_comment(comment)
-            # Update user status to DONE
-            self.databaseService.set_comment_done(comment)
+                # Update user status to DONE
+                self.databaseService.set_post_done(post)
             time.sleep(20)
 
     def buscar_botones(self, driver, botones):
@@ -202,8 +203,8 @@ class Scraper:
             if text is None:
                 text = soup.find(
                     "h1", {"class": "_aacl _aaco _aacu _aacx _aad7 _aade"})
-                text = text.text
-                text = text_to_unicode(text)
+            text = text.text
+            text = text_to_unicode(text)
             comment_object = {"text": text, "username": username}
             comments.append(comment_object)
 
@@ -215,7 +216,7 @@ class Scraper:
         var div_more_comments = document.querySelector("div.x9f619.xjbqb8w.x78zum5.x168nmei.x13lgxp2.x5pf9jr.xo71vjh.xdj266r.xat24cr.x1n2onr6.x1plvlek.xryxfnj.x1c4vz4f.x2lah0s.xdt5ytf.xqjyukv.x1qjc9v5.x1oa3qoh.xl56j7k");
         var button_more_comments = div_more_comments.querySelector("button");
         button_more_comments.click();
-    """
+        """
 
         # Ejecutar el script de JavaScript en Selenium
         self.driver.execute_script(script)
