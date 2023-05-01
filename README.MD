@@ -6,7 +6,7 @@ It is in progress.
 
 ## Model
 
-![Model-ML-BDI-II](https://images2.imgbox.com/22/72/jQ5ZoSOZ_o.png)
+![Model-ML-BDI-II](https://images2.imgbox.com/4a/db/CDNDXpw3_o.png)
 
 To install the libraries, run the following command in the terminal:
 ```console
