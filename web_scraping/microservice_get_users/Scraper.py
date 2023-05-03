@@ -39,13 +39,7 @@ class Scraper:
             This function starts the database connection
             * Set variables from .env file
         """
-        self.usersService = UsersService(
-            os.getenv("DB_HOST"),
-            os.getenv("DB_PORT"),
-            os.getenv("DB_NAME"),
-            os.getenv("DB_USER"),
-            os.getenv("DB_PASSWORD"),
-        )
+        self.usersService = UsersService(os.getenv('POSTGRES_URL'))
         self.logger.info("Database connection started")
 
     def setDriver(self):

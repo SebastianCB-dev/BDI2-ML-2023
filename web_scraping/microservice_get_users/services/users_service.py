@@ -6,15 +6,9 @@ from .logging_service import LoggingService
 class UsersService:
     logger = LoggingService().getLogging()
 
-    def __init__(self, host, port, database, user, password):
+    def __init__(self, url):
         # This function initializes the class
-        self.conn = psycopg2.connect(
-            host=host,
-            port=port,
-            dbname=database,
-            user=user,
-            password=password
-        )
+        self.conn = psycopg2.connect(url, sslmode='require', connect_timeout=10)   
         self.cur = self.conn.cursor()
 
     def getUsers(self):
