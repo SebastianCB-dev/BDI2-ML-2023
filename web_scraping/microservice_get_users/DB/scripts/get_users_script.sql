@@ -1,3 +1,6 @@
+-- This is the script to create the database and the table to store the users
+-- You have to run this script in the database to create the table
+-- Make sure you have the database created before running this script
 DROP TYPE IF EXISTS user_status;
 
 CREATE TYPE user_status AS ENUM ('PENDING', 'REVIEWED');
