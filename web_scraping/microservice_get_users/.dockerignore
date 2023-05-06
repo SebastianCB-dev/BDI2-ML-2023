@@ -21,3 +21,4 @@ LICENSE
 .gitignore
 production.Unix.sh
 sample.env
+.env
