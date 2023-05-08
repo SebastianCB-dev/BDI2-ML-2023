@@ -7,24 +7,26 @@ import json
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.common.exceptions import TimeoutException, NoSuchElementException
+from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.support.ui import WebDriverWait
-from bs4 import BeautifulSoup
 
 # Custom libraries
 from helpers.platform import get_platform
-from helpers.data_transform import deleteVerified, text_to_unicode
 from services.database_service import DatabaseService
 from services.logging_service import LoggingService
 
 
 class Scraper:
+    # Public Properties
     driver = None
     logger = LoggingService().getLogging()
     databaseService = None
 
     def __init__(self):
-        # This function initializes the class
+        """Constructor
+            This function initializes the class
+            Set the driver and connect to the database
+        """
         self.setDriver()
         self.startDB()
 
@@ -33,20 +35,22 @@ class Scraper:
         return self.logger
 
     def startDB(self):
-        # This function starts the database connection
-        self.databaseService = DatabaseService(
-            os.getenv("DB_HOST"),
-            os.getenv("DB_PORT"),
-            os.getenv("DB_NAME"),
-            os.getenv("DB_USER"),
-            os.getenv("DB_PASSWORD"),
-        )
+        """Database
+            This function starts the database connection
+            * Set variables from .env file
+        """
+        self.databaseService = DatabaseService(os.getenv('POSTGRES_URL'))
         self.logger.info("Database connection started")
 
     def setDriver(self):
-        # This function sets the driver for the browser
+        """Driver
+            This function sets the driver
+            The driver allows to use the browser and navigate through the web            
+        """
+        # get_platform() returns the operating system
         platform = get_platform()
         driver_path = None
+        # Load the drivers' paths from the json file
         with open("./helpers/drivers.json") as f:
             drivers = json.load(f)
         if drivers[platform] is not None:
@@ -59,6 +63,7 @@ class Scraper:
             self.driver = webdriver.Chrome(executable_path=driver_path)
             self.driver.maximize_window()
             return
+        # If the operating system is Linux, then set the options
         options = webdriver.ChromeOptions()
         options.add_argument('--no-sandbox')
         options.add_argument('--disable-dev-shm-usage')
@@ -69,7 +74,12 @@ class Scraper:
             executable_path=driver_path, options=options)
         self.driver.maximize_window()
 
-    def getCommentsFromInstagram(self):
+    def getPostsFromInstagram(self):
+        """Get Posts From Instagram
+            This function gets all posts from Instagram that the account follows
+            It is necessary to be logged in to get the posts.
+            You have only to set the credentials in the .env file
+        """
         self.driver.delete_all_cookies()
         # This function gets all users that the account is following from Instagram
         self.driver.get("https://www.instagram.com/accounts/login")
@@ -158,7 +168,7 @@ class Scraper:
                 time.sleep(20)
 
     def buscar_botones(self, driver, botones):
-        # This function searches for buttons in the page
+        # This function search for buttons in a list of XPATH
         for boton in botones:
             try:
                 return WebDriverWait(driver, 10).until(
