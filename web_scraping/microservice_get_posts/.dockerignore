@@ -9,6 +9,7 @@ DB/
 *.log
 *.cache
 logs.txt
+.git/
 
 # Archivos y directorios específicos de tu editor de código
 .vscode/
@@ -17,3 +18,7 @@ logs.txt
 # Otros archivos y directorios que no sean necesarios para la imagen Docker
 README.md
 LICENSE
+.gitignore
+production.Unix.sh
+sample.env
+.env
