@@ -1916,3 +1916,71 @@ Backtrace:
 2023-04-30 19:08:22,996 - root - INFO - User sebastian_carrillob set as REVIEWED
 2023-05-08 18:46:35,031 - root - INFO - Driver found to Windows
 2023-05-08 18:46:35,031 - root - INFO - Driver found to Windows
+2023-05-08 18:48:49,203 - root - INFO - Driver found to Windows
+2023-05-08 18:48:49,203 - root - INFO - Driver found to Windows
+2023-05-08 18:48:52,909 - root - INFO - Database connection started
+2023-05-08 18:48:52,909 - root - INFO - Database connection started
+2023-05-08 18:49:34,566 - root - ERROR - Error creating post: https://instagram.com/p/Cqfsl73OmfR/ relation "posts" does not exist
+LINE 1: INSERT INTO posts (post_url, username) VALUES ('https://inst...
+                    ^
+
+2023-05-08 18:49:34,566 - root - ERROR - Error creating post: https://instagram.com/p/Cqfsl73OmfR/ relation "posts" does not exist
+LINE 1: INSERT INTO posts (post_url, username) VALUES ('https://inst...
+                    ^
+
+2023-05-08 18:49:34,633 - root - ERROR - Error setting user as REVIEWED: sebastian_carrillob current transaction is aborted, commands ignored until end of transaction block
+
+2023-05-08 18:49:34,633 - root - ERROR - Error setting user as REVIEWED: sebastian_carrillob current transaction is aborted, commands ignored until end of transaction block
+
+2023-05-08 18:49:58,474 - root - CRITICAL - Error with the Scraper Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=112.0.5615.138)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00C6DCE3+50899]
+	(No symbol) [0x00BFE111]
+	(No symbol) [0x00B05588]
+	(No symbol) [0x00AED333]
+	(No symbol) [0x00B4F4DB]
+	(No symbol) [0x00B5DB33]
+	(No symbol) [0x00B4B6F6]
+	(No symbol) [0x00B27708]
+	(No symbol) [0x00B2886D]
+	GetHandleVerifier [0x00ED3EAE+2566302]
+	GetHandleVerifier [0x00F092B1+2784417]
+	GetHandleVerifier [0x00F0327C+2759788]
+	GetHandleVerifier [0x00D05740+672048]
+	(No symbol) [0x00C08872]
+	(No symbol) [0x00C041C8]
+	(No symbol) [0x00C042AB]
+	(No symbol) [0x00BF71B7]
+	BaseThreadInitThunk [0x75E47D59+25]
+	RtlInitializeExceptionChain [0x775BB74B+107]
+	RtlClearBits [0x775BB6CF+191]
+
+2023-05-08 18:49:58,474 - root - CRITICAL - Error with the Scraper Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=112.0.5615.138)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00C6DCE3+50899]
+	(No symbol) [0x00BFE111]
+	(No symbol) [0x00B05588]
+	(No symbol) [0x00AED333]
+	(No symbol) [0x00B4F4DB]
+	(No symbol) [0x00B5DB33]
+	(No symbol) [0x00B4B6F6]
+	(No symbol) [0x00B27708]
+	(No symbol) [0x00B2886D]
+	GetHandleVerifier [0x00ED3EAE+2566302]
+	GetHandleVerifier [0x00F092B1+2784417]
+	GetHandleVerifier [0x00F0327C+2759788]
+	GetHandleVerifier [0x00D05740+672048]
+	(No symbol) [0x00C08872]
+	(No symbol) [0x00C041C8]
+	(No symbol) [0x00C042AB]
+	(No symbol) [0x00BF71B7]
+	BaseThreadInitThunk [0x75E47D59+25]
+	RtlInitializeExceptionChain [0x775BB74B+107]
+	RtlClearBits [0x775BB6CF+191]
+

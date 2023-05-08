@@ -110,8 +110,7 @@ class Scraper:
 
         while True:
             # Get 4 users with status PENDING
-            # users = self.databaseService.get_users()
-            users = ['sebastian_carrillob']
+            users = self.databaseService.get_users()
             for user in users:
                 self.driver.get('https://www.instagram.com/' + user)
                 SCROLL_PAUSE_TIME = 3
