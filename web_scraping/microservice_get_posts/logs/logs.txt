@@ -1914,3 +1914,5 @@ Backtrace:
 2023-04-30 19:08:22,981 - root - INFO - Post https://instagram.com/p/Cqfsl73OmfR/ created
 2023-04-30 19:08:22,996 - root - INFO - User sebastian_carrillob set as REVIEWED
 2023-04-30 19:08:22,996 - root - INFO - User sebastian_carrillob set as REVIEWED
+2023-05-08 18:46:35,031 - root - INFO - Driver found to Windows
+2023-05-08 18:46:35,031 - root - INFO - Driver found to Windows
