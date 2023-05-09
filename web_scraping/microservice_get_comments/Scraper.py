@@ -4,12 +4,12 @@ import time
 import json
 
 # Third-party libraries
+from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException, NoSuchElementException
 from selenium.webdriver.support.ui import WebDriverWait
-from bs4 import BeautifulSoup
 
 # Custom libraries
 from helpers.platform import get_platform
@@ -19,12 +19,16 @@ from services.logging_service import LoggingService
 
 
 class Scraper:
+    # Public Properties
     driver = None
     logger = LoggingService().getLogging()
     databaseService = None
 
     def __init__(self):
-        # This function initializes the class
+        """Constructor
+            This function initializes the class
+            Set the driver and connect to the database
+        """
         self.setDriver()
         self.startDB()
 
@@ -33,20 +37,22 @@ class Scraper:
         return self.logger
 
     def startDB(self):
-        # This function starts the database connection
-        self.databaseService = DatabaseService(
-            os.getenv("DB_HOST"),
-            os.getenv("DB_PORT"),
-            os.getenv("DB_NAME"),
-            os.getenv("DB_USER"),
-            os.getenv("DB_PASSWORD"),
-        )
+        """Database
+            This function starts the database connection
+            * Set variables from .env file
+        """
+        self.databaseService = DatabaseService(os.getenv('POSTGRES_URL'))
         self.logger.info("Database connection started")
 
     def setDriver(self):
-        # This function sets the driver for the browser
+        """Driver
+            This function sets the driver
+            The driver allows to use the browser and navigate through the web
+        """
+        # get_platform() returns the operating system
         platform = get_platform()
         driver_path = None
+        # Load the drivers' paths from the json file
         with open("./helpers/drivers.json") as f:
             drivers = json.load(f)
         if drivers[platform] is not None:
@@ -59,6 +65,7 @@ class Scraper:
             self.driver = webdriver.Chrome(executable_path=driver_path)
             self.driver.maximize_window()
             return
+        # If the operating system is Linux, then set the options
         options = webdriver.ChromeOptions()
         options.add_argument('--no-sandbox')
         options.add_argument('--disable-dev-shm-usage')
@@ -70,6 +77,11 @@ class Scraper:
         self.driver.maximize_window()
 
     def getCommentsFromInstagram(self):
+        """Get Comments From Instagram
+            This function gets all the comments from a post that the account follows
+            It is necessary to be logged in to get the users.
+            You have only to set the credentials in the .env file
+        """
         self.driver.delete_all_cookies()
         # This function gets all users that the account is following from Instagram
         self.driver.get("https://www.instagram.com/accounts/login")
@@ -97,7 +109,7 @@ class Scraper:
         ]
         not_now_button = self.buscar_botones(self.driver, botones)
         not_now_button.click()
-
+        # Loop to get the next user every 20 seconds
         while True:
             # Get 4 posts with status PENDING
             posts = self.databaseService.get_posts()
@@ -114,6 +126,7 @@ class Scraper:
             time.sleep(20)
 
     def buscar_botones(self, driver, botones):
+        # This function search for buttons in a list of XPATH
         for boton in botones:
             try:
                 return WebDriverWait(driver, 10).until(
@@ -124,7 +137,10 @@ class Scraper:
         raise TimeoutException("No se pudo encontrar ningún botón en la lista")
 
     def scroll_comments(self):
-        # Updaste cause' button + to show more comments
+        """Scroll Comments
+            This function scrolls the comments of a post
+            It is necessary to click on the button "View all comments" to get all the comments
+        """
         scroll = 400
         height = 0
         last_height = 0
@@ -190,6 +206,9 @@ class Scraper:
             return comments
 
     def process_comments(self, general_comments):
+        """Process Comments
+            This function process the comments of a post            
+        """
         comments = []
         for gc in general_comments:
             source = gc.get_attribute('innerHTML')
@@ -211,17 +230,22 @@ class Scraper:
         return comments
 
     def clickButtonMoreComments(self):
-        # Definir el script de JavaScript
+        """Click Button More Comments
+            This function clicks on the button "View all comments" to get all the comments
+        """
         script = """
         var div_more_comments = document.querySelector("div.x9f619.xjbqb8w.x78zum5.x168nmei.x13lgxp2.x5pf9jr.xo71vjh.xdj266r.xat24cr.x1n2onr6.x1plvlek.xryxfnj.x1c4vz4f.x2lah0s.xdt5ytf.xqjyukv.x1qjc9v5.x1oa3qoh.xl56j7k");
         var button_more_comments = div_more_comments.querySelector("button");
         button_more_comments.click();
         """
 
-        # Ejecutar el script de JavaScript en Selenium
+        # Execute script
         self.driver.execute_script(script)
 
     def clickReplyComments(self):
+        """Click Reply Comments
+            This function clicks on the button "View replies" to get all the replies
+        """
         buttons = self.driver.find_elements(
             By.CSS_SELECTOR, value='button._acan._acao._acas._aj1-')
         for button in buttons:
