@@ -17,11 +17,15 @@ from services.logging_service import LoggingService
 
 
 class Scraper:
+    # Public Properties
     driver = None
     logger = LoggingService().getLogging()
 
     def __init__(self):
-        # This function initializes the class
+        """Constructor
+            This function initializes the class
+            Set the driver 
+        """
         self.setDriver()
 
     def getLogger(self):
@@ -29,9 +33,14 @@ class Scraper:
         return self.logger
 
     def setDriver(self):
-        # This function sets the driver for the browser
+        """Driver
+            This function sets the driver
+            The driver allows to use the browser and navigate through the web
+        """
+        # get_platform() returns the operating system
         platform = get_platform()
         driver_path = None
+        # Load the drivers' paths from the json file
         with open("./helpers/drivers.json") as f:
             drivers = json.load(f)
         if drivers[platform] != None:
@@ -45,6 +54,7 @@ class Scraper:
             self.driver = webdriver.Chrome(executable_path=driver_path)
             self.driver.maximize_window()
             return
+        # If the operating system is Linux, then set the options
         options.add_argument('--no-sandbox')
         options.add_argument('--disable-dev-shm-usage')
         options.add_argument('--headless')
@@ -53,7 +63,12 @@ class Scraper:
         self.driver = webdriver.Chrome(executable_path=driver_path, options=options)
         self.driver.maximize_window()
 
-    def getUsersFromInstagram(self):
+    def followNewPeople(self):
+        """Follow new People
+            This function follows new people in Instagram
+            It is necessary to be logged in to get the users.
+            You have only to set the credentials in the .env file
+        """
         self.driver.delete_all_cookies()
         # This function gets all users that the account is following from Instagram
         self.driver.get("https://www.instagram.com/")
@@ -104,6 +119,7 @@ class Scraper:
                 continue
 
     def buscar_botones(self, driver, botones):
+        # This function search for buttons in a list of XPATH
         for boton in botones:
             try:
                 return WebDriverWait(driver, 10).until(
