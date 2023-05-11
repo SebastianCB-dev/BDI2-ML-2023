@@ -98,19 +98,22 @@ class Scraper:
 
         # Go to main page
         while True:
-            self.driver.get("https://www.instagram.com/")
-            time.sleep(3)            
+            self.driver.get("https://www.instagram.com/explore/people")
+            time.sleep(3)
             try:
                 wait = WebDriverWait(self.driver, 10)
-                buttons = wait.until(EC.presence_of_all_elements_located(
-                    (By.CSS_SELECTOR, "button._acan._acao._acas._aj1-")))
-                for button in buttons:                  
+                buttons = wait.until(
+                    EC.presence_of_all_elements_located(
+                        (By.CSS_SELECTOR, "button._acan._acap._acas._aj1-")))
+                print(buttons, len(buttons))
+                for button in buttons:                     
                     try:
-                        div = button.find_element(By.XPATH, ".//div[contains(text(), 'Follow')]")
-                        button.click()
-                        time.sleep(2)
+                        div = button.find_element(By.CSS_SELECTOR, 'div>div')                        
+                        if div.text == 'Follow':
+                            button.click()
+                            time.sleep(2)                        
                     except Exception as e:
-                        continue
+                        continue                    
                 # Wait 2 minutes until next iteration to avoid being blocked
                 time.sleep(120)
             except Exception as e:
