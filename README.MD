@@ -30,5 +30,5 @@ Command Docker Postgres:
 
    
 
-#### acknowledgment
-@drojas159 for contributing with Web Scraping scripts
+#### Acknowledgment
+@drojas159 for contributing with Web Scraping scripts.
