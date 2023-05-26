@@ -17,9 +17,6 @@ RUN pip install emoji nltk sklearn spacy stanza wheel hunspell numpy gensim pyem
 # Install dictiionaries
 RUN python -m spacy download es_core_news_md
 
-# Copy app
-COPY . /app
-
 # Set working directory
 WORKDIR /app
 
