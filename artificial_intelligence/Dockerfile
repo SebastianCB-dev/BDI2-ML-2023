@@ -15,7 +15,7 @@ RUN apt-get install libhunspell-dev -y
 RUN pip install emoji nltk sklearn spacy stanza wheel hunspell numpy gensim pyemd joblib scikit-learn
 
 # Install dictiionaries
-RUN python -m spacy download es_core_news_md
+RUN python3 -m spacy download es_core_news_md
 
 # Set working directory
 WORKDIR /app
