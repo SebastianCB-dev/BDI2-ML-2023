@@ -4,20 +4,20 @@ from .logging_service import LoggingService
 
 
 class UsersService:
-    logger = LoggingService().getLogging()
+    logger = LoggingService().get_logging()
 
     def __init__(self, url):
         # This function initializes the class
         self.conn = psycopg2.connect(url, sslmode='require', connect_timeout=10)   
         self.cur = self.conn.cursor()
 
-    def getUsers(self):
+    def get_users(self):
         # This function gets all users from the database
         self.cur.execute('SELECT username FROM users')
         data = self.cur.fetchall()
         return [row[0] for row in data]
 
-    def createUser(self, username, fullname=None):
+    def create_user(self, username, fullname=None):
         # This function creates a new user in the database
         try:
             self.cur.execute(

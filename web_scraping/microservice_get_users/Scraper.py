@@ -12,7 +12,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 
 # Custom libraries
 from helpers.platform import get_platform
-from helpers.data_transform import deleteVerified, text_to_unicode
+from helpers.data_transform import delete_verified, text_to_unicode
 from services.users_service import UsersService
 from services.logging_service import LoggingService
 
@@ -20,29 +20,29 @@ from services.logging_service import LoggingService
 class Scraper:
     # Public Properties
     driver = None
-    logger = LoggingService().getLogging()
+    logger = LoggingService().get_logging()
 
     def __init__(self):
         """Constructor
             This function initializes the class
             Set the driver and connect to the database
         """
-        self.setDriver()
-        self.startDB()
+        self.set_driver()
+        self.start_database()
 
-    def getLogger(self):
+    def get_logger(self):
         # This function returns the logger
         return self.logger
 
-    def startDB(self):
+    def start_database(self):
         """Database
             This function starts the database connection
             * Set variables from .env file
         """
-        self.usersService = UsersService(os.getenv('POSTGRES_URL'))
+        self.users_service = UsersService(os.getenv('POSTGRES_URL'))
         self.logger.info("Database connection started")
 
-    def setDriver(self):
+    def set_driver(self):
         """Driver
             This function sets the driver
             The driver allows to use the browser and navigate through the web            
@@ -74,7 +74,7 @@ class Scraper:
             executable_path=driver_path, options=options)
         self.driver.maximize_window()
 
-    def getUsersFromInstagram(self):
+    def get_users(self):
         """Get Users From Instagram
             This function gets all users from Instagram that the account follows
             It is necessary to be logged in to get the users.
@@ -98,13 +98,13 @@ class Scraper:
         )
         login_button.click()
         # Click on not now button
-        botones = [
+        xpath_buttons_not_now = [
             "//button[contains(text(), 'Not Now')]",
             "//div[contains(text(), 'Not Now')]",
             "//span[contains(text(), 'Not Now')]",
             "//div[contains(text(), 'Not now')]",
         ]
-        not_now_button = self.buscar_botones(self.driver, botones)
+        not_now_button = self.search_buttons(self.driver, xpath_buttons_not_now)
         not_now_button.click()
 
         # Go to profile
@@ -132,7 +132,7 @@ class Scraper:
                 )
                 usernames = [username.text for username in usernames]
                 usernames = usernames[1:]
-                usernames = [deleteVerified(username)
+                usernames = [delete_verified(username)
                              for username in usernames]
                 usernames = [text_to_unicode(username)
                              for username in usernames]
@@ -143,13 +143,13 @@ class Scraper:
                     "var elements = document.querySelectorAll('span.x1lliihq.x1plvlek.xryxfnj.x1n2onr6.x193iq5w.xeuugli.x1fj9vlw.x13faqbe.x1vvkbs.x1s928wv.xhkezso.x1gmr53x.x1cpjm7i.x1fgarty.x1943h6x.x1i0vuye.xvs91rp.xo1l8bm.x1roi4f4.x10wh9bi.x1wdrske.x8viiok.x18hxmgj'); return Array.from(elements);"
                 )
                 names = [name.text for name in names]
-                names = [deleteVerified(name) for name in names]
+                names = [delete_verified(name) for name in names]
                 names = [text_to_unicode(name) for name in names]
-                usernamesDB = self.usersService.getUsers()
+                usernames_database = self.users_service.getUsers()
                 # Add users to database
                 for username in usernames:
-                    if username not in usernamesDB:
-                        self.usersService.createUser(
+                    if username not in usernames_database:
+                        self.users_service.create_user(
                             username, names[usernames.index(username)]
                         )
                 self.logger.info("Users added to database")
@@ -189,13 +189,13 @@ class Scraper:
                 # There is no more users
                 break
 
-    def buscar_botones(self, driver, botones):
+    def search_buttons(self, driver, buttons):
         # This function search for buttons in a list of XPATH
-        for boton in botones:
+        for button in buttons:
             try:
                 return WebDriverWait(driver, 10).until(
-                    EC.presence_of_element_located((By.XPATH, boton))
+                    EC.presence_of_element_located((By.XPATH, button))
                 )
             except TimeoutException:
                 continue
-        raise TimeoutException("No se pudo encontrar ningún botón en la lista")
+        raise TimeoutException("There is no any button in the list")
