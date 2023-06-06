@@ -146,7 +146,7 @@ class Scraper:
                 names = [name.text for name in names]
                 names = [delete_verified(name) for name in names]
                 names = [text_to_unicode(name) for name in names]
-                usernames_database = self.users_service.getUsers()
+                usernames_database = self.users_service.get_users()
                 # Add users to database
                 for username in usernames:
                     if username not in usernames_database:
