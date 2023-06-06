@@ -81,7 +81,8 @@ class Scraper:
             You have only to set the credentials in the .env file
         """
         self.driver.delete_all_cookies()
-        self.driver.get("https://www.instagram.com/")
+        # Open Instagram with English language
+        self.driver.get("https://www.instagram.com/?hl=en")
         # Login to Instagram fielding username and password
         username_field = WebDriverWait(self.driver, 10).until(
             EC.presence_of_element_located((By.NAME, "username"))
