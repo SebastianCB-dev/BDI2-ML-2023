@@ -155,9 +155,10 @@ class Scraper:
                         )
                 self.logger.info("Users added to database")
                 # Timer to repeat the process every 2 minutes and avoid being blocked
-                time.sleep(60)
+                time.sleep(120)
             except Exception as e:
                 self.logger.error(f"Error getting users {e.__str__()}")
+                time.sleep(120)
 
     def scroll_modal_users(self):
         # This function scrolls the modal to get all users
