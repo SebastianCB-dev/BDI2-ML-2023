@@ -60,16 +60,16 @@ class Scraper:
             self.logger.error("Don't recognize the operating system")
             Exception("Don't recognize the operating system")
         options = webdriver.ChromeOptions()
-        if (platform == "Windows"):
-            self.driver = webdriver.Chrome(executable_path=driver_path)
-            self.driver.maximize_window()
-            return
+        options.add_argument("--disable-extensions")
+        options.add_argument("--lang=en")
+        if (platform != "Windows"):
+            options.add_argument('--no-sandbox')
+            options.add_argument('--disable-dev-shm-usage')
+            options.add_argument('--headless')
+            options.add_argument('--disable-gpu')
+            options.add_argument('--incognito')            
         # If the operating system is Linux, then set the options
-        options.add_argument('--no-sandbox')
-        options.add_argument('--disable-dev-shm-usage')
-        options.add_argument('--headless')
-        options.add_argument('--disable-gpu')
-        options.add_argument('--incognito')
+       
         self.driver = webdriver.Chrome(
             executable_path=driver_path, options=options)
         self.driver.maximize_window()
