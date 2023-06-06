@@ -47,6 +47,12 @@ Before running the project, you need to set up some environment variables. Follo
 2. Open the `.env` file in the project directory.
 3. Set the value of the `POSTGRES_URL` variable to your PostgreSQL URL.
 
+```
+POSTGRES_URL=postgresql://username:password@host:port/database
+```
+
+* You have to run the scripts in the `DB` directory to create the tables.
+
 ### Database Credentials
 
 1. Provide the necessary credentials for your database.
