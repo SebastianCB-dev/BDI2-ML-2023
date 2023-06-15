@@ -72,7 +72,6 @@ class Scraper:
             options.add_argument('--incognito')            
         # If the operating system is Linux, then set the options
         self.driver = webdriver.Chrome(driver_path, options=options)
-        self.driver.maximize_window()
 
     def get_users(self):
         """Get Users From Instagram
@@ -80,7 +79,6 @@ class Scraper:
             It is necessary to be logged in to get the users.
             You have only to set the credentials in the .env file
         """
-        print('Hola')
         self.driver.delete_all_cookies()
         # Open Instagram with English language
         self.driver.get("https://www.instagram.com/?hl=en")
