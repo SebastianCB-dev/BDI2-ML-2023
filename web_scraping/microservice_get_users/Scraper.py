@@ -64,14 +64,14 @@ class Scraper:
         options.add_argument("--lang=en")
         if (platform != "Windows"):
             options.add_argument('--no-sandbox')
-            options.add_argument('--disable-dev-shm-usage')
             options.add_argument('--headless')
+            options.add_argument('--remote-debugging-address=0.0.0.0')
+            options.add_argument('--remote-debugging-port=9222')
+            options.add_argument('--disable-dev-shm-usage')
             options.add_argument('--disable-gpu')
             options.add_argument('--incognito')            
         # If the operating system is Linux, then set the options
-       
-        self.driver = webdriver.Chrome(
-            executable_path=driver_path, options=options)
+        self.driver = webdriver.Chrome(driver_path, options=options)
         self.driver.maximize_window()
 
     def get_users(self):
@@ -80,6 +80,7 @@ class Scraper:
             It is necessary to be logged in to get the users.
             You have only to set the credentials in the .env file
         """
+        print('Hola')
         self.driver.delete_all_cookies()
         # Open Instagram with English language
         self.driver.get("https://www.instagram.com/?hl=en")

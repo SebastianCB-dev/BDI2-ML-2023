@@ -1,5 +1,5 @@
 {
   "Windows": "./drivers/chromedriver.exe",
   "Linux": "./drivers/chromedriver",
-  "Darwin": "./drivers/chromedriver"
+  "Darwin": "./drivers/chromedriver_mac"
 }
