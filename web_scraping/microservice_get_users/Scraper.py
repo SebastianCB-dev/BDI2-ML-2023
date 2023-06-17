@@ -11,7 +11,7 @@ from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.support.ui import WebDriverWait
 
 # Custom libraries
-from helpers.platform import get_platform
+from helpers.platform import get_platform, is_darwin_arm_validator
 from helpers.data_transform import delete_verified, text_to_unicode
 from services.users_service import UsersService
 from services.logging_service import LoggingService
@@ -49,6 +49,9 @@ class Scraper:
         """
         # get_platform() returns the operating system
         platform = get_platform()
+        is_darwin_arm = is_darwin_arm_validator() 
+        if(platform == 'Darwin' and is_darwin_arm):
+            platform = 'Darwin_ARM'
         driver_path = None
         # Load the drivers' paths from the json file
         with open("./helpers/drivers.json") as f:
@@ -63,10 +66,8 @@ class Scraper:
         options.add_argument("--disable-extensions")
         options.add_argument("--lang=en")
         if (platform != "Windows"):
-            options.add_argument('--no-sandbox')
-            options.add_argument('--headless')
-            options.add_argument('--remote-debugging-address=0.0.0.0')
-            options.add_argument('--remote-debugging-port=9222')
+            #options.add_argument('--no-sandbox')
+            #options.add_argument('--headless')                
             options.add_argument('--disable-dev-shm-usage')
             options.add_argument('--disable-gpu')
             options.add_argument('--incognito')            
@@ -83,16 +84,16 @@ class Scraper:
         # Open Instagram with English language
         self.driver.get("https://www.instagram.com/?hl=en")
         # Login to Instagram fielding username and password
-        username_field = WebDriverWait(self.driver, 10).until(
+        username_field = WebDriverWait(self.driver, 15).until(
             EC.presence_of_element_located((By.NAME, "username"))
         )
         username_field.send_keys(os.getenv("IG_USERNAME"))
-        password_field = WebDriverWait(self.driver, 10).until(
+        password_field = WebDriverWait(self.driver, 15).until(
             EC.presence_of_element_located((By.NAME, "password"))
         )
         password_field.send_keys(os.getenv("IG_PASSWORD"))
         # Click on login button
-        login_button = WebDriverWait(self.driver, 10).until(
+        login_button = WebDriverWait(self.driver, 15).until(
             EC.presence_of_element_located(
                 (By.XPATH, "//button[@type='submit']"))
         )
@@ -115,7 +116,7 @@ class Scraper:
                 "https://www.instagram.com/" + os.getenv("IG_USERNAME") + "/"
             )
             # Go to Following
-            following_button = WebDriverWait(self.driver, 10).until(
+            following_button = WebDriverWait(self.driver, 15).until(
                 EC.presence_of_element_located(
                     (By.XPATH, "//a[contains(@href, '/following')]")
                 )
@@ -194,7 +195,7 @@ class Scraper:
         # This function search for buttons in a list of XPATH
         for button in buttons:
             try:
-                return WebDriverWait(driver, 10).until(
+                return WebDriverWait(driver, 15).until(
                     EC.presence_of_element_located((By.XPATH, button))
                 )
             except TimeoutException:
