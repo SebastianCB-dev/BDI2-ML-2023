@@ -49,8 +49,8 @@ class Scraper:
         """
         # get_platform() returns the operating system
         platform = get_platform()
-        is_darwin_arm = is_darwin_arm_validator() 
-        if(platform == 'Darwin' and is_darwin_arm):
+        is_darwin_arm = is_darwin_arm_validator()
+        if (platform == 'Darwin' and is_darwin_arm):
             platform = 'Darwin_ARM'
         driver_path = None
         # Load the drivers' paths from the json file
@@ -67,10 +67,10 @@ class Scraper:
         options.add_argument("--lang=en")
         if (platform != "Windows"):
             options.add_argument('--no-sandbox')
-            options.add_argument('--headless')                
+            options.add_argument('--headless')
             options.add_argument('--disable-dev-shm-usage')
             options.add_argument('--disable-gpu')
-            options.add_argument('--incognito')            
+            options.add_argument('--incognito')
         # If the operating system is Linux, then set the options
         self.driver = webdriver.Chrome(driver_path, options=options)
 
@@ -79,7 +79,7 @@ class Scraper:
             This function gets all users from Instagram that the account follows
             It is necessary to be logged in to get the users.
             You have only to set the credentials in the .env file
-        """        
+        """
         self.driver.delete_all_cookies()
         # Open Instagram with English language
         self.driver.get("https://www.instagram.com/?hl=en")
@@ -105,7 +105,8 @@ class Scraper:
             "//span[contains(text(), 'Not Now')]",
             "//div[contains(text(), 'Not now')]",
         ]
-        not_now_button = self.search_buttons(self.driver, xpath_buttons_not_now)
+        not_now_button = self.search_buttons(
+            self.driver, xpath_buttons_not_now)
         not_now_button.click()
 
         # Go to profile
