@@ -2,6 +2,7 @@
 import os
 import time
 import json
+import subprocess
 
 # Third-party libraries
 from selenium import webdriver
@@ -9,6 +10,8 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.chrome.options import Options
 
 # Custom libraries
 from helpers.platform import get_platform, is_darwin_arm_validator
@@ -47,8 +50,10 @@ class Scraper:
             This function sets the driver
             The driver allows to use the browser and navigate through the web            
         """
-        # get_platform() returns the operating system
+        # get_platform() returns the operating system       
         platform = get_platform()
+        if(platform != "Windows"):
+            subprocess.Popen(['xvfb-run', 'google-chrome'])
         is_darwin_arm = is_darwin_arm_validator()
         if (platform == 'Darwin' and is_darwin_arm):
             platform = 'Darwin_ARM'
@@ -62,17 +67,20 @@ class Scraper:
         else:
             self.logger.error("Don't recognize the operating system")
             Exception("Don't recognize the operating system")
-        options = webdriver.ChromeOptions()
-        options.add_argument("--disable-extensions")
-        options.add_argument("--lang=en")
+        options = Options()        
         if (platform != "Windows"):
             options.add_argument('--no-sandbox')
             options.add_argument('--headless')
             options.add_argument('--disable-dev-shm-usage')
             options.add_argument('--disable-gpu')
             options.add_argument('--incognito')
+            options.add_argument('--remote-debugging-port=9222')
+        options.add_argument("--disable-extensions")
+        options.add_argument("--lang=en")
         # If the operating system is Linux, then set the options
-        self.driver = webdriver.Chrome(driver_path, options=options)
+        service = Service(executable_path=driver_path)        
+        self.driver = webdriver.Chrome(service=service, options=options)    
+
 
     def get_users(self):
         """Get Users From Instagram

@@ -1,6 +1,6 @@
 {
-  "Windows": "./drivers/chromedriver.exe",
-  "Linux": "./drivers/chromedriver",
-  "Darwin": "./drivers/chromedriver_mac",
-  "Darwin_ARM": "./drivers/chromedriver_mac_arm"
+  "Windows": "/app/drivers/chromedriver.exe",
+  "Linux": "/app/drivers/chromedriver",
+  "Darwin": "/app/drivers/chromedriver_mac",
+  "Darwin_ARM": "/app/drivers/chromedriver_mac_arm"
 }
