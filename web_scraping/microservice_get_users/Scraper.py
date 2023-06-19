@@ -50,10 +50,8 @@ class Scraper:
             This function sets the driver
             The driver allows to use the browser and navigate through the web            
         """
-        # get_platform() returns the operating system       
+        # get_platform() returns the operating system
         platform = get_platform()
-        if(platform != "Windows"):
-            subprocess.Popen(['xvfb-run', 'google-chrome'])
         is_darwin_arm = is_darwin_arm_validator()
         if (platform == 'Darwin' and is_darwin_arm):
             platform = 'Darwin_ARM'
@@ -67,20 +65,18 @@ class Scraper:
         else:
             self.logger.error("Don't recognize the operating system")
             Exception("Don't recognize the operating system")
-        options = Options()        
+        options = Options()
         if (platform != "Windows"):
             options.add_argument('--no-sandbox')
             options.add_argument('--headless')
             options.add_argument('--disable-dev-shm-usage')
             options.add_argument('--disable-gpu')
             options.add_argument('--incognito')
-            options.add_argument('--remote-debugging-port=9222')
         options.add_argument("--disable-extensions")
         options.add_argument("--lang=en")
         # If the operating system is Linux, then set the options
-        service = Service(executable_path=driver_path)        
-        self.driver = webdriver.Chrome(service=service, options=options)    
-
+        self.driver = webdriver.Chrome(
+            executable_path=driver_path, options=options)
 
     def get_users(self):
         """Get Users From Instagram
