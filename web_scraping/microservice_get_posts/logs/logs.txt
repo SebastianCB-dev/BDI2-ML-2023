@@ -1996,3 +1996,135 @@ Backtrace:
 2023-06-19 15:58:14,532 - root - INFO - Database connection started
 2023-06-19 15:58:14,533 - root - CRITICAL - Error with the Scraper 'Scraper' object has no attribute 'get_users'
 2023-06-19 15:58:14,533 - root - CRITICAL - Error with the Scraper 'Scraper' object has no attribute 'get_users'
+2023-06-19 15:58:45,820 - root - INFO - Driver found to Darwin_ARM
+2023-06-19 15:58:45,820 - root - INFO - Driver found to Darwin_ARM
+2023-06-19 15:58:47,186 - root - INFO - Database connection started
+2023-06-19 15:58:47,186 - root - INFO - Database connection started
+2023-06-19 15:59:53,115 - root - ERROR - Error creating post: https://instagram.com/p/CsEL9wvuexT/ could not receive data from server: Operation timed out
+SSL SYSCALL error: Operation timed out
+
+2023-06-19 15:59:53,115 - root - ERROR - Error creating post: https://instagram.com/p/CsEL9wvuexT/ could not receive data from server: Operation timed out
+SSL SYSCALL error: Operation timed out
+
+2023-06-19 15:59:53,117 - root - ERROR - Error creating post: https://instagram.com/p/CqzQkgZOi5Q/ cursor already closed
+2023-06-19 15:59:53,117 - root - ERROR - Error creating post: https://instagram.com/p/CqzQkgZOi5Q/ cursor already closed
+2023-06-19 15:59:53,117 - root - ERROR - Error creating post: https://instagram.com/p/CrEcD2COnzI/ cursor already closed
+2023-06-19 15:59:53,117 - root - ERROR - Error creating post: https://instagram.com/p/CrEcD2COnzI/ cursor already closed
+2023-06-19 15:59:53,117 - root - ERROR - Error creating post: https://instagram.com/p/CmADvTKuVzX/ cursor already closed
+2023-06-19 15:59:53,117 - root - ERROR - Error creating post: https://instagram.com/p/CmADvTKuVzX/ cursor already closed
+2023-06-19 15:59:53,118 - root - ERROR - Error creating post: https://instagram.com/p/CredxuzuO9i/ cursor already closed
+2023-06-19 15:59:53,118 - root - ERROR - Error creating post: https://instagram.com/p/CredxuzuO9i/ cursor already closed
+2023-06-19 15:59:53,118 - root - ERROR - Error creating post: https://instagram.com/p/CtP_b-euIur/ cursor already closed
+2023-06-19 15:59:53,118 - root - ERROR - Error creating post: https://instagram.com/p/CtP_b-euIur/ cursor already closed
+2023-06-19 15:59:53,118 - root - ERROR - Error creating post: https://instagram.com/p/Clz4OG9jdkc/ cursor already closed
+2023-06-19 15:59:53,118 - root - ERROR - Error creating post: https://instagram.com/p/Clz4OG9jdkc/ cursor already closed
+2023-06-19 15:59:53,118 - root - ERROR - Error creating post: https://instagram.com/p/ClunLblr932/ cursor already closed
+2023-06-19 15:59:53,118 - root - ERROR - Error creating post: https://instagram.com/p/ClunLblr932/ cursor already closed
+2023-06-19 15:59:53,118 - root - ERROR - Error creating post: https://instagram.com/p/CrT__osuEge/ cursor already closed
+2023-06-19 15:59:53,118 - root - ERROR - Error creating post: https://instagram.com/p/CrT__osuEge/ cursor already closed
+2023-06-19 15:59:53,118 - root - ERROR - Error creating post: https://instagram.com/p/CoViTUTuaOE/ cursor already closed
+2023-06-19 15:59:53,118 - root - ERROR - Error creating post: https://instagram.com/p/CoViTUTuaOE/ cursor already closed
+2023-06-19 15:59:53,119 - root - ERROR - Error creating post: https://instagram.com/p/CpDY4IGuSxe/ cursor already closed
+2023-06-19 15:59:53,119 - root - ERROR - Error creating post: https://instagram.com/p/CpDY4IGuSxe/ cursor already closed
+2023-06-19 15:59:53,119 - root - ERROR - Error creating post: https://instagram.com/p/CoYqAy6Dq2N/ cursor already closed
+2023-06-19 15:59:53,119 - root - ERROR - Error creating post: https://instagram.com/p/CoYqAy6Dq2N/ cursor already closed
+2023-06-19 15:59:53,119 - root - ERROR - Error creating post: https://instagram.com/p/Cmk5DK8qyXu/ cursor already closed
+2023-06-19 15:59:53,119 - root - ERROR - Error creating post: https://instagram.com/p/Cmk5DK8qyXu/ cursor already closed
+2023-06-19 15:59:53,119 - root - ERROR - Error creating post: https://instagram.com/p/CrFGpmqO0RY/ cursor already closed
+2023-06-19 15:59:53,119 - root - ERROR - Error creating post: https://instagram.com/p/CrFGpmqO0RY/ cursor already closed
+2023-06-19 15:59:53,119 - root - ERROR - Error creating post: https://instagram.com/p/Cpu8MZ0u8Jw/ cursor already closed
+2023-06-19 15:59:53,119 - root - ERROR - Error creating post: https://instagram.com/p/Cpu8MZ0u8Jw/ cursor already closed
+2023-06-19 15:59:53,120 - root - ERROR - Error creating post: https://instagram.com/p/CsjgBP6u1Dn/ cursor already closed
+2023-06-19 15:59:53,120 - root - ERROR - Error creating post: https://instagram.com/p/CsjgBP6u1Dn/ cursor already closed
+2023-06-19 15:59:53,120 - root - ERROR - Error creating post: https://instagram.com/p/CrqvOVjOxnb/ cursor already closed
+2023-06-19 15:59:53,120 - root - ERROR - Error creating post: https://instagram.com/p/CrqvOVjOxnb/ cursor already closed
+2023-06-19 15:59:53,120 - root - ERROR - Error creating post: https://instagram.com/p/CocYQu6ulO5/ cursor already closed
+2023-06-19 15:59:53,120 - root - ERROR - Error creating post: https://instagram.com/p/CocYQu6ulO5/ cursor already closed
+2023-06-19 15:59:53,120 - root - ERROR - Error creating post: https://instagram.com/p/CoUn1cQOwOq/ cursor already closed
+2023-06-19 15:59:53,120 - root - ERROR - Error creating post: https://instagram.com/p/CoUn1cQOwOq/ cursor already closed
+2023-06-19 15:59:53,120 - root - ERROR - Error creating post: https://instagram.com/p/Cn0sgETO7GJ/ cursor already closed
+2023-06-19 15:59:53,120 - root - ERROR - Error creating post: https://instagram.com/p/Cn0sgETO7GJ/ cursor already closed
+2023-06-19 15:59:53,121 - root - ERROR - Error creating post: https://instagram.com/p/CmNXt_5O9k9/ cursor already closed
+2023-06-19 15:59:53,121 - root - ERROR - Error creating post: https://instagram.com/p/CmNXt_5O9k9/ cursor already closed
+2023-06-19 15:59:53,121 - root - ERROR - Error creating post: https://instagram.com/p/CtpbnsnSdsh/ cursor already closed
+2023-06-19 15:59:53,121 - root - ERROR - Error creating post: https://instagram.com/p/CtpbnsnSdsh/ cursor already closed
+2023-06-19 15:59:53,121 - root - ERROR - Error creating post: https://instagram.com/p/ConbUiyuKuo/ cursor already closed
+2023-06-19 15:59:53,121 - root - ERROR - Error creating post: https://instagram.com/p/ConbUiyuKuo/ cursor already closed
+2023-06-19 15:59:53,122 - root - ERROR - Error creating post: https://instagram.com/p/CqTRlxfuWy8/ cursor already closed
+2023-06-19 15:59:53,122 - root - ERROR - Error creating post: https://instagram.com/p/CqTRlxfuWy8/ cursor already closed
+2023-06-19 15:59:53,122 - root - ERROR - Error creating post: https://instagram.com/p/CoXoscFu9B0/ cursor already closed
+2023-06-19 15:59:53,122 - root - ERROR - Error creating post: https://instagram.com/p/CoXoscFu9B0/ cursor already closed
+2023-06-19 15:59:53,122 - root - ERROR - Error creating post: https://instagram.com/p/CmDkGleuz_n/ cursor already closed
+2023-06-19 15:59:53,122 - root - ERROR - Error creating post: https://instagram.com/p/CmDkGleuz_n/ cursor already closed
+2023-06-19 15:59:53,122 - root - ERROR - Error creating post: https://instagram.com/p/CsEMbSZObHF/ cursor already closed
+2023-06-19 15:59:53,122 - root - ERROR - Error creating post: https://instagram.com/p/CsEMbSZObHF/ cursor already closed
+2023-06-19 15:59:53,122 - root - ERROR - Error creating post: https://instagram.com/p/CnHlb_Vr-cC/ cursor already closed
+2023-06-19 15:59:53,122 - root - ERROR - Error creating post: https://instagram.com/p/CnHlb_Vr-cC/ cursor already closed
+2023-06-19 15:59:53,122 - root - ERROR - Error creating post: https://instagram.com/p/CpGoKAKhACl/ cursor already closed
+2023-06-19 15:59:53,122 - root - ERROR - Error creating post: https://instagram.com/p/CpGoKAKhACl/ cursor already closed
+2023-06-19 15:59:53,122 - root - ERROR - Error creating post: https://instagram.com/p/Cre4H3BOO4P/ cursor already closed
+2023-06-19 15:59:53,122 - root - ERROR - Error creating post: https://instagram.com/p/Cre4H3BOO4P/ cursor already closed
+2023-06-19 15:59:53,122 - root - ERROR - Error creating post: https://instagram.com/p/CrtWtREuHik/ cursor already closed
+2023-06-19 15:59:53,122 - root - ERROR - Error creating post: https://instagram.com/p/CrtWtREuHik/ cursor already closed
+2023-06-19 15:59:53,122 - root - ERROR - Error creating post: https://instagram.com/p/CoXYYPRucFq/ cursor already closed
+2023-06-19 15:59:53,122 - root - ERROR - Error creating post: https://instagram.com/p/CoXYYPRucFq/ cursor already closed
+2023-06-19 15:59:53,123 - root - ERROR - Error creating post: https://instagram.com/p/CronNQPOL3l/ cursor already closed
+2023-06-19 15:59:53,123 - root - ERROR - Error creating post: https://instagram.com/p/CronNQPOL3l/ cursor already closed
+2023-06-19 15:59:53,123 - root - ERROR - Error creating post: https://instagram.com/p/CpUKcgauj60/ cursor already closed
+2023-06-19 15:59:53,123 - root - ERROR - Error creating post: https://instagram.com/p/CpUKcgauj60/ cursor already closed
+2023-06-19 15:59:53,123 - root - ERROR - Error creating post: https://instagram.com/p/CocwUGIuvvT/ cursor already closed
+2023-06-19 15:59:53,123 - root - ERROR - Error creating post: https://instagram.com/p/CocwUGIuvvT/ cursor already closed
+2023-06-19 15:59:53,123 - root - ERROR - Error creating post: https://instagram.com/p/Cp2selXuJbc/ cursor already closed
+2023-06-19 15:59:53,123 - root - ERROR - Error creating post: https://instagram.com/p/Cp2selXuJbc/ cursor already closed
+2023-06-19 15:59:53,123 - root - ERROR - Error creating post: https://instagram.com/p/Ctj8eZ_O0E1/ cursor already closed
+2023-06-19 15:59:53,123 - root - ERROR - Error creating post: https://instagram.com/p/Ctj8eZ_O0E1/ cursor already closed
+2023-06-19 15:59:53,123 - root - ERROR - Error creating post: https://instagram.com/p/CrPUtSCOzFU/ cursor already closed
+2023-06-19 15:59:53,123 - root - ERROR - Error creating post: https://instagram.com/p/CrPUtSCOzFU/ cursor already closed
+2023-06-19 15:59:53,123 - root - ERROR - Error creating post: https://instagram.com/p/CpGqLp7tPTz/ cursor already closed
+2023-06-19 15:59:53,123 - root - ERROR - Error creating post: https://instagram.com/p/CpGqLp7tPTz/ cursor already closed
+2023-06-19 15:59:53,124 - root - ERROR - Error creating post: https://instagram.com/p/Co5pnWsu64Q/ cursor already closed
+2023-06-19 15:59:53,124 - root - ERROR - Error creating post: https://instagram.com/p/Co5pnWsu64Q/ cursor already closed
+2023-06-19 15:59:53,124 - root - ERROR - Error creating post: https://instagram.com/p/CobTX0_OJC8/ cursor already closed
+2023-06-19 15:59:53,124 - root - ERROR - Error creating post: https://instagram.com/p/CobTX0_OJC8/ cursor already closed
+2023-06-19 15:59:53,124 - root - ERROR - Error creating post: https://instagram.com/p/CoXVPWrOA1v/ cursor already closed
+2023-06-19 15:59:53,124 - root - ERROR - Error creating post: https://instagram.com/p/CoXVPWrOA1v/ cursor already closed
+2023-06-19 15:59:53,124 - root - ERROR - Error creating post: https://instagram.com/p/Cl6eU7WOaRQ/ cursor already closed
+2023-06-19 15:59:53,124 - root - ERROR - Error creating post: https://instagram.com/p/Cl6eU7WOaRQ/ cursor already closed
+2023-06-19 15:59:53,124 - root - ERROR - Error creating post: https://instagram.com/p/CqlFNgdOVM7/ cursor already closed
+2023-06-19 15:59:53,124 - root - ERROR - Error creating post: https://instagram.com/p/CqlFNgdOVM7/ cursor already closed
+2023-06-19 15:59:53,124 - root - ERROR - Error creating post: https://instagram.com/p/CpNsr9mOwR7/ cursor already closed
+2023-06-19 15:59:53,124 - root - ERROR - Error creating post: https://instagram.com/p/CpNsr9mOwR7/ cursor already closed
+2023-06-19 15:59:53,124 - root - ERROR - Error creating post: https://instagram.com/p/CpnbDT8u4Ay/ cursor already closed
+2023-06-19 15:59:53,124 - root - ERROR - Error creating post: https://instagram.com/p/CpnbDT8u4Ay/ cursor already closed
+2023-06-19 15:59:53,125 - root - ERROR - Error creating post: https://instagram.com/p/CmO4sFmu7Rn/ cursor already closed
+2023-06-19 15:59:53,125 - root - ERROR - Error creating post: https://instagram.com/p/CmO4sFmu7Rn/ cursor already closed
+2023-06-19 15:59:53,125 - root - ERROR - Error creating post: https://instagram.com/p/CqAFUhwOs4i/ cursor already closed
+2023-06-19 15:59:53,125 - root - ERROR - Error creating post: https://instagram.com/p/CqAFUhwOs4i/ cursor already closed
+2023-06-19 15:59:53,125 - root - ERROR - Error creating post: https://instagram.com/p/CoXo2j7u-mv/ cursor already closed
+2023-06-19 15:59:53,125 - root - ERROR - Error creating post: https://instagram.com/p/CoXo2j7u-mv/ cursor already closed
+2023-06-19 15:59:53,125 - root - ERROR - Error creating post: https://instagram.com/p/Cm2-2lPK62Y/ cursor already closed
+2023-06-19 15:59:53,125 - root - ERROR - Error creating post: https://instagram.com/p/Cm2-2lPK62Y/ cursor already closed
+2023-06-19 15:59:53,125 - root - ERROR - Error creating post: https://instagram.com/p/CobCupCuyvs/ cursor already closed
+2023-06-19 15:59:53,125 - root - ERROR - Error creating post: https://instagram.com/p/CobCupCuyvs/ cursor already closed
+2023-06-19 15:59:53,126 - root - ERROR - Error creating post: https://instagram.com/p/CpitI7hu8Er/ cursor already closed
+2023-06-19 15:59:53,126 - root - ERROR - Error creating post: https://instagram.com/p/CpitI7hu8Er/ cursor already closed
+2023-06-19 15:59:53,126 - root - ERROR - Error creating post: https://instagram.com/p/CoQ-rjiK3Sn/ cursor already closed
+2023-06-19 15:59:53,126 - root - ERROR - Error creating post: https://instagram.com/p/CoQ-rjiK3Sn/ cursor already closed
+2023-06-19 15:59:53,126 - root - ERROR - Error creating post: https://instagram.com/p/CnIjO5zOr92/ cursor already closed
+2023-06-19 15:59:53,126 - root - ERROR - Error creating post: https://instagram.com/p/CnIjO5zOr92/ cursor already closed
+2023-06-19 15:59:53,126 - root - ERROR - Error creating post: https://instagram.com/p/ClwvvfVOpB4/ cursor already closed
+2023-06-19 15:59:53,126 - root - ERROR - Error creating post: https://instagram.com/p/ClwvvfVOpB4/ cursor already closed
+2023-06-19 15:59:53,126 - root - ERROR - Error creating post: https://instagram.com/p/Co3Mdx9OGkG/ cursor already closed
+2023-06-19 15:59:53,126 - root - ERROR - Error creating post: https://instagram.com/p/Co3Mdx9OGkG/ cursor already closed
+2023-06-19 15:59:53,126 - root - ERROR - Error creating post: https://instagram.com/p/CsML72ju23t/ cursor already closed
+2023-06-19 15:59:53,126 - root - ERROR - Error creating post: https://instagram.com/p/CsML72ju23t/ cursor already closed
+2023-06-19 15:59:53,126 - root - ERROR - Error creating post: https://instagram.com/p/CofZp3IuYi_/ cursor already closed
+2023-06-19 15:59:53,126 - root - ERROR - Error creating post: https://instagram.com/p/CofZp3IuYi_/ cursor already closed
+2023-06-19 15:59:53,127 - root - ERROR - Error creating post: https://instagram.com/p/CoZ2vfgO3FI/ cursor already closed
+2023-06-19 15:59:53,127 - root - ERROR - Error creating post: https://instagram.com/p/CoZ2vfgO3FI/ cursor already closed
+2023-06-19 15:59:53,127 - root - ERROR - Error creating post: https://instagram.com/p/CsPTLTeuExZ/ cursor already closed
+2023-06-19 15:59:53,127 - root - ERROR - Error creating post: https://instagram.com/p/CsPTLTeuExZ/ cursor already closed
+2023-06-19 15:59:53,127 - root - ERROR - Error setting user as REVIEWED: dr.ariguillen cursor already closed
+2023-06-19 15:59:53,127 - root - ERROR - Error setting user as REVIEWED: dr.ariguillen cursor already closed
+2023-06-19 15:59:53,127 - root - CRITICAL - Error with the Scraper connection already closed
+2023-06-19 15:59:53,127 - root - CRITICAL - Error with the Scraper connection already closed
