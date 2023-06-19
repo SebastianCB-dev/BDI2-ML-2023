@@ -9,6 +9,6 @@ scraper = Scraper()
 
 # Start the scraper
 try:  
-  scraper.getPostsFromInstagram()
+  scraper.get_posts_from_instagram()
 except Exception as e:  
   scraper.getLogger().critical(f"Error with the Scraper {e.__str__()}")

@@ -1,17 +1,18 @@
 # Standard libraries
+import json
 import os
 import time
-import json
 
 # Third-party libraries
 from selenium import webdriver
+from selenium.common.exceptions import TimeoutException
+from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.support.ui import WebDriverWait
 
 # Custom libraries
-from helpers.platform import get_platform
+from helpers.platform import get_platform, is_darwin_arm_validator
 from services.database_service import DatabaseService
 from services.logging_service import LoggingService
 
@@ -19,7 +20,7 @@ from services.logging_service import LoggingService
 class Scraper:
     # Public Properties
     driver = None
-    logger = LoggingService().getLogging()
+    logger = LoggingService().get_logging()
     databaseService = None
 
     def __init__(self):
@@ -27,14 +28,14 @@ class Scraper:
             This function initializes the class
             Set the driver and connect to the database
         """
-        self.setDriver()
-        self.startDB()
+        self.set_driver()
+        self.start_db()
 
     def getLogger(self):
         # This function returns the logger
         return self.logger
 
-    def startDB(self):
+    def start_db(self):
         """Database
             This function starts the database connection
             * Set variables from .env file
@@ -42,13 +43,16 @@ class Scraper:
         self.databaseService = DatabaseService(os.getenv('POSTGRES_URL'))
         self.logger.info("Database connection started")
 
-    def setDriver(self):
+    def set_driver(self):
         """Driver
             This function sets the driver
             The driver allows to use the browser and navigate through the web            
         """
         # get_platform() returns the operating system
         platform = get_platform()
+        is_darwin_arm = is_darwin_arm_validator()
+        if (platform == "Darwin" and is_darwin_arm):
+            platform = "Darwin_ARM"
         driver_path = None
         # Load the drivers' paths from the json file
         with open("./helpers/drivers.json") as f:
@@ -57,24 +61,22 @@ class Scraper:
             self.logger.info(f"Driver found to {platform}")
             driver_path = drivers[platform]
         else:
-            self.logger.error("Don't recognize the operating system")
-            Exception("Don't recognize the operating system")
-        if platform == "Windows":
-            self.driver = webdriver.Chrome(executable_path=driver_path)
-            self.driver.maximize_window()
-            return
+            self.logger.error("Could not recognize the operating system")
+            Exception("Could not recognize the operating system")
+        options = Options()
+        if (platform != "Windows"):
+            options.add_argument('--no-sandbox')
+            options.add_argument('--headless')
+            options.add_argument('--disable-dev-shm-usage')
+            options.add_argument('--disable-gpu')
+            options.add_argument('--incognito')
+        options.add_argument("--disable-extensions")
+        options.add_argument("--lang=en")
         # If the operating system is Linux, then set the options
-        options = webdriver.ChromeOptions()
-        options.add_argument('--no-sandbox')
-        options.add_argument('--disable-dev-shm-usage')
-        options.add_argument('--headless')
-        options.add_argument('--disable-gpu')
-        options.add_argument('--incognito')
         self.driver = webdriver.Chrome(
             executable_path=driver_path, options=options)
-        self.driver.maximize_window()
 
-    def getPostsFromInstagram(self):
+    def get_posts_from_instagram(self):
         """Get Posts From Instagram
             This function gets all posts from Instagram that the account follows
             It is necessary to be logged in to get the posts.
@@ -82,7 +84,7 @@ class Scraper:
         """
         self.driver.delete_all_cookies()
         # This function gets all users that the account is following from Instagram
-        self.driver.get("https://www.instagram.com/accounts/login")
+        self.driver.get("https://www.instagram.com/accounts/login?hl=en")
         # Login to Instagram fielding username and password
         username_field = WebDriverWait(self.driver, 10).until(
             EC.presence_of_element_located((By.NAME, "username"))
@@ -99,20 +101,21 @@ class Scraper:
         )
         login_button.click()
         # Click on not now button
-        botones = [
+        xpath_buttons_not_now = [
             "//button[contains(text(), 'Not Now')]",
             "//div[contains(text(), 'Not Now')]",
             "//span[contains(text(), 'Not Now')]",
             "//div[contains(text(), 'Not now')]",
         ]
-        not_now_button = self.buscar_botones(self.driver, botones)
+        not_now_button = self.search_buttons(
+            self.driver, xpath_buttons_not_now)
         not_now_button.click()
 
         while True:
             # Get 4 users with status PENDING
             users = self.databaseService.get_users()
             for user in users:
-                self.driver.get('https://www.instagram.com/' + user)
+                self.driver.get("https://www.instagram.com/" + user)
                 SCROLL_PAUSE_TIME = 3
                 posts_urls = []
                 while True:
@@ -161,18 +164,18 @@ class Scraper:
                 posts_urls = list(set(posts_urls))
                 # Save Posts in database
                 for post in posts_urls:
-                    self.databaseService.create_post(post, user)     
+                    self.databaseService.create_post(post, user)
                 # Update user status to DONE
                 self.databaseService.set_done_user(user)
                 time.sleep(20)
 
-    def buscar_botones(self, driver, botones):
+    def search_buttons(self, driver, buttons_path):
         # This function search for buttons in a list of XPATH
-        for boton in botones:
+        for boton in buttons_path:
             try:
                 return WebDriverWait(driver, 10).until(
                     EC.presence_of_element_located((By.XPATH, boton))
                 )
             except TimeoutException:
                 continue
-        raise TimeoutException("No se pudo encontrar ningún botón en la lista")
+        raise TimeoutException("There is no any button in the list")
