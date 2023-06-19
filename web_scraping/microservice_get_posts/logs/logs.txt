@@ -1984,3 +1984,9 @@ Backtrace:
 	RtlInitializeExceptionChain [0x775BB74B+107]
 	RtlClearBits [0x775BB6CF+191]
 
+2023-06-19 15:56:00,366 - root - INFO - Driver found to Darwin_ARM
+2023-06-19 15:56:00,366 - root - INFO - Driver found to Darwin_ARM
+2023-06-19 15:57:29,300 - root - INFO - Driver found to Darwin_ARM
+2023-06-19 15:57:29,300 - root - INFO - Driver found to Darwin_ARM
+2023-06-19 15:57:31,139 - root - INFO - Database connection started
+2023-06-19 15:57:31,139 - root - INFO - Database connection started

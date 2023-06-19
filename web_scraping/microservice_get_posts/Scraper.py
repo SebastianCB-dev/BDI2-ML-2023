@@ -31,7 +31,7 @@ class Scraper:
         self.set_driver()
         self.start_db()
 
-    def getLogger(self):
+    def get_logger(self):
         # This function returns the logger
         return self.logger
 
