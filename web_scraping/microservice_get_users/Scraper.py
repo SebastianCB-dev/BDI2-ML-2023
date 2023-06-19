@@ -1,23 +1,21 @@
 # Standard libraries
+import json
 import os
 import time
-import json
-import subprocess
 
 # Third-party libraries
 from selenium import webdriver
+from selenium.common.exceptions import TimeoutException
+from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.chrome.options import Options
 
 # Custom libraries
-from helpers.platform import get_platform, is_darwin_arm_validator
 from helpers.data_transform import delete_verified, text_to_unicode
-from services.users_service import UsersService
+from helpers.platform import get_platform, is_darwin_arm_validator
 from services.logging_service import LoggingService
+from services.users_service import UsersService
 
 
 class Scraper:
@@ -40,10 +38,10 @@ class Scraper:
     def start_database(self):
         """Database
             This function starts the database connection
-            * Set variables from .env file
+            * Set variables from .env file in the project root
         """
-        self.users_service = UsersService(os.getenv('POSTGRES_URL'))
-        self.logger.info("Database connection started")
+        self.users_service = UsersService(os.getenv("POSTGRES_URL"))
+        self.logger.info("Database connection stablished")
 
     def set_driver(self):
         """Driver
@@ -53,8 +51,8 @@ class Scraper:
         # get_platform() returns the operating system
         platform = get_platform()
         is_darwin_arm = is_darwin_arm_validator()
-        if (platform == 'Darwin' and is_darwin_arm):
-            platform = 'Darwin_ARM'
+        if (platform == "Darwin" and is_darwin_arm):
+            platform = "Darwin_ARM"
         driver_path = None
         # Load the drivers' paths from the json file
         with open("./helpers/drivers.json") as f:
@@ -63,8 +61,8 @@ class Scraper:
             self.logger.info(f"Driver found to {platform}")
             driver_path = drivers[platform]
         else:
-            self.logger.error("Don't recognize the operating system")
-            Exception("Don't recognize the operating system")
+            self.logger.error("Could not recognize the operating system")
+            Exception("Could not recognize the operating system")
         options = Options()
         if (platform != "Windows"):
             options.add_argument('--no-sandbox')
@@ -193,12 +191,12 @@ class Scraper:
                 scroll = scroll * height
 
             if count > 2:
-                # There is no more users
+                # There are no more users
                 break
 
-    def search_buttons(self, driver, buttons):
-        # This function search for buttons in a list of XPATH
-        for button in buttons:
+    def search_buttons(self, driver, buttons_path):
+        # This function searches for buttons in a list of XPATH
+        for button in buttons_path:
             try:
                 return WebDriverWait(driver, 15).until(
                     EC.presence_of_element_located((By.XPATH, button))

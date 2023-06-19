@@ -11,4 +11,4 @@ def delete_verified(text):
 
 def text_to_unicode(text):
     # This function converts the text to unicode
-    return unicodedata.normalize('NFKD', text).encode('ascii', 'ignore').decode('utf-8')
+    return unicodedata.normalize("NFKD", text).encode("ascii", "ignore").decode("utf-8")

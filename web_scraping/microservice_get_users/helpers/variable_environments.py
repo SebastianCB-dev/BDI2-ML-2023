@@ -7,7 +7,7 @@ def validate_env_vars():
     Returns:
         bool: True if all required environment variables are set, False otherwise.
     """
-    required_vars = ['IG_USERNAME', 'IG_PASSWORD', 'POSTGRES_URL']
+    required_vars = ["IG_USERNAME", "IG_PASSWORD", "POSTGRES_URL"]
     for var in required_vars:
         if not os.getenv(var):
             return False
