@@ -1990,3 +1990,9 @@ Backtrace:
 2023-06-19 15:57:29,300 - root - INFO - Driver found to Darwin_ARM
 2023-06-19 15:57:31,139 - root - INFO - Database connection started
 2023-06-19 15:57:31,139 - root - INFO - Database connection started
+2023-06-19 15:58:13,176 - root - INFO - Driver found to Darwin_ARM
+2023-06-19 15:58:13,176 - root - INFO - Driver found to Darwin_ARM
+2023-06-19 15:58:14,532 - root - INFO - Database connection started
+2023-06-19 15:58:14,532 - root - INFO - Database connection started
+2023-06-19 15:58:14,533 - root - CRITICAL - Error with the Scraper 'Scraper' object has no attribute 'get_users'
+2023-06-19 15:58:14,533 - root - CRITICAL - Error with the Scraper 'Scraper' object has no attribute 'get_users'

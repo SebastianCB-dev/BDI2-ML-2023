@@ -18,6 +18,6 @@ scraper = Scraper()
 
 # Start the scraper
 try:
-    scraper.get_users()
+    scraper.get_posts_from_instagram()
 except Exception as e:
     scraper.get_logger().critical(f"Error with the Scraper {e.__str__()}")    
