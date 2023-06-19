@@ -3,7 +3,7 @@ set -e
 
 DOCKER_MICROSERVICE_GET_USERS="microservice_get_users"
 
-DOCKER_VERSION_IMG="1.1.1-prod"
+DOCKER_VERSION_IMG="1.2.0-prod"
 
 # build browser
 docker build --no-cache --platform linux/amd64 -t $DOCKER_MICROSERVICE_GET_USERS .
