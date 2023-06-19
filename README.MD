@@ -66,6 +66,20 @@ Here are some additional notes regarding the project:
 - Each microservice within the project has its own Dockerfile for building the corresponding image.
 - If you intend to run the microservices in production mode, make sure to modify the `production.Unix.sh` file with your own credentials.
 
+## Possible Issues
+
+You will probably be able to get the following issues:
+
+1. ChromeDriver issues:
+   - Validate that you ChromeDriver's version is the same that you Google Chrome's version.
+   - Make sure that the ChromeDriver's path is correctly typed.
+
+2. Environment Variables issues:
+   - Actually you have to stablish 3 environment variables (IG_USERNAME, IG_PASSWORD and POSTGRES_URL) to the correctly functionality
+
+3. The program broke suddenly.
+   - This could be happen because it is a scraper and maybe you have to change some script to get the correct HTML's elements.
+
 ## Acknowledgment
 
 We would like to extend our appreciation to @drojas159 for contributing valuable Web Scraping scripts to the project.
