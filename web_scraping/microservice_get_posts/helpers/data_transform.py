@@ -3,7 +3,7 @@ import unicodedata
 
 def deleteVerified(text):
     # This function deletes the verified text from the username
-    newText = text.split('\n')
+    newText = text.split("\n")
     if (len(newText) > 1):
         newText.pop()
     return newText[0]
