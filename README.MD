@@ -10,7 +10,7 @@ The BDI-II project is currently in progress and aims to enhance the existing BDI
 
 The project incorporates the following machine learning model:
 
-![Model-ML-BDI-II](https://images2.imgbox.com/4a/db/CDNDXpw3_o.png)
+![Model-ML-BDI-II](https://images2.imgbox.com/7f/61/ou4pnlOO_o.png)
 
 ## Installation
 
