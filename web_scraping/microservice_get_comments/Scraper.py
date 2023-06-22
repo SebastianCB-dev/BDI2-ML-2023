@@ -66,7 +66,7 @@ class Scraper:
             self.logger.error("Don't recognize the operating system")
             Exception("Don't recognize the operating system")
         options = Options()
-        if (platform != "Windows"):
+        if (platform != "Windows" and platform != "Darwin_ARM"):
             options.add_argument('--no-sandbox')
             options.add_argument('--headless')
             options.add_argument('--disable-dev-shm-usage')
@@ -218,7 +218,6 @@ class Scraper:
                 "span", {"class": "_aacl _aaco _aacu _aacx _aad7 _aade"})
             username = soup.find("a")
             username = username.text
-            print(username)
             username = deleteVerified(username)
             if text is None:
                 text = soup.find(
