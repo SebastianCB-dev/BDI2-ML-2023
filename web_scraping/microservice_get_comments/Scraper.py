@@ -7,13 +7,14 @@ import time
 from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.common.exceptions import TimeoutException, NoSuchElementException
+from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 
 # Custom libraries
 from helpers.data_transform import deleteVerified, text_to_unicode
-from helpers.platform import get_platform
+from helpers.platform import get_platform, is_darwin_arm_validator
 from services.database_service import DatabaseService
 from services.logging_service import LoggingService
 
