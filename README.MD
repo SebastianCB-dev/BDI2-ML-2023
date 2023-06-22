@@ -28,6 +28,7 @@ This command will install the required libraries, including:
 - Selenium
 - python-dotenv
 - psycopg2
+- bs4
 
 ## Configuration
 
