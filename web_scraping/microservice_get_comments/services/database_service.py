@@ -4,7 +4,7 @@ from .logging_service import LoggingService
 
 
 class DatabaseService:
-    logger = LoggingService().getLogging()
+    logger = LoggingService().get_logging()
 
     def __init__(self, url):
         # This function initializes the class

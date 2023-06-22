@@ -24,5 +24,5 @@ class LoggingService:
       self.logger.addHandler(self.file_handler)
       self.logger.setLevel(logging.INFO)
 
-    def getLogging(self):
+    def get_logging(self):
       return self.logger
