@@ -20,7 +20,7 @@ from services.logging_service import LoggingService
 class Scraper:
     # Public Properties
     driver = None
-    logger = LoggingService().getLogging()
+    logger = LoggingService().get_logging()
 
     def __init__(self):
         """Constructor
