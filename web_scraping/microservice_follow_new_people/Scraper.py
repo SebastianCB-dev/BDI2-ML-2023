@@ -12,7 +12,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 
 # Custom libraries
-from helpers.data_transform import deleteVerified, text_to_unicode
+from helpers.data_transform import delete_verified, text_to_unicode
 from helpers.platform import get_platform
 from services.logging_service import LoggingService
 

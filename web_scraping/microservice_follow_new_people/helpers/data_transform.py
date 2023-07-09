@@ -1,6 +1,6 @@
 import unicodedata
 
-def deleteVerified(text):
+def delete_verified(text):
   # This function deletes the verified text from the username
   newText = text.split('\n')
   if(len(newText) > 1):
