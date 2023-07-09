@@ -116,6 +116,7 @@ class Scraper:
         while True:
             # Get 4 posts with status PENDING
             posts = self.databaseService.get_posts()
+            posts = ['https://www.instagram.com/p/Cqfsl73OmfR/']
             for post in posts:
                 self.driver.get(post)
                 comments = self.scroll_comments()
@@ -249,8 +250,11 @@ class Scraper:
         buttons = self.driver.find_elements(
             By.CSS_SELECTOR, value='button._acan._acao._acas._aj1-')
         for button in buttons:
-            span_element = button.find_element(By.XPATH,
-                                               ".//span[contains(text(), 'View replies')]")
-            if (span_element is not None):
-                button.click()
-            time.sleep(2)
+            try:
+                span_element = button.find_element(By.CSS_SELECTOR,
+                                               "span._a9yi")
+                if ('View Replies' in span_element.text or 'View replies' in span_element.text):
+                    button.click()
+                time.sleep(2)
+            except Exception as e:
+                continue
