@@ -396,3 +396,7 @@ Backtrace:
 2023-05-10 20:05:04,859 - root - ERROR - Error: Message: 
 
 2023-05-10 20:05:47,413 - root - INFO - Driver found to Windows
+2023-07-09 14:34:58,000 - root - INFO - Driver found to Darwin_ARM
+2023-07-09 14:35:37,012 - root - INFO - Driver found to Darwin_ARM
+2023-07-09 14:35:58,189 - root - INFO - Driver found to Darwin_ARM
+2023-07-09 14:36:25,263 - root - INFO - Driver found to Darwin_ARM
