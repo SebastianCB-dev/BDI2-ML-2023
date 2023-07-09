@@ -9,6 +9,6 @@ scraper = Scraper()
 
 # Start the scraper
 try:  
-  scraper.followNewPeople()
+  scraper.follow_new_people()
 except Exception as e:
-  scraper.getLogger().critical(f"Error with the Scraper {e.__str__()}")
+  scraper.get_logger().critical(f"Error with the Scraper {e.__str__()}")

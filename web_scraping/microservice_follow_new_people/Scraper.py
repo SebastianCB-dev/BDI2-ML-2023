@@ -1,18 +1,18 @@
 # Standard libraries
+import json
 import os
 import time
-import json
 
 # Third-party libraries
 from selenium import webdriver
+from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.support.ui import WebDriverWait
 
 # Custom libraries
-from helpers.platform import get_platform
 from helpers.data_transform import deleteVerified, text_to_unicode
+from helpers.platform import get_platform
 from services.logging_service import LoggingService
 
 
@@ -26,19 +26,22 @@ class Scraper:
             This function initializes the class
             Set the driver 
         """
-        self.setDriver()
+        self.set_driver()
 
-    def getLogger(self):
+    def get_logger(self):
         # This function returns the logger
         return self.logger
 
-    def setDriver(self):
+    def set_driver(self):
         """Driver
             This function sets the driver
             The driver allows to use the browser and navigate through the web
         """
-        # get_platform() returns the operating system
+       # get_platform() returns the operating system
         platform = get_platform()
+        is_darwin_arm = is_darwin_arm_validator()
+        if (platform == "Darwin" and is_darwin_arm):
+            platform = "Darwin_ARM"
         driver_path = None
         # Load the drivers' paths from the json file
         with open("./helpers/drivers.json") as f:
@@ -47,23 +50,22 @@ class Scraper:
             self.logger.info(f"Driver found to {platform}")
             driver_path = drivers[platform]
         else:
-            self.logger.error("Don't recognize the operating system")
-            Exception("Don't recognize the operating system")
-        options = webdriver.ChromeOptions()
-        if (platform == "Windows"):
-            self.driver = webdriver.Chrome(executable_path=driver_path)
-            self.driver.maximize_window()
-            return
+            self.logger.error("Could not recognize the operating system")
+            Exception("Could not recognize the operating system")
+        options = Options()
+        if (platform != "Windows"):
+            options.add_argument('--no-sandbox')
+            options.add_argument('--headless')
+            options.add_argument('--disable-dev-shm-usage')
+            options.add_argument('--disable-gpu')
+            options.add_argument('--incognito')
+        options.add_argument("--disable-extensions")
+        options.add_argument("--lang=en")
         # If the operating system is Linux, then set the options
-        options.add_argument('--no-sandbox')
-        options.add_argument('--disable-dev-shm-usage')
-        options.add_argument('--headless')
-        options.add_argument('--disable-gpu')
-        options.add_argument('--incognito')
-        self.driver = webdriver.Chrome(executable_path=driver_path, options=options)
-        self.driver.maximize_window()
+        self.driver = webdriver.Chrome(
+            executable_path=driver_path, options=options)
 
-    def followNewPeople(self):
+    def follow_new_people(self):
         """Follow new People
             This function follows new people in Instagram
             It is necessary to be logged in to get the users.
@@ -83,17 +85,18 @@ class Scraper:
         password_field.send_keys(os.getenv("IG_PASSWORD"))
         # Click on login button
         login_button = WebDriverWait(self.driver, 10).until(
-            EC.presence_of_element_located((By.XPATH, "//button[@type='submit']"))
+            EC.presence_of_element_located(
+                (By.XPATH, "//button[@type='submit']"))
         )
         login_button.click()
         # Click on not now button
-        botones = [
+        xpath_buttons_not_now = [
             "//button[contains(text(), 'Not Now')]",
             "//div[contains(text(), 'Not Now')]",
             "//span[contains(text(), 'Not Now')]",
             "//div[contains(text(), 'Not now')]",
         ]
-        not_now_button = self.buscar_botones(self.driver, botones)
+        not_now_button = self.search_buttons(self.driver, xpath_buttons_not_now)
         not_now_button.click()
 
         # Go to main page
@@ -106,14 +109,14 @@ class Scraper:
                     EC.presence_of_all_elements_located(
                         (By.CSS_SELECTOR, "button._acan._acap._acas._aj1-")))
                 print(buttons, len(buttons))
-                for button in buttons:                     
+                for button in buttons:
                     try:
-                        div = button.find_element(By.CSS_SELECTOR, 'div>div')                        
+                        div = button.find_element(By.CSS_SELECTOR, 'div>div')
                         if div.text == 'Follow':
                             button.click()
-                            time.sleep(2)                        
+                            time.sleep(2)
                     except Exception as e:
-                        continue                    
+                        continue
                 # Wait 2 minutes until next iteration to avoid being blocked
                 time.sleep(120)
             except Exception as e:
@@ -121,13 +124,13 @@ class Scraper:
                 time.sleep(120)
                 continue
 
-    def buscar_botones(self, driver, botones):
+    def search_buttons(self, driver, buttons):
         # This function search for buttons in a list of XPATH
-        for boton in botones:
+        for button in buttons:
             try:
                 return WebDriverWait(driver, 10).until(
-                    EC.presence_of_element_located((By.XPATH, boton))
+                    EC.presence_of_element_located((By.XPATH, button))
                 )
             except TimeoutException:
                 continue
-        raise TimeoutException("No se pudo encontrar ningún botón en la lista")
+        raise TimeoutException("There is no any button in the list")
