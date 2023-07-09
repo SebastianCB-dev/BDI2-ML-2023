@@ -13,7 +13,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 
 # Custom libraries
 from helpers.data_transform import delete_verified, text_to_unicode
-from helpers.platform import get_platform
+from helpers.platform import get_platform, is_darwin_arm_validator
 from services.logging_service import LoggingService
 
 
