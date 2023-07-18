@@ -166,3 +166,4 @@ web_scraping/microservice_get_users/logs/logs.txt
 web_scraping/microservice_get_comments/logs/logs.txt
 web_scraping/microservice_follow_new_people/logs/logs.txt
 web_scraping/microservice_get_posts/logs/logs.txt
+artificial_intelligence/microservice_get_comments/logs/logs.txt

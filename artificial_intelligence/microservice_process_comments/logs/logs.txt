@@ -1,0 +1,4 @@
+2023-07-18 00:01:23,967 - root - INFO - Database connection started
+2023-07-18 00:01:23,967 - root - INFO - Database connection started
+2023-07-18 00:01:23,968 - root - CRITICAL - Error with the Model: 'Model' object has no attribute 'process_comments'
+2023-07-18 00:01:23,968 - root - CRITICAL - Error with the Model: 'Model' object has no attribute 'process_comments'

@@ -25,11 +25,11 @@ Lo que se hace:
 * joblib
 * skicit-learn
 ```
-pip install emoji nltk sklearn spacy stanza wheel hunspell numpy gensim pyemd joblib scikit-learn
+pip install emoji nltk spacy stanza wheel hunspell numpy gensim pyemd joblib scikit-learn
 ```
 o
 ```
-pip3 install emoji nltk sklearn spacy stanza wheel hunspell numpy gensim pyemd joblib scikit-learn
+pip3 install emoji nltk spacy stanza wheel hunspell numpy gensim pyemd joblib scikit-learn
 ```
 
 # Errores:
