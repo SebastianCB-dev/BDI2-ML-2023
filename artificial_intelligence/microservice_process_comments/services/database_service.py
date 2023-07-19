@@ -18,3 +18,14 @@ class DatabaseService:
         comments = self.cur.fetchall()
         comments = [{'id': comment[0], 'username': comment[1], 'user_comment': comment[2]} for comment in comments]        
         return comments
+    
+    def get_bdi(self, username):
+        # This function returns the bdi
+        self.cur.execute("SELECT bdi FROM users WHERE username = %s", (username,))
+        bdi = self.cur.fetchone()
+        if bdi is None:
+            return 0
+        return bdi[0]
+    
+    def create_bdi(self, username):
+        pass
