@@ -3944,3 +3944,865 @@
 2023-07-18 22:38:03,452 - root - INFO - Processing comment: 20- el_seebaaas
 2023-07-18 22:38:03,453 - root - INFO - Processing comment: 21- john_ja10
 2023-07-18 22:38:03,453 - root - INFO - Processing comment: 21- john_ja10
+2023-07-19 00:17:45,519 - root - INFO - Database connection started
+2023-07-19 00:17:45,519 - root - INFO - Database connection started
+2023-07-19 00:17:45,694 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:17:45,694 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:18:36,432 - root - INFO - Database connection started
+2023-07-19 00:18:36,432 - root - INFO - Database connection started
+2023-07-19 00:18:36,615 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:18:36,615 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:21:01,756 - root - INFO - Database connection started
+2023-07-19 00:21:01,756 - root - INFO - Database connection started
+2023-07-19 00:21:01,925 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:21:01,925 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:22:02,344 - root - INFO - Database connection started
+2023-07-19 00:22:02,344 - root - INFO - Database connection started
+2023-07-19 00:22:02,519 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:22:02,519 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:22:25,886 - root - INFO - Database connection started
+2023-07-19 00:22:25,886 - root - INFO - Database connection started
+2023-07-19 00:22:26,062 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:22:26,062 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:22:26,337 - root - INFO - BDI created for user: test comment
+2023-07-19 00:22:26,337 - root - INFO - BDI created for user: test comment
+2023-07-19 00:23:13,873 - root - INFO - Database connection started
+2023-07-19 00:23:13,873 - root - INFO - Database connection started
+2023-07-19 00:23:14,050 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:23:14,050 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:23:14,312 - root - INFO - BDI created for user: test comment
+2023-07-19 00:23:14,312 - root - INFO - BDI created for user: test comment
+2023-07-19 00:25:14,530 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:25:14,530 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:25:34,729 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:25:34,729 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:25:54,911 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:25:54,911 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:26:15,113 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:26:15,113 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:26:35,299 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:26:35,299 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:26:55,507 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:26:55,507 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:27:15,708 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:27:15,708 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:27:35,913 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:27:35,913 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:27:56,112 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:27:56,112 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:28:16,296 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:28:16,296 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:28:36,490 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:28:36,490 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:28:56,700 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:28:56,700 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:29:16,888 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:29:16,888 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:29:37,067 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:29:37,067 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:29:57,244 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:29:57,244 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:30:17,436 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:30:17,436 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:30:37,621 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:30:37,621 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:30:57,817 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:30:57,817 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:31:17,996 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:31:17,996 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:31:38,221 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:31:38,221 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:31:58,418 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:31:58,418 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:32:18,600 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:32:18,600 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:32:38,823 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:32:38,823 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:32:59,064 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:32:59,064 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:33:19,258 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:33:19,258 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:33:39,453 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:33:39,453 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:33:59,655 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:33:59,655 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:34:19,838 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:34:19,838 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:34:40,025 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:34:40,025 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:35:00,216 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:35:00,216 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:35:20,411 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:35:20,411 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:35:40,591 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:35:40,591 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:36:00,796 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:36:00,796 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:36:20,977 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:36:20,977 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:36:41,168 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:36:41,168 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:37:01,356 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:37:01,356 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:37:21,549 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:37:21,549 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:37:41,741 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:37:41,741 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:38:01,946 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:38:01,946 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:38:22,146 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:38:22,146 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:38:42,331 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:38:42,331 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:39:02,519 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:39:02,519 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:39:22,705 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:39:22,705 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:39:42,905 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:39:42,905 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:40:03,112 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:40:03,112 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:40:23,311 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:40:23,311 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:40:43,487 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:40:43,487 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:41:03,680 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:41:03,680 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:41:23,892 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:41:23,892 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:41:44,078 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:41:44,078 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:41:54,188 - root - INFO - Database connection started
+2023-07-19 00:41:54,188 - root - INFO - Database connection started
+2023-07-19 00:41:54,352 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:41:54,352 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:41:54,615 - root - INFO - BDI created for user: test
+2023-07-19 00:41:54,615 - root - INFO - BDI created for user: test
+2023-07-19 00:42:27,536 - root - INFO - Database connection started
+2023-07-19 00:42:27,536 - root - INFO - Database connection started
+2023-07-19 00:42:27,700 - root - INFO - Processing comment: 99999- test
+2023-07-19 00:42:27,700 - root - INFO - Processing comment: 99999- test
+2023-07-20 19:22:57,989 - root - INFO - Database connection started
+2023-07-20 19:22:57,989 - root - INFO - Database connection started
+2023-07-20 19:22:58,212 - root - INFO - Processing comment: 99999- test
+2023-07-20 19:22:58,212 - root - INFO - Processing comment: 99999- test
+2023-07-20 19:30:57,424 - gensim.utils - INFO - loading Word2Vec object from ./depresion.model
+2023-07-20 19:30:57,424 - gensim.utils - INFO - loading Word2Vec object from ./depresion.model
+2023-07-20 19:32:48,941 - gensim.utils - INFO - loading Word2Vec object from ../model/depresion.es.model
+2023-07-20 19:32:48,941 - gensim.utils - INFO - loading Word2Vec object from ../model/depresion.es.model
+2023-07-20 19:33:36,289 - gensim.utils - INFO - loading Word2Vec object from model/depresion.es.model
+2023-07-20 19:33:36,289 - gensim.utils - INFO - loading Word2Vec object from model/depresion.es.model
+2023-07-20 19:33:41,567 - gensim.utils - INFO - loading Word2Vec object from /model/depresion.es.model
+2023-07-20 19:33:41,567 - gensim.utils - INFO - loading Word2Vec object from /model/depresion.es.model
+2023-07-20 19:33:46,491 - gensim.utils - INFO - loading Word2Vec object from ../model/depresion.es.model
+2023-07-20 19:33:46,491 - gensim.utils - INFO - loading Word2Vec object from ../model/depresion.es.model
+2023-07-20 19:34:00,744 - gensim.utils - INFO - loading Word2Vec object from /Users/sebastiancb/Code/BDI2-ML-2023/artificial_intelligence/model/depresion.es.model
+2023-07-20 19:34:00,744 - gensim.utils - INFO - loading Word2Vec object from /Users/sebastiancb/Code/BDI2-ML-2023/artificial_intelligence/model/depresion.es.model
+2023-07-20 19:34:21,276 - gensim.utils - INFO - loading Word2Vec object from depresion.es.model
+2023-07-20 19:34:21,276 - gensim.utils - INFO - loading Word2Vec object from depresion.es.model
+2023-07-20 19:34:21,465 - gensim.utils - INFO - loading wv recursively from depresion.es.model.wv.* with mmap=None
+2023-07-20 19:34:21,465 - gensim.utils - INFO - loading wv recursively from depresion.es.model.wv.* with mmap=None
+2023-07-20 19:34:21,466 - gensim.utils - INFO - setting ignored attribute cum_table to None
+2023-07-20 19:34:21,466 - gensim.utils - INFO - setting ignored attribute cum_table to None
+2023-07-20 19:34:21,512 - gensim.utils - INFO - Word2Vec lifecycle event {'fname': 'depresion.es.model', 'datetime': '2023-07-20T19:34:21.511648', 'gensim': '4.3.1', 'python': '3.10.7 (main, May 29 2023, 13:51:48) [GCC 12.2.0]', 'platform': 'Linux-5.15.49-linuxkit-pr-aarch64-with-glibc2.36', 'event': 'loaded'}
+2023-07-20 19:34:21,512 - gensim.utils - INFO - Word2Vec lifecycle event {'fname': 'depresion.es.model', 'datetime': '2023-07-20T19:34:21.511648', 'gensim': '4.3.1', 'python': '3.10.7 (main, May 29 2023, 13:51:48) [GCC 12.2.0]', 'platform': 'Linux-5.15.49-linuxkit-pr-aarch64-with-glibc2.36', 'event': 'loaded'}
+2023-07-20 19:34:21,513 - root - INFO - Model loaded
+2023-07-20 19:34:21,513 - root - INFO - Model loaded
+2023-07-20 19:34:23,101 - root - INFO - Database connection started
+2023-07-20 19:34:23,101 - root - INFO - Database connection started
+2023-07-20 19:34:23,297 - root - INFO - Processing comment: 99999- test
+2023-07-20 19:34:23,297 - root - INFO - Processing comment: 99999- test
+2023-07-20 19:55:42,793 - gensim.utils - INFO - loading Word2Vec object from /app/model/depresion.es.model
+2023-07-20 19:55:42,793 - gensim.utils - INFO - loading Word2Vec object from /app/model/depresion.es.model
+2023-07-20 19:55:42,794 - gensim.models.word2vec - ERROR - Model load error. Was model saved using code from an older Gensim Version? Try loading older model using gensim-3.8.3, then re-saving, to restore compatibility with current code.
+2023-07-20 19:55:42,794 - gensim.models.word2vec - ERROR - Model load error. Was model saved using code from an older Gensim Version? Try loading older model using gensim-3.8.3, then re-saving, to restore compatibility with current code.
+2023-07-20 20:00:36,133 - gensim.utils - INFO - loading Word2Vec object from /app/model/depresion.es.model
+2023-07-20 20:00:36,133 - gensim.utils - INFO - loading Word2Vec object from /app/model/depresion.es.model
+2023-07-20 20:01:07,399 - gensim.utils - INFO - loading Word2Vec object from /model/depresion.es.model
+2023-07-20 20:01:07,399 - gensim.utils - INFO - loading Word2Vec object from /model/depresion.es.model
+2023-07-20 20:01:26,469 - gensim.utils - INFO - loading Word2Vec object from /model/depresion.es.model
+2023-07-20 20:01:26,469 - gensim.utils - INFO - loading Word2Vec object from /model/depresion.es.model
+2023-07-20 20:02:09,584 - gensim.utils - INFO - loading Word2Vec object from /app/model/depresion.es.model
+2023-07-20 20:02:09,584 - gensim.utils - INFO - loading Word2Vec object from /app/model/depresion.es.model
+2023-07-20 20:08:20,346 - gensim.utils - INFO - loading Word2Vec object from /../../model/depresion.es.model
+2023-07-20 20:08:20,346 - gensim.utils - INFO - loading Word2Vec object from /../../model/depresion.es.model
+2023-07-20 20:08:36,754 - gensim.utils - INFO - loading Word2Vec object from /model/depresion.es.model
+2023-07-20 20:08:36,754 - gensim.utils - INFO - loading Word2Vec object from /model/depresion.es.model
+2023-07-20 20:09:34,560 - root - INFO - Database connection started
+2023-07-20 20:09:34,560 - root - INFO - Database connection started
+2023-07-20 20:09:34,763 - root - INFO - Processing comment: 99999- test
+2023-07-20 20:09:34,763 - root - INFO - Processing comment: 99999- test
+2023-07-20 20:09:51,143 - root - INFO - Database connection started
+2023-07-20 20:09:51,143 - root - INFO - Database connection started
+2023-07-20 20:09:51,337 - root - INFO - Processing comment: 99999- test
+2023-07-20 20:09:51,337 - root - INFO - Processing comment: 99999- test
+2023-07-20 20:10:19,583 - root - INFO - Database connection started
+2023-07-20 20:10:19,583 - root - INFO - Database connection started
+2023-07-20 20:10:19,774 - root - INFO - Processing comment: 99999- test
+2023-07-20 20:10:19,774 - root - INFO - Processing comment: 99999- test
+2023-07-20 20:10:43,490 - root - INFO - Database connection started
+2023-07-20 20:10:43,490 - root - INFO - Database connection started
+2023-07-20 20:10:43,670 - root - INFO - Processing comment: 99999- test
+2023-07-20 20:10:43,670 - root - INFO - Processing comment: 99999- test
+2023-07-20 20:11:12,945 - root - INFO - Database connection started
+2023-07-20 20:11:12,945 - root - INFO - Database connection started
+2023-07-20 20:11:13,117 - root - INFO - Processing comment: 99999- test
+2023-07-20 20:11:13,117 - root - INFO - Processing comment: 99999- test
+2023-07-20 20:11:26,669 - root - INFO - Database connection started
+2023-07-20 20:11:26,669 - root - INFO - Database connection started
+2023-07-20 20:11:26,851 - root - INFO - Processing comment: 99999- test
+2023-07-20 20:11:26,851 - root - INFO - Processing comment: 99999- test
+2023-07-20 20:12:47,412 - gensim.utils - INFO - loading Word2Vec object from ../model/depresion.es.model
+2023-07-20 20:12:47,412 - gensim.utils - INFO - loading Word2Vec object from ../model/depresion.es.model
+2023-07-20 20:13:43,095 - gensim.utils - INFO - loading Word2Vec object from ../model/depresion.es.model
+2023-07-20 20:13:43,095 - gensim.utils - INFO - loading Word2Vec object from ../model/depresion.es.model
+2023-07-20 20:16:03,074 - gensim.utils - INFO - loading Word2Vec object from model/depresion.es.model
+2023-07-20 20:16:03,074 - gensim.utils - INFO - loading Word2Vec object from model/depresion.es.model
+2023-07-20 20:16:03,266 - gensim.utils - INFO - loading wv recursively from model/depresion.es.model.wv.* with mmap=None
+2023-07-20 20:16:03,266 - gensim.utils - INFO - loading wv recursively from model/depresion.es.model.wv.* with mmap=None
+2023-07-20 20:16:03,267 - gensim.utils - INFO - setting ignored attribute cum_table to None
+2023-07-20 20:16:03,267 - gensim.utils - INFO - setting ignored attribute cum_table to None
+2023-07-20 20:16:03,312 - gensim.utils - INFO - Word2Vec lifecycle event {'fname': 'model/depresion.es.model', 'datetime': '2023-07-20T20:16:03.311377', 'gensim': '4.3.1', 'python': '3.10.7 (main, May 29 2023, 13:51:48) [GCC 12.2.0]', 'platform': 'Linux-5.15.49-linuxkit-pr-aarch64-with-glibc2.36', 'event': 'loaded'}
+2023-07-20 20:16:03,312 - gensim.utils - INFO - Word2Vec lifecycle event {'fname': 'model/depresion.es.model', 'datetime': '2023-07-20T20:16:03.311377', 'gensim': '4.3.1', 'python': '3.10.7 (main, May 29 2023, 13:51:48) [GCC 12.2.0]', 'platform': 'Linux-5.15.49-linuxkit-pr-aarch64-with-glibc2.36', 'event': 'loaded'}
+2023-07-20 20:16:03,313 - root - INFO - Model loaded
+2023-07-20 20:16:03,313 - root - INFO - Model loaded
+2023-07-20 20:16:04,010 - root - INFO - Database connection started
+2023-07-20 20:16:04,010 - root - INFO - Database connection started
+2023-07-20 20:16:04,181 - root - INFO - Processing comment: 99999- test
+2023-07-20 20:16:04,181 - root - INFO - Processing comment: 99999- test
+2023-07-20 20:51:01,250 - gensim.utils - INFO - loading Word2Vec object from model/depresion.es.model
+2023-07-20 20:51:01,250 - gensim.utils - INFO - loading Word2Vec object from model/depresion.es.model
+2023-07-20 20:51:01,327 - gensim.utils - INFO - loading wv recursively from model/depresion.es.model.wv.* with mmap=None
+2023-07-20 20:51:01,327 - gensim.utils - INFO - loading wv recursively from model/depresion.es.model.wv.* with mmap=None
+2023-07-20 20:51:01,328 - gensim.utils - INFO - setting ignored attribute cum_table to None
+2023-07-20 20:51:01,328 - gensim.utils - INFO - setting ignored attribute cum_table to None
+2023-07-20 20:51:01,372 - gensim.utils - INFO - Word2Vec lifecycle event {'fname': 'model/depresion.es.model', 'datetime': '2023-07-20T20:51:01.371651', 'gensim': '4.3.1', 'python': '3.10.7 (main, May 29 2023, 13:51:48) [GCC 12.2.0]', 'platform': 'Linux-5.15.49-linuxkit-pr-aarch64-with-glibc2.36', 'event': 'loaded'}
+2023-07-20 20:51:01,372 - gensim.utils - INFO - Word2Vec lifecycle event {'fname': 'model/depresion.es.model', 'datetime': '2023-07-20T20:51:01.371651', 'gensim': '4.3.1', 'python': '3.10.7 (main, May 29 2023, 13:51:48) [GCC 12.2.0]', 'platform': 'Linux-5.15.49-linuxkit-pr-aarch64-with-glibc2.36', 'event': 'loaded'}
+2023-07-20 20:51:01,374 - root - INFO - Model loaded
+2023-07-20 20:51:01,374 - root - INFO - Model loaded
+2023-07-20 20:51:02,878 - root - INFO - Database connection started
+2023-07-20 20:51:02,878 - root - INFO - Database connection started
+2023-07-20 20:51:03,412 - stanza - INFO - Downloading these customized packages for language: es (Spanish)...
+==============================
+| Processor       | Package  |
+------------------------------
+| tokenize        | ancora   |
+| mwt             | ancora   |
+| pos             | ancora   |
+| lemma           | ancora   |
+| backward_charlm | newswiki |
+| forward_charlm  | newswiki |
+| pretrain        | ancora   |
+==============================
+
+2023-07-20 20:51:03,412 - stanza - INFO - Downloading these customized packages for language: es (Spanish)...
+==============================
+| Processor       | Package  |
+------------------------------
+| tokenize        | ancora   |
+| mwt             | ancora   |
+| pos             | ancora   |
+| lemma           | ancora   |
+| backward_charlm | newswiki |
+| forward_charlm  | newswiki |
+| pretrain        | ancora   |
+==============================
+
+2023-07-20 20:51:28,923 - stanza - INFO - Finished downloading models and saved to /root/stanza_resources.
+2023-07-20 20:51:28,923 - stanza - INFO - Finished downloading models and saved to /root/stanza_resources.
+2023-07-20 20:51:28,925 - stanza - INFO - Checking for updates to resources.json in case models have been updated.  Note: this behavior can be turned off with download_method=None or download_method=DownloadMethod.REUSE_RESOURCES
+2023-07-20 20:51:28,925 - stanza - INFO - Checking for updates to resources.json in case models have been updated.  Note: this behavior can be turned off with download_method=None or download_method=DownloadMethod.REUSE_RESOURCES
+2023-07-20 20:51:29,422 - stanza - INFO - Loading these models for language: es (Spanish):
+=======================
+| Processor | Package |
+-----------------------
+| tokenize  | ancora  |
+| mwt       | ancora  |
+| pos       | ancora  |
+| lemma     | ancora  |
+=======================
+
+2023-07-20 20:51:29,422 - stanza - INFO - Loading these models for language: es (Spanish):
+=======================
+| Processor | Package |
+-----------------------
+| tokenize  | ancora  |
+| mwt       | ancora  |
+| pos       | ancora  |
+| lemma     | ancora  |
+=======================
+
+2023-07-20 20:51:29,424 - stanza - WARNING - GPU requested, but is not available!
+2023-07-20 20:51:29,424 - stanza - WARNING - GPU requested, but is not available!
+2023-07-20 20:51:29,425 - stanza - INFO - Using device: cpu
+2023-07-20 20:51:29,425 - stanza - INFO - Using device: cpu
+2023-07-20 20:51:29,426 - stanza - INFO - Loading: tokenize
+2023-07-20 20:51:29,426 - stanza - INFO - Loading: tokenize
+2023-07-20 20:51:29,439 - stanza - INFO - Loading: mwt
+2023-07-20 20:51:29,439 - stanza - INFO - Loading: mwt
+2023-07-20 20:51:29,443 - stanza - INFO - Loading: pos
+2023-07-20 20:51:29,443 - stanza - INFO - Loading: pos
+2023-07-20 20:51:29,899 - stanza - INFO - Loading: lemma
+2023-07-20 20:51:29,899 - stanza - INFO - Loading: lemma
+2023-07-20 20:51:29,931 - stanza - INFO - Done loading processors!
+2023-07-20 20:51:29,931 - stanza - INFO - Done loading processors!
+2023-07-20 20:52:48,603 - gensim.utils - INFO - loading Word2Vec object from model/depresion.es.model
+2023-07-20 20:52:48,603 - gensim.utils - INFO - loading Word2Vec object from model/depresion.es.model
+2023-07-20 20:52:48,648 - gensim.utils - INFO - loading wv recursively from model/depresion.es.model.wv.* with mmap=None
+2023-07-20 20:52:48,648 - gensim.utils - INFO - loading wv recursively from model/depresion.es.model.wv.* with mmap=None
+2023-07-20 20:52:48,649 - gensim.utils - INFO - setting ignored attribute cum_table to None
+2023-07-20 20:52:48,649 - gensim.utils - INFO - setting ignored attribute cum_table to None
+2023-07-20 20:52:48,694 - gensim.utils - INFO - Word2Vec lifecycle event {'fname': 'model/depresion.es.model', 'datetime': '2023-07-20T20:52:48.693524', 'gensim': '4.3.1', 'python': '3.10.7 (main, May 29 2023, 13:51:48) [GCC 12.2.0]', 'platform': 'Linux-5.15.49-linuxkit-pr-aarch64-with-glibc2.36', 'event': 'loaded'}
+2023-07-20 20:52:48,694 - gensim.utils - INFO - Word2Vec lifecycle event {'fname': 'model/depresion.es.model', 'datetime': '2023-07-20T20:52:48.693524', 'gensim': '4.3.1', 'python': '3.10.7 (main, May 29 2023, 13:51:48) [GCC 12.2.0]', 'platform': 'Linux-5.15.49-linuxkit-pr-aarch64-with-glibc2.36', 'event': 'loaded'}
+2023-07-20 20:52:48,695 - root - INFO - Model loaded
+2023-07-20 20:52:48,695 - root - INFO - Model loaded
+2023-07-20 20:52:49,687 - root - INFO - Database connection started
+2023-07-20 20:52:49,687 - root - INFO - Database connection started
+2023-07-20 20:52:49,820 - stanza - INFO - Downloading these customized packages for language: es (Spanish)...
+==============================
+| Processor       | Package  |
+------------------------------
+| tokenize        | ancora   |
+| mwt             | ancora   |
+| pos             | ancora   |
+| lemma           | ancora   |
+| pretrain        | ancora   |
+| forward_charlm  | newswiki |
+| backward_charlm | newswiki |
+==============================
+
+2023-07-20 20:52:49,820 - stanza - INFO - Downloading these customized packages for language: es (Spanish)...
+==============================
+| Processor       | Package  |
+------------------------------
+| tokenize        | ancora   |
+| mwt             | ancora   |
+| pos             | ancora   |
+| lemma           | ancora   |
+| pretrain        | ancora   |
+| forward_charlm  | newswiki |
+| backward_charlm | newswiki |
+==============================
+
+2023-07-20 20:52:49,826 - stanza - INFO - File exists: /root/stanza_resources/es/tokenize/ancora.pt
+2023-07-20 20:52:49,826 - stanza - INFO - File exists: /root/stanza_resources/es/tokenize/ancora.pt
+2023-07-20 20:52:49,830 - stanza - INFO - File exists: /root/stanza_resources/es/mwt/ancora.pt
+2023-07-20 20:52:49,830 - stanza - INFO - File exists: /root/stanza_resources/es/mwt/ancora.pt
+2023-07-20 20:52:49,939 - stanza - INFO - File exists: /root/stanza_resources/es/pos/ancora.pt
+2023-07-20 20:52:49,939 - stanza - INFO - File exists: /root/stanza_resources/es/pos/ancora.pt
+2023-07-20 20:52:49,952 - stanza - INFO - File exists: /root/stanza_resources/es/lemma/ancora.pt
+2023-07-20 20:52:49,952 - stanza - INFO - File exists: /root/stanza_resources/es/lemma/ancora.pt
+2023-07-20 20:52:50,189 - stanza - INFO - File exists: /root/stanza_resources/es/pretrain/ancora.pt
+2023-07-20 20:52:50,189 - stanza - INFO - File exists: /root/stanza_resources/es/pretrain/ancora.pt
+2023-07-20 20:52:50,239 - stanza - INFO - File exists: /root/stanza_resources/es/forward_charlm/newswiki.pt
+2023-07-20 20:52:50,239 - stanza - INFO - File exists: /root/stanza_resources/es/forward_charlm/newswiki.pt
+2023-07-20 20:52:50,285 - stanza - INFO - File exists: /root/stanza_resources/es/backward_charlm/newswiki.pt
+2023-07-20 20:52:50,285 - stanza - INFO - File exists: /root/stanza_resources/es/backward_charlm/newswiki.pt
+2023-07-20 20:52:50,286 - stanza - INFO - Finished downloading models and saved to /root/stanza_resources.
+2023-07-20 20:52:50,286 - stanza - INFO - Finished downloading models and saved to /root/stanza_resources.
+2023-07-20 20:52:50,287 - stanza - INFO - Checking for updates to resources.json in case models have been updated.  Note: this behavior can be turned off with download_method=None or download_method=DownloadMethod.REUSE_RESOURCES
+2023-07-20 20:52:50,287 - stanza - INFO - Checking for updates to resources.json in case models have been updated.  Note: this behavior can be turned off with download_method=None or download_method=DownloadMethod.REUSE_RESOURCES
+2023-07-20 20:52:50,825 - stanza - INFO - Loading these models for language: es (Spanish):
+=======================
+| Processor | Package |
+-----------------------
+| tokenize  | ancora  |
+| mwt       | ancora  |
+| pos       | ancora  |
+| lemma     | ancora  |
+=======================
+
+2023-07-20 20:52:50,825 - stanza - INFO - Loading these models for language: es (Spanish):
+=======================
+| Processor | Package |
+-----------------------
+| tokenize  | ancora  |
+| mwt       | ancora  |
+| pos       | ancora  |
+| lemma     | ancora  |
+=======================
+
+2023-07-20 20:52:50,826 - stanza - WARNING - GPU requested, but is not available!
+2023-07-20 20:52:50,826 - stanza - WARNING - GPU requested, but is not available!
+2023-07-20 20:52:50,827 - stanza - INFO - Using device: cpu
+2023-07-20 20:52:50,827 - stanza - INFO - Using device: cpu
+2023-07-20 20:52:50,828 - stanza - INFO - Loading: tokenize
+2023-07-20 20:52:50,828 - stanza - INFO - Loading: tokenize
+2023-07-20 20:52:50,832 - stanza - INFO - Loading: mwt
+2023-07-20 20:52:50,832 - stanza - INFO - Loading: mwt
+2023-07-20 20:52:50,835 - stanza - INFO - Loading: pos
+2023-07-20 20:52:50,835 - stanza - INFO - Loading: pos
+2023-07-20 20:52:51,018 - stanza - INFO - Loading: lemma
+2023-07-20 20:52:51,018 - stanza - INFO - Loading: lemma
+2023-07-20 20:52:51,050 - stanza - INFO - Done loading processors!
+2023-07-20 20:52:51,050 - stanza - INFO - Done loading processors!
+2023-07-20 20:52:51,811 - root - INFO - Processing comment: 99999- test
+2023-07-20 20:52:51,811 - root - INFO - Processing comment: 99999- test
+2023-07-20 20:54:05,039 - gensim.utils - INFO - loading Word2Vec object from model/depresion.es.model
+2023-07-20 20:54:05,039 - gensim.utils - INFO - loading Word2Vec object from model/depresion.es.model
+2023-07-20 20:54:05,067 - gensim.utils - INFO - loading wv recursively from model/depresion.es.model.wv.* with mmap=None
+2023-07-20 20:54:05,067 - gensim.utils - INFO - loading wv recursively from model/depresion.es.model.wv.* with mmap=None
+2023-07-20 20:54:05,068 - gensim.utils - INFO - setting ignored attribute cum_table to None
+2023-07-20 20:54:05,068 - gensim.utils - INFO - setting ignored attribute cum_table to None
+2023-07-20 20:54:05,113 - gensim.utils - INFO - Word2Vec lifecycle event {'fname': 'model/depresion.es.model', 'datetime': '2023-07-20T20:54:05.111971', 'gensim': '4.3.1', 'python': '3.10.7 (main, May 29 2023, 13:51:48) [GCC 12.2.0]', 'platform': 'Linux-5.15.49-linuxkit-pr-aarch64-with-glibc2.36', 'event': 'loaded'}
+2023-07-20 20:54:05,113 - gensim.utils - INFO - Word2Vec lifecycle event {'fname': 'model/depresion.es.model', 'datetime': '2023-07-20T20:54:05.111971', 'gensim': '4.3.1', 'python': '3.10.7 (main, May 29 2023, 13:51:48) [GCC 12.2.0]', 'platform': 'Linux-5.15.49-linuxkit-pr-aarch64-with-glibc2.36', 'event': 'loaded'}
+2023-07-20 20:54:05,113 - root - INFO - Model loaded
+2023-07-20 20:54:05,113 - root - INFO - Model loaded
+2023-07-20 20:54:05,668 - root - INFO - Database connection started
+2023-07-20 20:54:05,668 - root - INFO - Database connection started
+2023-07-20 20:54:05,814 - stanza - INFO - Downloading these customized packages for language: es (Spanish)...
+==============================
+| Processor       | Package  |
+------------------------------
+| tokenize        | ancora   |
+| mwt             | ancora   |
+| pos             | ancora   |
+| lemma           | ancora   |
+| pretrain        | ancora   |
+| forward_charlm  | newswiki |
+| backward_charlm | newswiki |
+==============================
+
+2023-07-20 20:54:05,814 - stanza - INFO - Downloading these customized packages for language: es (Spanish)...
+==============================
+| Processor       | Package  |
+------------------------------
+| tokenize        | ancora   |
+| mwt             | ancora   |
+| pos             | ancora   |
+| lemma           | ancora   |
+| pretrain        | ancora   |
+| forward_charlm  | newswiki |
+| backward_charlm | newswiki |
+==============================
+
+2023-07-20 20:54:05,820 - stanza - INFO - File exists: /root/stanza_resources/es/tokenize/ancora.pt
+2023-07-20 20:54:05,820 - stanza - INFO - File exists: /root/stanza_resources/es/tokenize/ancora.pt
+2023-07-20 20:54:05,825 - stanza - INFO - File exists: /root/stanza_resources/es/mwt/ancora.pt
+2023-07-20 20:54:05,825 - stanza - INFO - File exists: /root/stanza_resources/es/mwt/ancora.pt
+2023-07-20 20:54:05,929 - stanza - INFO - File exists: /root/stanza_resources/es/pos/ancora.pt
+2023-07-20 20:54:05,929 - stanza - INFO - File exists: /root/stanza_resources/es/pos/ancora.pt
+2023-07-20 20:54:05,941 - stanza - INFO - File exists: /root/stanza_resources/es/lemma/ancora.pt
+2023-07-20 20:54:05,941 - stanza - INFO - File exists: /root/stanza_resources/es/lemma/ancora.pt
+2023-07-20 20:54:06,197 - stanza - INFO - File exists: /root/stanza_resources/es/pretrain/ancora.pt
+2023-07-20 20:54:06,197 - stanza - INFO - File exists: /root/stanza_resources/es/pretrain/ancora.pt
+2023-07-20 20:54:06,243 - stanza - INFO - File exists: /root/stanza_resources/es/forward_charlm/newswiki.pt
+2023-07-20 20:54:06,243 - stanza - INFO - File exists: /root/stanza_resources/es/forward_charlm/newswiki.pt
+2023-07-20 20:54:06,286 - stanza - INFO - File exists: /root/stanza_resources/es/backward_charlm/newswiki.pt
+2023-07-20 20:54:06,286 - stanza - INFO - File exists: /root/stanza_resources/es/backward_charlm/newswiki.pt
+2023-07-20 20:54:06,287 - stanza - INFO - Finished downloading models and saved to /root/stanza_resources.
+2023-07-20 20:54:06,287 - stanza - INFO - Finished downloading models and saved to /root/stanza_resources.
+2023-07-20 20:54:06,288 - stanza - INFO - Checking for updates to resources.json in case models have been updated.  Note: this behavior can be turned off with download_method=None or download_method=DownloadMethod.REUSE_RESOURCES
+2023-07-20 20:54:06,288 - stanza - INFO - Checking for updates to resources.json in case models have been updated.  Note: this behavior can be turned off with download_method=None or download_method=DownloadMethod.REUSE_RESOURCES
+2023-07-20 20:54:06,788 - stanza - INFO - Loading these models for language: es (Spanish):
+=======================
+| Processor | Package |
+-----------------------
+| tokenize  | ancora  |
+| mwt       | ancora  |
+| pos       | ancora  |
+| lemma     | ancora  |
+=======================
+
+2023-07-20 20:54:06,788 - stanza - INFO - Loading these models for language: es (Spanish):
+=======================
+| Processor | Package |
+-----------------------
+| tokenize  | ancora  |
+| mwt       | ancora  |
+| pos       | ancora  |
+| lemma     | ancora  |
+=======================
+
+2023-07-20 20:54:06,789 - stanza - WARNING - GPU requested, but is not available!
+2023-07-20 20:54:06,789 - stanza - WARNING - GPU requested, but is not available!
+2023-07-20 20:54:06,790 - stanza - INFO - Using device: cpu
+2023-07-20 20:54:06,790 - stanza - INFO - Using device: cpu
+2023-07-20 20:54:06,791 - stanza - INFO - Loading: tokenize
+2023-07-20 20:54:06,791 - stanza - INFO - Loading: tokenize
+2023-07-20 20:54:06,796 - stanza - INFO - Loading: mwt
+2023-07-20 20:54:06,796 - stanza - INFO - Loading: mwt
+2023-07-20 20:54:06,798 - stanza - INFO - Loading: pos
+2023-07-20 20:54:06,798 - stanza - INFO - Loading: pos
+2023-07-20 20:54:06,982 - stanza - INFO - Loading: lemma
+2023-07-20 20:54:06,982 - stanza - INFO - Loading: lemma
+2023-07-20 20:54:07,002 - stanza - INFO - Done loading processors!
+2023-07-20 20:54:07,002 - stanza - INFO - Done loading processors!
+2023-07-20 20:54:07,520 - root - INFO - Processing comment: 99999- test
+2023-07-20 20:54:07,520 - root - INFO - Processing comment: 99999- test
+2023-07-20 20:54:55,597 - gensim.utils - INFO - loading Word2Vec object from model/depresion.es.model
+2023-07-20 20:54:55,597 - gensim.utils - INFO - loading Word2Vec object from model/depresion.es.model
+2023-07-20 20:54:55,644 - gensim.utils - INFO - loading wv recursively from model/depresion.es.model.wv.* with mmap=None
+2023-07-20 20:54:55,644 - gensim.utils - INFO - loading wv recursively from model/depresion.es.model.wv.* with mmap=None
+2023-07-20 20:54:55,645 - gensim.utils - INFO - setting ignored attribute cum_table to None
+2023-07-20 20:54:55,645 - gensim.utils - INFO - setting ignored attribute cum_table to None
+2023-07-20 20:54:55,689 - gensim.utils - INFO - Word2Vec lifecycle event {'fname': 'model/depresion.es.model', 'datetime': '2023-07-20T20:54:55.688190', 'gensim': '4.3.1', 'python': '3.10.7 (main, May 29 2023, 13:51:48) [GCC 12.2.0]', 'platform': 'Linux-5.15.49-linuxkit-pr-aarch64-with-glibc2.36', 'event': 'loaded'}
+2023-07-20 20:54:55,689 - gensim.utils - INFO - Word2Vec lifecycle event {'fname': 'model/depresion.es.model', 'datetime': '2023-07-20T20:54:55.688190', 'gensim': '4.3.1', 'python': '3.10.7 (main, May 29 2023, 13:51:48) [GCC 12.2.0]', 'platform': 'Linux-5.15.49-linuxkit-pr-aarch64-with-glibc2.36', 'event': 'loaded'}
+2023-07-20 20:54:55,690 - root - INFO - Model loaded
+2023-07-20 20:54:55,690 - root - INFO - Model loaded
+2023-07-20 20:54:56,511 - root - INFO - Database connection started
+2023-07-20 20:54:56,511 - root - INFO - Database connection started
+2023-07-20 20:54:56,638 - stanza - INFO - Downloading these customized packages for language: es (Spanish)...
+==============================
+| Processor       | Package  |
+------------------------------
+| tokenize        | ancora   |
+| mwt             | ancora   |
+| pos             | ancora   |
+| lemma           | ancora   |
+| backward_charlm | newswiki |
+| forward_charlm  | newswiki |
+| pretrain        | ancora   |
+==============================
+
+2023-07-20 20:54:56,638 - stanza - INFO - Downloading these customized packages for language: es (Spanish)...
+==============================
+| Processor       | Package  |
+------------------------------
+| tokenize        | ancora   |
+| mwt             | ancora   |
+| pos             | ancora   |
+| lemma           | ancora   |
+| backward_charlm | newswiki |
+| forward_charlm  | newswiki |
+| pretrain        | ancora   |
+==============================
+
+2023-07-20 20:54:56,642 - stanza - INFO - File exists: /root/stanza_resources/es/tokenize/ancora.pt
+2023-07-20 20:54:56,642 - stanza - INFO - File exists: /root/stanza_resources/es/tokenize/ancora.pt
+2023-07-20 20:54:56,644 - stanza - INFO - File exists: /root/stanza_resources/es/mwt/ancora.pt
+2023-07-20 20:54:56,644 - stanza - INFO - File exists: /root/stanza_resources/es/mwt/ancora.pt
+2023-07-20 20:54:56,740 - stanza - INFO - File exists: /root/stanza_resources/es/pos/ancora.pt
+2023-07-20 20:54:56,740 - stanza - INFO - File exists: /root/stanza_resources/es/pos/ancora.pt
+2023-07-20 20:54:56,752 - stanza - INFO - File exists: /root/stanza_resources/es/lemma/ancora.pt
+2023-07-20 20:54:56,752 - stanza - INFO - File exists: /root/stanza_resources/es/lemma/ancora.pt
+2023-07-20 20:54:56,802 - stanza - INFO - File exists: /root/stanza_resources/es/backward_charlm/newswiki.pt
+2023-07-20 20:54:56,802 - stanza - INFO - File exists: /root/stanza_resources/es/backward_charlm/newswiki.pt
+2023-07-20 20:54:56,849 - stanza - INFO - File exists: /root/stanza_resources/es/forward_charlm/newswiki.pt
+2023-07-20 20:54:56,849 - stanza - INFO - File exists: /root/stanza_resources/es/forward_charlm/newswiki.pt
+2023-07-20 20:54:57,110 - stanza - INFO - File exists: /root/stanza_resources/es/pretrain/ancora.pt
+2023-07-20 20:54:57,110 - stanza - INFO - File exists: /root/stanza_resources/es/pretrain/ancora.pt
+2023-07-20 20:54:57,111 - stanza - INFO - Finished downloading models and saved to /root/stanza_resources.
+2023-07-20 20:54:57,111 - stanza - INFO - Finished downloading models and saved to /root/stanza_resources.
+2023-07-20 20:54:57,112 - stanza - INFO - Checking for updates to resources.json in case models have been updated.  Note: this behavior can be turned off with download_method=None or download_method=DownloadMethod.REUSE_RESOURCES
+2023-07-20 20:54:57,112 - stanza - INFO - Checking for updates to resources.json in case models have been updated.  Note: this behavior can be turned off with download_method=None or download_method=DownloadMethod.REUSE_RESOURCES
+2023-07-20 20:54:57,616 - stanza - INFO - Loading these models for language: es (Spanish):
+=======================
+| Processor | Package |
+-----------------------
+| tokenize  | ancora  |
+| mwt       | ancora  |
+| pos       | ancora  |
+| lemma     | ancora  |
+=======================
+
+2023-07-20 20:54:57,616 - stanza - INFO - Loading these models for language: es (Spanish):
+=======================
+| Processor | Package |
+-----------------------
+| tokenize  | ancora  |
+| mwt       | ancora  |
+| pos       | ancora  |
+| lemma     | ancora  |
+=======================
+
+2023-07-20 20:54:57,618 - stanza - WARNING - GPU requested, but is not available!
+2023-07-20 20:54:57,618 - stanza - WARNING - GPU requested, but is not available!
+2023-07-20 20:54:57,619 - stanza - INFO - Using device: cpu
+2023-07-20 20:54:57,619 - stanza - INFO - Using device: cpu
+2023-07-20 20:54:57,619 - stanza - INFO - Loading: tokenize
+2023-07-20 20:54:57,619 - stanza - INFO - Loading: tokenize
+2023-07-20 20:54:57,624 - stanza - INFO - Loading: mwt
+2023-07-20 20:54:57,624 - stanza - INFO - Loading: mwt
+2023-07-20 20:54:57,627 - stanza - INFO - Loading: pos
+2023-07-20 20:54:57,627 - stanza - INFO - Loading: pos
+2023-07-20 20:54:57,820 - stanza - INFO - Loading: lemma
+2023-07-20 20:54:57,820 - stanza - INFO - Loading: lemma
+2023-07-20 20:54:57,845 - stanza - INFO - Done loading processors!
+2023-07-20 20:54:57,845 - stanza - INFO - Done loading processors!
+2023-07-20 20:54:58,430 - root - INFO - Processing comment: 99999- test
+2023-07-20 20:54:58,430 - root - INFO - Processing comment: 99999- test
+2023-07-20 20:55:25,882 - gensim.utils - INFO - loading Word2Vec object from model/depresion.es.model
+2023-07-20 20:55:25,882 - gensim.utils - INFO - loading Word2Vec object from model/depresion.es.model
+2023-07-20 20:55:25,910 - gensim.utils - INFO - loading wv recursively from model/depresion.es.model.wv.* with mmap=None
+2023-07-20 20:55:25,910 - gensim.utils - INFO - loading wv recursively from model/depresion.es.model.wv.* with mmap=None
+2023-07-20 20:55:25,911 - gensim.utils - INFO - setting ignored attribute cum_table to None
+2023-07-20 20:55:25,911 - gensim.utils - INFO - setting ignored attribute cum_table to None
+2023-07-20 20:55:25,955 - gensim.utils - INFO - Word2Vec lifecycle event {'fname': 'model/depresion.es.model', 'datetime': '2023-07-20T20:55:25.954888', 'gensim': '4.3.1', 'python': '3.10.7 (main, May 29 2023, 13:51:48) [GCC 12.2.0]', 'platform': 'Linux-5.15.49-linuxkit-pr-aarch64-with-glibc2.36', 'event': 'loaded'}
+2023-07-20 20:55:25,955 - gensim.utils - INFO - Word2Vec lifecycle event {'fname': 'model/depresion.es.model', 'datetime': '2023-07-20T20:55:25.954888', 'gensim': '4.3.1', 'python': '3.10.7 (main, May 29 2023, 13:51:48) [GCC 12.2.0]', 'platform': 'Linux-5.15.49-linuxkit-pr-aarch64-with-glibc2.36', 'event': 'loaded'}
+2023-07-20 20:55:25,956 - root - INFO - Model loaded
+2023-07-20 20:55:25,956 - root - INFO - Model loaded
+2023-07-20 20:55:26,498 - root - INFO - Database connection started
+2023-07-20 20:55:26,498 - root - INFO - Database connection started
+2023-07-20 20:55:26,624 - stanza - INFO - Downloading these customized packages for language: es (Spanish)...
+==============================
+| Processor       | Package  |
+------------------------------
+| tokenize        | ancora   |
+| mwt             | ancora   |
+| pos             | ancora   |
+| lemma           | ancora   |
+| forward_charlm  | newswiki |
+| backward_charlm | newswiki |
+| pretrain        | ancora   |
+==============================
+
+2023-07-20 20:55:26,624 - stanza - INFO - Downloading these customized packages for language: es (Spanish)...
+==============================
+| Processor       | Package  |
+------------------------------
+| tokenize        | ancora   |
+| mwt             | ancora   |
+| pos             | ancora   |
+| lemma           | ancora   |
+| forward_charlm  | newswiki |
+| backward_charlm | newswiki |
+| pretrain        | ancora   |
+==============================
+
+2023-07-20 20:55:26,627 - stanza - INFO - File exists: /root/stanza_resources/es/tokenize/ancora.pt
+2023-07-20 20:55:26,627 - stanza - INFO - File exists: /root/stanza_resources/es/tokenize/ancora.pt
+2023-07-20 20:55:26,630 - stanza - INFO - File exists: /root/stanza_resources/es/mwt/ancora.pt
+2023-07-20 20:55:26,630 - stanza - INFO - File exists: /root/stanza_resources/es/mwt/ancora.pt
+2023-07-20 20:55:26,722 - stanza - INFO - File exists: /root/stanza_resources/es/pos/ancora.pt
+2023-07-20 20:55:26,722 - stanza - INFO - File exists: /root/stanza_resources/es/pos/ancora.pt
+2023-07-20 20:55:26,734 - stanza - INFO - File exists: /root/stanza_resources/es/lemma/ancora.pt
+2023-07-20 20:55:26,734 - stanza - INFO - File exists: /root/stanza_resources/es/lemma/ancora.pt
+2023-07-20 20:55:26,778 - stanza - INFO - File exists: /root/stanza_resources/es/forward_charlm/newswiki.pt
+2023-07-20 20:55:26,778 - stanza - INFO - File exists: /root/stanza_resources/es/forward_charlm/newswiki.pt
+2023-07-20 20:55:26,821 - stanza - INFO - File exists: /root/stanza_resources/es/backward_charlm/newswiki.pt
+2023-07-20 20:55:26,821 - stanza - INFO - File exists: /root/stanza_resources/es/backward_charlm/newswiki.pt
+2023-07-20 20:55:27,066 - stanza - INFO - File exists: /root/stanza_resources/es/pretrain/ancora.pt
+2023-07-20 20:55:27,066 - stanza - INFO - File exists: /root/stanza_resources/es/pretrain/ancora.pt
+2023-07-20 20:55:27,068 - stanza - INFO - Finished downloading models and saved to /root/stanza_resources.
+2023-07-20 20:55:27,068 - stanza - INFO - Finished downloading models and saved to /root/stanza_resources.
+2023-07-20 20:55:27,069 - stanza - INFO - Checking for updates to resources.json in case models have been updated.  Note: this behavior can be turned off with download_method=None or download_method=DownloadMethod.REUSE_RESOURCES
+2023-07-20 20:55:27,069 - stanza - INFO - Checking for updates to resources.json in case models have been updated.  Note: this behavior can be turned off with download_method=None or download_method=DownloadMethod.REUSE_RESOURCES
+2023-07-20 20:55:27,559 - stanza - INFO - Loading these models for language: es (Spanish):
+=======================
+| Processor | Package |
+-----------------------
+| tokenize  | ancora  |
+| mwt       | ancora  |
+| pos       | ancora  |
+| lemma     | ancora  |
+=======================
+
+2023-07-20 20:55:27,559 - stanza - INFO - Loading these models for language: es (Spanish):
+=======================
+| Processor | Package |
+-----------------------
+| tokenize  | ancora  |
+| mwt       | ancora  |
+| pos       | ancora  |
+| lemma     | ancora  |
+=======================
+
+2023-07-20 20:55:27,561 - stanza - WARNING - GPU requested, but is not available!
+2023-07-20 20:55:27,561 - stanza - WARNING - GPU requested, but is not available!
+2023-07-20 20:55:27,561 - stanza - INFO - Using device: cpu
+2023-07-20 20:55:27,561 - stanza - INFO - Using device: cpu
+2023-07-20 20:55:27,562 - stanza - INFO - Loading: tokenize
+2023-07-20 20:55:27,562 - stanza - INFO - Loading: tokenize
+2023-07-20 20:55:27,567 - stanza - INFO - Loading: mwt
+2023-07-20 20:55:27,567 - stanza - INFO - Loading: mwt
+2023-07-20 20:55:27,570 - stanza - INFO - Loading: pos
+2023-07-20 20:55:27,570 - stanza - INFO - Loading: pos
+2023-07-20 20:55:27,816 - stanza - INFO - Loading: lemma
+2023-07-20 20:55:27,816 - stanza - INFO - Loading: lemma
+2023-07-20 20:55:27,838 - stanza - INFO - Done loading processors!
+2023-07-20 20:55:27,838 - stanza - INFO - Done loading processors!
+2023-07-20 20:55:28,340 - root - INFO - Processing comment: 99999- test
+2023-07-20 20:55:28,340 - root - INFO - Processing comment: 99999- test
+2023-07-20 20:55:48,500 - root - INFO - Processing comment: 99999- test
+2023-07-20 20:55:48,500 - root - INFO - Processing comment: 99999- test
+2023-07-20 20:56:08,603 - root - INFO - Processing comment: 99999- test
+2023-07-20 20:56:08,603 - root - INFO - Processing comment: 99999- test
+2023-07-20 20:56:18,847 - gensim.utils - INFO - loading Word2Vec object from model/depresion.es.model
+2023-07-20 20:56:18,847 - gensim.utils - INFO - loading Word2Vec object from model/depresion.es.model
+2023-07-20 20:56:18,874 - gensim.utils - INFO - loading wv recursively from model/depresion.es.model.wv.* with mmap=None
+2023-07-20 20:56:18,874 - gensim.utils - INFO - loading wv recursively from model/depresion.es.model.wv.* with mmap=None
+2023-07-20 20:56:18,875 - gensim.utils - INFO - setting ignored attribute cum_table to None
+2023-07-20 20:56:18,875 - gensim.utils - INFO - setting ignored attribute cum_table to None
+2023-07-20 20:56:18,919 - gensim.utils - INFO - Word2Vec lifecycle event {'fname': 'model/depresion.es.model', 'datetime': '2023-07-20T20:56:18.918486', 'gensim': '4.3.1', 'python': '3.10.7 (main, May 29 2023, 13:51:48) [GCC 12.2.0]', 'platform': 'Linux-5.15.49-linuxkit-pr-aarch64-with-glibc2.36', 'event': 'loaded'}
+2023-07-20 20:56:18,919 - gensim.utils - INFO - Word2Vec lifecycle event {'fname': 'model/depresion.es.model', 'datetime': '2023-07-20T20:56:18.918486', 'gensim': '4.3.1', 'python': '3.10.7 (main, May 29 2023, 13:51:48) [GCC 12.2.0]', 'platform': 'Linux-5.15.49-linuxkit-pr-aarch64-with-glibc2.36', 'event': 'loaded'}
+2023-07-20 20:56:18,920 - root - INFO - Model loaded
+2023-07-20 20:56:18,920 - root - INFO - Model loaded
+2023-07-20 20:56:19,668 - root - INFO - Database connection started
+2023-07-20 20:56:19,668 - root - INFO - Database connection started
+2023-07-20 20:56:19,935 - stanza - INFO - Downloading these customized packages for language: es (Spanish)...
+==============================
+| Processor       | Package  |
+------------------------------
+| tokenize        | ancora   |
+| mwt             | ancora   |
+| pos             | ancora   |
+| lemma           | ancora   |
+| backward_charlm | newswiki |
+| pretrain        | ancora   |
+| forward_charlm  | newswiki |
+==============================
+
+2023-07-20 20:56:19,935 - stanza - INFO - Downloading these customized packages for language: es (Spanish)...
+==============================
+| Processor       | Package  |
+------------------------------
+| tokenize        | ancora   |
+| mwt             | ancora   |
+| pos             | ancora   |
+| lemma           | ancora   |
+| backward_charlm | newswiki |
+| pretrain        | ancora   |
+| forward_charlm  | newswiki |
+==============================
+
+2023-07-20 20:56:19,941 - stanza - INFO - File exists: /root/stanza_resources/es/tokenize/ancora.pt
+2023-07-20 20:56:19,941 - stanza - INFO - File exists: /root/stanza_resources/es/tokenize/ancora.pt
+2023-07-20 20:56:19,946 - stanza - INFO - File exists: /root/stanza_resources/es/mwt/ancora.pt
+2023-07-20 20:56:19,946 - stanza - INFO - File exists: /root/stanza_resources/es/mwt/ancora.pt
+2023-07-20 20:56:20,059 - stanza - INFO - File exists: /root/stanza_resources/es/pos/ancora.pt
+2023-07-20 20:56:20,059 - stanza - INFO - File exists: /root/stanza_resources/es/pos/ancora.pt
+2023-07-20 20:56:20,071 - stanza - INFO - File exists: /root/stanza_resources/es/lemma/ancora.pt
+2023-07-20 20:56:20,071 - stanza - INFO - File exists: /root/stanza_resources/es/lemma/ancora.pt
+2023-07-20 20:56:20,117 - stanza - INFO - File exists: /root/stanza_resources/es/backward_charlm/newswiki.pt
+2023-07-20 20:56:20,117 - stanza - INFO - File exists: /root/stanza_resources/es/backward_charlm/newswiki.pt
+2023-07-20 20:56:20,357 - stanza - INFO - File exists: /root/stanza_resources/es/pretrain/ancora.pt
+2023-07-20 20:56:20,357 - stanza - INFO - File exists: /root/stanza_resources/es/pretrain/ancora.pt
+2023-07-20 20:56:20,400 - stanza - INFO - File exists: /root/stanza_resources/es/forward_charlm/newswiki.pt
+2023-07-20 20:56:20,400 - stanza - INFO - File exists: /root/stanza_resources/es/forward_charlm/newswiki.pt
+2023-07-20 20:56:20,401 - stanza - INFO - Finished downloading models and saved to /root/stanza_resources.
+2023-07-20 20:56:20,401 - stanza - INFO - Finished downloading models and saved to /root/stanza_resources.
+2023-07-20 20:56:20,402 - stanza - INFO - Checking for updates to resources.json in case models have been updated.  Note: this behavior can be turned off with download_method=None or download_method=DownloadMethod.REUSE_RESOURCES
+2023-07-20 20:56:20,402 - stanza - INFO - Checking for updates to resources.json in case models have been updated.  Note: this behavior can be turned off with download_method=None or download_method=DownloadMethod.REUSE_RESOURCES
+2023-07-20 20:56:20,879 - stanza - INFO - Loading these models for language: es (Spanish):
+=======================
+| Processor | Package |
+-----------------------
+| tokenize  | ancora  |
+| mwt       | ancora  |
+| pos       | ancora  |
+| lemma     | ancora  |
+=======================
+
+2023-07-20 20:56:20,879 - stanza - INFO - Loading these models for language: es (Spanish):
+=======================
+| Processor | Package |
+-----------------------
+| tokenize  | ancora  |
+| mwt       | ancora  |
+| pos       | ancora  |
+| lemma     | ancora  |
+=======================
+
+2023-07-20 20:56:20,880 - stanza - WARNING - GPU requested, but is not available!
+2023-07-20 20:56:20,880 - stanza - WARNING - GPU requested, but is not available!
+2023-07-20 20:56:20,881 - stanza - INFO - Using device: cpu
+2023-07-20 20:56:20,881 - stanza - INFO - Using device: cpu
+2023-07-20 20:56:20,882 - stanza - INFO - Loading: tokenize
+2023-07-20 20:56:20,882 - stanza - INFO - Loading: tokenize
+2023-07-20 20:56:20,886 - stanza - INFO - Loading: mwt
+2023-07-20 20:56:20,886 - stanza - INFO - Loading: mwt
+2023-07-20 20:56:20,889 - stanza - INFO - Loading: pos
+2023-07-20 20:56:20,889 - stanza - INFO - Loading: pos
+2023-07-20 20:56:21,064 - stanza - INFO - Loading: lemma
+2023-07-20 20:56:21,064 - stanza - INFO - Loading: lemma
+2023-07-20 20:56:21,085 - stanza - INFO - Done loading processors!
+2023-07-20 20:56:21,085 - stanza - INFO - Done loading processors!
+2023-07-20 20:56:21,601 - root - INFO - Processing comment: 99999- test
+2023-07-20 20:56:21,601 - root - INFO - Processing comment: 99999- test
+2023-07-20 20:56:42,028 - root - INFO - Processing comment: 99999- test
+2023-07-20 20:56:42,028 - root - INFO - Processing comment: 99999- test
+2023-07-20 20:57:02,818 - gensim.utils - INFO - loading Word2Vec object from model/depresion.es.model
+2023-07-20 20:57:02,818 - gensim.utils - INFO - loading Word2Vec object from model/depresion.es.model
+2023-07-20 20:57:02,844 - gensim.utils - INFO - loading wv recursively from model/depresion.es.model.wv.* with mmap=None
+2023-07-20 20:57:02,844 - gensim.utils - INFO - loading wv recursively from model/depresion.es.model.wv.* with mmap=None
+2023-07-20 20:57:02,845 - gensim.utils - INFO - setting ignored attribute cum_table to None
+2023-07-20 20:57:02,845 - gensim.utils - INFO - setting ignored attribute cum_table to None
+2023-07-20 20:57:02,889 - gensim.utils - INFO - Word2Vec lifecycle event {'fname': 'model/depresion.es.model', 'datetime': '2023-07-20T20:57:02.888913', 'gensim': '4.3.1', 'python': '3.10.7 (main, May 29 2023, 13:51:48) [GCC 12.2.0]', 'platform': 'Linux-5.15.49-linuxkit-pr-aarch64-with-glibc2.36', 'event': 'loaded'}
+2023-07-20 20:57:02,889 - gensim.utils - INFO - Word2Vec lifecycle event {'fname': 'model/depresion.es.model', 'datetime': '2023-07-20T20:57:02.888913', 'gensim': '4.3.1', 'python': '3.10.7 (main, May 29 2023, 13:51:48) [GCC 12.2.0]', 'platform': 'Linux-5.15.49-linuxkit-pr-aarch64-with-glibc2.36', 'event': 'loaded'}
+2023-07-20 20:57:02,890 - root - INFO - Model loaded
+2023-07-20 20:57:02,890 - root - INFO - Model loaded
+2023-07-20 20:57:03,414 - root - INFO - Database connection started
+2023-07-20 20:57:03,414 - root - INFO - Database connection started
+2023-07-20 20:57:03,551 - stanza - INFO - Downloading these customized packages for language: es (Spanish)...
+==============================
+| Processor       | Package  |
+------------------------------
+| tokenize        | ancora   |
+| mwt             | ancora   |
+| pos             | ancora   |
+| lemma           | ancora   |
+| backward_charlm | newswiki |
+| forward_charlm  | newswiki |
+| pretrain        | ancora   |
+==============================
+
+2023-07-20 20:57:03,551 - stanza - INFO - Downloading these customized packages for language: es (Spanish)...
+==============================
+| Processor       | Package  |
+------------------------------
+| tokenize        | ancora   |
+| mwt             | ancora   |
+| pos             | ancora   |
+| lemma           | ancora   |
+| backward_charlm | newswiki |
+| forward_charlm  | newswiki |
+| pretrain        | ancora   |
+==============================
+
+2023-07-20 20:57:03,558 - stanza - INFO - File exists: /root/stanza_resources/es/tokenize/ancora.pt
+2023-07-20 20:57:03,558 - stanza - INFO - File exists: /root/stanza_resources/es/tokenize/ancora.pt
+2023-07-20 20:57:03,563 - stanza - INFO - File exists: /root/stanza_resources/es/mwt/ancora.pt
+2023-07-20 20:57:03,563 - stanza - INFO - File exists: /root/stanza_resources/es/mwt/ancora.pt
+2023-07-20 20:57:03,662 - stanza - INFO - File exists: /root/stanza_resources/es/pos/ancora.pt
+2023-07-20 20:57:03,662 - stanza - INFO - File exists: /root/stanza_resources/es/pos/ancora.pt
+2023-07-20 20:57:03,674 - stanza - INFO - File exists: /root/stanza_resources/es/lemma/ancora.pt
+2023-07-20 20:57:03,674 - stanza - INFO - File exists: /root/stanza_resources/es/lemma/ancora.pt
+2023-07-20 20:57:03,719 - stanza - INFO - File exists: /root/stanza_resources/es/backward_charlm/newswiki.pt
+2023-07-20 20:57:03,719 - stanza - INFO - File exists: /root/stanza_resources/es/backward_charlm/newswiki.pt
+2023-07-20 20:57:03,765 - stanza - INFO - File exists: /root/stanza_resources/es/forward_charlm/newswiki.pt
+2023-07-20 20:57:03,765 - stanza - INFO - File exists: /root/stanza_resources/es/forward_charlm/newswiki.pt
+2023-07-20 20:57:03,997 - stanza - INFO - File exists: /root/stanza_resources/es/pretrain/ancora.pt
+2023-07-20 20:57:03,997 - stanza - INFO - File exists: /root/stanza_resources/es/pretrain/ancora.pt
+2023-07-20 20:57:03,998 - stanza - INFO - Finished downloading models and saved to /root/stanza_resources.
+2023-07-20 20:57:03,998 - stanza - INFO - Finished downloading models and saved to /root/stanza_resources.
+2023-07-20 20:57:03,999 - stanza - INFO - Checking for updates to resources.json in case models have been updated.  Note: this behavior can be turned off with download_method=None or download_method=DownloadMethod.REUSE_RESOURCES
+2023-07-20 20:57:03,999 - stanza - INFO - Checking for updates to resources.json in case models have been updated.  Note: this behavior can be turned off with download_method=None or download_method=DownloadMethod.REUSE_RESOURCES
+2023-07-20 20:57:04,482 - stanza - INFO - Loading these models for language: es (Spanish):
+=======================
+| Processor | Package |
+-----------------------
+| tokenize  | ancora  |
+| mwt       | ancora  |
+| pos       | ancora  |
+| lemma     | ancora  |
+=======================
+
+2023-07-20 20:57:04,482 - stanza - INFO - Loading these models for language: es (Spanish):
+=======================
+| Processor | Package |
+-----------------------
+| tokenize  | ancora  |
+| mwt       | ancora  |
+| pos       | ancora  |
+| lemma     | ancora  |
+=======================
+
+2023-07-20 20:57:04,484 - stanza - WARNING - GPU requested, but is not available!
+2023-07-20 20:57:04,484 - stanza - WARNING - GPU requested, but is not available!
+2023-07-20 20:57:04,484 - stanza - INFO - Using device: cpu
+2023-07-20 20:57:04,484 - stanza - INFO - Using device: cpu
+2023-07-20 20:57:04,485 - stanza - INFO - Loading: tokenize
+2023-07-20 20:57:04,485 - stanza - INFO - Loading: tokenize
+2023-07-20 20:57:04,489 - stanza - INFO - Loading: mwt
+2023-07-20 20:57:04,489 - stanza - INFO - Loading: mwt
+2023-07-20 20:57:04,492 - stanza - INFO - Loading: pos
+2023-07-20 20:57:04,492 - stanza - INFO - Loading: pos
+2023-07-20 20:57:04,669 - stanza - INFO - Loading: lemma
+2023-07-20 20:57:04,669 - stanza - INFO - Loading: lemma
+2023-07-20 20:57:04,689 - stanza - INFO - Done loading processors!
+2023-07-20 20:57:04,689 - stanza - INFO - Done loading processors!
+2023-07-20 20:57:05,190 - root - INFO - Processing comment: 99999- test
+2023-07-20 20:57:05,190 - root - INFO - Processing comment: 99999- test
+2023-07-20 20:57:25,590 - root - INFO - Processing comment: 99999- test
+2023-07-20 20:57:25,590 - root - INFO - Processing comment: 99999- test
