@@ -4806,3 +4806,709 @@
 2023-07-20 20:57:05,190 - root - INFO - Processing comment: 99999- test
 2023-07-20 20:57:25,590 - root - INFO - Processing comment: 99999- test
 2023-07-20 20:57:25,590 - root - INFO - Processing comment: 99999- test
+2023-07-23 22:57:52,073 - gensim.utils - INFO - loading Word2Vec object from model/depresion.es.model
+2023-07-23 22:57:52,073 - gensim.utils - INFO - loading Word2Vec object from model/depresion.es.model
+2023-07-23 22:57:52,294 - gensim.utils - INFO - loading wv recursively from model/depresion.es.model.wv.* with mmap=None
+2023-07-23 22:57:52,294 - gensim.utils - INFO - loading wv recursively from model/depresion.es.model.wv.* with mmap=None
+2023-07-23 22:57:52,294 - gensim.utils - INFO - setting ignored attribute cum_table to None
+2023-07-23 22:57:52,294 - gensim.utils - INFO - setting ignored attribute cum_table to None
+2023-07-23 22:57:52,340 - gensim.utils - INFO - Word2Vec lifecycle event {'fname': 'model/depresion.es.model', 'datetime': '2023-07-23T22:57:52.339495', 'gensim': '4.3.1', 'python': '3.10.7 (main, May 29 2023, 13:51:48) [GCC 12.2.0]', 'platform': 'Linux-5.15.49-linuxkit-pr-aarch64-with-glibc2.36', 'event': 'loaded'}
+2023-07-23 22:57:52,340 - gensim.utils - INFO - Word2Vec lifecycle event {'fname': 'model/depresion.es.model', 'datetime': '2023-07-23T22:57:52.339495', 'gensim': '4.3.1', 'python': '3.10.7 (main, May 29 2023, 13:51:48) [GCC 12.2.0]', 'platform': 'Linux-5.15.49-linuxkit-pr-aarch64-with-glibc2.36', 'event': 'loaded'}
+2023-07-23 22:57:52,341 - root - INFO - Model loaded
+2023-07-23 22:57:52,341 - root - INFO - Model loaded
+2023-07-23 22:57:56,125 - root - INFO - Database connection started
+2023-07-23 22:57:56,125 - root - INFO - Database connection started
+2023-07-23 22:57:56,598 - stanza - INFO - Downloading these customized packages for language: es (Spanish)...
+==============================
+| Processor       | Package  |
+------------------------------
+| tokenize        | ancora   |
+| mwt             | ancora   |
+| pos             | ancora   |
+| lemma           | ancora   |
+| backward_charlm | newswiki |
+| forward_charlm  | newswiki |
+| pretrain        | ancora   |
+==============================
+
+2023-07-23 22:57:56,598 - stanza - INFO - Downloading these customized packages for language: es (Spanish)...
+==============================
+| Processor       | Package  |
+------------------------------
+| tokenize        | ancora   |
+| mwt             | ancora   |
+| pos             | ancora   |
+| lemma           | ancora   |
+| backward_charlm | newswiki |
+| forward_charlm  | newswiki |
+| pretrain        | ancora   |
+==============================
+
+2023-07-23 22:57:56,608 - stanza - INFO - File exists: /root/stanza_resources/es/tokenize/ancora.pt
+2023-07-23 22:57:56,608 - stanza - INFO - File exists: /root/stanza_resources/es/tokenize/ancora.pt
+2023-07-23 22:57:56,614 - stanza - INFO - File exists: /root/stanza_resources/es/mwt/ancora.pt
+2023-07-23 22:57:56,614 - stanza - INFO - File exists: /root/stanza_resources/es/mwt/ancora.pt
+2023-07-23 22:57:56,739 - stanza - INFO - File exists: /root/stanza_resources/es/pos/ancora.pt
+2023-07-23 22:57:56,739 - stanza - INFO - File exists: /root/stanza_resources/es/pos/ancora.pt
+2023-07-23 22:57:56,753 - stanza - INFO - File exists: /root/stanza_resources/es/lemma/ancora.pt
+2023-07-23 22:57:56,753 - stanza - INFO - File exists: /root/stanza_resources/es/lemma/ancora.pt
+2023-07-23 22:57:56,807 - stanza - INFO - File exists: /root/stanza_resources/es/backward_charlm/newswiki.pt
+2023-07-23 22:57:56,807 - stanza - INFO - File exists: /root/stanza_resources/es/backward_charlm/newswiki.pt
+2023-07-23 22:57:56,865 - stanza - INFO - File exists: /root/stanza_resources/es/forward_charlm/newswiki.pt
+2023-07-23 22:57:56,865 - stanza - INFO - File exists: /root/stanza_resources/es/forward_charlm/newswiki.pt
+2023-07-23 22:57:57,177 - stanza - INFO - File exists: /root/stanza_resources/es/pretrain/ancora.pt
+2023-07-23 22:57:57,177 - stanza - INFO - File exists: /root/stanza_resources/es/pretrain/ancora.pt
+2023-07-23 22:57:57,178 - stanza - INFO - Finished downloading models and saved to /root/stanza_resources.
+2023-07-23 22:57:57,178 - stanza - INFO - Finished downloading models and saved to /root/stanza_resources.
+2023-07-23 22:57:57,179 - stanza - INFO - Checking for updates to resources.json in case models have been updated.  Note: this behavior can be turned off with download_method=None or download_method=DownloadMethod.REUSE_RESOURCES
+2023-07-23 22:57:57,179 - stanza - INFO - Checking for updates to resources.json in case models have been updated.  Note: this behavior can be turned off with download_method=None or download_method=DownloadMethod.REUSE_RESOURCES
+2023-07-23 22:57:57,687 - stanza - INFO - Loading these models for language: es (Spanish):
+=======================
+| Processor | Package |
+-----------------------
+| tokenize  | ancora  |
+| mwt       | ancora  |
+| pos       | ancora  |
+| lemma     | ancora  |
+=======================
+
+2023-07-23 22:57:57,687 - stanza - INFO - Loading these models for language: es (Spanish):
+=======================
+| Processor | Package |
+-----------------------
+| tokenize  | ancora  |
+| mwt       | ancora  |
+| pos       | ancora  |
+| lemma     | ancora  |
+=======================
+
+2023-07-23 22:57:57,688 - stanza - WARNING - GPU requested, but is not available!
+2023-07-23 22:57:57,688 - stanza - WARNING - GPU requested, but is not available!
+2023-07-23 22:57:57,689 - stanza - INFO - Using device: cpu
+2023-07-23 22:57:57,689 - stanza - INFO - Using device: cpu
+2023-07-23 22:57:57,689 - stanza - INFO - Loading: tokenize
+2023-07-23 22:57:57,689 - stanza - INFO - Loading: tokenize
+2023-07-23 22:57:57,704 - stanza - INFO - Loading: mwt
+2023-07-23 22:57:57,704 - stanza - INFO - Loading: mwt
+2023-07-23 22:57:57,707 - stanza - INFO - Loading: pos
+2023-07-23 22:57:57,707 - stanza - INFO - Loading: pos
+2023-07-23 22:57:57,922 - stanza - INFO - Loading: lemma
+2023-07-23 22:57:57,922 - stanza - INFO - Loading: lemma
+2023-07-23 22:57:57,956 - stanza - INFO - Done loading processors!
+2023-07-23 22:57:57,956 - stanza - INFO - Done loading processors!
+2023-07-23 22:57:58,920 - root - INFO - Processing comment: 1- sebastian_carrillob
+2023-07-23 22:57:58,920 - root - INFO - Processing comment: 1- sebastian_carrillob
+2023-07-23 22:57:59,198 - root - INFO - BDI created for user: sebastian_carrillob
+2023-07-23 22:57:59,198 - root - INFO - BDI created for user: sebastian_carrillob
+2023-07-23 22:57:59,203 - root - CRITICAL - Error with the Model: name 'comment_test' is not defined
+2023-07-23 22:57:59,203 - root - CRITICAL - Error with the Model: name 'comment_test' is not defined
+2023-07-23 22:58:25,561 - gensim.utils - INFO - loading Word2Vec object from model/depresion.es.model
+2023-07-23 22:58:25,561 - gensim.utils - INFO - loading Word2Vec object from model/depresion.es.model
+2023-07-23 22:58:25,587 - gensim.utils - INFO - loading wv recursively from model/depresion.es.model.wv.* with mmap=None
+2023-07-23 22:58:25,587 - gensim.utils - INFO - loading wv recursively from model/depresion.es.model.wv.* with mmap=None
+2023-07-23 22:58:25,588 - gensim.utils - INFO - setting ignored attribute cum_table to None
+2023-07-23 22:58:25,588 - gensim.utils - INFO - setting ignored attribute cum_table to None
+2023-07-23 22:58:25,632 - gensim.utils - INFO - Word2Vec lifecycle event {'fname': 'model/depresion.es.model', 'datetime': '2023-07-23T22:58:25.631875', 'gensim': '4.3.1', 'python': '3.10.7 (main, May 29 2023, 13:51:48) [GCC 12.2.0]', 'platform': 'Linux-5.15.49-linuxkit-pr-aarch64-with-glibc2.36', 'event': 'loaded'}
+2023-07-23 22:58:25,632 - gensim.utils - INFO - Word2Vec lifecycle event {'fname': 'model/depresion.es.model', 'datetime': '2023-07-23T22:58:25.631875', 'gensim': '4.3.1', 'python': '3.10.7 (main, May 29 2023, 13:51:48) [GCC 12.2.0]', 'platform': 'Linux-5.15.49-linuxkit-pr-aarch64-with-glibc2.36', 'event': 'loaded'}
+2023-07-23 22:58:25,633 - root - INFO - Model loaded
+2023-07-23 22:58:25,633 - root - INFO - Model loaded
+2023-07-23 22:58:26,342 - root - INFO - Database connection started
+2023-07-23 22:58:26,342 - root - INFO - Database connection started
+2023-07-23 22:58:26,490 - stanza - INFO - Downloading these customized packages for language: es (Spanish)...
+==============================
+| Processor       | Package  |
+------------------------------
+| tokenize        | ancora   |
+| mwt             | ancora   |
+| pos             | ancora   |
+| lemma           | ancora   |
+| backward_charlm | newswiki |
+| pretrain        | ancora   |
+| forward_charlm  | newswiki |
+==============================
+
+2023-07-23 22:58:26,490 - stanza - INFO - Downloading these customized packages for language: es (Spanish)...
+==============================
+| Processor       | Package  |
+------------------------------
+| tokenize        | ancora   |
+| mwt             | ancora   |
+| pos             | ancora   |
+| lemma           | ancora   |
+| backward_charlm | newswiki |
+| pretrain        | ancora   |
+| forward_charlm  | newswiki |
+==============================
+
+2023-07-23 22:58:26,496 - stanza - INFO - File exists: /root/stanza_resources/es/tokenize/ancora.pt
+2023-07-23 22:58:26,496 - stanza - INFO - File exists: /root/stanza_resources/es/tokenize/ancora.pt
+2023-07-23 22:58:26,500 - stanza - INFO - File exists: /root/stanza_resources/es/mwt/ancora.pt
+2023-07-23 22:58:26,500 - stanza - INFO - File exists: /root/stanza_resources/es/mwt/ancora.pt
+2023-07-23 22:58:26,599 - stanza - INFO - File exists: /root/stanza_resources/es/pos/ancora.pt
+2023-07-23 22:58:26,599 - stanza - INFO - File exists: /root/stanza_resources/es/pos/ancora.pt
+2023-07-23 22:58:26,611 - stanza - INFO - File exists: /root/stanza_resources/es/lemma/ancora.pt
+2023-07-23 22:58:26,611 - stanza - INFO - File exists: /root/stanza_resources/es/lemma/ancora.pt
+2023-07-23 22:58:26,657 - stanza - INFO - File exists: /root/stanza_resources/es/backward_charlm/newswiki.pt
+2023-07-23 22:58:26,657 - stanza - INFO - File exists: /root/stanza_resources/es/backward_charlm/newswiki.pt
+2023-07-23 22:58:26,898 - stanza - INFO - File exists: /root/stanza_resources/es/pretrain/ancora.pt
+2023-07-23 22:58:26,898 - stanza - INFO - File exists: /root/stanza_resources/es/pretrain/ancora.pt
+2023-07-23 22:58:26,942 - stanza - INFO - File exists: /root/stanza_resources/es/forward_charlm/newswiki.pt
+2023-07-23 22:58:26,942 - stanza - INFO - File exists: /root/stanza_resources/es/forward_charlm/newswiki.pt
+2023-07-23 22:58:26,943 - stanza - INFO - Finished downloading models and saved to /root/stanza_resources.
+2023-07-23 22:58:26,943 - stanza - INFO - Finished downloading models and saved to /root/stanza_resources.
+2023-07-23 22:58:26,944 - stanza - INFO - Checking for updates to resources.json in case models have been updated.  Note: this behavior can be turned off with download_method=None or download_method=DownloadMethod.REUSE_RESOURCES
+2023-07-23 22:58:26,944 - stanza - INFO - Checking for updates to resources.json in case models have been updated.  Note: this behavior can be turned off with download_method=None or download_method=DownloadMethod.REUSE_RESOURCES
+2023-07-23 22:58:27,447 - stanza - INFO - Loading these models for language: es (Spanish):
+=======================
+| Processor | Package |
+-----------------------
+| tokenize  | ancora  |
+| mwt       | ancora  |
+| pos       | ancora  |
+| lemma     | ancora  |
+=======================
+
+2023-07-23 22:58:27,447 - stanza - INFO - Loading these models for language: es (Spanish):
+=======================
+| Processor | Package |
+-----------------------
+| tokenize  | ancora  |
+| mwt       | ancora  |
+| pos       | ancora  |
+| lemma     | ancora  |
+=======================
+
+2023-07-23 22:58:27,448 - stanza - WARNING - GPU requested, but is not available!
+2023-07-23 22:58:27,448 - stanza - WARNING - GPU requested, but is not available!
+2023-07-23 22:58:27,449 - stanza - INFO - Using device: cpu
+2023-07-23 22:58:27,449 - stanza - INFO - Using device: cpu
+2023-07-23 22:58:27,450 - stanza - INFO - Loading: tokenize
+2023-07-23 22:58:27,450 - stanza - INFO - Loading: tokenize
+2023-07-23 22:58:27,455 - stanza - INFO - Loading: mwt
+2023-07-23 22:58:27,455 - stanza - INFO - Loading: mwt
+2023-07-23 22:58:27,458 - stanza - INFO - Loading: pos
+2023-07-23 22:58:27,458 - stanza - INFO - Loading: pos
+2023-07-23 22:58:27,627 - stanza - INFO - Loading: lemma
+2023-07-23 22:58:27,627 - stanza - INFO - Loading: lemma
+2023-07-23 22:58:27,648 - stanza - INFO - Done loading processors!
+2023-07-23 22:58:27,648 - stanza - INFO - Done loading processors!
+2023-07-23 22:58:28,350 - root - INFO - Processing comment: 1- sebastian_carrillob
+2023-07-23 22:58:28,350 - root - INFO - Processing comment: 1- sebastian_carrillob
+2023-07-23 22:58:28,449 - root - INFO - Processing comment: 2- john_ja10
+2023-07-23 22:58:28,449 - root - INFO - Processing comment: 2- john_ja10
+2023-07-23 22:58:28,736 - root - INFO - BDI created for user: john_ja10
+2023-07-23 22:58:28,736 - root - INFO - BDI created for user: john_ja10
+2023-07-23 22:58:28,740 - root - INFO - Processing comment: 3- el_seebaaas
+2023-07-23 22:58:28,740 - root - INFO - Processing comment: 3- el_seebaaas
+2023-07-23 22:58:29,106 - root - INFO - BDI created for user: el_seebaaas
+2023-07-23 22:58:29,106 - root - INFO - BDI created for user: el_seebaaas
+2023-07-23 22:58:29,111 - root - INFO - Processing comment: 4- andres_neita
+2023-07-23 22:58:29,111 - root - INFO - Processing comment: 4- andres_neita
+2023-07-23 22:58:29,482 - root - INFO - BDI created for user: andres_neita
+2023-07-23 22:58:29,482 - root - INFO - BDI created for user: andres_neita
+2023-07-23 22:58:29,487 - root - INFO - Processing comment: 5- el_seebaaas
+2023-07-23 22:58:29,487 - root - INFO - Processing comment: 5- el_seebaaas
+2023-07-23 22:58:29,669 - root - INFO - Processing comment: 6- juandm_13
+2023-07-23 22:58:29,669 - root - INFO - Processing comment: 6- juandm_13
+2023-07-23 22:58:29,936 - root - INFO - BDI created for user: juandm_13
+2023-07-23 22:58:29,936 - root - INFO - BDI created for user: juandm_13
+2023-07-23 22:58:29,941 - root - INFO - Processing comment: 7- sebastian_carrillob
+2023-07-23 22:58:29,941 - root - INFO - Processing comment: 7- sebastian_carrillob
+2023-07-23 22:58:30,112 - root - INFO - Processing comment: 8- sebastian_carrillob
+2023-07-23 22:58:30,112 - root - INFO - Processing comment: 8- sebastian_carrillob
+2023-07-23 22:58:30,200 - root - INFO - Processing comment: 9- andres_neita
+2023-07-23 22:58:30,200 - root - INFO - Processing comment: 9- andres_neita
+2023-07-23 22:58:30,294 - root - INFO - Processing comment: 10- itssebastiancb
+2023-07-23 22:58:30,294 - root - INFO - Processing comment: 10- itssebastiancb
+2023-07-23 22:58:30,562 - root - INFO - BDI created for user: itssebastiancb
+2023-07-23 22:58:30,562 - root - INFO - BDI created for user: itssebastiancb
+2023-07-23 22:58:30,567 - root - INFO - Processing comment: 11- john_ja10
+2023-07-23 22:58:30,567 - root - INFO - Processing comment: 11- john_ja10
+2023-07-23 22:58:30,746 - root - INFO - Processing comment: 12- el_seebaaas
+2023-07-23 22:58:30,746 - root - INFO - Processing comment: 12- el_seebaaas
+2023-07-23 22:58:30,843 - root - INFO - Processing comment: 13- andres_neita
+2023-07-23 22:58:30,843 - root - INFO - Processing comment: 13- andres_neita
+2023-07-23 22:58:30,936 - root - INFO - Processing comment: 14- itssebastiancb
+2023-07-23 22:58:30,936 - root - INFO - Processing comment: 14- itssebastiancb
+2023-07-23 22:58:31,035 - root - INFO - Processing comment: 15- el_seebaaas
+2023-07-23 22:58:31,035 - root - INFO - Processing comment: 15- el_seebaaas
+2023-07-23 22:58:31,124 - root - INFO - Processing comment: 16- john_ja10
+2023-07-23 22:58:31,124 - root - INFO - Processing comment: 16- john_ja10
+2023-07-23 22:58:31,217 - root - INFO - Processing comment: 17- andres_neita
+2023-07-23 22:58:31,217 - root - INFO - Processing comment: 17- andres_neita
+2023-07-23 22:58:31,311 - root - INFO - Processing comment: 18- itssebastiancb
+2023-07-23 22:58:31,311 - root - INFO - Processing comment: 18- itssebastiancb
+2023-07-23 22:58:31,406 - root - INFO - Processing comment: 19- itssebastiancb
+2023-07-23 22:58:31,406 - root - INFO - Processing comment: 19- itssebastiancb
+2023-07-23 22:58:31,514 - root - INFO - Processing comment: 20- el_seebaaas
+2023-07-23 22:58:31,514 - root - INFO - Processing comment: 20- el_seebaaas
+2023-07-23 22:58:31,611 - root - INFO - Processing comment: 21- john_ja10
+2023-07-23 22:58:31,611 - root - INFO - Processing comment: 21- john_ja10
+2023-07-23 22:58:51,816 - root - INFO - Processing comment: 1- sebastian_carrillob
+2023-07-23 22:58:51,816 - root - INFO - Processing comment: 1- sebastian_carrillob
+2023-07-23 22:58:51,902 - root - INFO - Processing comment: 2- john_ja10
+2023-07-23 22:58:51,902 - root - INFO - Processing comment: 2- john_ja10
+2023-07-23 22:58:51,989 - root - INFO - Processing comment: 3- el_seebaaas
+2023-07-23 22:58:51,989 - root - INFO - Processing comment: 3- el_seebaaas
+2023-07-23 22:58:52,075 - root - INFO - Processing comment: 4- andres_neita
+2023-07-23 22:58:52,075 - root - INFO - Processing comment: 4- andres_neita
+2023-07-23 22:58:52,162 - root - INFO - Processing comment: 5- el_seebaaas
+2023-07-23 22:58:52,162 - root - INFO - Processing comment: 5- el_seebaaas
+2023-07-23 22:58:52,251 - root - INFO - Processing comment: 6- juandm_13
+2023-07-23 22:58:52,251 - root - INFO - Processing comment: 6- juandm_13
+2023-07-23 22:58:52,342 - root - INFO - Processing comment: 7- sebastian_carrillob
+2023-07-23 22:58:52,342 - root - INFO - Processing comment: 7- sebastian_carrillob
+2023-07-23 22:58:52,422 - root - INFO - Processing comment: 8- sebastian_carrillob
+2023-07-23 22:58:52,422 - root - INFO - Processing comment: 8- sebastian_carrillob
+2023-07-23 22:58:52,511 - root - INFO - Processing comment: 9- andres_neita
+2023-07-23 22:58:52,511 - root - INFO - Processing comment: 9- andres_neita
+2023-07-23 22:58:52,592 - root - INFO - Processing comment: 10- itssebastiancb
+2023-07-23 22:58:52,592 - root - INFO - Processing comment: 10- itssebastiancb
+2023-07-23 22:58:52,684 - root - INFO - Processing comment: 11- john_ja10
+2023-07-23 22:58:52,684 - root - INFO - Processing comment: 11- john_ja10
+2023-07-23 22:58:52,779 - root - INFO - Processing comment: 12- el_seebaaas
+2023-07-23 22:58:52,779 - root - INFO - Processing comment: 12- el_seebaaas
+2023-07-23 22:58:52,869 - root - INFO - Processing comment: 13- andres_neita
+2023-07-23 22:58:52,869 - root - INFO - Processing comment: 13- andres_neita
+2023-07-23 22:58:52,965 - root - INFO - Processing comment: 14- itssebastiancb
+2023-07-23 22:58:52,965 - root - INFO - Processing comment: 14- itssebastiancb
+2023-07-23 22:58:53,055 - root - INFO - Processing comment: 15- el_seebaaas
+2023-07-23 22:58:53,055 - root - INFO - Processing comment: 15- el_seebaaas
+2023-07-23 22:58:53,149 - root - INFO - Processing comment: 16- john_ja10
+2023-07-23 22:58:53,149 - root - INFO - Processing comment: 16- john_ja10
+2023-07-23 22:58:53,245 - root - INFO - Processing comment: 17- andres_neita
+2023-07-23 22:58:53,245 - root - INFO - Processing comment: 17- andres_neita
+2023-07-23 22:58:53,336 - root - INFO - Processing comment: 18- itssebastiancb
+2023-07-23 22:58:53,336 - root - INFO - Processing comment: 18- itssebastiancb
+2023-07-23 22:58:53,421 - root - INFO - Processing comment: 19- itssebastiancb
+2023-07-23 22:58:53,421 - root - INFO - Processing comment: 19- itssebastiancb
+2023-07-23 22:58:53,508 - root - INFO - Processing comment: 20- el_seebaaas
+2023-07-23 22:58:53,508 - root - INFO - Processing comment: 20- el_seebaaas
+2023-07-23 22:58:53,595 - root - INFO - Processing comment: 21- john_ja10
+2023-07-23 22:58:53,595 - root - INFO - Processing comment: 21- john_ja10
+2023-07-23 22:59:59,107 - gensim.utils - INFO - loading Word2Vec object from model/depresion.es.model
+2023-07-23 22:59:59,107 - gensim.utils - INFO - loading Word2Vec object from model/depresion.es.model
+2023-07-23 22:59:59,133 - gensim.utils - INFO - loading wv recursively from model/depresion.es.model.wv.* with mmap=None
+2023-07-23 22:59:59,133 - gensim.utils - INFO - loading wv recursively from model/depresion.es.model.wv.* with mmap=None
+2023-07-23 22:59:59,134 - gensim.utils - INFO - setting ignored attribute cum_table to None
+2023-07-23 22:59:59,134 - gensim.utils - INFO - setting ignored attribute cum_table to None
+2023-07-23 22:59:59,175 - gensim.utils - INFO - Word2Vec lifecycle event {'fname': 'model/depresion.es.model', 'datetime': '2023-07-23T22:59:59.174715', 'gensim': '4.3.1', 'python': '3.10.7 (main, May 29 2023, 13:51:48) [GCC 12.2.0]', 'platform': 'Linux-5.15.49-linuxkit-pr-aarch64-with-glibc2.36', 'event': 'loaded'}
+2023-07-23 22:59:59,175 - gensim.utils - INFO - Word2Vec lifecycle event {'fname': 'model/depresion.es.model', 'datetime': '2023-07-23T22:59:59.174715', 'gensim': '4.3.1', 'python': '3.10.7 (main, May 29 2023, 13:51:48) [GCC 12.2.0]', 'platform': 'Linux-5.15.49-linuxkit-pr-aarch64-with-glibc2.36', 'event': 'loaded'}
+2023-07-23 22:59:59,176 - root - INFO - Model loaded
+2023-07-23 22:59:59,176 - root - INFO - Model loaded
+2023-07-23 23:00:00,130 - root - INFO - Database connection started
+2023-07-23 23:00:00,130 - root - INFO - Database connection started
+2023-07-23 23:00:00,244 - stanza - INFO - Downloading these customized packages for language: es (Spanish)...
+==============================
+| Processor       | Package  |
+------------------------------
+| tokenize        | ancora   |
+| mwt             | ancora   |
+| pos             | ancora   |
+| lemma           | ancora   |
+| backward_charlm | newswiki |
+| forward_charlm  | newswiki |
+| pretrain        | ancora   |
+==============================
+
+2023-07-23 23:00:00,244 - stanza - INFO - Downloading these customized packages for language: es (Spanish)...
+==============================
+| Processor       | Package  |
+------------------------------
+| tokenize        | ancora   |
+| mwt             | ancora   |
+| pos             | ancora   |
+| lemma           | ancora   |
+| backward_charlm | newswiki |
+| forward_charlm  | newswiki |
+| pretrain        | ancora   |
+==============================
+
+2023-07-23 23:00:00,246 - stanza - INFO - File exists: /root/stanza_resources/es/tokenize/ancora.pt
+2023-07-23 23:00:00,246 - stanza - INFO - File exists: /root/stanza_resources/es/tokenize/ancora.pt
+2023-07-23 23:00:00,248 - stanza - INFO - File exists: /root/stanza_resources/es/mwt/ancora.pt
+2023-07-23 23:00:00,248 - stanza - INFO - File exists: /root/stanza_resources/es/mwt/ancora.pt
+2023-07-23 23:00:00,338 - stanza - INFO - File exists: /root/stanza_resources/es/pos/ancora.pt
+2023-07-23 23:00:00,338 - stanza - INFO - File exists: /root/stanza_resources/es/pos/ancora.pt
+2023-07-23 23:00:00,349 - stanza - INFO - File exists: /root/stanza_resources/es/lemma/ancora.pt
+2023-07-23 23:00:00,349 - stanza - INFO - File exists: /root/stanza_resources/es/lemma/ancora.pt
+2023-07-23 23:00:00,396 - stanza - INFO - File exists: /root/stanza_resources/es/backward_charlm/newswiki.pt
+2023-07-23 23:00:00,396 - stanza - INFO - File exists: /root/stanza_resources/es/backward_charlm/newswiki.pt
+2023-07-23 23:00:00,439 - stanza - INFO - File exists: /root/stanza_resources/es/forward_charlm/newswiki.pt
+2023-07-23 23:00:00,439 - stanza - INFO - File exists: /root/stanza_resources/es/forward_charlm/newswiki.pt
+2023-07-23 23:00:00,676 - stanza - INFO - File exists: /root/stanza_resources/es/pretrain/ancora.pt
+2023-07-23 23:00:00,676 - stanza - INFO - File exists: /root/stanza_resources/es/pretrain/ancora.pt
+2023-07-23 23:00:00,677 - stanza - INFO - Finished downloading models and saved to /root/stanza_resources.
+2023-07-23 23:00:00,677 - stanza - INFO - Finished downloading models and saved to /root/stanza_resources.
+2023-07-23 23:00:00,678 - stanza - INFO - Checking for updates to resources.json in case models have been updated.  Note: this behavior can be turned off with download_method=None or download_method=DownloadMethod.REUSE_RESOURCES
+2023-07-23 23:00:00,678 - stanza - INFO - Checking for updates to resources.json in case models have been updated.  Note: this behavior can be turned off with download_method=None or download_method=DownloadMethod.REUSE_RESOURCES
+2023-07-23 23:00:01,183 - stanza - INFO - Loading these models for language: es (Spanish):
+=======================
+| Processor | Package |
+-----------------------
+| tokenize  | ancora  |
+| mwt       | ancora  |
+| pos       | ancora  |
+| lemma     | ancora  |
+=======================
+
+2023-07-23 23:00:01,183 - stanza - INFO - Loading these models for language: es (Spanish):
+=======================
+| Processor | Package |
+-----------------------
+| tokenize  | ancora  |
+| mwt       | ancora  |
+| pos       | ancora  |
+| lemma     | ancora  |
+=======================
+
+2023-07-23 23:00:01,184 - stanza - WARNING - GPU requested, but is not available!
+2023-07-23 23:00:01,184 - stanza - WARNING - GPU requested, but is not available!
+2023-07-23 23:00:01,185 - stanza - INFO - Using device: cpu
+2023-07-23 23:00:01,185 - stanza - INFO - Using device: cpu
+2023-07-23 23:00:01,186 - stanza - INFO - Loading: tokenize
+2023-07-23 23:00:01,186 - stanza - INFO - Loading: tokenize
+2023-07-23 23:00:01,191 - stanza - INFO - Loading: mwt
+2023-07-23 23:00:01,191 - stanza - INFO - Loading: mwt
+2023-07-23 23:00:01,194 - stanza - INFO - Loading: pos
+2023-07-23 23:00:01,194 - stanza - INFO - Loading: pos
+2023-07-23 23:00:01,367 - stanza - INFO - Loading: lemma
+2023-07-23 23:00:01,367 - stanza - INFO - Loading: lemma
+2023-07-23 23:00:01,388 - stanza - INFO - Done loading processors!
+2023-07-23 23:00:01,388 - stanza - INFO - Done loading processors!
+2023-07-23 23:00:02,076 - root - INFO - Processing comment: id. 1: sebastian_carrillob
+2023-07-23 23:00:02,076 - root - INFO - Processing comment: id. 1: sebastian_carrillob
+2023-07-23 23:00:02,841 - root - INFO - Processing comment: id. 2: john_ja10
+2023-07-23 23:00:02,841 - root - INFO - Processing comment: id. 2: john_ja10
+2023-07-23 23:00:03,374 - root - INFO - Processing comment: id. 3: el_seebaaas
+2023-07-23 23:00:03,374 - root - INFO - Processing comment: id. 3: el_seebaaas
+2023-07-23 23:00:03,781 - root - INFO - Processing comment: id. 4: andres_neita
+2023-07-23 23:00:03,781 - root - INFO - Processing comment: id. 4: andres_neita
+2023-07-23 23:00:04,230 - root - INFO - Processing comment: id. 5: el_seebaaas
+2023-07-23 23:00:04,230 - root - INFO - Processing comment: id. 5: el_seebaaas
+2023-07-23 23:00:04,349 - root - INFO - Processing comment: id. 6: juandm_13
+2023-07-23 23:00:04,349 - root - INFO - Processing comment: id. 6: juandm_13
+2023-07-23 23:00:04,461 - root - INFO - Processing comment: id. 7: sebastian_carrillob
+2023-07-23 23:00:04,461 - root - INFO - Processing comment: id. 7: sebastian_carrillob
+2023-07-23 23:00:04,847 - root - INFO - Processing comment: id. 8: sebastian_carrillob
+2023-07-23 23:00:04,847 - root - INFO - Processing comment: id. 8: sebastian_carrillob
+2023-07-23 23:00:04,934 - root - INFO - Processing comment: id. 9: andres_neita
+2023-07-23 23:00:04,934 - root - INFO - Processing comment: id. 9: andres_neita
+2023-07-23 23:00:05,432 - root - INFO - Processing comment: id. 10: itssebastiancb
+2023-07-23 23:00:05,432 - root - INFO - Processing comment: id. 10: itssebastiancb
+2023-07-23 23:00:06,111 - root - INFO - Processing comment: id. 11: john_ja10
+2023-07-23 23:00:06,111 - root - INFO - Processing comment: id. 11: john_ja10
+2023-07-23 23:00:06,638 - root - INFO - Processing comment: id. 12: el_seebaaas
+2023-07-23 23:00:06,638 - root - INFO - Processing comment: id. 12: el_seebaaas
+2023-07-23 23:00:07,028 - root - INFO - Processing comment: id. 13: andres_neita
+2023-07-23 23:00:07,028 - root - INFO - Processing comment: id. 13: andres_neita
+2023-07-23 23:00:07,459 - root - INFO - Processing comment: id. 14: itssebastiancb
+2023-07-23 23:00:07,459 - root - INFO - Processing comment: id. 14: itssebastiancb
+2023-07-23 23:00:08,135 - root - INFO - Processing comment: id. 15: el_seebaaas
+2023-07-23 23:00:08,135 - root - INFO - Processing comment: id. 15: el_seebaaas
+2023-07-23 23:00:08,524 - root - INFO - Processing comment: id. 16: john_ja10
+2023-07-23 23:00:08,524 - root - INFO - Processing comment: id. 16: john_ja10
+2023-07-23 23:00:09,051 - root - INFO - Processing comment: id. 17: andres_neita
+2023-07-23 23:00:09,051 - root - INFO - Processing comment: id. 17: andres_neita
+2023-07-23 23:00:09,483 - root - INFO - Processing comment: id. 18: itssebastiancb
+2023-07-23 23:00:09,483 - root - INFO - Processing comment: id. 18: itssebastiancb
+2023-07-23 23:00:10,150 - root - INFO - Processing comment: id. 19: itssebastiancb
+2023-07-23 23:00:10,150 - root - INFO - Processing comment: id. 19: itssebastiancb
+2023-07-23 23:00:10,309 - root - INFO - Processing comment: id. 20: el_seebaaas
+2023-07-23 23:00:10,309 - root - INFO - Processing comment: id. 20: el_seebaaas
+2023-07-23 23:00:10,694 - root - INFO - Processing comment: id. 21: john_ja10
+2023-07-23 23:00:10,694 - root - INFO - Processing comment: id. 21: john_ja10
+2023-07-23 23:00:31,329 - root - INFO - Processing comment: id. 1: sebastian_carrillob
+2023-07-23 23:00:31,329 - root - INFO - Processing comment: id. 1: sebastian_carrillob
+2023-07-23 23:00:32,057 - root - INFO - Processing comment: id. 2: john_ja10
+2023-07-23 23:00:32,057 - root - INFO - Processing comment: id. 2: john_ja10
+2023-07-23 23:00:32,590 - root - INFO - Processing comment: id. 3: el_seebaaas
+2023-07-23 23:00:32,590 - root - INFO - Processing comment: id. 3: el_seebaaas
+2023-07-23 23:00:33,013 - root - INFO - Processing comment: id. 4: andres_neita
+2023-07-23 23:00:33,013 - root - INFO - Processing comment: id. 4: andres_neita
+2023-07-23 23:00:33,452 - root - INFO - Processing comment: id. 5: el_seebaaas
+2023-07-23 23:00:33,452 - root - INFO - Processing comment: id. 5: el_seebaaas
+2023-07-23 23:00:33,582 - root - INFO - Processing comment: id. 6: juandm_13
+2023-07-23 23:00:33,582 - root - INFO - Processing comment: id. 6: juandm_13
+2023-07-23 23:00:33,696 - root - INFO - Processing comment: id. 7: sebastian_carrillob
+2023-07-23 23:00:33,696 - root - INFO - Processing comment: id. 7: sebastian_carrillob
+2023-07-23 23:00:34,071 - root - INFO - Processing comment: id. 8: sebastian_carrillob
+2023-07-23 23:00:34,071 - root - INFO - Processing comment: id. 8: sebastian_carrillob
+2023-07-23 23:00:34,141 - root - INFO - Processing comment: id. 9: andres_neita
+2023-07-23 23:00:34,141 - root - INFO - Processing comment: id. 9: andres_neita
+2023-07-23 23:00:34,605 - root - INFO - Processing comment: id. 10: itssebastiancb
+2023-07-23 23:00:34,605 - root - INFO - Processing comment: id. 10: itssebastiancb
+2023-07-23 23:00:35,271 - root - INFO - Processing comment: id. 11: john_ja10
+2023-07-23 23:00:35,271 - root - INFO - Processing comment: id. 11: john_ja10
+2023-07-23 23:00:35,827 - root - INFO - Processing comment: id. 12: el_seebaaas
+2023-07-23 23:00:35,827 - root - INFO - Processing comment: id. 12: el_seebaaas
+2023-07-23 23:00:36,218 - root - INFO - Processing comment: id. 13: andres_neita
+2023-07-23 23:00:36,218 - root - INFO - Processing comment: id. 13: andres_neita
+2023-07-23 23:00:36,657 - root - INFO - Processing comment: id. 14: itssebastiancb
+2023-07-23 23:00:36,657 - root - INFO - Processing comment: id. 14: itssebastiancb
+2023-07-23 23:00:37,331 - root - INFO - Processing comment: id. 15: el_seebaaas
+2023-07-23 23:00:37,331 - root - INFO - Processing comment: id. 15: el_seebaaas
+2023-07-23 23:00:37,726 - root - INFO - Processing comment: id. 16: john_ja10
+2023-07-23 23:00:37,726 - root - INFO - Processing comment: id. 16: john_ja10
+2023-07-23 23:00:38,262 - root - INFO - Processing comment: id. 17: andres_neita
+2023-07-23 23:00:38,262 - root - INFO - Processing comment: id. 17: andres_neita
+2023-07-23 23:00:38,697 - root - INFO - Processing comment: id. 18: itssebastiancb
+2023-07-23 23:00:38,697 - root - INFO - Processing comment: id. 18: itssebastiancb
+2023-07-23 23:00:39,373 - root - INFO - Processing comment: id. 19: itssebastiancb
+2023-07-23 23:00:39,373 - root - INFO - Processing comment: id. 19: itssebastiancb
+2023-07-23 23:00:39,529 - root - INFO - Processing comment: id. 20: el_seebaaas
+2023-07-23 23:00:39,529 - root - INFO - Processing comment: id. 20: el_seebaaas
+2023-07-23 23:00:39,925 - root - INFO - Processing comment: id. 21: john_ja10
+2023-07-23 23:00:39,925 - root - INFO - Processing comment: id. 21: john_ja10
+2023-07-23 23:01:00,558 - root - INFO - Processing comment: id. 1: sebastian_carrillob
+2023-07-23 23:01:00,558 - root - INFO - Processing comment: id. 1: sebastian_carrillob
+2023-07-23 23:01:01,286 - root - INFO - Processing comment: id. 2: john_ja10
+2023-07-23 23:01:01,286 - root - INFO - Processing comment: id. 2: john_ja10
+2023-07-23 23:01:01,818 - root - INFO - Processing comment: id. 3: el_seebaaas
+2023-07-23 23:01:01,818 - root - INFO - Processing comment: id. 3: el_seebaaas
+2023-07-23 23:01:02,214 - root - INFO - Processing comment: id. 4: andres_neita
+2023-07-23 23:01:02,214 - root - INFO - Processing comment: id. 4: andres_neita
+2023-07-23 23:01:02,649 - root - INFO - Processing comment: id. 5: el_seebaaas
+2023-07-23 23:01:02,649 - root - INFO - Processing comment: id. 5: el_seebaaas
+2023-07-23 23:01:02,790 - root - INFO - Processing comment: id. 6: juandm_13
+2023-07-23 23:01:02,790 - root - INFO - Processing comment: id. 6: juandm_13
+2023-07-23 23:01:02,906 - root - INFO - Processing comment: id. 7: sebastian_carrillob
+2023-07-23 23:01:02,906 - root - INFO - Processing comment: id. 7: sebastian_carrillob
+2023-07-23 23:01:03,276 - root - INFO - Processing comment: id. 8: sebastian_carrillob
+2023-07-23 23:01:03,276 - root - INFO - Processing comment: id. 8: sebastian_carrillob
+2023-07-23 23:01:03,353 - root - INFO - Processing comment: id. 9: andres_neita
+2023-07-23 23:01:03,353 - root - INFO - Processing comment: id. 9: andres_neita
+2023-07-23 23:01:03,827 - root - INFO - Processing comment: id. 10: itssebastiancb
+2023-07-23 23:01:03,827 - root - INFO - Processing comment: id. 10: itssebastiancb
+2023-07-23 23:01:04,520 - root - INFO - Processing comment: id. 11: john_ja10
+2023-07-23 23:01:04,520 - root - INFO - Processing comment: id. 11: john_ja10
+2023-07-23 23:01:05,049 - root - INFO - Processing comment: id. 12: el_seebaaas
+2023-07-23 23:01:05,049 - root - INFO - Processing comment: id. 12: el_seebaaas
+2023-07-23 23:01:05,449 - root - INFO - Processing comment: id. 13: andres_neita
+2023-07-23 23:01:05,449 - root - INFO - Processing comment: id. 13: andres_neita
+2023-07-23 23:01:05,911 - root - INFO - Processing comment: id. 14: itssebastiancb
+2023-07-23 23:01:05,911 - root - INFO - Processing comment: id. 14: itssebastiancb
+2023-07-23 23:01:06,590 - root - INFO - Processing comment: id. 15: el_seebaaas
+2023-07-23 23:01:06,590 - root - INFO - Processing comment: id. 15: el_seebaaas
+2023-07-23 23:01:06,997 - root - INFO - Processing comment: id. 16: john_ja10
+2023-07-23 23:01:06,997 - root - INFO - Processing comment: id. 16: john_ja10
+2023-07-23 23:01:07,526 - root - INFO - Processing comment: id. 17: andres_neita
+2023-07-23 23:01:07,526 - root - INFO - Processing comment: id. 17: andres_neita
+2023-07-23 23:01:07,959 - root - INFO - Processing comment: id. 18: itssebastiancb
+2023-07-23 23:01:07,959 - root - INFO - Processing comment: id. 18: itssebastiancb
+2023-07-23 23:01:08,641 - root - INFO - Processing comment: id. 19: itssebastiancb
+2023-07-23 23:01:08,641 - root - INFO - Processing comment: id. 19: itssebastiancb
+2023-07-23 23:01:08,798 - root - INFO - Processing comment: id. 20: el_seebaaas
+2023-07-23 23:01:08,798 - root - INFO - Processing comment: id. 20: el_seebaaas
+2023-07-23 23:01:09,181 - root - INFO - Processing comment: id. 21: john_ja10
+2023-07-23 23:01:09,181 - root - INFO - Processing comment: id. 21: john_ja10
+2023-07-23 23:01:29,820 - root - INFO - Processing comment: id. 1: sebastian_carrillob
+2023-07-23 23:01:29,820 - root - INFO - Processing comment: id. 1: sebastian_carrillob
+2023-07-23 23:01:30,542 - root - INFO - Processing comment: id. 2: john_ja10
+2023-07-23 23:01:30,542 - root - INFO - Processing comment: id. 2: john_ja10
+2023-07-23 23:01:31,074 - root - INFO - Processing comment: id. 3: el_seebaaas
+2023-07-23 23:01:31,074 - root - INFO - Processing comment: id. 3: el_seebaaas
+2023-07-23 23:01:31,469 - root - INFO - Processing comment: id. 4: andres_neita
+2023-07-23 23:01:31,469 - root - INFO - Processing comment: id. 4: andres_neita
+2023-07-23 23:01:31,906 - root - INFO - Processing comment: id. 5: el_seebaaas
+2023-07-23 23:01:31,906 - root - INFO - Processing comment: id. 5: el_seebaaas
+2023-07-23 23:01:32,036 - root - INFO - Processing comment: id. 6: juandm_13
+2023-07-23 23:01:32,036 - root - INFO - Processing comment: id. 6: juandm_13
+2023-07-23 23:01:32,151 - root - INFO - Processing comment: id. 7: sebastian_carrillob
+2023-07-23 23:01:32,151 - root - INFO - Processing comment: id. 7: sebastian_carrillob
+2023-07-23 23:01:32,518 - root - INFO - Processing comment: id. 8: sebastian_carrillob
+2023-07-23 23:01:32,518 - root - INFO - Processing comment: id. 8: sebastian_carrillob
+2023-07-23 23:01:32,597 - root - INFO - Processing comment: id. 9: andres_neita
+2023-07-23 23:01:32,597 - root - INFO - Processing comment: id. 9: andres_neita
+2023-07-23 23:01:33,065 - root - INFO - Processing comment: id. 10: itssebastiancb
+2023-07-23 23:01:33,065 - root - INFO - Processing comment: id. 10: itssebastiancb
+2023-07-23 23:01:33,734 - root - INFO - Processing comment: id. 11: john_ja10
+2023-07-23 23:01:33,734 - root - INFO - Processing comment: id. 11: john_ja10
+2023-07-23 23:01:34,267 - root - INFO - Processing comment: id. 12: el_seebaaas
+2023-07-23 23:01:34,267 - root - INFO - Processing comment: id. 12: el_seebaaas
+2023-07-23 23:01:34,656 - root - INFO - Processing comment: id. 13: andres_neita
+2023-07-23 23:01:34,656 - root - INFO - Processing comment: id. 13: andres_neita
+2023-07-23 23:01:35,093 - root - INFO - Processing comment: id. 14: itssebastiancb
+2023-07-23 23:01:35,093 - root - INFO - Processing comment: id. 14: itssebastiancb
+2023-07-23 23:01:35,763 - root - INFO - Processing comment: id. 15: el_seebaaas
+2023-07-23 23:01:35,763 - root - INFO - Processing comment: id. 15: el_seebaaas
+2023-07-23 23:01:36,149 - root - INFO - Processing comment: id. 16: john_ja10
+2023-07-23 23:01:36,149 - root - INFO - Processing comment: id. 16: john_ja10
+2023-07-23 23:01:36,698 - root - INFO - Processing comment: id. 17: andres_neita
+2023-07-23 23:01:36,698 - root - INFO - Processing comment: id. 17: andres_neita
+2023-07-23 23:01:37,131 - root - INFO - Processing comment: id. 18: itssebastiancb
+2023-07-23 23:01:37,131 - root - INFO - Processing comment: id. 18: itssebastiancb
+2023-07-23 23:01:37,808 - root - INFO - Processing comment: id. 19: itssebastiancb
+2023-07-23 23:01:37,808 - root - INFO - Processing comment: id. 19: itssebastiancb
+2023-07-23 23:01:37,967 - root - INFO - Processing comment: id. 20: el_seebaaas
+2023-07-23 23:01:37,967 - root - INFO - Processing comment: id. 20: el_seebaaas
+2023-07-23 23:01:38,358 - root - INFO - Processing comment: id. 21: john_ja10
+2023-07-23 23:01:38,358 - root - INFO - Processing comment: id. 21: john_ja10
+2023-07-23 23:01:59,006 - root - INFO - Processing comment: id. 1: sebastian_carrillob
+2023-07-23 23:01:59,006 - root - INFO - Processing comment: id. 1: sebastian_carrillob
+2023-07-23 23:01:59,721 - root - INFO - Processing comment: id. 2: john_ja10
+2023-07-23 23:01:59,721 - root - INFO - Processing comment: id. 2: john_ja10
+2023-07-23 23:02:00,266 - root - INFO - Processing comment: id. 3: el_seebaaas
+2023-07-23 23:02:00,266 - root - INFO - Processing comment: id. 3: el_seebaaas
+2023-07-23 23:02:00,652 - root - INFO - Processing comment: id. 4: andres_neita
+2023-07-23 23:02:00,652 - root - INFO - Processing comment: id. 4: andres_neita
+2023-07-23 23:02:01,095 - root - INFO - Processing comment: id. 5: el_seebaaas
+2023-07-23 23:02:01,095 - root - INFO - Processing comment: id. 5: el_seebaaas
+2023-07-23 23:02:01,222 - root - INFO - Processing comment: id. 6: juandm_13
+2023-07-23 23:02:01,222 - root - INFO - Processing comment: id. 6: juandm_13
+2023-07-23 23:02:01,330 - root - INFO - Processing comment: id. 7: sebastian_carrillob
+2023-07-23 23:02:01,330 - root - INFO - Processing comment: id. 7: sebastian_carrillob
+2023-07-23 23:02:01,707 - root - INFO - Processing comment: id. 8: sebastian_carrillob
+2023-07-23 23:02:01,707 - root - INFO - Processing comment: id. 8: sebastian_carrillob
+2023-07-23 23:02:01,783 - root - INFO - Processing comment: id. 9: andres_neita
+2023-07-23 23:02:01,783 - root - INFO - Processing comment: id. 9: andres_neita
+2023-07-23 23:02:02,241 - root - INFO - Processing comment: id. 10: itssebastiancb
+2023-07-23 23:02:02,241 - root - INFO - Processing comment: id. 10: itssebastiancb
+2023-07-23 23:02:02,943 - root - INFO - Processing comment: id. 11: john_ja10
+2023-07-23 23:02:02,943 - root - INFO - Processing comment: id. 11: john_ja10
+2023-07-23 23:02:03,474 - root - INFO - Processing comment: id. 12: el_seebaaas
+2023-07-23 23:02:03,474 - root - INFO - Processing comment: id. 12: el_seebaaas
+2023-07-23 23:02:03,868 - root - INFO - Processing comment: id. 13: andres_neita
+2023-07-23 23:02:03,868 - root - INFO - Processing comment: id. 13: andres_neita
+2023-07-23 23:02:04,299 - root - INFO - Processing comment: id. 14: itssebastiancb
+2023-07-23 23:02:04,299 - root - INFO - Processing comment: id. 14: itssebastiancb
+2023-07-23 23:02:04,968 - root - INFO - Processing comment: id. 15: el_seebaaas
+2023-07-23 23:02:04,968 - root - INFO - Processing comment: id. 15: el_seebaaas
+2023-07-23 23:02:05,372 - root - INFO - Processing comment: id. 16: john_ja10
+2023-07-23 23:02:05,372 - root - INFO - Processing comment: id. 16: john_ja10
+2023-07-23 23:02:05,893 - root - INFO - Processing comment: id. 17: andres_neita
+2023-07-23 23:02:05,893 - root - INFO - Processing comment: id. 17: andres_neita
+2023-07-23 23:02:06,325 - root - INFO - Processing comment: id. 18: itssebastiancb
+2023-07-23 23:02:06,325 - root - INFO - Processing comment: id. 18: itssebastiancb
+2023-07-23 23:02:07,008 - root - INFO - Processing comment: id. 19: itssebastiancb
+2023-07-23 23:02:07,008 - root - INFO - Processing comment: id. 19: itssebastiancb
+2023-07-23 23:02:07,167 - root - INFO - Processing comment: id. 20: el_seebaaas
+2023-07-23 23:02:07,167 - root - INFO - Processing comment: id. 20: el_seebaaas
+2023-07-23 23:02:07,555 - root - INFO - Processing comment: id. 21: john_ja10
+2023-07-23 23:02:07,555 - root - INFO - Processing comment: id. 21: john_ja10
+2023-07-23 23:02:28,182 - root - INFO - Processing comment: id. 1: sebastian_carrillob
+2023-07-23 23:02:28,182 - root - INFO - Processing comment: id. 1: sebastian_carrillob
+2023-07-23 23:02:28,903 - root - INFO - Processing comment: id. 2: john_ja10
+2023-07-23 23:02:28,903 - root - INFO - Processing comment: id. 2: john_ja10
+2023-07-23 23:02:29,426 - root - INFO - Processing comment: id. 3: el_seebaaas
+2023-07-23 23:02:29,426 - root - INFO - Processing comment: id. 3: el_seebaaas
+2023-07-23 23:02:29,833 - root - INFO - Processing comment: id. 4: andres_neita
+2023-07-23 23:02:29,833 - root - INFO - Processing comment: id. 4: andres_neita
+2023-07-23 23:02:30,271 - root - INFO - Processing comment: id. 5: el_seebaaas
+2023-07-23 23:02:30,271 - root - INFO - Processing comment: id. 5: el_seebaaas
+2023-07-23 23:02:30,394 - root - INFO - Processing comment: id. 6: juandm_13
+2023-07-23 23:02:30,394 - root - INFO - Processing comment: id. 6: juandm_13
+2023-07-23 23:02:30,507 - root - INFO - Processing comment: id. 7: sebastian_carrillob
+2023-07-23 23:02:30,507 - root - INFO - Processing comment: id. 7: sebastian_carrillob
+2023-07-23 23:02:30,881 - root - INFO - Processing comment: id. 8: sebastian_carrillob
+2023-07-23 23:02:30,881 - root - INFO - Processing comment: id. 8: sebastian_carrillob
+2023-07-23 23:02:30,960 - root - INFO - Processing comment: id. 9: andres_neita
+2023-07-23 23:02:30,960 - root - INFO - Processing comment: id. 9: andres_neita
+2023-07-23 23:02:31,462 - root - INFO - Processing comment: id. 10: itssebastiancb
+2023-07-23 23:02:31,462 - root - INFO - Processing comment: id. 10: itssebastiancb
+2023-07-23 23:02:32,134 - root - INFO - Processing comment: id. 11: john_ja10
+2023-07-23 23:02:32,134 - root - INFO - Processing comment: id. 11: john_ja10
+2023-07-23 23:02:32,659 - root - INFO - Processing comment: id. 12: el_seebaaas
+2023-07-23 23:02:32,659 - root - INFO - Processing comment: id. 12: el_seebaaas
+2023-07-23 23:02:33,059 - root - INFO - Processing comment: id. 13: andres_neita
+2023-07-23 23:02:33,059 - root - INFO - Processing comment: id. 13: andres_neita
+2023-07-23 23:02:33,493 - root - INFO - Processing comment: id. 14: itssebastiancb
+2023-07-23 23:02:33,493 - root - INFO - Processing comment: id. 14: itssebastiancb
+2023-07-23 23:02:34,188 - root - INFO - Processing comment: id. 15: el_seebaaas
+2023-07-23 23:02:34,188 - root - INFO - Processing comment: id. 15: el_seebaaas
+2023-07-23 23:02:34,587 - root - INFO - Processing comment: id. 16: john_ja10
+2023-07-23 23:02:34,587 - root - INFO - Processing comment: id. 16: john_ja10
+2023-07-23 23:02:35,121 - root - INFO - Processing comment: id. 17: andres_neita
+2023-07-23 23:02:35,121 - root - INFO - Processing comment: id. 17: andres_neita
+2023-07-23 23:02:35,554 - root - INFO - Processing comment: id. 18: itssebastiancb
+2023-07-23 23:02:35,554 - root - INFO - Processing comment: id. 18: itssebastiancb
+2023-07-23 23:02:36,260 - root - INFO - Processing comment: id. 19: itssebastiancb
+2023-07-23 23:02:36,260 - root - INFO - Processing comment: id. 19: itssebastiancb
+2023-07-23 23:02:36,419 - root - INFO - Processing comment: id. 20: el_seebaaas
+2023-07-23 23:02:36,419 - root - INFO - Processing comment: id. 20: el_seebaaas
+2023-07-23 23:02:36,802 - root - INFO - Processing comment: id. 21: john_ja10
+2023-07-23 23:02:36,802 - root - INFO - Processing comment: id. 21: john_ja10
+2023-07-23 23:02:57,435 - root - INFO - Processing comment: id. 1: sebastian_carrillob
+2023-07-23 23:02:57,435 - root - INFO - Processing comment: id. 1: sebastian_carrillob
+2023-07-23 23:02:58,172 - root - INFO - Processing comment: id. 2: john_ja10
+2023-07-23 23:02:58,172 - root - INFO - Processing comment: id. 2: john_ja10
+2023-07-23 23:02:58,706 - root - INFO - Processing comment: id. 3: el_seebaaas
+2023-07-23 23:02:58,706 - root - INFO - Processing comment: id. 3: el_seebaaas
+2023-07-23 23:02:59,128 - root - INFO - Processing comment: id. 4: andres_neita
+2023-07-23 23:02:59,128 - root - INFO - Processing comment: id. 4: andres_neita
+2023-07-23 23:02:59,589 - root - INFO - Processing comment: id. 5: el_seebaaas
+2023-07-23 23:02:59,589 - root - INFO - Processing comment: id. 5: el_seebaaas
+2023-07-23 23:02:59,726 - root - INFO - Processing comment: id. 6: juandm_13
+2023-07-23 23:02:59,726 - root - INFO - Processing comment: id. 6: juandm_13
+2023-07-23 23:02:59,843 - root - INFO - Processing comment: id. 7: sebastian_carrillob
+2023-07-23 23:02:59,843 - root - INFO - Processing comment: id. 7: sebastian_carrillob
+2023-07-23 23:03:00,226 - root - INFO - Processing comment: id. 8: sebastian_carrillob
+2023-07-23 23:03:00,226 - root - INFO - Processing comment: id. 8: sebastian_carrillob
+2023-07-23 23:03:00,306 - root - INFO - Processing comment: id. 9: andres_neita
+2023-07-23 23:03:00,306 - root - INFO - Processing comment: id. 9: andres_neita
+2023-07-23 23:03:00,772 - root - INFO - Processing comment: id. 10: itssebastiancb
+2023-07-23 23:03:00,772 - root - INFO - Processing comment: id. 10: itssebastiancb
+2023-07-23 23:03:01,529 - root - INFO - Processing comment: id. 11: john_ja10
+2023-07-23 23:03:01,529 - root - INFO - Processing comment: id. 11: john_ja10
+2023-07-23 23:03:02,104 - root - INFO - Processing comment: id. 12: el_seebaaas
+2023-07-23 23:03:02,104 - root - INFO - Processing comment: id. 12: el_seebaaas
+2023-07-23 23:03:02,503 - root - INFO - Processing comment: id. 13: andres_neita
+2023-07-23 23:03:02,503 - root - INFO - Processing comment: id. 13: andres_neita
+2023-07-23 23:03:02,978 - root - INFO - Processing comment: id. 14: itssebastiancb
+2023-07-23 23:03:02,978 - root - INFO - Processing comment: id. 14: itssebastiancb
+2023-07-23 23:03:03,703 - root - INFO - Processing comment: id. 15: el_seebaaas
+2023-07-23 23:03:03,703 - root - INFO - Processing comment: id. 15: el_seebaaas
+2023-07-23 23:03:04,123 - root - INFO - Processing comment: id. 16: john_ja10
+2023-07-23 23:03:04,123 - root - INFO - Processing comment: id. 16: john_ja10
+2023-07-23 23:03:04,676 - root - INFO - Processing comment: id. 17: andres_neita
+2023-07-23 23:03:04,676 - root - INFO - Processing comment: id. 17: andres_neita
+2023-07-23 23:03:05,125 - root - INFO - Processing comment: id. 18: itssebastiancb
+2023-07-23 23:03:05,125 - root - INFO - Processing comment: id. 18: itssebastiancb
+2023-07-23 23:03:05,842 - root - INFO - Processing comment: id. 19: itssebastiancb
+2023-07-23 23:03:05,842 - root - INFO - Processing comment: id. 19: itssebastiancb
+2023-07-23 23:03:06,014 - root - INFO - Processing comment: id. 20: el_seebaaas
+2023-07-23 23:03:06,014 - root - INFO - Processing comment: id. 20: el_seebaaas
+2023-07-23 23:03:06,442 - root - INFO - Processing comment: id. 21: john_ja10
+2023-07-23 23:03:06,442 - root - INFO - Processing comment: id. 21: john_ja10
+2023-07-23 23:03:27,077 - root - INFO - Processing comment: id. 1: sebastian_carrillob
+2023-07-23 23:03:27,077 - root - INFO - Processing comment: id. 1: sebastian_carrillob
+2023-07-23 23:03:27,849 - root - INFO - Processing comment: id. 2: john_ja10
+2023-07-23 23:03:27,849 - root - INFO - Processing comment: id. 2: john_ja10
+2023-07-23 23:03:28,396 - root - INFO - Processing comment: id. 3: el_seebaaas
+2023-07-23 23:03:28,396 - root - INFO - Processing comment: id. 3: el_seebaaas
+2023-07-23 23:03:28,790 - root - INFO - Processing comment: id. 4: andres_neita
+2023-07-23 23:03:28,790 - root - INFO - Processing comment: id. 4: andres_neita
+2023-07-23 23:03:29,246 - root - INFO - Processing comment: id. 5: el_seebaaas
+2023-07-23 23:03:29,246 - root - INFO - Processing comment: id. 5: el_seebaaas
+2023-07-23 23:03:29,369 - root - INFO - Processing comment: id. 6: juandm_13
+2023-07-23 23:03:29,369 - root - INFO - Processing comment: id. 6: juandm_13
+2023-07-23 23:03:29,487 - root - INFO - Processing comment: id. 7: sebastian_carrillob
+2023-07-23 23:03:29,487 - root - INFO - Processing comment: id. 7: sebastian_carrillob
+2023-07-23 23:03:29,862 - root - INFO - Processing comment: id. 8: sebastian_carrillob
+2023-07-23 23:03:29,862 - root - INFO - Processing comment: id. 8: sebastian_carrillob
+2023-07-23 23:03:29,937 - root - INFO - Processing comment: id. 9: andres_neita
+2023-07-23 23:03:29,937 - root - INFO - Processing comment: id. 9: andres_neita
+2023-07-23 23:03:30,414 - root - INFO - Processing comment: id. 10: itssebastiancb
+2023-07-23 23:03:30,414 - root - INFO - Processing comment: id. 10: itssebastiancb
+2023-07-23 23:03:31,122 - root - INFO - Processing comment: id. 11: john_ja10
+2023-07-23 23:03:31,122 - root - INFO - Processing comment: id. 11: john_ja10
+2023-07-23 23:03:31,720 - root - INFO - Processing comment: id. 12: el_seebaaas
+2023-07-23 23:03:31,720 - root - INFO - Processing comment: id. 12: el_seebaaas
+2023-07-23 23:03:32,109 - root - INFO - Processing comment: id. 13: andres_neita
+2023-07-23 23:03:32,109 - root - INFO - Processing comment: id. 13: andres_neita
+2023-07-23 23:03:32,579 - root - INFO - Processing comment: id. 14: itssebastiancb
+2023-07-23 23:03:32,579 - root - INFO - Processing comment: id. 14: itssebastiancb
+2023-07-23 23:03:33,259 - root - INFO - Processing comment: id. 15: el_seebaaas
+2023-07-23 23:03:33,259 - root - INFO - Processing comment: id. 15: el_seebaaas
+2023-07-23 23:03:33,663 - root - INFO - Processing comment: id. 16: john_ja10
+2023-07-23 23:03:33,663 - root - INFO - Processing comment: id. 16: john_ja10
+2023-07-23 23:03:34,243 - root - INFO - Processing comment: id. 17: andres_neita
+2023-07-23 23:03:34,243 - root - INFO - Processing comment: id. 17: andres_neita
+2023-07-23 23:03:34,714 - root - INFO - Processing comment: id. 18: itssebastiancb
+2023-07-23 23:03:34,714 - root - INFO - Processing comment: id. 18: itssebastiancb
+2023-07-23 23:03:35,405 - root - INFO - Processing comment: id. 19: itssebastiancb
+2023-07-23 23:03:35,405 - root - INFO - Processing comment: id. 19: itssebastiancb
+2023-07-23 23:03:35,565 - root - INFO - Processing comment: id. 20: el_seebaaas
+2023-07-23 23:03:35,565 - root - INFO - Processing comment: id. 20: el_seebaaas
+2023-07-23 23:03:35,957 - root - INFO - Processing comment: id. 21: john_ja10
+2023-07-23 23:03:35,957 - root - INFO - Processing comment: id. 21: john_ja10

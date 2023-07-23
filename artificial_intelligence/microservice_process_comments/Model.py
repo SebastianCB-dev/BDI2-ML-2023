@@ -46,18 +46,32 @@ class Model:
     def process_comments(self):
         while True:
             try:
-                #comments = self.databaseService.get_comments()
-                comments = [{'id': 99999, 'username': 'test', 'user_comment': 'test comment'}]
+                comments = self.databaseService.get_comments()
                 for comment in comments:
-                    self.logger.info(f"Processing comment: {comment['id']}- {comment['username']}")
+                    print(comment)
+                    self.logger.info(f"Processing comment: id. {comment['id']}: {comment['username']}")
                     # Get the BDI for the user
                     bdi = self.databaseService.get_bdi(comment['username'])
                     #TODO: Identify language of the comment and use the correct model
                     # language = self.languageService.identify_language(comment['user_comment'])
                     
                     # Process Comment
-                    comment_test = 'Hola soi sebastian y tengo ganas de morirme hoy o suisidarme'
-                    processed_comment = self.preprocessingService.process_comment(comment_test)
+                    if (comment["user_comment"] == None or comment["user_comment"] == ""):
+                        # TODO: Update the comment status to "PROCESSED"
+                        continue
+                    processed_comment = self.preprocessingService.process_comment(comment["user_comment"])
+                    if (processed_comment == None or processed_comment == ""):
+                        # TODO: Update the comment status to "PROCESSED"
+                        continue
+                    
+                    print("")
+                    print("")
+                    print("")
+                    print(processed_comment)
+                    print("")
+                    print("")
+                    print("")
+
 
                     
                 time.sleep(20)
