@@ -10,6 +10,7 @@ from gensim.models import Word2Vec
 from services.database_service import DatabaseService
 from services.logging_service import LoggingService
 from preprocessing import Preprocessing
+from Word2Vec import ModelWord2Vec
 
 class Model:
     # Public Properties
@@ -22,14 +23,9 @@ class Model:
            This function initializes the class
            Set the model and connect to the database
         """
-        self.set_model()
         self.start_db()
         self.preprocessingService = Preprocessing()
-
-    def set_model(self):    
-        print(os.getcwd());    
-        self.modelES = Word2Vec.load('model/depresion.es.model')
-        self.logger.info("Model loaded")
+        self.W2V = ModelWord2Vec()
     
     def getLogger(self):
         # This function returns the logger
@@ -63,7 +59,7 @@ class Model:
                     if (processed_comment == None or processed_comment == ""):
                         # TODO: Update the comment status to "PROCESSED"
                         continue
-                    
+                    get_bdi_comment = self.preprocessingService.get_bdi_comment(processed_comment)
                     print("")
                     print("")
                     print("")
