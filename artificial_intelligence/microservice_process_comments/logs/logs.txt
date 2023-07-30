@@ -6023,3 +6023,369 @@
 2023-07-30 23:07:44,431 - root - CRITICAL - Error with the Model: 'ModelWord2Vec' object has no attribute 'model'
 2023-07-30 23:07:44,431 - root - CRITICAL - Error with the Model: 'ModelWord2Vec' object has no attribute 'model'
 2023-07-30 23:07:44,431 - root - CRITICAL - Error with the Model: 'ModelWord2Vec' object has no attribute 'model'
+2023-07-30 23:09:30,653 - root - INFO - Database connection started
+2023-07-30 23:09:30,653 - root - INFO - Database connection started
+2023-07-30 23:09:30,653 - root - INFO - Database connection started
+2023-07-30 23:09:30,786 - stanza - INFO - Downloading these customized packages for language: es (Spanish)...
+==============================
+| Processor       | Package  |
+------------------------------
+| tokenize        | ancora   |
+| mwt             | ancora   |
+| pos             | ancora   |
+| lemma           | ancora   |
+| pretrain        | ancora   |
+| forward_charlm  | newswiki |
+| backward_charlm | newswiki |
+==============================
+
+2023-07-30 23:09:30,786 - stanza - INFO - Downloading these customized packages for language: es (Spanish)...
+==============================
+| Processor       | Package  |
+------------------------------
+| tokenize        | ancora   |
+| mwt             | ancora   |
+| pos             | ancora   |
+| lemma           | ancora   |
+| pretrain        | ancora   |
+| forward_charlm  | newswiki |
+| backward_charlm | newswiki |
+==============================
+
+2023-07-30 23:09:30,786 - stanza - INFO - Downloading these customized packages for language: es (Spanish)...
+==============================
+| Processor       | Package  |
+------------------------------
+| tokenize        | ancora   |
+| mwt             | ancora   |
+| pos             | ancora   |
+| lemma           | ancora   |
+| pretrain        | ancora   |
+| forward_charlm  | newswiki |
+| backward_charlm | newswiki |
+==============================
+
+2023-07-30 23:09:30,792 - stanza - INFO - File exists: /root/stanza_resources/es/tokenize/ancora.pt
+2023-07-30 23:09:30,792 - stanza - INFO - File exists: /root/stanza_resources/es/tokenize/ancora.pt
+2023-07-30 23:09:30,792 - stanza - INFO - File exists: /root/stanza_resources/es/tokenize/ancora.pt
+2023-07-30 23:09:30,797 - stanza - INFO - File exists: /root/stanza_resources/es/mwt/ancora.pt
+2023-07-30 23:09:30,797 - stanza - INFO - File exists: /root/stanza_resources/es/mwt/ancora.pt
+2023-07-30 23:09:30,797 - stanza - INFO - File exists: /root/stanza_resources/es/mwt/ancora.pt
+2023-07-30 23:09:30,896 - stanza - INFO - File exists: /root/stanza_resources/es/pos/ancora.pt
+2023-07-30 23:09:30,896 - stanza - INFO - File exists: /root/stanza_resources/es/pos/ancora.pt
+2023-07-30 23:09:30,896 - stanza - INFO - File exists: /root/stanza_resources/es/pos/ancora.pt
+2023-07-30 23:09:30,908 - stanza - INFO - File exists: /root/stanza_resources/es/lemma/ancora.pt
+2023-07-30 23:09:30,908 - stanza - INFO - File exists: /root/stanza_resources/es/lemma/ancora.pt
+2023-07-30 23:09:30,908 - stanza - INFO - File exists: /root/stanza_resources/es/lemma/ancora.pt
+2023-07-30 23:09:31,140 - stanza - INFO - File exists: /root/stanza_resources/es/pretrain/ancora.pt
+2023-07-30 23:09:31,140 - stanza - INFO - File exists: /root/stanza_resources/es/pretrain/ancora.pt
+2023-07-30 23:09:31,140 - stanza - INFO - File exists: /root/stanza_resources/es/pretrain/ancora.pt
+2023-07-30 23:09:31,186 - stanza - INFO - File exists: /root/stanza_resources/es/forward_charlm/newswiki.pt
+2023-07-30 23:09:31,186 - stanza - INFO - File exists: /root/stanza_resources/es/forward_charlm/newswiki.pt
+2023-07-30 23:09:31,186 - stanza - INFO - File exists: /root/stanza_resources/es/forward_charlm/newswiki.pt
+2023-07-30 23:09:31,229 - stanza - INFO - File exists: /root/stanza_resources/es/backward_charlm/newswiki.pt
+2023-07-30 23:09:31,229 - stanza - INFO - File exists: /root/stanza_resources/es/backward_charlm/newswiki.pt
+2023-07-30 23:09:31,229 - stanza - INFO - File exists: /root/stanza_resources/es/backward_charlm/newswiki.pt
+2023-07-30 23:09:31,231 - stanza - INFO - Finished downloading models and saved to /root/stanza_resources.
+2023-07-30 23:09:31,231 - stanza - INFO - Finished downloading models and saved to /root/stanza_resources.
+2023-07-30 23:09:31,231 - stanza - INFO - Finished downloading models and saved to /root/stanza_resources.
+2023-07-30 23:09:31,232 - stanza - INFO - Checking for updates to resources.json in case models have been updated.  Note: this behavior can be turned off with download_method=None or download_method=DownloadMethod.REUSE_RESOURCES
+2023-07-30 23:09:31,232 - stanza - INFO - Checking for updates to resources.json in case models have been updated.  Note: this behavior can be turned off with download_method=None or download_method=DownloadMethod.REUSE_RESOURCES
+2023-07-30 23:09:31,232 - stanza - INFO - Checking for updates to resources.json in case models have been updated.  Note: this behavior can be turned off with download_method=None or download_method=DownloadMethod.REUSE_RESOURCES
+2023-07-30 23:09:31,725 - stanza - INFO - Loading these models for language: es (Spanish):
+=======================
+| Processor | Package |
+-----------------------
+| tokenize  | ancora  |
+| mwt       | ancora  |
+| pos       | ancora  |
+| lemma     | ancora  |
+=======================
+
+2023-07-30 23:09:31,725 - stanza - INFO - Loading these models for language: es (Spanish):
+=======================
+| Processor | Package |
+-----------------------
+| tokenize  | ancora  |
+| mwt       | ancora  |
+| pos       | ancora  |
+| lemma     | ancora  |
+=======================
+
+2023-07-30 23:09:31,725 - stanza - INFO - Loading these models for language: es (Spanish):
+=======================
+| Processor | Package |
+-----------------------
+| tokenize  | ancora  |
+| mwt       | ancora  |
+| pos       | ancora  |
+| lemma     | ancora  |
+=======================
+
+2023-07-30 23:09:31,727 - stanza - WARNING - GPU requested, but is not available!
+2023-07-30 23:09:31,727 - stanza - WARNING - GPU requested, but is not available!
+2023-07-30 23:09:31,727 - stanza - WARNING - GPU requested, but is not available!
+2023-07-30 23:09:31,728 - stanza - INFO - Using device: cpu
+2023-07-30 23:09:31,728 - stanza - INFO - Using device: cpu
+2023-07-30 23:09:31,728 - stanza - INFO - Using device: cpu
+2023-07-30 23:09:31,730 - stanza - INFO - Loading: tokenize
+2023-07-30 23:09:31,730 - stanza - INFO - Loading: tokenize
+2023-07-30 23:09:31,730 - stanza - INFO - Loading: tokenize
+2023-07-30 23:09:31,734 - stanza - INFO - Loading: mwt
+2023-07-30 23:09:31,734 - stanza - INFO - Loading: mwt
+2023-07-30 23:09:31,734 - stanza - INFO - Loading: mwt
+2023-07-30 23:09:31,737 - stanza - INFO - Loading: pos
+2023-07-30 23:09:31,737 - stanza - INFO - Loading: pos
+2023-07-30 23:09:31,737 - stanza - INFO - Loading: pos
+2023-07-30 23:09:31,907 - stanza - INFO - Loading: lemma
+2023-07-30 23:09:31,907 - stanza - INFO - Loading: lemma
+2023-07-30 23:09:31,907 - stanza - INFO - Loading: lemma
+2023-07-30 23:09:31,927 - stanza - INFO - Done loading processors!
+2023-07-30 23:09:31,927 - stanza - INFO - Done loading processors!
+2023-07-30 23:09:31,927 - stanza - INFO - Done loading processors!
+2023-07-30 23:09:32,454 - gensim.utils - INFO - loading Word2Vec object from model/depresion.es.model
+2023-07-30 23:09:32,454 - gensim.utils - INFO - loading Word2Vec object from model/depresion.es.model
+2023-07-30 23:09:32,454 - gensim.utils - INFO - loading Word2Vec object from model/depresion.es.model
+2023-07-30 23:09:32,487 - gensim.utils - INFO - loading wv recursively from model/depresion.es.model.wv.* with mmap=None
+2023-07-30 23:09:32,487 - gensim.utils - INFO - loading wv recursively from model/depresion.es.model.wv.* with mmap=None
+2023-07-30 23:09:32,487 - gensim.utils - INFO - loading wv recursively from model/depresion.es.model.wv.* with mmap=None
+2023-07-30 23:09:32,489 - gensim.utils - INFO - setting ignored attribute cum_table to None
+2023-07-30 23:09:32,489 - gensim.utils - INFO - setting ignored attribute cum_table to None
+2023-07-30 23:09:32,489 - gensim.utils - INFO - setting ignored attribute cum_table to None
+2023-07-30 23:09:32,535 - gensim.utils - INFO - Word2Vec lifecycle event {'fname': 'model/depresion.es.model', 'datetime': '2023-07-30T23:09:32.534835', 'gensim': '4.3.1', 'python': '3.10.7 (main, May 29 2023, 13:51:48) [GCC 12.2.0]', 'platform': 'Linux-5.15.49-linuxkit-pr-aarch64-with-glibc2.36', 'event': 'loaded'}
+2023-07-30 23:09:32,535 - gensim.utils - INFO - Word2Vec lifecycle event {'fname': 'model/depresion.es.model', 'datetime': '2023-07-30T23:09:32.534835', 'gensim': '4.3.1', 'python': '3.10.7 (main, May 29 2023, 13:51:48) [GCC 12.2.0]', 'platform': 'Linux-5.15.49-linuxkit-pr-aarch64-with-glibc2.36', 'event': 'loaded'}
+2023-07-30 23:09:32,535 - gensim.utils - INFO - Word2Vec lifecycle event {'fname': 'model/depresion.es.model', 'datetime': '2023-07-30T23:09:32.534835', 'gensim': '4.3.1', 'python': '3.10.7 (main, May 29 2023, 13:51:48) [GCC 12.2.0]', 'platform': 'Linux-5.15.49-linuxkit-pr-aarch64-with-glibc2.36', 'event': 'loaded'}
+2023-07-30 23:09:32,537 - root - INFO - Model loaded
+2023-07-30 23:09:32,537 - root - INFO - Model loaded
+2023-07-30 23:09:32,537 - root - INFO - Model loaded
+2023-07-30 23:09:32,714 - root - INFO - Processing comment: id. 1: sebastian_carrillob
+2023-07-30 23:09:32,714 - root - INFO - Processing comment: id. 1: sebastian_carrillob
+2023-07-30 23:09:32,714 - root - INFO - Processing comment: id. 1: sebastian_carrillob
+2023-07-30 23:09:33,573 - gensim.models.word2vec - INFO - collecting all words and their counts
+2023-07-30 23:09:33,573 - gensim.models.word2vec - INFO - collecting all words and their counts
+2023-07-30 23:09:33,573 - gensim.models.word2vec - INFO - collecting all words and their counts
+2023-07-30 23:09:33,574 - gensim.models.word2vec - INFO - PROGRESS: at sentence #0, processed 0 words, keeping 0 word types
+2023-07-30 23:09:33,574 - gensim.models.word2vec - INFO - PROGRESS: at sentence #0, processed 0 words, keeping 0 word types
+2023-07-30 23:09:33,574 - gensim.models.word2vec - INFO - PROGRESS: at sentence #0, processed 0 words, keeping 0 word types
+2023-07-30 23:09:33,576 - gensim.models.word2vec - INFO - collected 24 word types from a corpus of 24 raw words and 1 sentences
+2023-07-30 23:09:33,576 - gensim.models.word2vec - INFO - collected 24 word types from a corpus of 24 raw words and 1 sentences
+2023-07-30 23:09:33,576 - gensim.models.word2vec - INFO - collected 24 word types from a corpus of 24 raw words and 1 sentences
+2023-07-30 23:09:33,577 - gensim.models.word2vec - INFO - Updating model with new vocabulary
+2023-07-30 23:09:33,577 - gensim.models.word2vec - INFO - Updating model with new vocabulary
+2023-07-30 23:09:33,577 - gensim.models.word2vec - INFO - Updating model with new vocabulary
+2023-07-30 23:09:33,594 - gensim.utils - INFO - Word2Vec lifecycle event {'msg': 'added 0 new unique words (0.00% of original 24) and increased the count of 0 pre-existing words (0.00% of original 24)', 'datetime': '2023-07-30T23:09:33.594091', 'gensim': '4.3.1', 'python': '3.10.7 (main, May 29 2023, 13:51:48) [GCC 12.2.0]', 'platform': 'Linux-5.15.49-linuxkit-pr-aarch64-with-glibc2.36', 'event': 'prepare_vocab'}
+2023-07-30 23:09:33,594 - gensim.utils - INFO - Word2Vec lifecycle event {'msg': 'added 0 new unique words (0.00% of original 24) and increased the count of 0 pre-existing words (0.00% of original 24)', 'datetime': '2023-07-30T23:09:33.594091', 'gensim': '4.3.1', 'python': '3.10.7 (main, May 29 2023, 13:51:48) [GCC 12.2.0]', 'platform': 'Linux-5.15.49-linuxkit-pr-aarch64-with-glibc2.36', 'event': 'prepare_vocab'}
+2023-07-30 23:09:33,594 - gensim.utils - INFO - Word2Vec lifecycle event {'msg': 'added 0 new unique words (0.00% of original 24) and increased the count of 0 pre-existing words (0.00% of original 24)', 'datetime': '2023-07-30T23:09:33.594091', 'gensim': '4.3.1', 'python': '3.10.7 (main, May 29 2023, 13:51:48) [GCC 12.2.0]', 'platform': 'Linux-5.15.49-linuxkit-pr-aarch64-with-glibc2.36', 'event': 'prepare_vocab'}
+2023-07-30 23:09:33,595 - gensim.models.word2vec - INFO - deleting the raw counts dictionary of 24 items
+2023-07-30 23:09:33,595 - gensim.models.word2vec - INFO - deleting the raw counts dictionary of 24 items
+2023-07-30 23:09:33,595 - gensim.models.word2vec - INFO - deleting the raw counts dictionary of 24 items
+2023-07-30 23:09:33,596 - gensim.models.word2vec - INFO - sample=0.001 downsamples 0 most-common words
+2023-07-30 23:09:33,596 - gensim.models.word2vec - INFO - sample=0.001 downsamples 0 most-common words
+2023-07-30 23:09:33,596 - gensim.models.word2vec - INFO - sample=0.001 downsamples 0 most-common words
+2023-07-30 23:09:33,598 - gensim.utils - INFO - Word2Vec lifecycle event {'msg': 'downsampling leaves estimated 0 word corpus (0.0%% of prior 0)', 'datetime': '2023-07-30T23:09:33.598118', 'gensim': '4.3.1', 'python': '3.10.7 (main, May 29 2023, 13:51:48) [GCC 12.2.0]', 'platform': 'Linux-5.15.49-linuxkit-pr-aarch64-with-glibc2.36', 'event': 'prepare_vocab'}
+2023-07-30 23:09:33,598 - gensim.utils - INFO - Word2Vec lifecycle event {'msg': 'downsampling leaves estimated 0 word corpus (0.0%% of prior 0)', 'datetime': '2023-07-30T23:09:33.598118', 'gensim': '4.3.1', 'python': '3.10.7 (main, May 29 2023, 13:51:48) [GCC 12.2.0]', 'platform': 'Linux-5.15.49-linuxkit-pr-aarch64-with-glibc2.36', 'event': 'prepare_vocab'}
+2023-07-30 23:09:33,598 - gensim.utils - INFO - Word2Vec lifecycle event {'msg': 'downsampling leaves estimated 0 word corpus (0.0%% of prior 0)', 'datetime': '2023-07-30T23:09:33.598118', 'gensim': '4.3.1', 'python': '3.10.7 (main, May 29 2023, 13:51:48) [GCC 12.2.0]', 'platform': 'Linux-5.15.49-linuxkit-pr-aarch64-with-glibc2.36', 'event': 'prepare_vocab'}
+2023-07-30 23:09:33,642 - gensim.models.word2vec - INFO - estimated required memory for 14313 words and 200 dimensions: 30057300 bytes
+2023-07-30 23:09:33,642 - gensim.models.word2vec - INFO - estimated required memory for 14313 words and 200 dimensions: 30057300 bytes
+2023-07-30 23:09:33,642 - gensim.models.word2vec - INFO - estimated required memory for 14313 words and 200 dimensions: 30057300 bytes
+2023-07-30 23:09:33,643 - gensim.models.word2vec - INFO - updating layer weights
+2023-07-30 23:09:33,643 - gensim.models.word2vec - INFO - updating layer weights
+2023-07-30 23:09:33,643 - gensim.models.word2vec - INFO - updating layer weights
+2023-07-30 23:09:33,647 - gensim.utils - INFO - Word2Vec lifecycle event {'update': True, 'trim_rule': 'None', 'datetime': '2023-07-30T23:09:33.647124', 'gensim': '4.3.1', 'python': '3.10.7 (main, May 29 2023, 13:51:48) [GCC 12.2.0]', 'platform': 'Linux-5.15.49-linuxkit-pr-aarch64-with-glibc2.36', 'event': 'build_vocab'}
+2023-07-30 23:09:33,647 - gensim.utils - INFO - Word2Vec lifecycle event {'update': True, 'trim_rule': 'None', 'datetime': '2023-07-30T23:09:33.647124', 'gensim': '4.3.1', 'python': '3.10.7 (main, May 29 2023, 13:51:48) [GCC 12.2.0]', 'platform': 'Linux-5.15.49-linuxkit-pr-aarch64-with-glibc2.36', 'event': 'build_vocab'}
+2023-07-30 23:09:33,647 - gensim.utils - INFO - Word2Vec lifecycle event {'update': True, 'trim_rule': 'None', 'datetime': '2023-07-30T23:09:33.647124', 'gensim': '4.3.1', 'python': '3.10.7 (main, May 29 2023, 13:51:48) [GCC 12.2.0]', 'platform': 'Linux-5.15.49-linuxkit-pr-aarch64-with-glibc2.36', 'event': 'build_vocab'}
+2023-07-30 23:09:33,648 - gensim.utils - INFO - Word2Vec lifecycle event {'fname_or_handle': 'model/depresion.es.model', 'separately': 'None', 'sep_limit': 10485760, 'ignore': frozenset(), 'datetime': '2023-07-30T23:09:33.648463', 'gensim': '4.3.1', 'python': '3.10.7 (main, May 29 2023, 13:51:48) [GCC 12.2.0]', 'platform': 'Linux-5.15.49-linuxkit-pr-aarch64-with-glibc2.36', 'event': 'saving'}
+2023-07-30 23:09:33,648 - gensim.utils - INFO - Word2Vec lifecycle event {'fname_or_handle': 'model/depresion.es.model', 'separately': 'None', 'sep_limit': 10485760, 'ignore': frozenset(), 'datetime': '2023-07-30T23:09:33.648463', 'gensim': '4.3.1', 'python': '3.10.7 (main, May 29 2023, 13:51:48) [GCC 12.2.0]', 'platform': 'Linux-5.15.49-linuxkit-pr-aarch64-with-glibc2.36', 'event': 'saving'}
+2023-07-30 23:09:33,648 - gensim.utils - INFO - Word2Vec lifecycle event {'fname_or_handle': 'model/depresion.es.model', 'separately': 'None', 'sep_limit': 10485760, 'ignore': frozenset(), 'datetime': '2023-07-30T23:09:33.648463', 'gensim': '4.3.1', 'python': '3.10.7 (main, May 29 2023, 13:51:48) [GCC 12.2.0]', 'platform': 'Linux-5.15.49-linuxkit-pr-aarch64-with-glibc2.36', 'event': 'saving'}
+2023-07-30 23:09:33,649 - gensim.utils - INFO - not storing attribute cum_table
+2023-07-30 23:09:33,649 - gensim.utils - INFO - not storing attribute cum_table
+2023-07-30 23:09:33,649 - gensim.utils - INFO - not storing attribute cum_table
+2023-07-30 23:09:33,855 - gensim.utils - INFO - saved model/depresion.es.model
+2023-07-30 23:09:33,855 - gensim.utils - INFO - saved model/depresion.es.model
+2023-07-30 23:09:33,855 - gensim.utils - INFO - saved model/depresion.es.model
+2023-07-30 23:09:33,857 - root - CRITICAL - Error with the Model: 'NoneType' object has no attribute 'predict'
+2023-07-30 23:09:33,857 - root - CRITICAL - Error with the Model: 'NoneType' object has no attribute 'predict'
+2023-07-30 23:09:33,857 - root - CRITICAL - Error with the Model: 'NoneType' object has no attribute 'predict'
+2023-07-30 23:10:00,150 - root - INFO - Database connection started
+2023-07-30 23:10:00,150 - root - INFO - Database connection started
+2023-07-30 23:10:00,150 - root - INFO - Database connection started
+2023-07-30 23:10:00,271 - stanza - INFO - Downloading these customized packages for language: es (Spanish)...
+==============================
+| Processor       | Package  |
+------------------------------
+| tokenize        | ancora   |
+| mwt             | ancora   |
+| pos             | ancora   |
+| lemma           | ancora   |
+| pretrain        | ancora   |
+| backward_charlm | newswiki |
+| forward_charlm  | newswiki |
+==============================
+
+2023-07-30 23:10:00,271 - stanza - INFO - Downloading these customized packages for language: es (Spanish)...
+==============================
+| Processor       | Package  |
+------------------------------
+| tokenize        | ancora   |
+| mwt             | ancora   |
+| pos             | ancora   |
+| lemma           | ancora   |
+| pretrain        | ancora   |
+| backward_charlm | newswiki |
+| forward_charlm  | newswiki |
+==============================
+
+2023-07-30 23:10:00,271 - stanza - INFO - Downloading these customized packages for language: es (Spanish)...
+==============================
+| Processor       | Package  |
+------------------------------
+| tokenize        | ancora   |
+| mwt             | ancora   |
+| pos             | ancora   |
+| lemma           | ancora   |
+| pretrain        | ancora   |
+| backward_charlm | newswiki |
+| forward_charlm  | newswiki |
+==============================
+
+2023-07-30 23:10:00,277 - stanza - INFO - File exists: /root/stanza_resources/es/tokenize/ancora.pt
+2023-07-30 23:10:00,277 - stanza - INFO - File exists: /root/stanza_resources/es/tokenize/ancora.pt
+2023-07-30 23:10:00,277 - stanza - INFO - File exists: /root/stanza_resources/es/tokenize/ancora.pt
+2023-07-30 23:10:00,282 - stanza - INFO - File exists: /root/stanza_resources/es/mwt/ancora.pt
+2023-07-30 23:10:00,282 - stanza - INFO - File exists: /root/stanza_resources/es/mwt/ancora.pt
+2023-07-30 23:10:00,282 - stanza - INFO - File exists: /root/stanza_resources/es/mwt/ancora.pt
+2023-07-30 23:10:00,382 - stanza - INFO - File exists: /root/stanza_resources/es/pos/ancora.pt
+2023-07-30 23:10:00,382 - stanza - INFO - File exists: /root/stanza_resources/es/pos/ancora.pt
+2023-07-30 23:10:00,382 - stanza - INFO - File exists: /root/stanza_resources/es/pos/ancora.pt
+2023-07-30 23:10:00,394 - stanza - INFO - File exists: /root/stanza_resources/es/lemma/ancora.pt
+2023-07-30 23:10:00,394 - stanza - INFO - File exists: /root/stanza_resources/es/lemma/ancora.pt
+2023-07-30 23:10:00,394 - stanza - INFO - File exists: /root/stanza_resources/es/lemma/ancora.pt
+2023-07-30 23:10:00,629 - stanza - INFO - File exists: /root/stanza_resources/es/pretrain/ancora.pt
+2023-07-30 23:10:00,629 - stanza - INFO - File exists: /root/stanza_resources/es/pretrain/ancora.pt
+2023-07-30 23:10:00,629 - stanza - INFO - File exists: /root/stanza_resources/es/pretrain/ancora.pt
+2023-07-30 23:10:00,674 - stanza - INFO - File exists: /root/stanza_resources/es/backward_charlm/newswiki.pt
+2023-07-30 23:10:00,674 - stanza - INFO - File exists: /root/stanza_resources/es/backward_charlm/newswiki.pt
+2023-07-30 23:10:00,674 - stanza - INFO - File exists: /root/stanza_resources/es/backward_charlm/newswiki.pt
+2023-07-30 23:10:00,719 - stanza - INFO - File exists: /root/stanza_resources/es/forward_charlm/newswiki.pt
+2023-07-30 23:10:00,719 - stanza - INFO - File exists: /root/stanza_resources/es/forward_charlm/newswiki.pt
+2023-07-30 23:10:00,719 - stanza - INFO - File exists: /root/stanza_resources/es/forward_charlm/newswiki.pt
+2023-07-30 23:10:00,720 - stanza - INFO - Finished downloading models and saved to /root/stanza_resources.
+2023-07-30 23:10:00,720 - stanza - INFO - Finished downloading models and saved to /root/stanza_resources.
+2023-07-30 23:10:00,720 - stanza - INFO - Finished downloading models and saved to /root/stanza_resources.
+2023-07-30 23:10:00,721 - stanza - INFO - Checking for updates to resources.json in case models have been updated.  Note: this behavior can be turned off with download_method=None or download_method=DownloadMethod.REUSE_RESOURCES
+2023-07-30 23:10:00,721 - stanza - INFO - Checking for updates to resources.json in case models have been updated.  Note: this behavior can be turned off with download_method=None or download_method=DownloadMethod.REUSE_RESOURCES
+2023-07-30 23:10:00,721 - stanza - INFO - Checking for updates to resources.json in case models have been updated.  Note: this behavior can be turned off with download_method=None or download_method=DownloadMethod.REUSE_RESOURCES
+2023-07-30 23:10:01,211 - stanza - INFO - Loading these models for language: es (Spanish):
+=======================
+| Processor | Package |
+-----------------------
+| tokenize  | ancora  |
+| mwt       | ancora  |
+| pos       | ancora  |
+| lemma     | ancora  |
+=======================
+
+2023-07-30 23:10:01,211 - stanza - INFO - Loading these models for language: es (Spanish):
+=======================
+| Processor | Package |
+-----------------------
+| tokenize  | ancora  |
+| mwt       | ancora  |
+| pos       | ancora  |
+| lemma     | ancora  |
+=======================
+
+2023-07-30 23:10:01,211 - stanza - INFO - Loading these models for language: es (Spanish):
+=======================
+| Processor | Package |
+-----------------------
+| tokenize  | ancora  |
+| mwt       | ancora  |
+| pos       | ancora  |
+| lemma     | ancora  |
+=======================
+
+2023-07-30 23:10:01,212 - stanza - WARNING - GPU requested, but is not available!
+2023-07-30 23:10:01,212 - stanza - WARNING - GPU requested, but is not available!
+2023-07-30 23:10:01,212 - stanza - WARNING - GPU requested, but is not available!
+2023-07-30 23:10:01,213 - stanza - INFO - Using device: cpu
+2023-07-30 23:10:01,213 - stanza - INFO - Using device: cpu
+2023-07-30 23:10:01,213 - stanza - INFO - Using device: cpu
+2023-07-30 23:10:01,215 - stanza - INFO - Loading: tokenize
+2023-07-30 23:10:01,215 - stanza - INFO - Loading: tokenize
+2023-07-30 23:10:01,215 - stanza - INFO - Loading: tokenize
+2023-07-30 23:10:01,219 - stanza - INFO - Loading: mwt
+2023-07-30 23:10:01,219 - stanza - INFO - Loading: mwt
+2023-07-30 23:10:01,219 - stanza - INFO - Loading: mwt
+2023-07-30 23:10:01,222 - stanza - INFO - Loading: pos
+2023-07-30 23:10:01,222 - stanza - INFO - Loading: pos
+2023-07-30 23:10:01,222 - stanza - INFO - Loading: pos
+2023-07-30 23:10:01,396 - stanza - INFO - Loading: lemma
+2023-07-30 23:10:01,396 - stanza - INFO - Loading: lemma
+2023-07-30 23:10:01,396 - stanza - INFO - Loading: lemma
+2023-07-30 23:10:01,416 - stanza - INFO - Done loading processors!
+2023-07-30 23:10:01,416 - stanza - INFO - Done loading processors!
+2023-07-30 23:10:01,416 - stanza - INFO - Done loading processors!
+2023-07-30 23:10:01,934 - gensim.utils - INFO - loading Word2Vec object from model/depresion.es.model
+2023-07-30 23:10:01,934 - gensim.utils - INFO - loading Word2Vec object from model/depresion.es.model
+2023-07-30 23:10:01,934 - gensim.utils - INFO - loading Word2Vec object from model/depresion.es.model
+2023-07-30 23:10:02,086 - gensim.utils - INFO - loading wv recursively from model/depresion.es.model.wv.* with mmap=None
+2023-07-30 23:10:02,086 - gensim.utils - INFO - loading wv recursively from model/depresion.es.model.wv.* with mmap=None
+2023-07-30 23:10:02,086 - gensim.utils - INFO - loading wv recursively from model/depresion.es.model.wv.* with mmap=None
+2023-07-30 23:10:02,088 - gensim.utils - INFO - setting ignored attribute cum_table to None
+2023-07-30 23:10:02,088 - gensim.utils - INFO - setting ignored attribute cum_table to None
+2023-07-30 23:10:02,088 - gensim.utils - INFO - setting ignored attribute cum_table to None
+2023-07-30 23:10:02,134 - gensim.utils - INFO - Word2Vec lifecycle event {'fname': 'model/depresion.es.model', 'datetime': '2023-07-30T23:10:02.133473', 'gensim': '4.3.1', 'python': '3.10.7 (main, May 29 2023, 13:51:48) [GCC 12.2.0]', 'platform': 'Linux-5.15.49-linuxkit-pr-aarch64-with-glibc2.36', 'event': 'loaded'}
+2023-07-30 23:10:02,134 - gensim.utils - INFO - Word2Vec lifecycle event {'fname': 'model/depresion.es.model', 'datetime': '2023-07-30T23:10:02.133473', 'gensim': '4.3.1', 'python': '3.10.7 (main, May 29 2023, 13:51:48) [GCC 12.2.0]', 'platform': 'Linux-5.15.49-linuxkit-pr-aarch64-with-glibc2.36', 'event': 'loaded'}
+2023-07-30 23:10:02,134 - gensim.utils - INFO - Word2Vec lifecycle event {'fname': 'model/depresion.es.model', 'datetime': '2023-07-30T23:10:02.133473', 'gensim': '4.3.1', 'python': '3.10.7 (main, May 29 2023, 13:51:48) [GCC 12.2.0]', 'platform': 'Linux-5.15.49-linuxkit-pr-aarch64-with-glibc2.36', 'event': 'loaded'}
+2023-07-30 23:10:02,135 - root - INFO - Model loaded
+2023-07-30 23:10:02,135 - root - INFO - Model loaded
+2023-07-30 23:10:02,135 - root - INFO - Model loaded
+2023-07-30 23:10:02,316 - root - INFO - Processing comment: id. 1: sebastian_carrillob
+2023-07-30 23:10:02,316 - root - INFO - Processing comment: id. 1: sebastian_carrillob
+2023-07-30 23:10:02,316 - root - INFO - Processing comment: id. 1: sebastian_carrillob
+2023-07-30 23:10:03,090 - gensim.models.word2vec - INFO - collecting all words and their counts
+2023-07-30 23:10:03,090 - gensim.models.word2vec - INFO - collecting all words and their counts
+2023-07-30 23:10:03,090 - gensim.models.word2vec - INFO - collecting all words and their counts
+2023-07-30 23:10:03,091 - gensim.models.word2vec - INFO - PROGRESS: at sentence #0, processed 0 words, keeping 0 word types
+2023-07-30 23:10:03,091 - gensim.models.word2vec - INFO - PROGRESS: at sentence #0, processed 0 words, keeping 0 word types
+2023-07-30 23:10:03,091 - gensim.models.word2vec - INFO - PROGRESS: at sentence #0, processed 0 words, keeping 0 word types
+2023-07-30 23:10:03,093 - gensim.models.word2vec - INFO - collected 24 word types from a corpus of 24 raw words and 1 sentences
+2023-07-30 23:10:03,093 - gensim.models.word2vec - INFO - collected 24 word types from a corpus of 24 raw words and 1 sentences
+2023-07-30 23:10:03,093 - gensim.models.word2vec - INFO - collected 24 word types from a corpus of 24 raw words and 1 sentences
+2023-07-30 23:10:03,094 - gensim.models.word2vec - INFO - Updating model with new vocabulary
+2023-07-30 23:10:03,094 - gensim.models.word2vec - INFO - Updating model with new vocabulary
+2023-07-30 23:10:03,094 - gensim.models.word2vec - INFO - Updating model with new vocabulary
+2023-07-30 23:10:03,110 - gensim.utils - INFO - Word2Vec lifecycle event {'msg': 'added 0 new unique words (0.00% of original 24) and increased the count of 0 pre-existing words (0.00% of original 24)', 'datetime': '2023-07-30T23:10:03.110783', 'gensim': '4.3.1', 'python': '3.10.7 (main, May 29 2023, 13:51:48) [GCC 12.2.0]', 'platform': 'Linux-5.15.49-linuxkit-pr-aarch64-with-glibc2.36', 'event': 'prepare_vocab'}
+2023-07-30 23:10:03,110 - gensim.utils - INFO - Word2Vec lifecycle event {'msg': 'added 0 new unique words (0.00% of original 24) and increased the count of 0 pre-existing words (0.00% of original 24)', 'datetime': '2023-07-30T23:10:03.110783', 'gensim': '4.3.1', 'python': '3.10.7 (main, May 29 2023, 13:51:48) [GCC 12.2.0]', 'platform': 'Linux-5.15.49-linuxkit-pr-aarch64-with-glibc2.36', 'event': 'prepare_vocab'}
+2023-07-30 23:10:03,110 - gensim.utils - INFO - Word2Vec lifecycle event {'msg': 'added 0 new unique words (0.00% of original 24) and increased the count of 0 pre-existing words (0.00% of original 24)', 'datetime': '2023-07-30T23:10:03.110783', 'gensim': '4.3.1', 'python': '3.10.7 (main, May 29 2023, 13:51:48) [GCC 12.2.0]', 'platform': 'Linux-5.15.49-linuxkit-pr-aarch64-with-glibc2.36', 'event': 'prepare_vocab'}
+2023-07-30 23:10:03,112 - gensim.models.word2vec - INFO - deleting the raw counts dictionary of 24 items
+2023-07-30 23:10:03,112 - gensim.models.word2vec - INFO - deleting the raw counts dictionary of 24 items
+2023-07-30 23:10:03,112 - gensim.models.word2vec - INFO - deleting the raw counts dictionary of 24 items
+2023-07-30 23:10:03,113 - gensim.models.word2vec - INFO - sample=0.001 downsamples 0 most-common words
+2023-07-30 23:10:03,113 - gensim.models.word2vec - INFO - sample=0.001 downsamples 0 most-common words
+2023-07-30 23:10:03,113 - gensim.models.word2vec - INFO - sample=0.001 downsamples 0 most-common words
+2023-07-30 23:10:03,114 - gensim.utils - INFO - Word2Vec lifecycle event {'msg': 'downsampling leaves estimated 0 word corpus (0.0%% of prior 0)', 'datetime': '2023-07-30T23:10:03.114766', 'gensim': '4.3.1', 'python': '3.10.7 (main, May 29 2023, 13:51:48) [GCC 12.2.0]', 'platform': 'Linux-5.15.49-linuxkit-pr-aarch64-with-glibc2.36', 'event': 'prepare_vocab'}
+2023-07-30 23:10:03,114 - gensim.utils - INFO - Word2Vec lifecycle event {'msg': 'downsampling leaves estimated 0 word corpus (0.0%% of prior 0)', 'datetime': '2023-07-30T23:10:03.114766', 'gensim': '4.3.1', 'python': '3.10.7 (main, May 29 2023, 13:51:48) [GCC 12.2.0]', 'platform': 'Linux-5.15.49-linuxkit-pr-aarch64-with-glibc2.36', 'event': 'prepare_vocab'}
+2023-07-30 23:10:03,114 - gensim.utils - INFO - Word2Vec lifecycle event {'msg': 'downsampling leaves estimated 0 word corpus (0.0%% of prior 0)', 'datetime': '2023-07-30T23:10:03.114766', 'gensim': '4.3.1', 'python': '3.10.7 (main, May 29 2023, 13:51:48) [GCC 12.2.0]', 'platform': 'Linux-5.15.49-linuxkit-pr-aarch64-with-glibc2.36', 'event': 'prepare_vocab'}
+2023-07-30 23:10:03,160 - gensim.models.word2vec - INFO - estimated required memory for 14313 words and 200 dimensions: 30057300 bytes
+2023-07-30 23:10:03,160 - gensim.models.word2vec - INFO - estimated required memory for 14313 words and 200 dimensions: 30057300 bytes
+2023-07-30 23:10:03,160 - gensim.models.word2vec - INFO - estimated required memory for 14313 words and 200 dimensions: 30057300 bytes
+2023-07-30 23:10:03,161 - gensim.models.word2vec - INFO - updating layer weights
+2023-07-30 23:10:03,161 - gensim.models.word2vec - INFO - updating layer weights
+2023-07-30 23:10:03,161 - gensim.models.word2vec - INFO - updating layer weights
+2023-07-30 23:10:03,165 - gensim.utils - INFO - Word2Vec lifecycle event {'update': True, 'trim_rule': 'None', 'datetime': '2023-07-30T23:10:03.165549', 'gensim': '4.3.1', 'python': '3.10.7 (main, May 29 2023, 13:51:48) [GCC 12.2.0]', 'platform': 'Linux-5.15.49-linuxkit-pr-aarch64-with-glibc2.36', 'event': 'build_vocab'}
+2023-07-30 23:10:03,165 - gensim.utils - INFO - Word2Vec lifecycle event {'update': True, 'trim_rule': 'None', 'datetime': '2023-07-30T23:10:03.165549', 'gensim': '4.3.1', 'python': '3.10.7 (main, May 29 2023, 13:51:48) [GCC 12.2.0]', 'platform': 'Linux-5.15.49-linuxkit-pr-aarch64-with-glibc2.36', 'event': 'build_vocab'}
+2023-07-30 23:10:03,165 - gensim.utils - INFO - Word2Vec lifecycle event {'update': True, 'trim_rule': 'None', 'datetime': '2023-07-30T23:10:03.165549', 'gensim': '4.3.1', 'python': '3.10.7 (main, May 29 2023, 13:51:48) [GCC 12.2.0]', 'platform': 'Linux-5.15.49-linuxkit-pr-aarch64-with-glibc2.36', 'event': 'build_vocab'}
+2023-07-30 23:10:03,167 - gensim.utils - INFO - Word2Vec lifecycle event {'fname_or_handle': 'model/depresion.es.model', 'separately': 'None', 'sep_limit': 10485760, 'ignore': frozenset(), 'datetime': '2023-07-30T23:10:03.167135', 'gensim': '4.3.1', 'python': '3.10.7 (main, May 29 2023, 13:51:48) [GCC 12.2.0]', 'platform': 'Linux-5.15.49-linuxkit-pr-aarch64-with-glibc2.36', 'event': 'saving'}
+2023-07-30 23:10:03,167 - gensim.utils - INFO - Word2Vec lifecycle event {'fname_or_handle': 'model/depresion.es.model', 'separately': 'None', 'sep_limit': 10485760, 'ignore': frozenset(), 'datetime': '2023-07-30T23:10:03.167135', 'gensim': '4.3.1', 'python': '3.10.7 (main, May 29 2023, 13:51:48) [GCC 12.2.0]', 'platform': 'Linux-5.15.49-linuxkit-pr-aarch64-with-glibc2.36', 'event': 'saving'}
+2023-07-30 23:10:03,167 - gensim.utils - INFO - Word2Vec lifecycle event {'fname_or_handle': 'model/depresion.es.model', 'separately': 'None', 'sep_limit': 10485760, 'ignore': frozenset(), 'datetime': '2023-07-30T23:10:03.167135', 'gensim': '4.3.1', 'python': '3.10.7 (main, May 29 2023, 13:51:48) [GCC 12.2.0]', 'platform': 'Linux-5.15.49-linuxkit-pr-aarch64-with-glibc2.36', 'event': 'saving'}
+2023-07-30 23:10:03,168 - gensim.utils - INFO - not storing attribute cum_table
+2023-07-30 23:10:03,168 - gensim.utils - INFO - not storing attribute cum_table
+2023-07-30 23:10:03,168 - gensim.utils - INFO - not storing attribute cum_table
+2023-07-30 23:10:03,342 - gensim.utils - INFO - saved model/depresion.es.model
+2023-07-30 23:10:03,342 - gensim.utils - INFO - saved model/depresion.es.model
+2023-07-30 23:10:03,342 - gensim.utils - INFO - saved model/depresion.es.model
+2023-07-30 23:10:03,344 - root - CRITICAL - Error with the Model: Found array with 0 feature(s) (shape=(1, 0)) while a minimum of 1 is required by LogisticRegression.
+2023-07-30 23:10:03,344 - root - CRITICAL - Error with the Model: Found array with 0 feature(s) (shape=(1, 0)) while a minimum of 1 is required by LogisticRegression.
+2023-07-30 23:10:03,344 - root - CRITICAL - Error with the Model: Found array with 0 feature(s) (shape=(1, 0)) while a minimum of 1 is required by LogisticRegression.

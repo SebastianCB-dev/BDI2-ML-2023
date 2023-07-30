@@ -17,7 +17,7 @@ class ModelWord2Vec:
     Esta función carga el modelo Word2Vec de depresión.
     """
     self.set_model()  
-    clf = joblib.load('./models/logistic_regression.pkl')  
+    self.clf = joblib.load('./models/logistic_regression.pkl')  
 
   def set_model(self):    
     print(os.getcwd());    
