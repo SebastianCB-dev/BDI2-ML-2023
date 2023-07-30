@@ -66,9 +66,11 @@ class Model:
                     #Obtener la similitud de coseno entre el comentario y 
                     #Cada una de las respuestas del inventario de depresión de BECK (BDI-II)
                     cosine_similarity_beck = self.W2V.get_cosine_similarity_BECK(processed_comment)
+                    print("cosine_similarity_beck:", cosine_similarity_beck)
                     # Obtener la respuesta por item basandose en la similitud de coseno
                     results_beck = self.W2V.get_result_beck(cosine_similarity_beck)
                     print("El comentario lleno el inventario BECK de esta manera:", results_beck)
+                    
                     predict = self.W2V.get_predict(results_beck)
                     print('Predicción:', predict)
 
