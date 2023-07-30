@@ -3,15 +3,21 @@ from gensim.models import Word2Vec
 import numpy as np
 import os
 import json
+from services.logging_service import LoggingService
+import joblib
 
 class ModelWord2Vec:
   modelES = None
+   # Public Properties
+  logger = LoggingService().get_logging()
+  clf = None
 
   def __init__(self):
     """
     Esta función carga el modelo Word2Vec de depresión.
     """
-    self.set_model()
+    self.set_model()  
+    clf = joblib.load('./models/logistic_regression.pkl')  
 
   def set_model(self):    
     print(os.getcwd());    
@@ -162,3 +168,6 @@ class ModelWord2Vec:
     :return: Una lista de 250 ceros.
     """
     return list(np.zeros(250))
+  
+  def get_predict(self, corpus):
+    return self.clf.predict([corpus])
