@@ -43,7 +43,7 @@ class ModelWord2Vec:
     Retorna el Word Embedding.
     :return: modelo Word2Vec de depresión.
     """
-    return self.model
+    return self.modelES
   
   def add_corpus(self, corpus):
     """
@@ -52,14 +52,14 @@ class ModelWord2Vec:
     :param corpus: El corpus es una lista de listas. Cada lista es un documento. Cada documento es una lista de palabras
     """
     corpus = [corpus]
-    self.model.build_vocab(corpus, update=True)
+    self.modelES.build_vocab(corpus, update=True)
     self.save_model()
 
   def save_model(self):
     """
     Toma el modelo, y lo guarda como un archivo llamado 'depresion.model'
     """
-    self.model.save('depresion.model')
+    self.modelES.save('model/depresion.es.model')
 
   def get_cosine_similarity(self, corpus_a, corpus_b):
     """
@@ -69,7 +69,7 @@ class ModelWord2Vec:
     :param corpus_b: El corpus con el que comparar
     :return: La similitud del coseno entre los dos documentos.
     """
-    return self.model.wv.n_similarity(corpus_a, corpus_b)
+    return self.modelES.wv.n_similarity(corpus_a, corpus_b)
 
   def get_word_vectors(self, corpus):
     """
@@ -81,7 +81,7 @@ class ModelWord2Vec:
     array_result = []
     for word in corpus:
       try:
-        array_result.append(self.model.wv[word])
+        array_result.append(self.modelES.wv[word])
       except Exception as e:
         return self.getVector250()
     return array_result
