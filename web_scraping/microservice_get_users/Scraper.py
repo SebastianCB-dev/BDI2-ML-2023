@@ -17,8 +17,7 @@ from helpers.platform import get_platform, is_darwin_arm_validator
 from services.logging_service import LoggingService
 from services.users_service import UsersService
 
-
-class Scraper:
+class ScraperGetUsers:
     # Public Properties
     driver = None
     logger = LoggingService().get_logging()
