@@ -1,6 +1,6 @@
 from dotenv import load_dotenv
 from helpers.variable_environments import validate_env_vars
-from Model import Model
+from Model import CommentsProcessor
 # Load environment variables
 load_dotenv()
 
@@ -12,10 +12,10 @@ if not there_are_env_vars:
     raise ImportError("Environment variables are needed.")
 
 # Create a model object
-model = Model()
+model = CommentsProcessor()
 
 # Start the Model for this microservice
 try:
     model.process_comments()
 except Exception as e:
-    model.getLogger().critical(f"Error with the Model: {e.__str__()}")
+    model.get_logger().critical(f"Error with the Model: {e.__str__()}")

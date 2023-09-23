@@ -1,24 +1,21 @@
 # Standard libraries
+from pathlib import Path
 import os
 import time
-from pathlib import Path
-
-# External libraries
-from gensim.models import Word2Vec
 
 # Custom libraries
+from preprocessing import Preprocessing
 from services.database_service import DatabaseService
 from services.logging_service import LoggingService
-from preprocessing import Preprocessing
 from Word2Vec import ModelWord2Vec
 
 
-class Model:
+class CommentsProcessor:
     # Public Properties
     logger = LoggingService().get_logging()
     databaseService = None
     preprocessingService = None
-    W2V = None
+    w2v = None
 
     def __init__(self):
         """Constructor
@@ -27,9 +24,9 @@ class Model:
         """
         self.start_db()
         self.preprocessingService = Preprocessing()
-        self.W2V = ModelWord2Vec()
+        self.w2v = ModelWord2Vec()
 
-    def getLogger(self):
+    def get_logger(self):
         # This function returns the logger
         return self.logger
 
@@ -65,13 +62,13 @@ class Model:
                         continue
                     #Obtener la similitud de coseno entre el comentario y 
                     #Cada una de las respuestas del inventario de depresión de BECK (BDI-II)
-                    cosine_similarity_beck = self.W2V.get_cosine_similarity_BECK(processed_comment)
+                    cosine_similarity_beck = self.w2v.get_cosine_similarity_BECK(processed_comment)
                     print("cosine_similarity_beck:", cosine_similarity_beck)
                     # Obtener la respuesta por item basandose en la similitud de coseno
-                    results_beck = self.W2V.get_result_beck(cosine_similarity_beck)
+                    results_beck = self.w2v.get_result_beck(cosine_similarity_beck)
                     print("El comentario lleno el inventario BECK de esta manera:", results_beck)
                     
-                    predict = self.W2V.get_predict(results_beck)
+                    predict = self.w2v.get_predict(results_beck)
                     print('Predicción:', predict)
 
                 time.sleep(20)
