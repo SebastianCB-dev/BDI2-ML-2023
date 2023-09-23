@@ -6,6 +6,10 @@ Welcome to the improved version of the BDI-II project! This README provides an o
 
 The BDI-II project is currently in progress and aims to enhance the existing BDI-II model. The project utilizes machine learning techniques to analyze and interpret data related to the Beck Depression Inventory-II (BDI-II), a widely used self-report instrument for measuring depression severity.
 
+## What is new?
+
+The idea of this project is to include the English language and divide the responsibilities into small parts known as microservices.
+
 ## Model
 
 The project incorporates the following machine learning model:
@@ -79,7 +83,7 @@ You will probably be able to get the following issues:
    - Actually you have to stablish 3 environment variables (IG_USERNAME, IG_PASSWORD and POSTGRES_URL) to the correctly functionality
 
 3. The program broke suddenly.
-   - This could be happen because it is a scraper and maybe you have to change some script to get the correct HTML's elements.
+   - This could be happen due it is a scraper and maybe you have to change some script to get the correct HTML's elements.
 
 ## Acknowledgment
 
