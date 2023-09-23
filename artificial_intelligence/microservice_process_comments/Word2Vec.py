@@ -14,7 +14,7 @@ class ModelWord2Vec:
 
   def __init__(self):
     """
-    Esta función carga el modelo Word2Vec de depresión.
+    This function loads the Word2Vec model for depression.
     """
     self.set_model()  
     self.clf = joblib.load('./models/logistic_regression.pkl')  
@@ -26,8 +26,8 @@ class ModelWord2Vec:
 
   def get_beck(self):
     """
-    Abre el archivo JSON de los items del BECK vectorizados, lo lee y devuelve los datos del archivo JSON en un diccionario de Python
-    :return: Un diccionario de diccionarios.
+    Open the JSON file of the BECK items vectorized, read it and return the data from the JSON file in a Python dictionary
+    :return: A dictionary of dictionaries.
     """
     beck_data_preprocessing = {}
     try:
@@ -40,59 +40,65 @@ class ModelWord2Vec:
 
   def get_model(self):
     """
-    Retorna el Word Embedding.
-    :return: modelo Word2Vec de depresión.
+    Return the Word Embedding.
+    :return: Word2Vec model of depression.
     """
+
     return self.modelES
   
   def add_corpus(self, corpus):
     """
-    > La función toma un corpus como entrada, lo agrega al modelo existente y guarda el modelo actualizado.
-    
-    :param corpus: El corpus es una lista de listas. Cada lista es un documento. Cada documento es una lista de palabras
+    The function takes a corpus as input, adds it to the existing model and saves the updated model.
+
+    :param corpus: The corpus is a list of lists. Each list is a document. Each document is a list of words
     """
+
     corpus = [corpus]
     self.modelES.build_vocab(corpus, update=True)
     self.save_model()
 
   def save_model(self):
     """
-    Toma el modelo, y lo guarda como un archivo llamado 'depresion.model'
+    Take the model, and save it as a file called 'model/depresion.model'
     """
+
     self.modelES.save('model/depresion.es.model')
 
   def get_cosine_similarity(self, corpus_a, corpus_b):
     """
-    > La función toma dos listas de palabras como entrada y devuelve la similitud del coseno entre las dos listas
-    
-    :param corpus_a: una lista de palabras
-    :param corpus_b: El corpus con el que comparar
-    :return: La similitud del coseno entre los dos documentos.
+    The function takes two lists of words as input and returns the cosine similarity between the two lists
+
+    :param corpus_a: a list of words
+    :param corpus_b: The corpus to compare with
+    :return: The cosine similarity between the two documents.
     """
+
     return self.modelES.wv.n_similarity(corpus_a, corpus_b)
 
   def get_word_vectors(self, corpus):
     """
-    Devuelve los vectores de palabras para las palabras del corpus.
-    
-    :param corpus: El corpus es la lista de palabras para las que desea obtener los vectores
-    :return: Los vectores de palabras para cada palabra en el corpus.
+    Return the word vectors for the words in the corpus.
+
+    :param corpus: The corpus is the list of words for which you want to get the vectors
+    :return: The word vectors for each word in the corpus.
     """
+
     array_result = []
     for word in corpus:
       try:
         array_result.append(self.modelES.wv[word])
       except Exception as e:
-        return self.getVector250()
+        return self.get_vector_250()
     return array_result
 
   def get_cosine_similarity_BECK(self, corpus):
     """
-    Esta función toma un corpus y devuelve una lista de similitudes de coseno entre el corpus y cada uno de los resultador del inventario de depresión de BECK (BDI-II) 90 resultados.
-    
-    :param corpus: el texto que desea comparar con el corpus BECK
-    :return: Una lista de similitudes de coseno entre el corpus y los datos de BECK.
+    This function takes a corpus and returns a list of cosine similarities between the corpus and each of the 90 results of the BECK Depression Inventory (BDI-II) inventory.
+
+    :param corpus: The text you want to compare with the BECK corpus
+    :return: A list of cosine similarities between the corpus and the BECK data.
     """
+
     self.add_corpus(corpus)
     beck = self.get_beck()
     data = []
@@ -104,32 +110,34 @@ class ModelWord2Vec:
 
   def get_result_beck(self, cosine_similarities):
     """
-    Toma las similitudes del coseno y devuelve los resultados de la encuesta llenada en una lista plana.
-    
-    :param cosine_similarities: las similitudes de coseno entre la consulta y los documentos
-    :return: Los resultados se devuelven como una lista de listas.
+    Take the cosine similarities and return the results of the survey filled in a flat list.
+
+    :param cosine_similarities: The cosine similarities between the query and the documents
+    :return: The results are returned as a list of lists.
     """
+
     results = []
     primera_parte = cosine_similarities[:60]  # 4 respuestas
     segunda_parte = cosine_similarities[60:67]  # 7 respuestas
     tercera_parte = cosine_similarities[67:71]  # 4 respuestas
     cuarta_parte = cosine_similarities[71:78]  # 7 respuestas
     quinta_parte = cosine_similarities[78:]  # 4 respuestas
-    results.append(self.getMaxBeck4Items(primera_parte))
-    results.append(self.getMaxBeck7Items(segunda_parte))
-    results.append(self.getMaxBeck4Items(tercera_parte))
-    results.append(self.getMaxBeck7Items(cuarta_parte))
-    results.append(self.getMaxBeck4Items(quinta_parte))
+    results.append(self.get_max_beck_4_items(primera_parte))
+    results.append(self.get_max_beck_7_items(segunda_parte))
+    results.append(self.get_max_beck_4_items(tercera_parte))
+    results.append(self.get_max_beck_7_items(cuarta_parte))
+    results.append(self.get_max_beck_4_items(quinta_parte))
     results_flat = [x for sublist in results for x in sublist]
     return results_flat
 
-  def getMaxBeck4Items(self, array):
+  def get_max_beck_4_items(self, array):
     """
-    Toma una matriz de números y devuelve una matriz del índice del número más grande en cada grupo de 4
-    
-    :param array: la matriz de números a procesar
-    :return: El índice del valor máximo en cada grupo de 4 elementos.
+    Take a matrix of numbers and return a matrix of the index of the largest number in each group of 4
+
+    :param array: The matrix of numbers to process
+    :return: The index of the maximum value in each group of 4 elements.
     """
+
     results = []
     for index in range(0, len(array), 4):
       item = array[index: index + 4]
@@ -142,13 +150,14 @@ class ModelWord2Vec:
       results.append(mayor_idx)
     return results
 
-  def getMaxBeck7Items(self, array):
+  def get_max_beck_7_items(self, array):
     """
-    Toma una matriz de números y devuelve una matriz de números.
-    
-    :param array: el conjunto de resultados del inventario de depresión de beck
-    :return: el valor máximo de cada grupo de 7 artículos.
+    Take a matrix of numbers and return a matrix of the index of the largest number in each group of 7
+
+    :param array: The matrix of numbers to process
+    :return: The index of the maximum value in each group of 7 elements.
     """
+
     results_beck = [0, 1, 1, 2, 2, 3, 3]
     results = []
     for index in range(0, len(array), 7):
@@ -162,12 +171,19 @@ class ModelWord2Vec:
       results.append(mayor_idx)
     return results
 
-  def getVector250(self):
+  def get_vector_250(self):
     """
-    Devuelve una lista de 250 ceros.
-    :return: Una lista de 250 ceros.
+    Return a list of 250 zeros.
+    :return: A list of 250 zeros.
     """
     return list(np.zeros(250))
   
   def get_predict(self, corpus):
+    """
+    Return the prediction of the model.
+
+    :param corpus: The corpus to predict
+    :return: The prediction of the model.
+    """
+    
     return self.clf.predict([corpus])
