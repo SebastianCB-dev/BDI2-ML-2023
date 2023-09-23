@@ -1,0 +1,8 @@
+python-dotenv==1.0.0
+gensim
+psycopg2
+hunspell
+spacy
+stanza
+nltk
+scikit-learn
