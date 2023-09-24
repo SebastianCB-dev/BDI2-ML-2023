@@ -21,7 +21,7 @@ class ModelWord2Vec:
 
   def set_model(self):    
     print(os.getcwd());    
-    self.modelES = Word2Vec.load('model/depresion.es.model')
+    self.modelES = Word2Vec.load('./model_ai/depresion.es.model')
     self.logger.info("Model loaded")
 
   def get_beck(self):
@@ -62,7 +62,7 @@ class ModelWord2Vec:
     Take the model, and save it as a file called 'model/depresion.model'
     """
 
-    self.modelES.save('model/depresion.es.model')
+    self.modelES.save('./model_ai/depresion.es.model')
 
   def get_cosine_similarity(self, corpus_a, corpus_b):
     """
@@ -117,16 +117,17 @@ class ModelWord2Vec:
     """
 
     results = []
-    primera_parte = cosine_similarities[:60]  # 4 respuestas
-    segunda_parte = cosine_similarities[60:67]  # 7 respuestas
-    tercera_parte = cosine_similarities[67:71]  # 4 respuestas
-    cuarta_parte = cosine_similarities[71:78]  # 7 respuestas
-    quinta_parte = cosine_similarities[78:]  # 4 respuestas
-    results.append(self.get_max_beck_4_items(primera_parte))
-    results.append(self.get_max_beck_7_items(segunda_parte))
-    results.append(self.get_max_beck_4_items(tercera_parte))
-    results.append(self.get_max_beck_7_items(cuarta_parte))
-    results.append(self.get_max_beck_4_items(quinta_parte))
+    first_part = cosine_similarities[:60]  # 4 respuestas
+    second_part = cosine_similarities[60:67]  # 7 respuestas
+    third_part = cosine_similarities[67:71]  # 4 respuestas
+    fourth_part = cosine_similarities[71:78]  # 7 respuestas
+    fifth_parth = cosine_similarities[78:]  # 4 respuestas
+    # TODO: Fix max value is over 70%
+    results.append(self.get_max_beck_4_items(first_part))
+    results.append(self.get_max_beck_7_items(second_part))
+    results.append(self.get_max_beck_4_items(third_part))
+    results.append(self.get_max_beck_7_items(fourth_part))
+    results.append(self.get_max_beck_4_items(fifth_parth))
     results_flat = [x for sublist in results for x in sublist]
     return results_flat
 
@@ -147,6 +148,8 @@ class ModelWord2Vec:
         if result > mayor:
           mayor = result
           mayor_idx = index
+      if mayor < 0.7:
+        mayor_idx = None
       results.append(mayor_idx)
     return results
 
@@ -168,6 +171,8 @@ class ModelWord2Vec:
         if result > mayor:
           mayor = result
           mayor_idx = results_beck[index]
+      if mayor < 0.7:
+        mayor_idx = None
       results.append(mayor_idx)
     return results
 

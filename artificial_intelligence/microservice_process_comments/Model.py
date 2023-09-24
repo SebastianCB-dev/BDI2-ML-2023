@@ -70,7 +70,7 @@ class CommentsProcessor:
                     
                     predict = self.w2v.get_predict(results_beck)
                     print('Predicción:', predict)
-
+                    time.sleep(20000)
                 time.sleep(20)
             except Exception as e:
                 self.logger.critical(f"Error with the Model: {e.__str__()}")

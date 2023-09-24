@@ -50,7 +50,7 @@ class Preprocessing:
       comment = self.fix_ortography(comment)
       comment = self.normalize_text(comment)
       comment = comment.split(" ")
-      comment = self.lemma_words(comment)
+      comment = self.lemmatize_words(comment)
       comment = " ".join(comment)
       comment = self.delete_stop_words(comment)
       comment = self.delete_duplicates(comment)
