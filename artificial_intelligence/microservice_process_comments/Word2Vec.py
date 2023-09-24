@@ -142,15 +142,15 @@ class ModelWord2Vec:
     results = []
     for index in range(0, len(array), 4):
       item = array[index: index + 4]
-      mayor = 0
-      mayor_idx = 0
+      greater = 0
+      greater_idx = 0
       for index, result in enumerate(item):
-        if result > mayor:
-          mayor = result
-          mayor_idx = index
-      if mayor < 0.7:
-        mayor_idx = None
-      results.append(mayor_idx)
+        if result > greater:
+          greater = result
+          greater_idx = index
+      if greater < 0.7:
+        greater_idx = None
+      results.append(greater_idx)
     return results
 
   def get_max_beck_7_items(self, array):
@@ -165,15 +165,15 @@ class ModelWord2Vec:
     results = []
     for index in range(0, len(array), 7):
       item = array[index: index + 7]
-      mayor = 0
-      mayor_idx = 0
+      greater = 0
+      greater_idx = 0
       for index, result in enumerate(item):
-        if result > mayor:
-          mayor = result
-          mayor_idx = results_beck[index]
-      if mayor < 0.7:
-        mayor_idx = None
-      results.append(mayor_idx)
+        if result > greater:
+          greater = result
+          greater_idx = results_beck[index]
+      if greater < 0.7:
+        greater_idx = None
+      results.append(greater_idx)
     return results
 
   def get_vector_250(self):
