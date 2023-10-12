@@ -13,10 +13,9 @@ if not there_are_env_vars:
     print("3. POSTGRES_URL -> postgres url for database eg. postgresql://username:password@host:port/database")
     raise ImportError("Environment variables are needed.")
 
+# Create a scraper object
+scraper = ScraperGetUsers()
 try:
-    # Create a scraper object
-    scraper = ScraperGetUsers()
-
     # Start the scraper
     scraper.get_users()
 except Exception as e:
