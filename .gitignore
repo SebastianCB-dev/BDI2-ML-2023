@@ -170,3 +170,5 @@ artificial_intelligence/microservice_process_comments/logs/logs.txt
 
 # models
 *.model
+
+*.txt
