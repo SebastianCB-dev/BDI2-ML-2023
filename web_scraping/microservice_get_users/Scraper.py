@@ -10,7 +10,8 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
-
+from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.chrome.service import Service
 # Custom libraries
 from helpers.data_transform import delete_verified, text_to_unicode
 from helpers.platform import get_platform, is_darwin_arm_validator
@@ -52,18 +53,8 @@ class ScraperGetUsers:
         is_darwin_arm = is_darwin_arm_validator()
         if (platform == "Darwin" and is_darwin_arm):
             platform = "Darwin_ARM"
-        driver_path = None
-        # Load the drivers' paths from the json file
-        with open("./helpers/drivers.json") as f:
-            drivers = json.load(f)
-        if drivers[platform] != None:
-            self.logger.info(f"Driver found to {platform}")
-            driver_path = drivers[platform]
-        else:
-            self.logger.error("Could not recognize the operating system")
-            Exception("Could not recognize the operating system")
         options = Options()
-        if (platform != "Windows"):
+        if (platform != "Windows" and platform != "Darwin_ARM"):
             options.add_argument('--no-sandbox')
             options.add_argument('--headless')
             options.add_argument('--disable-dev-shm-usage')
@@ -72,8 +63,7 @@ class ScraperGetUsers:
         options.add_argument("--disable-extensions")
         options.add_argument("--lang=en")
         # If the operating system is Linux, then set the options
-        self.driver = webdriver.Chrome(
-            executable_path=driver_path, options=options)
+        self.driver = webdriver.Chrome(options=options)
 
     def get_users(self):
         """Get Users From Instagram
