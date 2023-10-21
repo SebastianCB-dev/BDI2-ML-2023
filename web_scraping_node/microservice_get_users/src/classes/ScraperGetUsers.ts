@@ -24,7 +24,6 @@ export class ScraperGetUsers {
       const page: Page = await browser.newPage()
       return page
     } catch (err) {
-      Logger.errorLog(err as string)
       throw new Error('Error when launching browser')
     }
   }
@@ -38,7 +37,6 @@ export class ScraperGetUsers {
       await page.click('button[type="submit"]')
       await page.waitForNavigation()
     } catch (err) {
-      Logger.errorLog(err as string)
       throw new Error('Error when logging in')
     }
   }
@@ -47,7 +45,6 @@ export class ScraperGetUsers {
     try {
       await page.goto(`https://www.instagram.com/${process.env.INSTAGRAM_USERNAME}/following/`)
     } catch (err) {
-      Logger.errorLog(err as string)
       throw new Error('Error when going to the account`s following users')
     }
   }
