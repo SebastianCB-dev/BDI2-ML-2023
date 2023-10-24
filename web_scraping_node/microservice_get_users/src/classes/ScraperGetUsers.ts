@@ -11,6 +11,7 @@ export class ScraperGetUsers {
     const page = await this.launchBrowser()
     await this.login(page)
     const users = await this.getUsers(page)
+    console.log(users)
   }
 
   async launchBrowser (): Promise<Page> {
@@ -41,7 +42,7 @@ export class ScraperGetUsers {
     }
   }
 
-  async getUsers (page: Page): Promise<void> {
+  async getUsers (page: Page): Promise<any[]> {
     try {
       if (process.env.INSTAGRAM_USERNAME === undefined) throw new Error('Instagram username is not defined')
       await page.goto(`https://www.instagram.com/${process.env.INSTAGRAM_USERNAME}/following/`)
@@ -51,6 +52,20 @@ export class ScraperGetUsers {
         throw new Error('')
       }
       await this.scrollToEnd(usersContainer, page)
+      const users = await usersContainer.evaluate((element) => {
+        const usersSpan = element.querySelectorAll('span._aacl._aaco._aacw._aacx._aad7._aade')
+        const fullNamesSpan = element.querySelectorAll('span.x1lliihq.x193iq5w.x6ikm8r.x10wlt62.xlyipyv.xuxw1ft')
+        const users = []
+        for (let i = 0; i < usersSpan.length; i++) {
+          const user = {
+            username: usersSpan[i].innerHTML,
+            fullName: fullNamesSpan[i].innerHTML
+          }
+          users.push(user)
+        }
+        return users
+      })
+      return users
     } catch (err) {
       console.error(err)
       throw new Error('Error Getting the users, maybe the class name has changed? or some script is blocking the page')
