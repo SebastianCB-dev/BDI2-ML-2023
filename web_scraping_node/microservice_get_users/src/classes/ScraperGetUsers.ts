@@ -1,4 +1,4 @@
-import puppeteer, { Browser, Page } from 'puppeteer'
+import puppeteer, { Browser, ElementHandle, Page } from 'puppeteer'
 import { NODE_ENV_VALUES } from '../constants/env'
 import { Logger } from './Logger'
 
@@ -10,7 +10,7 @@ export class ScraperGetUsers {
   async run (): Promise<void> {
     const page = await this.launchBrowser()
     await this.login(page)
-    await this.getUsers(page)
+    const users = await this.getUsers(page)
   }
 
   async launchBrowser (): Promise<Page> {
@@ -43,9 +43,35 @@ export class ScraperGetUsers {
 
   async getUsers (page: Page): Promise<void> {
     try {
+      if (process.env.INSTAGRAM_USERNAME === undefined) throw new Error('Instagram username is not defined')
       await page.goto(`https://www.instagram.com/${process.env.INSTAGRAM_USERNAME}/following/`)
+      const usersContainer = await page.waitForSelector('._aano', { timeout: 5000 })
+      if (usersContainer == null) {
+        Logger.errorLog('❌ Container with class _aano not found, maybe the class name has changed?')
+        throw new Error('')
+      }
+      await this.scrollToEnd(usersContainer, page)
     } catch (err) {
-      throw new Error('Error when going to the account`s following users')
+      console.error(err)
+      throw new Error('Error Getting the users, maybe the class name has changed? or some script is blocking the page')
     }
+  }
+
+  async scrollToEnd (usersContainer: ElementHandle<Element>, page: Page): Promise<void> {
+    let previousHeight = 0
+    let currentHeight = 0
+
+    do {
+      previousHeight = currentHeight
+      await usersContainer.evaluate((element) => {
+        element.scrollTop = element.scrollHeight
+      })
+      // Wait for 3 seconds to load the next users
+      await new Promise(resolve => setTimeout(resolve, 3000))
+
+      currentHeight = await usersContainer.evaluate((element) => {
+        return element.scrollHeight
+      })
+    } while (previousHeight < currentHeight)
   }
 }
