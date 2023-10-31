@@ -1,6 +1,7 @@
 import puppeteer, { Browser, ElementHandle, Page } from 'puppeteer'
 import { NODE_ENV_VALUES } from '../constants/env'
 import { Logger } from './Logger'
+import { Database } from './Database'
 
 export class ScraperGetUsers {
   /**
@@ -9,6 +10,7 @@ export class ScraperGetUsers {
    */
   async run (): Promise<void> {
     const page = await this.launchBrowser()
+    const db = new Database()
     await this.login(page)
     const users = await this.getUsers(page)
     console.log(users)
