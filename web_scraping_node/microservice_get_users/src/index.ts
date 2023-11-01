@@ -5,7 +5,6 @@ import { validateEnv } from './helpers/validateEnv'
 
 // Config environment variables
 config()
-
 const existsEnv = validateEnv()
 if (!existsEnv) {
   Logger.errorLog('❌ Environment variables are not properly set')

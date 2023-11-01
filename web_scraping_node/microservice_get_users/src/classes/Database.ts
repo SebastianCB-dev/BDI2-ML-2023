@@ -2,25 +2,31 @@ import { Pool } from 'pg'
 import { Logger } from './Logger'
 
 export class Database {
+
+  pool: Pool | undefined = undefined
+
   constructor () {
     this.createConnection()
   }
 
   createConnection (): void {
-    const pool = new Pool({
-      connectionString: 'asd'
+    this.pool = new Pool({
+      connectionString: process.env.POSTGRES_URL,
     })
     // Validate connection
     // Attempt a test query
-    pool.query('SELECT 1', (error, results) => {
-      if (error) {
-        // The connection is not successful.
-        Logger.errorLog('❌ Error with database connection: ' + error.message)
-        throw error
-      } else {
-        // The connection is successful.
-        Logger.infoLog('✅ Database connection successful')
-      }
-    })
+    this.pool.connect()
+      .then(() => {
+        Logger.infoLog('✅ Database connection established')
+      })
+      .catch((err) => {
+        Logger.errorLog('❌ Database connection failed')
+        Logger.errorLog(err as string)
+        throw new Error('Error when connecting to the database')
+      })
+  }
+
+  getPool () {
+    return this.pool
   }
 }

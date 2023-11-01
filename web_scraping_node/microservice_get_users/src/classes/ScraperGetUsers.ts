@@ -1,16 +1,25 @@
 import puppeteer, { Browser, ElementHandle, Page } from 'puppeteer'
+import { Pool } from 'pg'
 import { NODE_ENV_VALUES } from '../constants/env'
 import { Logger } from './Logger'
 import { Database } from './Database'
+import {User} from "../interface/User"
+
 
 export class ScraperGetUsers {
-  /**
-   * Start the web scraper to get the users from Instagram.
-   * @returns {Promise<void>}
-   */
+
+  private _pool: Pool | undefined = undefined
+  constructor() {
+    this.startDB()
+  }
+
+  startDB() {
+    const db = new Database()
+    this._pool = db.getPool()
+  }
+
   async run (): Promise<void> {
     const page = await this.launchBrowser()
-    const db = new Database()
     await this.login(page)
     const users = await this.getUsers(page)
     console.log(users)
@@ -24,8 +33,7 @@ export class ScraperGetUsers {
           ? ['--no-sandbox', '--disable-extensions', '--lang=en', '--disable-dev-shm-usage', '--disable-gpu', '--incognito']
           : ['--disable-extensions', '--lang=en']
       })
-      const page: Page = await browser.newPage()
-      return page
+      return await browser.newPage()
     } catch (err) {
       throw new Error('Error when launching browser')
     }
@@ -57,15 +65,15 @@ export class ScraperGetUsers {
       const users = await usersContainer.evaluate((element) => {
         const usersSpan = element.querySelectorAll('span._aacl._aaco._aacw._aacx._aad7._aade')
         const fullNamesSpan = element.querySelectorAll('span.x1lliihq.x193iq5w.x6ikm8r.x10wlt62.xlyipyv.xuxw1ft')
-        const users = []
+        const usersStructured: User[] = []
         for (let i = 0; i < usersSpan.length; i++) {
-          const user = {
+          const user: User = {
             username: usersSpan[i].innerHTML,
             fullName: fullNamesSpan[i].innerHTML
           }
-          users.push(user)
+          usersStructured.push(user)
         }
-        return users
+        return usersStructured
       })
       return users
     } catch (err) {

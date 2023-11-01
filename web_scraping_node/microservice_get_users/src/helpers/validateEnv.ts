@@ -1,4 +1,4 @@
-import { Logger } from '../classes/Logger'
+import { Logger } from '../classes'
 import { ENV_VARIABLES, ENV_VALUES_RUNTIME, NODE_ENV_VALUES } from '../constants/env'
 
 export const validateEnv = (): boolean => {
