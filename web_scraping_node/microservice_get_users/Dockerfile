@@ -1,13 +1,13 @@
 FROM node:20.9.0-alpine as development-dependencies
 WORKDIR /app
 RUN npm install --location=global pnpm
-COPY package.json package-lock.yaml ./
+COPY package.json package.json ./
 RUN pnpm install
 
 FROM node:20.9.0-alpine as production-dependencies
 WORKDIR /app
 RUN npm install --location=global pnpm
-COPY package.json package-lock.yaml ./
+COPY package.json package.json ./
 RUN pnpm install --production
 
 FROM node:20.9.0-alpine as builder
@@ -23,4 +23,3 @@ RUN npm install --location=global pnpm
 COPY --from=production-dependencies /app/node_modules ./node_modules
 COPY --from=builder /app/dist ./dist
 CMD ["node", "dist/index.js"]
-
