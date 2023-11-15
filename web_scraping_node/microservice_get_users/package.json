@@ -6,7 +6,9 @@
   "scripts": {
     "typescript": "tsc",
     "start": "tsc && node dist/index.js",
-    "build": "tsc"
+    "build": "tsc",
+    "lint": "ts-standard",
+    "lint:fix": "ts-standard --fix"
   },
   "keywords": [],
   "author": "",

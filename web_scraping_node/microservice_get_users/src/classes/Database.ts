@@ -25,7 +25,7 @@ export class Database {
       })
   }
 
-  async addUsers (users: User[]) {
+  async addUsers (users: User[]): Promise<void> {
     for (let i = 0; i < users.length; i++) {
       const { username, fullName } = users[i]
       const existsUser = await this.existUserInDatabase(username)
