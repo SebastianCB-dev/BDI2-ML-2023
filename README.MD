@@ -44,9 +44,11 @@ The idea of this project is to include the English language (create a new model)
 
 The project incorporates the following machine learning model:
 
-![Model-ML-BDI-II](https://images2.imgbox.com/7f/61/ou4pnlOO_o.png)
+![Model-ML-BDI-II](https://images2.imgbox.com/1a/d1/uAqZt2ie_o.png)
 
 ## Web Scraping 🕸️
+
+![Model-ML-BDI-II](https://images2.imgbox.com/67/a7/rfPoipNO_o.png)
 
 ### Introduction 📜
 This project uses Web Scraping to obtain the comments from Instagram posts. Using selenium, the program is able to log in to Instagram and get the users' username then it goes to the users' profile and get the posts' links. After that, the program goes to each post and get the comments. Finally, the program saves the comments in a database.
@@ -127,6 +129,8 @@ You will probably be able to get the following issues:
    - This could be happen due it is a scraper and maybe you have to change some script to get the correct HTML's elements.
 
 ## Artificial Intelligence 🤖
+
+![Model-ML-BDI-II](https://images2.imgbox.com/62/4b/O285rmhe_o.png)
 
 ### Introduction 📜
 
