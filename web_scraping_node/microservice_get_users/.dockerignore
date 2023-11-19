@@ -4,3 +4,5 @@ sample.env
 node_modules/
 dist/
 src/DB/
+.idea/
+.vscode/
