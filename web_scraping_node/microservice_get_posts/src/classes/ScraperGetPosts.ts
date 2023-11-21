@@ -17,8 +17,10 @@ export class ScraperGetPosts {
   async run (): Promise<void> {
     const page = await this.launchBrowser()
     await this.login(page)
-    const users = await this.getUsers()
-    console.log({ users })
+    while (true) {
+      const users = await this.getUsers()
+      await this.getPosts(page, users)
+    }
   }
 
   async launchBrowser (): Promise<Page> {
@@ -52,8 +54,57 @@ export class ScraperGetPosts {
     const usersDB: Array<Record<string, string>> = await this._db?.getUsers().then((res) => res.rows)
     if (!Array.isArray(usersDB) || usersDB.length === 0) {
       Logger.warningLog('⚠️ There are no users to get posts, please check the database.')
+      return []
     }
     const users = usersDB.map((user) => user.username)
     return users
+  }
+
+  async getPosts (page: Page, users: string[]): Promise<void> {
+    // TODO: create Interface
+    const comments: any = []
+    for (const user of users) {
+      try {
+        const urlUserProfile: string = `https://www.instagram.com/${user}/`
+        await page.goto(urlUserProfile)
+        const totalPosts: number = await this.getTotalPosts(page)
+        if (totalPosts === 0) {
+          Logger.warningLog(`⚠️ User ${user} has no posts`)
+          await this.wait(1000)
+          continue
+        }
+        // Slep 1 second to load the page
+        // TODO: Put the user as REVIEWED in the database
+      } catch (err) {
+        Logger.errorLog(`❌ Error when accessing the user profile: ${user}`)
+        Logger.errorLog(err as string)
+        await this.wait(1000)
+        continue
+      }
+      await this.wait(1000)
+    }
+    // const commentsNotRepeated = [...new Set(comments)]
+    await new Promise((resolve) => setTimeout(resolve, 180000))
+  }
+
+  async getTotalPosts (page: Page): Promise<number> {
+    const spansUserInfo = await page.waitForSelector('.html-span.xdj266r.x11i5rnm.xat24cr.x1mh8g0r.xexx8yu.x4uap5.x18d9i69.xkhd6sd.x1hl2dhg.x16tdsg8.x1vvkbs', {
+      timeout: 10000
+    })
+    if (spansUserInfo == null) {
+      Logger.errorLog('❌ Error when getting the total number of posts, please check the selector of the spansUserInfo')
+      throw new Error('Error when getting the total number of posts, Please check the selector of the spansUserInfo')
+    }
+
+    const spansUserInfoText = await page.evaluate((elem) => elem.textContent, spansUserInfo)
+    if (spansUserInfoText == null) {
+      Logger.errorLog('❌ Error when getting the total number of posts, please check the selector of the spansUserInfoText')
+      throw new Error('Error when getting the total number of posts, Please check the selector of the spansUserInfoText')
+    }
+    return parseInt(spansUserInfoText)
+  }
+
+  async wait (ms: number): Promise<void> {
+    return await new Promise((resolve) => setTimeout(resolve, ms))
   }
 }

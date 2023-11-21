@@ -13,17 +13,15 @@ if (!existsEnv) {
 
 const main = async (): Promise<void> => {
   const scraperGetPosts = new ScraperGetPosts()
-  while (true) {
-    try {
-      await scraperGetPosts.run()
-      Logger.infoLog('✅ Scraper finished')
-      Logger.infoLog('⏳ Waiting 3 minutes to run again')
-      await new Promise((resolve) => setTimeout(resolve, 180000))
-      Logger.infoLog('⏳ Running scraper again')
-    } catch (err) {
-      Logger.errorLog(err as string)
-      throw new Error('Error when running scraper it was not possible to get users, please check the logs')
-    }
+  try {
+    await scraperGetPosts.run()
+    Logger.infoLog('✅ Scraper finished')
+    Logger.infoLog('⏳ Waiting 3 minutes to run again')
+    await new Promise((resolve) => setTimeout(resolve, 180000))
+    Logger.infoLog('⏳ Running scraper again')
+  } catch (err) {
+    Logger.errorLog(err as string)
+    throw new Error('Error when running scraper it was not possible to get users, please check the logs')
   }
 }
 
