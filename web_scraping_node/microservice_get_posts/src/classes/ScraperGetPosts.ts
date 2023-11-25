@@ -62,10 +62,10 @@ export class ScraperGetPosts {
 
   async getPosts (page: Page, users: string[]): Promise<void> {
     // TODO: create Interface
-    const comments: any = []
+    const posts = []
     for (const user of users) {
       try {
-        const urlUserProfile: string = `https://www.instagram.com/${user}/`
+        const urlUserProfile: string = `https://www.instagram.com/${'itssebastiancb'}/`
         await page.goto(urlUserProfile)
         const totalPosts: number = await this.getTotalPosts(page)
         if (totalPosts === 0) {
@@ -73,6 +73,17 @@ export class ScraperGetPosts {
           await this.wait(1000)
           continue
         }
+        const divPosts = await page.waitForSelector('.x9f619.xjbqb8w.x78zum5.x168nmei.x13lgxp2.x5pf9jr.xo71vjh.x1n2onr6.x1plvlek.xryxfnj.x1iyjqo2.x2lwn1j.xeuugli.xdt5ytf.xqjyukv.x1qjc9v5.x1oa3qoh.x1nhvcw1 > .x1iyjqo2', {
+          timeout: 10000
+        })
+        const comments = await page.evaluate((elem) => {
+          const imgs = elem?.querySelectorAll('img')
+          const postUrls: string[] = []
+          imgs?.forEach((img) => postUrls.push(img?.src ?? ''))
+          return postUrls
+        }, divPosts)
+        // TODO: Scroll down to load all posts
+        await this.wait(999999)
         // Slep 1 second to load the page
         // TODO: Put the user as REVIEWED in the database
       } catch (err) {
