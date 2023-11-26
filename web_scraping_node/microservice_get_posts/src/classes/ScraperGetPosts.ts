@@ -1,7 +1,8 @@
-import puppeteer, { Browser, Page } from 'puppeteer'
+import puppeteer, { Browser, ElementHandle, Page } from 'puppeteer'
 import { NODE_ENV_VALUES } from '../constants/env'
 import { Database } from './Database'
 import { Logger } from '.'
+import { UserPost } from '../interfaces'
 
 export class ScraperGetPosts {
   private _db: Database | undefined = undefined
@@ -61,8 +62,6 @@ export class ScraperGetPosts {
   }
 
   async getPosts (page: Page, users: string[]): Promise<void> {
-    // TODO: create Interface
-    const posts = []
     for (const user of users) {
       try {
         const urlUserProfile: string = `https://www.instagram.com/${'itssebastiancb'}/`
@@ -76,16 +75,30 @@ export class ScraperGetPosts {
         const divPosts = await page.waitForSelector('.x9f619.xjbqb8w.x78zum5.x168nmei.x13lgxp2.x5pf9jr.xo71vjh.x1n2onr6.x1plvlek.xryxfnj.x1iyjqo2.x2lwn1j.xeuugli.xdt5ytf.xqjyukv.x1qjc9v5.x1oa3qoh.x1nhvcw1 > .x1iyjqo2', {
           timeout: 10000
         })
-        const comments = await page.evaluate((elem) => {
-          const imgs = elem?.querySelectorAll('img')
-          const postUrls: string[] = []
-          imgs?.forEach((img) => postUrls.push(img?.src ?? ''))
-          return postUrls
-        }, divPosts)
-        // TODO: Scroll down to load all posts
+        if (divPosts == null) {
+          Logger.errorLog('❌ Error when getting the divPosts, please check the selector of the divPosts')
+          throw new Error('Error when getting the divPosts, Please check the selector of the divPosts')
+        }
+        const pageUser = await page.waitForSelector('html._9dls.js-focus-visible._aa4d')
+        if (pageUser == null) {
+          Logger.errorLog('❌ Error when getting the body, please check the selector of the body')
+          throw new Error('Error when getting the body, Please check the selector of the body')
+        }
+        const posts = await this.scrollTrhoughPosts(pageUser, page)
+        // Clean duplicated posts
+        const postsNotRepeated = [...new Set(posts)]
+        // Filter by https://www.instagram.com/p/
+        const postRegex = /https:\/\/www.instagram.com\/p\//
+        const postsFiltered = postsNotRepeated.filter((post) => postRegex.test(post))
+        const userPosts: UserPost = {
+          username: user,
+          posts: postsFiltered
+        }
+        // TODO: Save the posts in the database
+        console.log(userPosts.posts.length)
+        // TODO: Put the user as REVIEWED in the database
         await this.wait(999999)
         // Slep 1 second to load the page
-        // TODO: Put the user as REVIEWED in the database
       } catch (err) {
         Logger.errorLog(`❌ Error when accessing the user profile: ${user}`)
         Logger.errorLog(err as string)
@@ -117,5 +130,36 @@ export class ScraperGetPosts {
 
   async wait (ms: number): Promise<void> {
     return await new Promise((resolve) => setTimeout(resolve, ms))
+  }
+
+  async scrollTrhoughPosts (usersPosts: ElementHandle<Element>, page: Page): Promise<string[]> {
+    let previousHeight = 0
+    let currentHeight = 0
+    const posts: string[] = []
+    do {
+      const newPosts = await this.getPostsByDiv(page, usersPosts)
+      posts.push(...newPosts)
+      previousHeight = currentHeight
+      await usersPosts.evaluate((element) => {
+        element.scrollTop = element.scrollHeight
+      })
+      // Wait for 3 seconds to load the next users
+      await new Promise(resolve => setTimeout(resolve, 3000))
+
+      currentHeight = await usersPosts.evaluate((element) => {
+        return element.scrollHeight
+      })
+    } while (previousHeight < currentHeight)
+    return posts
+  }
+
+  async getPostsByDiv (page: Page, divPosts: ElementHandle<Element>): Promise<string[]> {
+    const posts = await page.evaluate((elem) => {
+      const imgs = elem?.querySelectorAll<HTMLLinkElement>('.x1i10hfl.xjbqb8w.x6umtig.x1b1mbwd.xaqea5y.xav7gou.x9f619.x1ypdohk.xt0psk2.xe8uvvx.xdj266r.x11i5rnm.xat24cr.x1mh8g0r.xexx8yu.x4uap5.x18d9i69.xkhd6sd.x16tdsg8.x1hl2dhg.xggy1nq.x1a2a7pz._a6hd')
+      const postUrls: string[] = []
+      imgs?.forEach((img) => postUrls.push(img?.href ?? ''))
+      return postUrls
+    }, divPosts)
+    return posts
   }
 }
