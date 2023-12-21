@@ -1,9 +1,7 @@
 import puppeteer, { Browser, ElementHandle, Page } from 'puppeteer'
 import { NODE_ENV_VALUES } from '../constants/env'
-import { Logger } from './Logger'
 
 export class ScraperFollowNewPeople {
-
   constructor () {}
 
   async run (): Promise<void> {
@@ -41,12 +39,12 @@ export class ScraperFollowNewPeople {
 
   async followNewPeople (page: Page): Promise<void> {
     try {
-      await page.goto(`https://www.instagram.com/explore/people/suggested/`)
+      await page.goto('https://www.instagram.com/explore/people/suggested/')
       await this.wait(5000)
       const buttons = await this.getButtonsFollow(page)
       for (const button of buttons) {
         await button.click()
-        await this.wait(5000)  
+        await this.wait(5000)
       }
     } catch (err) {
       console.error(err)
@@ -54,11 +52,11 @@ export class ScraperFollowNewPeople {
     }
   }
 
-  async wait(ms: number): Promise<void> {
+  async wait (ms: number): Promise<void> {
     return await new Promise((resolve) => setTimeout(resolve, ms))
   }
 
-  async getButtonsFollow(page: Page,): Promise<ElementHandle<Element>[]> {
+  async getButtonsFollow (page: Page): Promise<Array<ElementHandle<Element>>> {
     const buttons = await page.$$('._acan._acap._acas._aj1-._ap30')
     return buttons.filter(async (button) => {
       const text = await button.evaluate((node) => node.textContent)
