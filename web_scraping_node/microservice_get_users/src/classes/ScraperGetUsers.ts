@@ -1,6 +1,6 @@
 import puppeteer, { Browser, ElementHandle, Page } from 'puppeteer'
 import { NODE_ENV_VALUES } from '../constants/env'
-import { Logger } from './Logger'
+import { LoggerService as Logger } from './Logger'
 import { Database } from './Database'
 import { User } from '../interface/User'
 
@@ -54,12 +54,13 @@ export class ScraperGetUsers {
   }
 
   async getUsers (page: Page): Promise<any[]> {
+    const logger: Logger = new Logger()
     try {
       if (process.env.INSTAGRAM_USERNAME === undefined) throw new Error('Instagram username is not defined')
       await page.goto(`https://www.instagram.com/${process.env.INSTAGRAM_USERNAME}/following/`)
       const usersContainer = await page.waitForSelector('._aano', { timeout: 5000 })
       if (usersContainer == null) {
-        Logger.errorLog('❌ Container with class _aano not found, maybe the class name has changed?')
+        logger.errorLog('❌ Container with class _aano not found, maybe the class name has changed?')
         throw new Error('')
       }
       await this.scrollToEnd(usersContainer, page)

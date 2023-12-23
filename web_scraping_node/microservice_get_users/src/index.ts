@@ -1,13 +1,15 @@
 import process from 'process'
 import { config } from 'dotenv'
-import { ScraperGetUsers, Logger } from './classes'
+import { ScraperGetUsers, LoggerService as Logger } from './classes'
 import { validateEnv } from './helpers/validateEnv'
+
+const logger: Logger = new Logger()
 
 // Config environment variables
 config()
 const existsEnv = validateEnv()
 if (!existsEnv) {
-  Logger.errorLog('❌ Environment variables are not properly set')
+  logger.errorLog('❌ Environment variables are not properly set')
   process.exit(1)
 }
 
@@ -16,12 +18,12 @@ const main = async (): Promise<void> => {
   while (true) {
     try {
       await scraperGetUsers.run()
-      Logger.infoLog('✅ Scraper finished')
-      Logger.infoLog('⏳ Waiting 3 minutes to run again')
+      logger.infoLog('✅ Scraper finished')
+      logger.infoLog('⏳ Waiting 3 minutes to run again')
       await new Promise((resolve) => setTimeout(resolve, 180000))
-      Logger.infoLog('⏳ Running scraper again')
+      logger.infoLog('⏳ Running scraper again')
     } catch (err) {
-      Logger.errorLog(err as string)
+      logger.errorLog(err as string)
       throw new Error('Error when running scraper it was not possible to get users, please check the logs')
     }
   }
@@ -29,5 +31,5 @@ const main = async (): Promise<void> => {
 
 main()
   .catch((error) => {
-    Logger.errorLog(error as string)
+    logger.errorLog(error as string)
   })

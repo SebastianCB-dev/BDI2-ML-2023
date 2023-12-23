@@ -1,9 +1,10 @@
 import { Pool } from 'pg'
-import { Logger } from './Logger'
+import { LoggerService as Logger } from './Logger'
 import { User } from '../interface/User'
 
 export class Database {
   private _pool: Pool | undefined = undefined
+  private _logger: Logger = new Logger()
 
   constructor () {
     this.createConnection()
@@ -16,11 +17,11 @@ export class Database {
     // Validate connection
     this._pool.connect()
       .then(() => {
-        Logger.infoLog('✅ Database connection established')
+        this._logger.infoLog('✅ Database connection established')
       })
       .catch((err) => {
-        Logger.errorLog('❌ Database connection failed')
-        Logger.errorLog(err as string)
+        this._logger.errorLog('❌ Database connection failed')
+        this._logger.errorLog(err as string)
         throw new Error('Error when connecting to the database')
       })
   }
@@ -32,10 +33,10 @@ export class Database {
       if (!existsUser) {
         try {
           await this._pool!.query('INSERT INTO users (username, fullname) VALUES ($1, $2)', [username, fullName])
-          Logger.infoLog(`✅ User ${username} added to database`)
+          this._logger.infoLog(`✅ User ${username} added to database`)
         } catch (err) {
-          Logger.errorLog(`❌ Error when adding user ${username} to database`)
-          Logger.errorLog(err as string)
+          this._logger.errorLog(`❌ Error when adding user ${username} to database`)
+          this._logger.errorLog(err as string)
         }
       }
     }
