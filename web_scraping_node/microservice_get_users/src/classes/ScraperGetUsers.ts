@@ -6,6 +6,7 @@ import { User } from '../interface/User'
 
 export class ScraperGetUsers {
   private _db: Database | undefined = undefined
+  private _logger: Logger = new Logger()
 
   constructor () {
     this.startDB()
@@ -18,7 +19,8 @@ export class ScraperGetUsers {
   async run (): Promise<void> {
     const page = await this.launchBrowser()
     await this.login(page)
-    const users: User[] = await this.getUsers(page)
+    const users: User[] = await this.getUsers(page) 
+    console.log(users)   
     try {
       await this._db?.addUsers(users)
     } catch (e) {
@@ -54,26 +56,29 @@ export class ScraperGetUsers {
   }
 
   async getUsers (page: Page): Promise<any[]> {
-    const logger: Logger = new Logger()
     try {
       if (process.env.INSTAGRAM_USERNAME === undefined) throw new Error('Instagram username is not defined')
       await page.goto(`https://www.instagram.com/${process.env.INSTAGRAM_USERNAME}/following/`)
       const usersContainer = await page.waitForSelector('._aano', { timeout: 5000 })
       if (usersContainer == null) {
-        logger.errorLog('❌ Container with class _aano not found, maybe the class name has changed?')
+        this._logger.errorLog('❌ Container with class _aano not found, maybe the class name has changed?')
         throw new Error('')
       }
-      await this.scrollToEnd(usersContainer, page)
+      await this.scrollToEnd(usersContainer)
       const users = await usersContainer.evaluate((element) => {
-        const usersSpan = element.querySelectorAll('span._aacl._aaco._aacw._aacx._aad7._aade')
-        const fullNamesSpan = element.querySelectorAll('span.x1lliihq.x193iq5w.x6ikm8r.x10wlt62.xlyipyv.xuxw1ft')
+        const usersSpan = element.querySelectorAll('span._ap3a._aaco._aacw._aacx._aad7._aade')
+        const fullNamesSpan = element.querySelectorAll('span.x1lliihq.x1plvlek.xryxfnj.x1n2onr6.x193iq5w.xeuugli.x1fj9vlw.x13faqbe.x1vvkbs.x1s928wv.xhkezso.x1gmr53x.x1cpjm7i.x1fgarty.x1943h6x.x1i0vuye.xvs91rp.xo1l8bm.x1roi4f4.x10wh9bi.x1wdrske.x8viiok.x18hxmgj')
         const usersStructured: User[] = []
         for (let i = 0; i < usersSpan.length; i++) {
           const user: User = {
-            username: usersSpan[i].innerHTML,
-            fullName: fullNamesSpan[i].innerHTML
+            username: usersSpan[i].querySelector('span')?.innerHTML ?? '',
+            fullName: fullNamesSpan[i].querySelector('span')?.innerHTML ?? ''
           }
-          usersStructured.push(user)
+          if (user.username !== '') {
+            usersStructured.push(user)
+            continue
+          }
+          this._logger.errorLog(`❌ User ${user.username} not added to the array because it is empty`)
         }
         return usersStructured
       })
@@ -84,7 +89,7 @@ export class ScraperGetUsers {
     }
   }
 
-  async scrollToEnd (usersContainer: ElementHandle<Element>, page: Page): Promise<void> {
+  async scrollToEnd (usersContainer: ElementHandle<Element>): Promise<void> {
     let previousHeight = 0
     let currentHeight = 0
 
