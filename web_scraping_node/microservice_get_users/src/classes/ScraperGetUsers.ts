@@ -3,10 +3,12 @@ import { NODE_ENV_VALUES } from '../constants/env'
 import { LoggerService as Logger } from './Logger'
 import { Database } from './Database'
 import { User } from '../interface/User'
+import { joinClasses } from '../helpers/joinClasses.helper'
+import { ELEMENT_CLASSES, HTML_ELEMENTS } from '../constants/classes.constant'
 
 export class ScraperGetUsers {
   private _db: Database | undefined = undefined
-  private _logger: Logger = new Logger()
+  private readonly _logger: Logger = new Logger()
 
   constructor () {
     this.startDB()
@@ -19,8 +21,8 @@ export class ScraperGetUsers {
   async run (): Promise<void> {
     const page = await this.launchBrowser()
     await this.login(page)
-    const users: User[] = await this.getUsers(page) 
-    console.log(users)   
+    const users: User[] = await this.getUsers(page)
+    console.log({ users })
     try {
       await this._db?.addUsers(users)
     } catch (e) {
@@ -32,11 +34,30 @@ export class ScraperGetUsers {
     try {
       const browser: Browser = await puppeteer.launch({
         headless: process.env.ENVIRONMENT === NODE_ENV_VALUES.PRODUCTION,
-        args: process.env.ENVIRONMENT === NODE_ENV_VALUES.PRODUCTION
-          ? ['--no-sandbox', '--disable-extensions', '--lang=en', '--disable-dev-shm-usage', '--disable-gpu', '--incognito']
-          : ['--disable-extensions', '--lang=en']
+        args:
+          process.env.ENVIRONMENT === NODE_ENV_VALUES.PRODUCTION
+            ? [
+                '--no-sandbox',
+                '--disable-extensions',
+                '--lang=en',
+                '--disable-dev-shm-usage',
+                '--disable-gpu',
+                '--incognito'
+              ]
+            : ['--disable-extensions', '--lang=en']
       })
-      return await browser.newPage()
+      const page = await browser.newPage()
+
+      // Establish viewport size
+      await page.setViewport({
+        width: 1700,
+        height: 800,
+        deviceScaleFactor: 1,
+        isMobile: false,
+        hasTouch: false
+      })
+
+      return page
     } catch (err) {
       throw new Error('Error when launching browser')
     }
@@ -46,8 +67,17 @@ export class ScraperGetUsers {
     try {
       await page.goto('https://www.instagram.com/accounts/login/')
       await page.waitForSelector('input[name="username"]')
-      await page.type('input[name="username"]', process.env.INSTAGRAM_USERNAME!)
-      await page.type('input[name="password"]', process.env.INSTAGRAM_PASSWORD!)
+      if (
+        process.env.INSTAGRAM_USERNAME === undefined ||
+        process.env.INSTAGRAM_PASSWORD === undefined
+      ) {
+        throw new Error('Instagram username or password is not defined')
+      }
+      await page.type('input[name="username"]', process.env.INSTAGRAM_USERNAME)
+      if (process.env.INSTAGRAM_PASSWORD === undefined) {
+        throw new Error('Instagram password is not defined')
+      }
+      await page.type('input[name="password"]', process.env.INSTAGRAM_PASSWORD)
       await page.click('button[type="submit"]')
       await page.waitForNavigation()
     } catch (err) {
@@ -57,39 +87,84 @@ export class ScraperGetUsers {
 
   async getUsers (page: Page): Promise<any[]> {
     try {
-      if (process.env.INSTAGRAM_USERNAME === undefined) throw new Error('Instagram username is not defined')
-      await page.goto(`https://www.instagram.com/${process.env.INSTAGRAM_USERNAME}/following/`)
-      const usersContainer = await page.waitForSelector('._aano', { timeout: 5000 })
-      if (usersContainer == null) {
-        this._logger.errorLog('❌ Container with class _aano not found, maybe the class name has changed?')
+      if (process.env.INSTAGRAM_USERNAME === undefined) {
+        throw new Error('Instagram username is not defined')
+      }
+      await page.goto(
+        `https://www.instagram.com/${process.env.INSTAGRAM_USERNAME}/`
+      )
+
+      await new Promise((resolve) => setTimeout(resolve, 5000))
+
+      const buttonFollowing = await page.waitForSelector(
+        joinClasses(ELEMENT_CLASSES.BUTTON_FOLLOWING, HTML_ELEMENTS.ANCHOR),
+        { timeout: 5000 }
+      )
+      if (buttonFollowing == null) {
+        this._logger.errorLog(
+          '❌ Button following not found, maybe the class name has changed?'
+        )
         throw new Error('')
       }
-      await this.scrollToEnd(usersContainer)
-      const users = await usersContainer.evaluate((element) => {
-        const usersSpan = element.querySelectorAll('span._ap3a._aaco._aacw._aacx._aad7._aade')
-        const fullNamesSpan = element.querySelectorAll('span.x1lliihq.x1plvlek.xryxfnj.x1n2onr6.x193iq5w.xeuugli.x1fj9vlw.x13faqbe.x1vvkbs.x1s928wv.xhkezso.x1gmr53x.x1cpjm7i.x1fgarty.x1943h6x.x1i0vuye.xvs91rp.xo1l8bm.x1roi4f4.x10wh9bi.x1wdrske.x8viiok.x18hxmgj')
-        const usersStructured: User[] = []
-        for (let i = 0; i < usersSpan.length; i++) {
-          const user: User = {
-            username: usersSpan[i].querySelector('span')?.innerHTML ?? '',
-            fullName: fullNamesSpan[i].querySelector('span')?.innerHTML ?? ''
-          }
-          if (user.username !== '') {
-            usersStructured.push(user)
-            continue
-          }
-          this._logger.errorLog(`❌ User ${user.username} not added to the array because it is empty`)
+      await buttonFollowing.click()
+      const usersContainer = await page.waitForSelector(
+        joinClasses(ELEMENT_CLASSES.CONTAINER_USERS, HTML_ELEMENTS.DIV),
+        {
+          timeout: 5000
         }
-        return usersStructured
-      })
+      )
+      if (usersContainer == null) {
+        this._logger.errorLog(
+          '❌ Container following users not found, maybe the class name has changed?'
+        )
+        throw new Error('')
+      }
+      // Wait 5 seconds to ensure all users are loaded
+      await new Promise((resolve) => setTimeout(resolve, 5000))
+      await this.scrollToEnd(usersContainer)
+      const usernameSpanClass = joinClasses(
+        ELEMENT_CLASSES.USERNAME_SPAN,
+        HTML_ELEMENTS.SPAN
+      )
+      const fullNameSpanClass = joinClasses(
+        ELEMENT_CLASSES.FULLNAME_SPAN,
+        HTML_ELEMENTS.SPAN
+      )
+
+      const users = await usersContainer.evaluate(
+        (element, usersSpanClass, fullNameSpanClass) => {
+          const usernameSpan = element.querySelectorAll(usersSpanClass)
+          const fullNamesSpan = element.querySelectorAll(fullNameSpanClass)
+          const usersStructured: User[] = []
+          for (let i = 0; i < usernameSpan.length; i++) {
+            const user: User = {
+              username: usernameSpan[i].innerHTML ?? '',
+              fullName: fullNamesSpan[i].innerHTML ?? ''
+            }
+            if (user.username !== '') {
+              usersStructured.push(user)
+              continue
+            }
+            this._logger.errorLog(
+              `❌ User ${user.username} not added to the array because it is empty`
+            )
+          }
+          return usersStructured
+        },
+        usernameSpanClass,
+        fullNameSpanClass
+      )
       return users
     } catch (err) {
       console.error(err)
-      throw new Error('Error Getting the users, maybe the class name has changed? or some script is blocking the page')
+      throw new Error(
+        'Error Getting the users, maybe the class name has changed? or some script is blocking the page'
+      )
     }
   }
 
   async scrollToEnd (usersContainer: ElementHandle<Element>): Promise<void> {
+    console.log('Scroll To end', usersContainer)
     let previousHeight = 0
     let currentHeight = 0
 
@@ -98,8 +173,8 @@ export class ScraperGetUsers {
       await usersContainer.evaluate((element) => {
         element.scrollTop = element.scrollHeight
       })
-      // Wait for 3 seconds to load the next users
-      await new Promise(resolve => setTimeout(resolve, 3000))
+      // Wait for 5 seconds to load the next users
+      await new Promise((resolve) => setTimeout(resolve, 5000))
 
       currentHeight = await usersContainer.evaluate((element) => {
         return element.scrollHeight
