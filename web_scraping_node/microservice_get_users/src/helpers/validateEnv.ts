@@ -1,5 +1,5 @@
-import { LoggerService as Logger } from '../classes'
-import { ENV_VARIABLES, ENV_VALUES_RUNTIME, NODE_ENV_VALUES } from '../constants/env'
+import { LoggerService as Logger } from '@src/classes'
+import { ENV_VARIABLES, ENV_VALUES_RUNTIME, NODE_ENV_VALUES } from '@src/constants/env'
 
 export const validateEnv = (): boolean => {
   let existsEnv: boolean = true

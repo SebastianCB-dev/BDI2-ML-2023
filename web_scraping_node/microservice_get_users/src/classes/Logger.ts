@@ -3,15 +3,17 @@ import { createLogger, transports, format, Logger } from 'winston'
 
 export class LoggerService {
   private readonly _logger: Logger
+  private readonly _folder: string = 'logs'
 
   constructor () {
+    const currentDate = new Date().toISOString().split('T')[0]
     this._logger = createLogger({
       level: 'info',
       format: format.json(),
       defaultMeta: { service: 'Microservice-Get-Users' },
       transports: [
-        new transports.File({ filename: 'error.log', level: 'error' }),
-        new transports.File({ filename: 'combined.log' })
+        new transports.File({ filename: `${this._folder}/error-${currentDate}.log`, level: 'error' }),
+        new transports.File({ filename: `${this._folder}/combined-${currentDate}.log` })
       ]
     })
 

@@ -1,6 +1,6 @@
 import { Pool } from 'pg'
 import { LoggerService as Logger } from './Logger'
-import { User } from '../interface/User'
+import { User } from '@src/interface/User'
 
 export class Database {
   private _pool: Pool | undefined = undefined

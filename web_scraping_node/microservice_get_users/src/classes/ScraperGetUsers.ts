@@ -1,10 +1,10 @@
 import puppeteer, { Browser, ElementHandle, Page } from 'puppeteer'
-import { NODE_ENV_VALUES } from '../constants/env'
-import { LoggerService as Logger } from './Logger'
-import { Database } from './Database'
-import { User } from '../interface/User'
-import { joinClasses } from '../helpers/joinClasses.helper'
-import { ELEMENT_CLASSES, HTML_ELEMENTS } from '../constants/classes.constant'
+import { NODE_ENV_VALUES } from '@src/constants/env'
+import { LoggerService as Logger } from '@src/classes/Logger'
+import { Database } from '@src/classes/Database'
+import { User } from '@src/interface/User'
+import { joinClasses } from '@src/helpers/joinClasses.helper'
+import { ELEMENT_CLASSES, HTML_ELEMENTS } from '@src/constants/classes.constant'
 
 export class ScraperGetUsers {
   private _db: Database | undefined = undefined

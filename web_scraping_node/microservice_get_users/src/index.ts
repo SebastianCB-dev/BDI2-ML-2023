@@ -1,7 +1,7 @@
 import process from 'process'
 import { config } from 'dotenv'
-import { ScraperGetUsers, LoggerService as Logger } from './classes'
-import { validateEnv } from './helpers/validateEnv'
+import { ScraperGetUsers, LoggerService as Logger } from '@src/classes'
+import { validateEnv } from '@src/helpers/validateEnv'
 
 const logger: Logger = new Logger()
 
