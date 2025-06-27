@@ -18,6 +18,17 @@ export class ScraperGetUsers {
     this._db = new Database()
   }
 
+  /**
+   * Executes the main scraping workflow:
+   * - Launches a browser instance.
+   * - Logs into the target website.
+   * - Retrieves a list of users.
+   * - Logs the retrieved users to the console.
+   * - Attempts to add the users to the database.
+   *
+   * @throws {Error} If there is an issue adding users to the database.
+   * @returns {Promise<void>} A promise that resolves when the workflow is complete.
+   */
   async run (): Promise<void> {
     const page = await this.launchBrowser()
     await this.login(page)
@@ -30,6 +41,15 @@ export class ScraperGetUsers {
     }
   }
 
+  /**
+   * Launches a new Puppeteer browser instance and returns a new page.
+   *
+   * The browser is launched in headless mode and with additional arguments if the
+   * environment is set to production. The viewport of the new page is set to a fixed size.
+   *
+   * @returns {Promise<Page>} A promise that resolves to a Puppeteer Page instance.
+   * @throws {Error} Throws an error if the browser fails to launch.
+   */
   async launchBrowser (): Promise<Page> {
     try {
       const browser: Browser = await puppeteer.launch({
@@ -63,6 +83,17 @@ export class ScraperGetUsers {
     }
   }
 
+  /**
+   * Logs into Instagram using the provided Puppeteer page instance.
+   *
+   * Navigates to the Instagram login page, fills in the username and password
+   * from environment variables (`INSTAGRAM_USERNAME` and `INSTAGRAM_PASSWORD`),
+   * submits the login form, and waits for navigation to complete.
+   *
+   * @param page - The Puppeteer Page object to perform actions on.
+   * @throws {Error} If the username or password environment variables are not defined,
+   *                 or if an error occurs during the login process.
+   */
   async login (page: Page): Promise<void> {
     try {
       await page.goto('https://www.instagram.com/accounts/login/')
@@ -85,6 +116,18 @@ export class ScraperGetUsers {
     }
   }
 
+  /**
+   * Retrieves the list of users that the specified Instagram account is following.
+   *
+   * Navigates to the Instagram profile page, clicks the "Following" button,
+   * waits for the users container to appear, scrolls to load all users, and extracts
+   * the usernames and full names from the DOM.
+   *
+   * @param page - The Puppeteer Page instance to use for navigation and DOM interaction.
+   * @returns A promise that resolves to an array of user objects, each containing `username` and `fullName`.
+   * @throws Will throw an error if the Instagram username is not defined, if required elements are not found,
+   *         or if there is an issue during the scraping process.
+   */
   async getUsers (page: Page): Promise<any[]> {
     try {
       if (process.env.INSTAGRAM_USERNAME === undefined) {
@@ -163,6 +206,14 @@ export class ScraperGetUsers {
     }
   }
 
+  /**
+   * Scrolls the given users container element to its end, waiting for additional content to load.
+   * The method repeatedly scrolls to the bottom of the container and waits for new content to appear,
+   * until no more content is loaded (i.e., the scroll height stops increasing).
+   *
+   * @param usersContainer - The ElementHandle representing the container element to scroll.
+   * @returns A promise that resolves when the end of the container is reached and no more content loads.
+   */
   async scrollToEnd (usersContainer: ElementHandle<Element>): Promise<void> {
     console.log('Scroll To end', usersContainer)
     let previousHeight = 0
