@@ -1,15 +1,22 @@
 import { Pool } from 'pg'
-import { LoggerService as Logger } from './Logger'
+import { LoggerService as Logger } from '@src/classes/Logger'
 import { User } from '@src/interface/User'
 
 export class Database {
-  private _pool: Pool | undefined = undefined
   private readonly _logger: Logger = new Logger()
+  private _pool: Pool | undefined = undefined
 
   constructor () {
     this.createConnection()
   }
 
+  /**
+   * Establishes a connection pool to the PostgreSQL database using the connection string
+   * provided in the `POSTGRES_URL` environment variable. Logs a success message if the
+   * connection is established, or logs an error and throws an exception if the connection fails.
+   *
+   * @throws {Error} If the connection to the database cannot be established.
+   */
   createConnection (): void {
     this._pool = new Pool({
       connectionString: process.env.POSTGRES_URL
@@ -27,6 +34,18 @@ export class Database {
       })
   }
 
+  /**
+   * Adds or updates a list of users in the database.
+   *
+   * For each user in the provided array:
+   * - If the user does not exist in the database, inserts the user.
+   * - If the user exists and their full name has changed, updates the full name.
+   * - Logs actions and errors using the internal logger.
+   *
+   * @param users - An array of `User` objects to be added or updated in the database.
+   * @returns A promise that resolves when all users have been processed.
+   * @throws {Error} If the database connection is not established.
+   */
   async addUsers (users: User[]): Promise<void> {
     for (let i = 0; i < users.length; i++) {
       const { username, fullName } = users[i]
@@ -76,6 +95,13 @@ export class Database {
     }
   }
 
+  /**
+   * Checks if a user with the specified username exists in the database.
+   *
+   * @param username - The username to search for in the users table.
+   * @returns A promise that resolves to `true` if the user exists, or `false` otherwise.
+   * @throws Will throw an error if the database connection is not established.
+   */
   async existUserInDatabase (username: string): Promise<boolean> {
     if (this._pool === null || this._pool === undefined) {
       this._logger.errorLog('❌ Database connection not established')
