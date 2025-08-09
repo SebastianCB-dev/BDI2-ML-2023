@@ -140,8 +140,8 @@ export class ScraperGetUsers {
       await new Promise((resolve) => setTimeout(resolve, 5000))
 
       const buttonFollowing = await page.waitForSelector(
-        joinClasses(ELEMENT_CLASSES.BUTTON_FOLLOWING, HTML_ELEMENTS.ANCHOR),
-        { timeout: 5000 }
+  `${joinClasses(ELEMENT_CLASSES.BUTTON_FOLLOWING, HTML_ELEMENTS.ANCHOR)}[href*="following"]`,
+  { timeout: 5000 }
       )
       if (buttonFollowing == null) {
         this._logger.errorLog(
