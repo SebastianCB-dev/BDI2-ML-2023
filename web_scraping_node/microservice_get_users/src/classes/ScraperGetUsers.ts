@@ -33,9 +33,11 @@ export class ScraperGetUsers {
     const page = await this.launchBrowser()
     await this.login(page)
     const users: User[] = await this.getUsers(page)
-    console.log({ users })
+    if (!this._db) {
+      return
+    }
     try {
-      await this._db?.addUsers(users)
+      await this._db.addUsers(users)
     } catch (e) {
       throw new Error('Error when adding users to database')
     }
